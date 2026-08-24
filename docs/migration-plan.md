@@ -1,6 +1,6 @@
 # Echo 迁移计划（CET 耦合处置清单）
 
-> Phase 0 Repository Audit 产出 · 2026-08-24
+> Phase 0 Repository Audit 产出 · 2026-08-24；Phase 2 执行后更新处置结果（✅ 标记已完成项）
 > 用途：Phase 1"去 CET 化"的施工图。本文件只记录，不执行——所有改动在后续 Phase 按 commit 粒度实施。
 
 ## 处置分类定义
@@ -16,27 +16,27 @@
 
 | 耦合点 | 位置 | 处置 |
 |---|---|---|
-| `APP_EXAMS = ("cet6","cet4")` | server.py:19 | **删除**（被 catalog 取代） |
-| 入口路由正则 `/(?:cet6\|cet4)…` | server.py:86 | **抽象** → `/` 或 `/item/<id>` |
-| exam URL 前缀剥离 | server.py:269-276 | **删除** |
-| 默认路径模板 transcripts/{exam}/ 等 | server.py:406-409 | **抽象** → library/ 路径规则 |
-| 上传/保存拼 transcripts/{exam}/ | server.py:477,559,701,706,711 | **抽象** → 上传目标由 catalog 决定 |
-| `TRACK_ID_PATTERN` 强制 YYYY-M-N | server.py:20 | **删除** → ID 即目录 basename |
-| `normalize_exam` 兜底 cet6 | server.py:736-737 | **删除** |
-| admin 全套 API + JOBS + run 子进程 | server.py:88-94,120-235,335-691（约 400 行） | **缩编**：CET 数据管道用途废弃；jobs 思想保留给 Phase 2 upload / Phase 4 AI 任务 |
-| Range 媒体服务 handle_media/parse_range | server.py:281-329 | **复用**（核心资产，实测 206 正常） |
-| 路径遍历防护 resolve_relative_path | server.py:723-729 | **复用** |
-| 启动横幅/端口扫描逻辑 | server.py:820-841 | **复用**（Docker 场景显式 PORT） |
+| `APP_EXAMS = ("cet6","cet4")` | server.py:19 | ✅ **删除**（Phase 1 摘除；Phase 2 随重写消失） |
+| 入口路由正则 `/(?:cet6\|cet4)…` | server.py:86 | ✅ **删除**（Phase 2：`/` 唯一入口，`?track=<id>` 路由） |
+| exam URL 前缀剥离 | server.py:269-276 | ✅ **删除** |
+| 默认路径模板 transcripts/{exam}/ 等 | server.py:406-409 | ✅ **抽象** → `library/` 路径规则（scan_library） |
+| 上传/保存拼 transcripts/{exam}/ | server.py:477,559,701,706,711 | ✅ **删除**（随 admin 整体移除；添加内容=放文件进 library/） |
+| `TRACK_ID_PATTERN` 强制 YYYY-M-N | server.py:20 | ✅ **删除** → Item id = 文件 basename |
+| `normalize_exam` 兜底 cet6 | server.py:736-737 | ✅ **删除** |
+| admin 全套 API + JOBS + run 子进程（约 400 行） | server.py | ✅ **整体移除**（用户决策：彻底移除 admin；do_POST 恒 404。jobs 思想 Phase 4 AI 任务如需再重建） |
+| Range 媒体服务 handle_media/parse_range | server.py:281-329 | ✅ **复用**（核心资产，实测 206 正常） |
+| 路径遍历防护 | server.py | ✅ **复用**（SimpleHTTPRequestHandler translate_path + is_file 校验） |
+| 启动横幅/端口扫描逻辑 | server.py:820-841 | ✅ **复用**（横幅已去 admin/data-tools 行；Docker 场景显式 PORT） |
 
 ## B. 数据层
 
 | 项 | 现状 | 处置 |
 |---|---|---|
-| tracks.json | 37 条全 cet6，字段 exam/id/title/markdown/transcript/audio/timings/available | **抽象** → catalog.json `{id,title,audio,transcript}`；旧字段不迁移（历史数据留在 git 里即可） |
-| `.md` 文稿 | CET 题目结构（Section A/B、Q1-15 等） | **保留不动**（上游历史资产）；Echo 不再依赖它作为输入 |
-| `.transcript.json` / `.timings.json` | whisper 对齐产物，lines[] 结构 {start,end,text,…} | **结构复用**：这是播放器的内部契约。SRT 解析器输出对齐到该结构 |
-| data_tools/ 整目录 | whisper 管线（scan/timings/normalize） | **冻结**：不删（尊重上游），Echo 主线不再使用；ASR 能力 Phase 4 以新实现替代 |
-| ID 规则 YYYY-M-N | scan.py:19,89 生成 | **删除** → Item id = 目录/basename |
+| tracks.json | 37 条全 cet6 | ✅ **不再被加载**，留仓库作历史档案（用户决策：不删除）。通用内容由 `/api/library` 实时扫描取代（原计划 catalog.json 文件，已改为实时扫描——admin 移除后维护索引文件无收益） |
+| `.md` 文稿 | CET 题目结构 | **保留不动**（历史资产）；播放器不再依赖它作为输入 |
+| `.transcript.json` / `.timings.json` | whisper 对齐产物 | ✅ **结构复用**：播放器内部契约 lines[]。SRT 解析器输出对齐到该结构 |
+| data_tools/ 整目录 | whisper 管线 | **冻结**：不删，Echo 主线不再使用；ASR 能力 Phase 4 以新实现替代 |
+| ID 规则 YYYY-M-N | scan.py:19,89 | ✅ **删除** → Item id = 文件 basename |
 
 ## C. 前端 — index.html / styles.css
 
@@ -70,21 +70,20 @@
 
 整页是 CET 数据准备工具台（exam 下拉×5、年月套表单、whisper 任务触发）。
 
-**处置：Phase 2 缩编重造为"Library 上传管理"页。** 可复用的只有：
-- job 日志轮询 UI 模式（admin.js:381,456）
-- status 汇总卡片思路
-
-不可复用：全部 exam/年份/套数表单、markdown 编辑器（CET 格式绑定）、whisper 触发。
+✅ **已执行（Phase 2，用户决策：彻底移除）**：三个文件已删除，
+server.py 全部 `*admin*` 路由/处理已移除。添加音频 = 把 MP3+SRT 放进 `library/`（filesystem-first）。
+job 日志轮询 UI 模式与 status 汇总卡片思路记录在案，Phase 4 AI 任务如需后台作业可参考重建。
 
 ## F. 新增能力清单（上游没有、Echo 必需）
 
-1. **SRT 解析器** → 输出 lines[] 契约结构（Phase 1 核心，附单元测试）
-2. **Library Scanner**（Source→Collection→Item，basename 配对）（Phase 2）
-3. **catalog.json** 生成与 serve（Phase 2）
-4. Upload MP3/SRT 流程（Phase 2）
-5. Dockerfile + compose（Phase 2）
+1. ✅ **SRT 解析器** → 输出 lines[] 契约结构（Phase 1，附单元测试 12 条）
+2. ✅ **Library Scanner**（Source→Collection→Item，basename 配对）→ `scan_library()` + `GET /api/library`（Phase 2，附 unittest 11 条）
+3. ✅ ~~catalog.json 生成与 serve~~ → 被 `/api/library` 实时扫描取代（Phase 2 决策）
+4. ~~Upload MP3/SRT 流程~~ → 用户决策移除：filesystem-first，直接放文件进 `library/`
+5. Dockerfile + compose（延后到部署阶段，用户决策）
 6. Dictation 模式 + normalize 比较（Phase 3）
 7. Translation/ASR 旁路 + OpenAI-compatible provider（Phase 4）
+8. ✅ **三层树浏览 + 搜索**（Phase 2）：分组折叠（localStorage 持久化）+ title/source/collection 子串过滤
 
 ## G. refactor/listening 分支处置
 

@@ -53,19 +53,23 @@
 
 ---
 
-## Phase 2 — Generic Audio Library → `v0.2-library`
+## Phase 2 — Generic Audio Library → `v0.2-library` ✅
 
 **目标**：管理任意 MP3 + SRT。
 
-- Library Scanner：启动扫描 `library/`，Source→Collection→Item 三层，basename 配对
-- catalog.json 替代 tracks.json（保持纯文件，无数据库）
-- Library UI 最小版：三层浏览 + 点击进 Player
-- Search：仅 title/source/collection 子串匹配
-- Upload：MP3/SRT 上传 → validate → basename 配对 → 落目录 → rescn
-- Docker 化：Dockerfile + compose + volume（library/audio/transcripts），显式 PORT
-- Admin 改造决策点：现有 CET 数据管道 admin 大概率整体移除或缩编为"上传工具"
+- [x] Library Scanner：`scan_library()` 每请求实时扫描 `library/`，Source→Collection→Item 三层，basename 配对（缺 srt/mp3 不列入）
+- [x] `GET /api/library` 取代 tracks.json + catalog.json 双索引（**与原计划的偏差**：不做 catalog.json 文件——admin 已移除、添加内容=放文件，实时扫描无索引漂移；catalog.json 删除，tracks.json 留仓库作历史）
+- [x] 移除 admin：admin.html/ui/admin.js/ui/admin.css 删除，server 全部 `*admin*` 路由移除（do_POST 恒 404）；CET 深链路由移除
+- [x] 前端数据层：init() fetch `/api/library`；flattenLibrary() 展平附 source/collection；`?track=<id>` 唯一路由；compareTracks 简化
+- [x] Library UI：三层树（分组可折叠，localStorage 持久化）+ 搜索框（title/source/collection 子串过滤）
+- [x] 标题：`<stem>.txt` / `title.txt` 首行覆盖，否则人性化 basename（去日期/编号、连字符转空格）
+- [ ] Upload：**用户决策移除**——filesystem-first，直接放文件进 `library/`
+- [ ] Docker：**延后到部署阶段**（用户决策）
 
 **验收**：BBC/Podcast/Audiobook/自制录音混放一个目录树，服务器自动识别并全部可播。
+- [x] 单测 11 条（unittest，扫描/配对/分层/标题）+ SRT 12 条回归全绿
+- [x] curl 冒烟：`/` 200、`/api/library` 200、`.srt` 200、Range 206、`/api/admin/*` 404、`/cet6/` 404
+- [x] headless Chrome E2E 11 项全 PASS（树渲染/折叠持久化/搜索/SRT 加载/标题覆盖/URL 参数）；500px 视口正常、console 无错误
 
 ---
 
@@ -92,8 +96,7 @@
 - Translation：SRT → translation.json（旁路文件，禁止覆盖原 SRT）；Show/Hide 开关起步
 - ASR：仅 MP3 有、SRT 缺失时运行；产物 generated.srt 进 Library 流程
 - Provider：OpenAI-compatible API 三项配置（base_url/api_key/model）
-- 任务模型：Python 后台子进程（复用 jobs 思想），不引入 Redis/Celery
-- 安全债清偿（部署公网前必须）：admin 认证方案落地
+- 任务模型：Python 后台子进程（jobs 思想需重建——admin 已移除），不引入 Redis/Celery
 
 **验收**：无 AI 完整可用；有 AI 时翻译与 ASR 均为可选旁路。
 

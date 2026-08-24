@@ -1,43 +1,39 @@
-# Echo / cet-listening 架构文档
+# Echo 架构文档
 
-> Phase 0 Repository Audit 产出 · 2026-08-24
+> Phase 0 Repository Audit 产出 · 2026-08-24；Phase 2（v0.2-library）更新当前架构节
 > 基线：upstream/main @ 1876536（tag `v0-original`）
 
 ---
 
-## 1. 当前架构
+## 1. 当前架构（Phase 2 后）
 
-上游项目是一个**零框架、零数据库、零构建**的单体本地 Web 应用：
+仍是**零框架、零数据库、零构建**的单体本地 Web 应用，但内容源已完全通用化：
 
 ```text
 Browser (原生 HTML/CSS/JS，无框架无构建)
    ↓ HTTP (默认 :5173)
-server.py — Python 标准库 ThreadingHTTPServer（单文件 841 行，零第三方依赖）
-   ↓ 静态文件 + 自定义 Media 处理
+server.py — Python 标准库 ThreadingHTTPServer（~300 行，零第三方依赖）
+   ↓ /api/library（实时扫描）+ 静态文件 + 自定义 Media 处理
 Filesystem
-├── tracks.json                    # 内容索引（37 条，全部 CET-6）
-├── transcripts/cet6/*.md          # 人工整理的原文（含题目结构）
-├── transcripts/cet6/*.transcript.json   # v1：sections + lines（文本分段+占位时间）
-├── transcripts/cet6/*.timings.json      # v2：whisper 对齐结果（真实 start/end）
-└── audio/cet6/*.mp3               # 音频（不入库，用户手动放置）
+├── library/                       # 唯一内容源：MP3 + 同名 .srt（+ 可选 .txt 标题）
+├── tracks.json                    # 历史 CET 索引，保留作档案，不再被加载
+├── transcripts/cet6/…             # 历史 CET 档案，不再被加载
+└── audio/cet6/…                   # 历史 CET 音频，不再被加载
 ```
 
 ### 路由清单（server.py）
 
-| 路由 | 方法 | 功能 | 位置 |
-|---|---|---|---|
-| `/` | GET | 故意返回 404（强制走 `/cet6/` 入口） | server.py:44 |
-| `/cet6/…`、`/cet4/…` | GET | serve index.html（SPA 入口） | server.py:47,86 |
-| 媒体后缀（.mp3 等 6 种） | GET/HEAD | handle_media：**完整 Range 支持** | server.py:50,281 |
-| `/admin`、`/admin/` | GET | 数据管理页（仅本机 IP 可访问） | server.py:88 |
-| `/api/admin/status` | GET | 目录/工具/tracks 状态汇总 | server.py:137 |
-| `/api/admin/run` | POST | 启动 data_tools 子进程任务 | server.py:153 |
-| `/api/admin/jobs/<uuid>` | GET | 任务日志轮询 | server.py:141 |
-| `/api/admin/save-markdown` | POST | 写 transcript .md 文件 | server.py:165 |
-| `/api/admin/upload?kind=audio\|markdown` | POST | 上传音频/文稿 | server.py:177,188 |
-| 其余路径 | GET/HEAD | SimpleHTTPRequestHandler 默认静态服务 | server.py:53 |
+| 路由 | 方法 | 功能 |
+|---|---|---|
+| `/` | GET/HEAD | serve index.html（唯一应用入口） |
+| `/api/library` | GET/HEAD | 实时扫描 `library/`，返回三层 JSON（Cache-Control: no-store） |
+| 媒体后缀（.mp3 等 6 种） | GET/HEAD | handle_media：完整 Range 支持（206/416） |
+| 其余路径 | GET/HEAD | SimpleHTTPRequestHandler 默认静态服务 |
+| POST 任意路径 | POST | 404（admin 已整体移除） |
 
-**没有 rename/delete API；admin 本质是"CET 数据准备工具台"，不是内容管理系统。**
+Phase 1 的 `/cet6/<id>`、`/cet4/<id>` 深链入口与全部 `/api/admin/*`
+（含 `ALLOW_REMOTE_ADMIN`、JOBS、whisper 触发）已在 Phase 2 移除；
+前端 `?track=<id>` 是唯一路由。
 
 ### Audio Serving 细节（server.py:281-329）
 
@@ -50,8 +46,8 @@ Filesystem
 
 已知限制：
 - 监听 `0.0.0.0`，端口默认 5173，被占用时自动向后扫描最多 50 个端口（Docker 场景必须显式固定 `PORT`，否则健康检查会指向错误端口）
-- admin 认证仅靠"来源 IP 是否本机"判断 + `ALLOW_REMOTE_ADMIN=1` 环境变量开关，**无密码**；`/api/admin/run` 可启动任意 data_tools 子进程，属于本机 RCE 面，暴露到局域网前必须处理
-- `JOBS` 字典只增不清（轻微内存泄漏，长期运行需注意）
+- admin 移除后，原"admin 无认证 / JOBS 泄漏"两项风险随之消失；`do_POST` 恒 404，无写接口
+- 无 Cache-Control / ETag（静态文件）；`/api/library` 已带 no-store
 
 ## 2. Player 数据流（核心资产）
 
@@ -75,12 +71,12 @@ auto scroll
 （startLineLoopMonitor:1740 / checkLineLoop:1755 / enforceLineLoop:1763），
 用于单句循环的精确回跳——比 timeupdate 的 250ms 粒度更精准。
 
-### 字幕数据加载优先级（app.js:718-754）
+### 字幕数据加载优先级（loadTrack，Phase 2 后）
 
 ```text
-1. *.transcript.json（v1 结构，若含真实时间则直接用）
-2. 回退：*.md 浏览器端解析（parseMarkdown/splitSentences）+ *.timings.json 合并
-3. 都没有：buildAutoTimings (1324) 按词数加权估算时间轴
+1. *.srt（library/ 条目全部走此路径）：ui/srt.js 容错解析（BOM/CRLF/multiline/HTML 标签/重叠/乱序）
+2. *.transcript.json（历史 CET 结构，仅当 URL 直指时仍可用）
+3. 回退：*.md 浏览器端解析 + *.timings.json 合并
 ```
 
 内部统一的行结构：
@@ -114,27 +110,36 @@ auto scroll
 localStorage key `cet6-browser-state`（app.js:424-503）：每个 track 记录
 audioTime + 两个侧栏 scrollTop；160ms debounce 保存、播放态 1s 节流、pagehide/visibilitychange 兜底刷写。刷新/重开恢复体验完善。
 
-## 3. Library 数据流（目标模型，Phase 2 实现）
+## 3. Library 数据流（Phase 2 已实现）
 
 ```text
-library/                        # filesystem 就是数据库
-├── BBC/6 Minute English/Dreams/
+library/                        # filesystem 就是数据库，无索引文件
+├── Podcasts/BBC/
+│     ├── 2026-01-01-the-future-of-ai.mp3
+│     └── 2026-01-01-the-future-of-ai.srt   # 第一公民格式
+├── Samples/Dreams/
 │     ├── dreams.mp3
-│     └── dreams.srt            # 第一公民格式
-├── Podcast/Luke English Podcast/…
-└── Audiobook/Harry Potter/…
+│     ├── dreams.srt
+│     └── dreams.txt             # 可选标题覆盖（首行）
+└── …
 
-服务器启动扫描
-   ↓ Source（一级目录）→ Collection（二级目录）→ Item（叶子目录）
-basename 配对 audio.mp3 + audio.srt
+GET /api/library —— 每次请求实时扫描，无索引漂移
+   ↓ basename 配对 audio + .srt（缺任一不成 item）
+   ↓ 路径分层：第 1 段 = Source，第 2 段 = Collection（2 段直挂 Source，1 段挂根 "Library"）
+   ↓ 标题 = <stem>.txt / title.txt 首行，否则人性化 basename（scan_library()）
+三层 JSON {"sources":[{id,title,items,collections:[{id,title,items}]}]}
    ↓
-生成 catalog.json（替代 tracks.json）
-   ↓
-Item = { id, title, audio, transcript }
+前端 flattenLibrary() 展平为 items[]（附 source/collection 名）供播放器复用；
+renderTrackList() 按树渲染 Source → Collection → Item，支持折叠与搜索。
 ```
 
 概念模型只需三层：**Source → Collection → Item**。
-不引入数据库；SRT 在服务端或浏览器端解析为 §2 的 lines[] 结构喂给现有播放器。
+不引入数据库；SRT 在浏览器端由 ui/srt.js 解析为 §2 的 lines[] 结构喂给现有播放器。
+
+与 Phase 0 计划的一处偏差：原计划"扫描写 catalog.json"，实际改为
+`/api/library` 每请求实时扫描——admin 已移除、添加内容=放文件，
+维护一个会过期的索引文件没有收益。tracks.json / catalog.json 均不再加载
+（catalog.json 已删除；tracks.json 留仓库作历史）。
 
 ## 4. AI 数据流（Optional Enhancement，不属于核心）
 
@@ -165,11 +170,11 @@ Provider 设计为 OpenAI-compatible API（base_url/api_key/model 三项配置�
 | 维度 | 评估 |
 |---|---|
 | 依赖 | server.py 纯标准库 → `python:3.x-slim` 镜像即可跑主服务 |
-| RAM/CPU | 极低（估算 <50MB RSS 空载；无常驻计算） |
-| 存储 | 代码 <5MB；数据全在 volume（audio/ + transcripts/ + 未来 library/） |
+| RAM/CPU | 极低（估算 <50MB RSS 空载；无常驻计算；`/api/library` 每请求扫描，库很大时才有成本） |
+| 存储 | 代码 <5MB；数据全在 volume（library/） |
 | 端口 | 必须显式设 `PORT` 环境变量（禁用自动扫描歧义） |
 | 路径 | ROOT 相对定位，volume 挂载无障碍 |
 | GPU/AI | 无强依赖；AI 全部走外部 API |
-| 风险点 | ① admin 无认证（容器内需 ALLOW_REMOTE_ADMIN=1 才能从外部访问，等于对局域网裸奔）② JOBS 泄漏 ③ 无 Cache-Control（移动端重复拉音频略费流量） |
+| 风险点 | 无 Cache-Control（移动端重复拉音频略费流量）；`/api/library` 全量返回，库达数百条后可考虑分页/缓存 |
 
 三者都不是 Phase 0 阻塞项，记入 roadmap。
