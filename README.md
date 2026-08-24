@@ -1,63 +1,57 @@
-# CET-4/6 听力训练网站
+# Echo — 自托管英语精听播放器
 
-一个面向大学英语四、六级听力精听训练的本地网页应用。项目把历年听力音频、原文和句级时间轴组织成可浏览的题库，支持逐句播放、原文高亮、段落跳转、倍速、快捷键和可拖动播放器，适合用来做精听、跟读、复盘和材料整理。
+一个极简、自托管、移动端友好的通用英语音频精听平台（由开源项目 cet-listening 改造而来）。核心输入是 `MP3 + 同名 .srt`：把文件放进 `library/` 目录，服务器实时扫描识别，即可逐句精听。支持逐句播放、原文高亮、单句循环、倍速、快捷键和可拖动播放器。
 
-当前仓库已经按同一数据结构整理了 37 套六级听力材料；目前内容仍以 CET-6 为主，但目录、脚本和 URL 结构已经预留了 `cet6` / `cet4` 两类数据。当前如果 `cet4` 目录为空，页面会明确显示“暂无内容”，不会自动回退到 `cet6`。
+仓库中的历史 CET-6 材料（37 套）保留作档案，但播放器不再加载；内容来源完全由 `library/` 目录决定。
 
 ![界面预览](docs/app-preview.png)
 
 ## 功能特性
 
-- 题库列表：左侧按年份、月份、套题展示听力材料，支持顺序/逆序切换。
+- 内容库浏览：左侧按 来源 → 合集 → 条目 三层树展示 `library/` 中的内容，分组可折叠，顶部搜索框可按标题/来源过滤。
 - 音频播放：支持播放/暂停、进度条拖动、前进/后退 5 秒、1x/1.25x/1.5x 倍速。
-- 句级时间轴：原文按句拆分并显示开始时间，播放时自动高亮当前句。
+- 句级时间轴：SRT 字幕按句拆分并显示开始时间，播放时自动高亮当前句。
 - 逐句精听：每一句右侧都有播放按钮，点击即可跳到该句并播放。
 - 单句循环：每一句都支持单独循环播放，适合跟读、听写和卡点复听。
 - 自动滚动：播放时自动把当前句滚动到视野中心，可随时关闭。
 - 原文开关：可隐藏/显示听力原文，用于盲听或复盘。
 - 翻译开关：如果对应数据里带有 `translation` 字段，可以一键显示/隐藏中译。
-- 段落导航：右侧按 Conversation、Passage、Recording 分段跳转。
-- 可调整布局：左右侧栏可隐藏、恢复、拖动调整宽度。
+- 段落导航：右侧按段落跳转。
+- 可调整布局：左右侧栏可隐藏、恢复、拖动调整宽度；860px 以下折叠为单列，适配移动端。
 - 悬浮播放器：底部播放器可拖动，也可固定；位置和固定状态会保存在浏览器本地。
-- 断点续看：会自动恢复上次打开的套题、播放进度、题库滚动位置和原文滚动位置。
-- 分享定位：URL 支持 `/cet6/2025-12-2` 这样的形式，方便直接打开指定考试和套题。
+- 断点续看：会自动恢复上次打开的内容、播放进度、列表滚动位置和原文滚动位置。
+- 分享定位：URL 支持 `?track=<id>` 形式，方便直接打开指定内容。
 - 音频 Range 支持：本地 Python 服务支持浏览器分段请求，拖动进度条和大音频播放更稳定。
-- Web 数据管理：本机管理页支持上传音频/原文、保存 Markdown、扫描题库、拆分总稿、生成 transcript 和 timings，并显示后台任务日志。
 
 ## 技术栈
 
-- 前端：原生 HTML、CSS、JavaScript，无构建步骤。
-- 本地服务：Python `http.server` + 自定义媒体 Range 处理。
-- 数据：`tracks.json` 题库索引、按 `cet6` / `cet4` 分类的 Markdown 原文、标准化 transcript JSON、timings JSON。
-- 时间轴生成：`ffprobe` 获取音频时长，`faster-whisper` 可选用于自动语音识别与文本对齐。
+- 前端：原生 HTML、CSS、JavaScript，无构建步骤、无第三方依赖。
+- 本地服务：Python `http.server` + `/api/library` 实时目录扫描 + 媒体 Range 处理。
+- 数据：`library/` 下的 `MP3 + SRT` 文件对即数据本身（filesystem-first），无索引文件。
 
 ## 快速开始
 
-### 音频资源获取
+### 放入内容
 
-仓库中的 `*.mp3` 文件体积较大，没有直接提交到 Git 仓库。请先下载并解压音频目录到项目根目录。当前内容主要是 CET-6，推荐按 `audio/cet6/` 放置；以后增加 CET-4 时可对应放到 `audio/cet4/`。
-
-- 百度网盘：<https://pan.baidu.com/s/1z21mlwexhTcNY2L6TrH6kQ>
-- 提取码：`awq9`
-
-目录准备完成后，项目结构应类似：
+在项目根目录的 `library/` 下放入成对的 `MP3` 和同名 `.srt`：
 
 ```text
-audio/
-  cet6/
-    2025-12-2.mp3
-    2025-12-1.mp3
-  cet4/
-    ...
+library/
+  Podcasts/
+    BBC/
+      2026-01-01-the-future-of-ai.mp3
+      2026-01-01-the-future-of-ai.srt
+  Samples/
+    Dreams/
+      dreams.mp3
+      dreams.srt
 ```
 
 ### 环境要求
 
 - Python 3.10 或更新版本。
 - 现代浏览器：Chrome、Edge、Firefox 等。
-- 如果只播放已有材料，不需要安装额外 Python 依赖。
-- 如果要重新生成时间轴，需要安装 FFmpeg，并确保命令行能访问 `ffprobe`。
-- 如果要使用 Whisper 自动对齐，建议安装 `faster-whisper`。
+- 只需播放已有材料，不需要安装额外 Python 依赖。
 
 ### Windows 启动
 
@@ -88,12 +82,10 @@ python server.py
 启动后打开控制台提示的地址。当前有效入口是：
 
 ```text
-http://127.0.0.1:5173/cet6/
-http://127.0.0.1:5173/cet4/
-http://127.0.0.1:5173/admin/
+http://127.0.0.1:5173/
 ```
 
-`/admin/` 是本机数据管理入口，默认只允许从当前电脑访问。根路径 `http://127.0.0.1:5173/` 不作为应用入口使用。如果 `5173` 已被占用，服务会自动尝试后续端口。
+根路径即播放器入口，内容来自 `library/` 目录的实时扫描（`GET /api/library`）。把 `MP3 + 同名 .srt` 放进 `library/` 后刷新页面即可看到。如果 `5173` 已被占用，服务会自动尝试后续端口。
 
 ### 指定端口
 
@@ -149,23 +141,59 @@ PORT=5180 python3 server.py
 │   │   └── 2025-12-2.timings.json
 │   └── cet4/
 ├── ui/
-│   ├── admin.css                  # Web 数据管理页样式
-│   ├── admin.js                   # Web 数据管理页逻辑
 │   ├── app.js                     # 播放器、题库、原文渲染和交互逻辑
+│   ├── srt.js                     # SRT 字幕容错解析器
 │   └── styles.css                 # 页面样式和响应式布局
-├── admin.html                     # Web 数据管理入口
-├── index.html                     # 应用入口
-├── server.py                      # 本地静态服务和音频 Range 服务
+├── index.html                     # 应用入口（根路径直服）
+├── server.py                      # 本地静态服务 + /api/library 实时扫描 + 音频 Range 服务
 ├── start.bat                      # Windows 一键启动脚本
-├── tracks.json                    # 题库索引
-└── improvement_suggestions.md     # 后续优化建议
+├── library/                       # 通用音频库：MP3 + 同名 .srt 成对放入即被识别
+├── tests/                         # 单元测试（Python unittest + node --test）
+└── tracks.json                    # 历史 CET 索引，保留作档案，不再被加载
 ```
 
 ## 数据说明
 
-### `tracks.json`
+### `library/` 目录与 `/api/library`
 
-前端启动后会读取 `tracks.json`，每一项代表一套听力：
+播放器的唯一内容源是 `GET /api/library`，它每次请求都实时扫描 `library/` 并返回三层结构：
+
+```json
+{
+  "sources": [
+    {
+      "id": "Podcasts",
+      "title": "Podcasts",
+      "items": [],
+      "collections": [
+        {
+          "id": "BBC",
+          "title": "BBC",
+          "items": [
+            {
+              "id": "2026-01-01-the-future-of-ai",
+              "title": "The Future Of Ai",
+              "audio": "library/Podcasts/BBC/2026-01-01-the-future-of-ai.mp3",
+              "transcript": "library/Podcasts/BBC/2026-01-01-the-future-of-ai.srt",
+              "available": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+分层规则：
+
+- **Item** = 同目录、同 basename 的音频（`.mp3` 等）+ `.srt` 配对；缺任一不构成 item。
+- **Source** = 相对 `library/` 的第 1 层目录；**Collection** = 第 2 层目录。条目直接放在 Source 下时没有 Collection。
+- **标题** = 同目录 `<同名>.txt` 或 `title.txt` 的首行；否则从文件名人性化（去日期前缀、连字符转空格）。
+
+### 历史 CET 数据格式
+
+以下格式仅存在于历史档案中，播放器不再加载：
 
 ```json
 {
@@ -180,20 +208,9 @@ PORT=5180 python3 server.py
 }
 ```
 
-字段含义：
-
-- `exam`：考试类型，当前支持 `cet6` 和 `cet4`。
-- `id`：套题唯一标识，推荐格式为 `YYYY-M-套数`。
-- `title`：页面展示标题。
-- `markdown`：原始 Markdown 原文路径。
-- `transcript`：标准化后的句级原文 JSON。
-- `audio`：音频路径。
-- `timings`：句级时间轴 JSON。
-- `available`：是否已经有标准化原文和时间轴。
-
 ### Markdown 原文格式
 
-原文文件建议放在 `transcripts/<exam>/` 下，例如 `transcripts/cet6/` 或 `transcripts/cet4/`，文件名格式为：
+历史 CET 档案使用 Markdown 原文，放在 `transcripts/<exam>/` 下，文件名格式为：
 
 ```text
 transcripts/cet6/YYYY-M-套数.md
@@ -245,69 +262,27 @@ Q9. What does the speaker mainly talk about?
 
 ## 数据维护流程
 
-### 使用 Web 管理页
+### 添加新材料
 
-启动 `server.py` 后打开：
+Echo 采用 filesystem-first：把 `MP3 + 同名 .srt` 直接放进 `library/` 目录即可，无需任何索引文件或管理页。
 
-```text
-http://127.0.0.1:5173/admin/
-```
-
-管理页可以完成常用本地维护动作：上传音频和原文、直接粘贴保存 Markdown、扫描并刷新 `tracks.json`、拆分 `data_tools/0.md` 这类整合稿、为单套材料生成 transcript JSON 或 timings JSON。耗时任务会在后台运行，右侧任务日志会显示命令输出。
-
-如果需要在局域网内访问管理页，可以启动前设置 `ALLOW_REMOTE_ADMIN=1`。这个入口可以写文件和执行本项目的数据脚本，只建议在可信网络中开启。
-
-### 添加一套新材料
-
-1. 先确定考试类型目录。六级建议放在 `audio/cet6/`，四级建议放在 `audio/cet4/`。推荐命名：
+1. 在 `library/` 下按需建目录（第 1 层 = 来源 Source，第 2 层 = 合集 Collection，也可以直接放文件）：
 
 ```text
-audio/cet6/2026-6-1.mp3
+library/Podcasts/BBC/2026-01-01-the-future-of-ai.mp3
+library/Podcasts/BBC/2026-01-01-the-future-of-ai.srt
 ```
 
-2. 把原文放入对应的 `transcripts/<exam>/` 目录，推荐命名：
+2. （可选）在同目录放 `<同名>.txt` 或 `title.txt`（首行）作为显示标题；否则会从文件名自动人性化标题。
+3. 刷新页面即可看到新内容。服务端每次请求 `/api/library` 都会实时重新扫描，无需重启。
 
-```text
-transcripts/cet6/2026-6-1.md
-```
-
-3. 生成标准化 transcript JSON，并刷新题库索引：
-
-PowerShell：
-
-```powershell
-python data_tools/scan.py
-```
-
-Bash：
-
-```bash
-python3 data_tools/scan.py
-```
-
-如果只想扫描某一类考试，可以加上：
-
-```powershell
-python data_tools/scan.py --exam cet6
-```
-
-4. 生成时间轴：
-
-PowerShell：
-
-```powershell
-python data_tools/scan.py --gen
-```
-
-Bash：
-
-```bash
-python3 data_tools/scan.py --gen
-```
-
-5. 重启服务或刷新页面。如果浏览器缓存导致样式或数据没有更新，请按 `Ctrl + F5` 强制刷新。
+历史 CET 材料（`tracks.json`、`transcripts/cet6/`、`audio/cet6/`、`data_tools/`）保留在仓库中作档案，但播放器不再加载它们。
 
 ### 只处理单套材料
+
+Echo 的播放器直接读取 SRT 字幕，不再需要 transcript JSON / timings JSON 生成流程。只要 `MP3` 与同名 `.srt` 成对放入 `library/`，即可正常显示原文并逐句对齐。
+
+以下 `data_tools/` 命令仅用于维护历史 CET 档案，与通用 Library 无关：
 
 生成标准化 transcript JSON：
 
@@ -449,18 +424,11 @@ WHISPER_MODEL="small.en" WHISPER_DEVICE="cuda" WHISPER_COMPUTE_TYPE="float16" py
 
 ### 页面打不开
 
-确认 Python 服务已经启动，并使用控制台打印出来的地址访问，例如 `http://127.0.0.1:5173/cet6/`。不要直接双击打开 `index.html`，否则浏览器可能因为本地文件安全策略无法正常读取 JSON 和音频。
+确认 Python 服务已经启动，并使用控制台打印出来的地址访问，例如 `http://127.0.0.1:5173/`。不要直接双击打开 `index.html`，否则浏览器可能因为本地文件安全策略无法正常读取 JSON 和音频。
 
 ### 音频不能播放
 
-检查 `tracks.json` 中的 `audio` 路径是否存在，文件名是否和实际音频一致。仓库的 `.gitignore` 默认忽略 `*.mp3`，所以新环境需要单独准备 `audio/` 目录下的音频文件。
-
-如果本地没有音频，可以从百度网盘下载：
-
-- 链接：<https://pan.baidu.com/s/1z21mlwexhTcNY2L6TrH6kQ>
-- 提取码：`awq9`
-
-下载后请确认项目根目录下存在 `audio/cet6/` 或 `audio/cet4/` 这样的实际音频目录，而不是多包了一层目录。
+检查 `/api/library` 返回的条目里 `audio` 路径是否存在，文件名是否与实际音频一致。仓库的 `.gitignore` 默认忽略 `*.mp3`，所以新环境需要把音频和 `.srt` 一起放进 `library/`。
 
 ### 拖动进度条不稳定
 
@@ -493,16 +461,13 @@ python3 data_tools/scan.py --gen --force
 - `index.html`：页面结构。
 - `ui/styles.css`：布局和视觉样式。
 - `ui/app.js`：播放器、题库、原文和交互逻辑。
-- `admin.html`：Web 数据管理页结构。
-- `ui/admin.css`：Web 数据管理页样式。
-- `ui/admin.js`：Web 数据管理页逻辑。
+- `ui/srt.js`：SRT 字幕容错解析器。
 
-本地服务入口是 `server.py`。它继承 `SimpleHTTPRequestHandler`，并为音频文件补充了：
+本地服务入口是 `server.py`。它继承 `SimpleHTTPRequestHandler`，并在静态服务之外提供：
 
-- `Range` 请求解析。
-- `206 Partial Content` 响应。
-- `Accept-Ranges: bytes`。
-- 大文件分块传输。
+- `GET /api/library`：实时扫描 `library/`，返回 Source → Collection → Item 三层结构。
+- 音频文件的 `Range` 请求解析与 `206 Partial Content` 响应。
+- `Accept-Ranges: bytes` 与大文件分块传输。
 
 ## 问题反馈
 
