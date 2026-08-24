@@ -73,19 +73,23 @@
 
 ---
 
-## Phase 3 — Listening Mode → `v0.3-listening`
+## Phase 3 — Listening Mode → `v0.3-listening` ✅
 
 **目标**：把播放器升级成真正的精听工具。
 
-- Normal Mode（已有，保底）
-- Intensive Mode：上一句/下一句按钮（当前缺失）、单句循环强化
-- Blind Listening：已有开关，补模式化体验（隐藏字幕时播放完全不受影响）
-- Dictation：逐句听写 → normalize 比较（lowercase/trim/空白/标点）→ 揭示原文；第一版无 AI
-- A-B Loop：Set A / Set B / Loop 三键极简版
-- 自定义倍速输入（替掉硬编码三档）
-- Mobile UI 全面验证：Android Chrome / iOS Safari / iPad / Desktop；大按钮、底部控制、竖横屏、无 hover
+- [x] 上一句/下一句按钮（播放器条 + `[` `]` 快捷键；基于 activeIndex 步进，边界 clamp）
+- [x] 自定义倍速：预设下拉 0.5/0.75/1/1.25/1.5/2 + 自定义输入（0.25–4），`echo-playback-rate` 持久化
+- [x] A-B Loop：A/B/清除三键（A/B 快捷键），rAF 监控器内 enforceAbLoop（过 B 回 A）；与句/段循环互斥
+- [x] Dictation 逐句行内听写（用户决策形态）：开关持久化 → 全文打码 → 点击句子播放+展开输入 →
+  normalize 比较（大小写/标点/撇号/NFKC 容错）→ 全对揭示+自动进下一句；错词词级 diff（漏词红粗、多词删除线）
+  - `ui/dictation.js` 纯函数（normalizeAnswer/diffWords/gradeAttempt）+ 16 条单测
+- [x] Blind Listening：已有开关保留；听写开启时自动关闭原文开关（同一遮罩，避免打架）
+- [x] Mobile UI：430/500/860/1400px 四档截图验证；520px 断点改 5 列控制行（修复新按钮挤爆布局）
 
 **验收**：Normal + Blind + Intensive + Dictation + Sentence Loop 全部可用且无 AI 依赖。
+- [x] 单测 28 条（srt 12 + dictation 16）+ unittest 11 条全绿
+- [x] headless Chrome E2E 28 项全 PASS（树/搜索/播放/步进/A-B 状态机/倍速含自定义/听写全链路）
+- [x] console 无错误；四档视口无横向溢出
 
 ---
 

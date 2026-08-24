@@ -64,15 +64,17 @@ curl -s -D - -o /dev/null -H "Range: bytes=0-99" \
 ```text
 echo/
 ├── server.py              # 全部后端：路由 + scan_library() + Range 媒体服务（~300 行）
-├── index.html             # 播放器页骨架；侧栏含 #librarySearch 搜索框
+├── index.html             # 播放器页骨架；侧栏搜索框 + 播放器条（步进/A-B/听写/倍速下拉）
 ├── ui/
-│   ├── app.js             # ★ 核心：播放器 + 库树/搜索逻辑（原生 JS，已去 CET 域）
+│   ├── app.js             # ★ 核心：播放器 + 库树/搜索/听写交互（原生 JS，已去 CET 域）
 │   ├── srt.js             # ★ 通用 SRT 解析器 parseSrt()（零依赖，可被 node:test 单测）
-│   ├── styles.css         # 全部样式（三栏布局 + 树/搜索样式 + 移动端断点 860px/520px）
+│   ├── dictation.js       # ★ 听写纯函数 normalizeAnswer/diffWords/gradeAttempt（零依赖）
+│   ├── styles.css         # 全部样式（三栏布局 + 树/搜索/听写样式 + 移动端断点 860px/520px）
 │   └── echo-icon.svg      # Echo 图标
 ├── library/               # ★ 唯一内容源：MP3 + 同名 .srt（+ 可选 .txt 标题覆盖）
 ├── tests/
 │   ├── srt.test.mjs       # SRT 解析器单测（node:test，12 条）
+│   ├── dictation.test.mjs # 听写 normalize/diff 单测（node:test，16 条）
 │   └── test_scan.py       # scan_library 单测（unittest，11 条）
 ├── tracks.json            # 历史 CET 索引，保留作档案，不再被加载
 ├── transcripts/cet6/      # 历史 CET 档案，不再被加载
@@ -105,7 +107,11 @@ echo/
 | SRT 加载分支 | `loadTrack` 内 `parseSrt` → `buildLinesFromSrtSegments` |
 | 时间轴应用 / 自动估算 | `applyTimings` / `buildAutoTimings` |
 | 当前句二分查找 | `findActiveLineIndex` |
-| 单句循环（rAF 监控） | `toggleLineLoop` / `startLineLoopMonitor` 等 |
+| 单句循环（rAF 监控） | `toggleLineLoop` / `startLineLoopMonitor` / `enforceLineLoop` |
+| A-B 循环（同一 rAF 监控） | `setAbLoopPoint` / `enforceAbLoop` / `hasAbLoop` / `clearAbLoop` |
+| 上一句/下一句 | `stepLine(direction)`（`[` `]` 快捷键） |
+| 倍速（下拉+自定义，持久化） | `setPlaybackRate` / `restorePlaybackRate`（`echo-playback-rate`） |
+| 听写模式 | `setDictationActive` / `openDictationLine` / `submitDictation`；纯函数在 ui/dictation.js |
 | 断点续听持久化 | browser-state 系列 |
 | 排序 | `getOrderedSources` / `getOrderedCatalog` / `compareTracks`（title localeCompare） |
 
@@ -134,24 +140,23 @@ Inspect → Understand → Plan → Implement → Test → Review → Commit
 ## 5. 测试策略
 
 ```bash
-python3 -m unittest tests.test_scan -v   # 库扫描单测（11 条）
-node --test tests/srt.test.mjs           # SRT 解析单测（12 条）
+python3 -m unittest tests.test_scan -v              # 库扫描单测（11 条）
+node --test tests/srt.test.mjs                      # SRT 解析单测（12 条）
+node --test tests/dictation.test.mjs                # 听写 normalize/diff 单测（16 条）
 ```
 
 （注意 `node --test tests/` 会把 Python 文件当 JS 加载而报错，指定具体文件运行。）
 
 前后端全零新增运行时依赖；测试用 Node 内置 `node:test` 与 Python 标准库 `unittest`。
 
-已建立（Phase 2 后）：
+已建立（Phase 3 后）：
 
 1. SRT 解析器（multiline/CRLF/HTML 标签/malformed/重叠/乱序）— ✅ 12 条
 2. Library 扫描配对/分层/标题 — ✅ 11 条（unittest，临时目录装配）
-3. 音频 Range 服务 — curl 断言 206/Content-Range（冒烟命令覆盖）
-4. 前端全链路 — headless Chrome + e2e_driver.html（同源 iframe 驱动：树渲染/折叠/搜索/SRT 加载/URL 参数，11 项断言）
-
-待建立：
-
-5. 听写 normalize 比较（Phase 3）
+3. 听写 normalize/diff/grading（撇号保留、NFKC、词级 LCS diff）— ✅ 16 条
+4. 音频 Range 服务 — curl 断言 206/Content-Range（冒烟命令覆盖）
+5. 前端全链路 — headless Chrome + e2e_driver.html（同源 iframe 驱动：树/折叠/搜索/SRT/
+   步进/A-B 状态机/倍速下拉含自定义/听写全链路，28 项断言）
 
 ## 6. 已知技术债清单（记录在案，勿顺手修）
 
@@ -160,9 +165,12 @@ node --test tests/srt.test.mjs           # SRT 解析单测（12 条）
 | 无 Cache-Control/ETag 头（静态文件） | server.py | Phase 2+ 优化（/api/library 已 no-store） |
 | HTTP/1.0 协议版本（keep-alive 依赖头 hack） | server.py | 观察即可，无实际影响 |
 | SRT 无内嵌时间轴时退化为 buildAutoTimings 估算（非精确） | app.js applyTimings | 固有取舍；精确需 whisper 或人工 SRT |
-| 移动端面板先后顺序（当前音频卡片居中、字幕偏下） | styles.css 860 断点 | Phase 3 移动端细化 |
+| 普通模式点击句子文字仍不跳转（仅行内按钮；听写模式已支持点击句子） | app.js renderTranscript | Phase 4 评估（一行 click 委托） |
+| 移动端面板先后顺序（当前音频卡片居中、字幕偏下） | styles.css 860 断点 | Phase 4 移动端细化 |
 | `/api/library` 全量返回，库达数百条后扫描/传输成本上升 | server.py | 观察即可；必要时加缓存/分页 |
-| loadTrack 仍保留 transcript.json/.md 回退分支（library 条目不会走到） | app.js loadTrack | Phase 3 评估清理 |
+| loadTrack 仍保留 transcript.json/.md 回退分支（library 条目不会走到） | app.js loadTrack | Phase 4 评估清理 |
+| 听写进度（dictationCorrect）仅会话级，刷新丢失（开关状态本身持久化） | app.js state.dictationCorrect | 观察即可；持久化需权衡"重测"价值 |
 | 无暗色主题（color-scheme 仅 light） | styles.css:2 | 低优先级 backlog |
 
 已清偿（Phase 2）：admin 无认证 / `/api/admin/run` 子进程面 / JOBS 泄漏（随 admin 整体移除）；catalog.json 与 tracks.json 双索引（归一为 /api/library 实时扫描）。
+已清偿（Phase 3）：上一句/下一句缺失；自定义倍速缺失；A-B 循环缺失；听写模式缺失；520px 控制行布局。

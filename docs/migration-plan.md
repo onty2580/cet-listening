@@ -81,9 +81,10 @@ job 日志轮询 UI 模式与 status 汇总卡片思路记录在案，Phase 4 AI
 3. ✅ ~~catalog.json 生成与 serve~~ → 被 `/api/library` 实时扫描取代（Phase 2 决策）
 4. ~~Upload MP3/SRT 流程~~ → 用户决策移除：filesystem-first，直接放文件进 `library/`
 5. Dockerfile + compose（延后到部署阶段，用户决策）
-6. Dictation 模式 + normalize 比较（Phase 3）
+6. ✅ **Dictation 逐句行内听写 + normalize 比较**（Phase 3：ui/dictation.js 纯函数 + 16 单测；词级 diff 批改）
 7. Translation/ASR 旁路 + OpenAI-compatible provider（Phase 4）
 8. ✅ **三层树浏览 + 搜索**（Phase 2）：分组折叠（localStorage 持久化）+ title/source/collection 子串过滤
+9. ✅ **精听控制套件**（Phase 3）：上一句/下一句（`[` `]`）、A-B 循环（rAF enforce + 与句循环互斥）、倍速下拉 0.5–2 + 自定义（持久化）
 
 ## G. refactor/listening 分支处置
 
