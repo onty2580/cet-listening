@@ -816,30 +816,10 @@ body.resizing {
   border-radius: 999px;
   background: var(--panel);
   color: var(--accent-strong);
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-2px) scale(0.94);
   transition:
-    opacity 140ms ease,
-    transform 140ms ease,
     background 140ms ease,
-    border-color 140ms ease;
-}
-
-.line:hover .line-play,
-.line:focus-within .line-play,
-.line.looping .line-play {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(-2px) scale(1);
-}
-
-.section-nav-item:hover .section-action,
-.section-nav-item:focus-within .section-action,
-.section-nav-item.looping .section-action {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(-2px) scale(1);
+    border-color 140ms ease,
+    color 140ms ease;
 }
 
 .line-play:hover {
