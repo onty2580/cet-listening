@@ -92,6 +92,20 @@ async function init() {
     const response = await fetch("tracks.json", { cache: "no-store" });
     state.catalog = normalizeCatalog(await response.json());
 
+    // Generic MP3+SRT items coexist with the upstream archive catalog.
+    try {
+      const catalogResponse = await fetch("catalog.json", {
+        cache: "no-store",
+      });
+      if (catalogResponse.ok) {
+        state.catalog = state.catalog.concat(
+          normalizeCatalogItems(await catalogResponse.json()),
+        );
+      }
+    } catch (error) {
+      console.info("Optional catalog.json unavailable.", error);
+    }
+
     const route = getRouteFromLocation();
     state.pendingTrackListScrollTop = getSavedTrackListScrollTop();
     renderTrackList();
@@ -293,6 +307,22 @@ function replaceCurrentRouteWithTrack(track) {
 function normalizeCatalog(catalog) {
   return Array.isArray(catalog)
     ? catalog.filter((item) => item && item.id)
+    : [];
+}
+
+// catalog.json items are the generic MP3+SRT model:
+// { id, title, audio, transcript } with the transcript pointing at an .srt.
+function normalizeCatalogItems(items) {
+  return Array.isArray(items)
+    ? items
+        .filter((item) => item?.id && item?.audio && item?.transcript)
+        .map((item) => ({
+          id: String(item.id),
+          title: String(item.title || item.id),
+          audio: String(item.audio),
+          transcript: String(item.transcript),
+          available: true,
+        }))
     : [];
 }
 
