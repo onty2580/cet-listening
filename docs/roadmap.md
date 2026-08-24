@@ -17,33 +17,39 @@
 
 ---
 
-## Phase 1 — Generic Audio Core → `v0.1-generic-core`
+## Phase 1 — Generic Audio Core → `v0.1-generic-core` ✅
 
 **目标**：把 CET Listening 抽象成 Generic Audio Listening Core。
 
 ### 1.1 SRT First（新增能力，最高优先级）
-- 新写 SRT 解析器（JS 端或 Python 端，倾向前端解析、服务端只 serve 文件），
-  输出 app.js 已有的 lines[] 结构 `{start, end, text}`
-- 必须稳健：multiline / 空 block / HTML 标签 / 重叠时间轴 / malformed / UTF-8 / CRLF
-- 为解析器建立第一批单元测试（项目目前零测试，从这里开始建）
+- [x] 新写 SRT 解析器 `ui/srt.js`（前端解析、服务端只 serve 文件），
+  映射到 app.js 已有 lines[] 结构 `{start, end, text}`
+- [x] 稳健：multiline / 空 block / HTML 标签 / 重叠时间轴 / 乱序 / malformed / UTF-8/BOM / CRLF
+- [x] 单元测试 `tests/srt.test.mjs`（node:test，12 条）— 项目第一批测试
 
 ### 1.2 去 CET 化
-- 路由 `/cet6|/cet4` → 通用入口；APP_EXAMS/TRACK_ID_PATTERN/normalize_exam 摘除
-- UI 文案、exam tabs、CET 图标替换为通用概念
-- localStorage key 前缀迁移
-- splitTranscriptLine 的 Q\d+/W:/M: 对话假设改为可选增强而非前置依赖
+- [x] 路由 `/cet6|/cet4` → 根路径通用入口（旧深链保留）；APP_EXAMS/normalize_exam 摘除
+- [x] UI 文案、exam tabs、CET 图标（→ echo-icon.svg）替换
+- [x] localStorage key 前缀迁移（cet6-* → echo-*，一次性）
+- [x] CET 对话假设（Q\d+/W:/M:）从前置依赖降为可选
 
 ### 1.3 Generic Audio Item 模型
-```json
-{ "id": "dreams", "title": "Why do we dream?", "audio": "dreams.mp3", "transcript": "dreams.srt" }
-```
+- [x] `catalog.json`：`{ "id", "title", "audio"(.mp3), "transcript"(.srt) }`
+- [x] 样例 `library/Samples/Dreams/`（11 句 SRT）
 不做 CEFR/tags/difficulty/vocabulary。
 
 ### 1.4 保留现有播放器
-Play/Pause/Seek/速度/句子高亮/自动滚动/单句循环/browser-state 续听——全部原样复用。
+- [x] Play/Pause/Seek/速度/句子高亮/自动滚动/单句循环/browser-state 续听——全部原样复用，零改动。
 
 **验收**：MP3+SRT → 播放 → 字幕同步 → 点击跳转 全链路可用；UI 无 CET 概念。
-**顺带修复**（属阻塞移动端核心交互的缺陷）：行内 play/loop 按钮去 hover-only。
+- [x] 浏览器实测：根页 37 CET + 1 通用；SRT 11 句全渲染、句 1 active、内嵌时间轴生效（“SRT 时间轴”）
+- [x] curl 冒烟 7 项全 200/206
+
+**顺带修复**（属阻塞移动端核心交互的缺陷）：
+- [x] 行内 play/loop 按钮去 hover-only（触屏常显）
+- [x] ≤860px shell 横向溢出：重置三面板 grid-column，单列堆叠（桌面不受影响）
+
+**状态**：已完成，tag `v0.1-generic-core`。移动端面板先后顺序留待 Phase 2/3 细化。
 
 ---
 
