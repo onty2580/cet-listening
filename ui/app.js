@@ -715,6 +715,17 @@ async function fetchJson(path) {
 }
 
 async function loadTrack(track) {
+  if (isSrtTranscript(track)) {
+    const text = await fetchText(track.transcript);
+    const parsed = parseSrt(text);
+    parsed.warnings.forEach((warning) => console.info("SRT:", warning));
+    return {
+      sections: [],
+      lines: buildLinesFromSrtSegments(parsed.segments),
+      status: `${parsed.segments.length} 句 · SRT 字幕`,
+    };
+  }
+
   if (track.transcript) {
     try {
       const transcript = await fetchJson(track.transcript);
@@ -745,6 +756,31 @@ async function loadTrack(track) {
     lines: parsed.lines,
     status: `${parsed.lines.length} 行原文 · 浏览器估算时间轴`,
   };
+}
+
+function isSrtTranscript(track) {
+  return (
+    typeof track?.transcript === "string" &&
+    track.transcript.toLowerCase().endsWith(".srt")
+  );
+}
+
+function countWords(text) {
+  return String(text).trim().split(/\s+/).filter(Boolean).length;
+}
+
+function buildLinesFromSrtSegments(segments) {
+  return segments.map((segment, index) => ({
+    id: `line-${index}`,
+    sectionId: "",
+    sectionTitle: "",
+    speaker: "",
+    text: segment.text,
+    type: "narration",
+    words: countWords(segment.text),
+    start: segment.start,
+    end: segment.end,
+  }));
 }
 
 async function mergeSupplementalLineData(track, lines) {
@@ -1254,6 +1290,18 @@ async function applyTimings() {
     !state.lines.length
   )
     return;
+
+  const hasEmbeddedTimings =
+    !state.currentTrack?.timings &&
+    state.lines.some((line) => Number(line.end) > Number(line.start));
+
+  if (hasEmbeddedTimings) {
+    normalizeLineEnds(els.audio.duration);
+    els.trackMeta.textContent = `${state.lines.length} 句 · SRT 时间轴`;
+    state.timingsReady = true;
+    renderTranscript();
+    return;
+  }
 
   let externalTimings = null;
   try {
