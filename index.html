@@ -22,6 +22,10 @@
     ></script>
     <script
       defer
+      src="./ui/dictation.js"
+    ></script>
+    <script
+      defer
       src="./ui/app.js"
     ></script>
   </head>
@@ -315,6 +319,20 @@
                 aria-hidden="true"
               ></span>
               <span>显示原文</span>
+            </label>
+
+            <label class="switch-control">
+              <input
+                id="dictationActive"
+                type="checkbox"
+                role="switch"
+                aria-label="听写模式：隐藏原文，逐句输入听写"
+              />
+              <span
+                class="switch-track"
+                aria-hidden="true"
+              ></span>
+              <span>听写</span>
             </label>
 
             <label class="switch-control">

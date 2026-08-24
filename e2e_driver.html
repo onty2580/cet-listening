@@ -90,6 +90,93 @@ async function run() {
     check("title-override", trackName === "Why do we dream?", `trackName=${trackName}`);
     const urlHasTrack = win().location.search.includes("track=dreams");
     check("url-track-param", urlHasTrack, win().location.search);
+
+    // E: prev/next line stepping (wait for SRT timings to be applied)
+    await waitFor(() => win().eval("state.timingsReady === true"), 10000);
+    const firstLineId = app().querySelector("#transcript .line").id;
+    win().eval("stepLine(1)");
+    await new Promise((resolve) => setTimeout(resolve, 300));
+    const activeAfterNext = app().querySelector("#transcript .line.active");
+    check("next-line-steps", activeAfterNext && activeAfterNext.id !== firstLineId,
+      `active=${activeAfterNext?.id ?? "none"}`);
+    win().eval("stepLine(-1)");
+    await new Promise((resolve) => setTimeout(resolve, 300));
+    const activeAfterPrev = app().querySelector("#transcript .line.active");
+    check("prev-line-steps-back", activeAfterPrev && activeAfterPrev.id === firstLineId,
+      `active=${activeAfterPrev?.id ?? "none"}`);
+
+    // F: A-B loop state machine
+    win().eval("els.audio.currentTime = 5; setAbLoopPoint('a')");
+    check("ab-a-set", win().eval("Number.isFinite(state.abLoopA) && state.abLoopB === null"), "");
+    win().eval("els.audio.currentTime = 12; setAbLoopPoint('b')");
+    check("ab-b-set", win().eval("hasAbLoop() && Math.abs(state.abLoopB - 12) < 0.01"),
+      `a=${win().eval("state.abLoopA")} b=${win().eval("state.abLoopB")}`);
+    win().eval("els.audio.currentTime = 30; enforceAbLoop()");
+    const afterEnforce = win().eval("els.audio.currentTime");
+    check("ab-enforce-rewinds", Math.abs(afterEnforce - win().eval("state.abLoopA")) < 0.5,
+      `t=${afterEnforce}`);
+    win().eval("setAbLoopPoint('a')");
+    check("ab-clear", !win().eval("hasAbLoop()"), "");
+    win().eval("els.audio.pause()");
+
+    // G: speed dropdown
+    const speedSel = app().querySelector("#speedSelect");
+    speedSel.value = "0.75";
+    speedSel.dispatchEvent(new (win()).Event("change", { bubbles: true }));
+    check("speed-preset", Math.abs(win().eval("els.audio.playbackRate") - 0.75) < 1e-6,
+      `rate=${win().eval("els.audio.playbackRate")}`);
+    speedSel.value = "custom";
+    speedSel.dispatchEvent(new (win()).Event("change", { bubbles: true }));
+    const customVisible = !app().querySelector("#speedCustom").hidden;
+    check("speed-custom-reveals", customVisible, "");
+    const customInput = app().querySelector("#speedCustom");
+    customInput.value = "1.7";
+    customInput.dispatchEvent(new (win()).Event("change", { bubbles: true }));
+    check("speed-custom-applies", Math.abs(win().eval("els.audio.playbackRate") - 1.7) < 1e-6,
+      `rate=${win().eval("els.audio.playbackRate")}`);
+
+    // H: dictation flow — enable, mask, submit wrong then right
+    const dictSwitch = app().querySelector("#dictationActive");
+    dictSwitch.checked = true;
+    dictSwitch.dispatchEvent(new (win()).Event("change", { bubbles: true }));
+    const maskedCount = app().querySelectorAll(".line-original.masked").length;
+    check("dictation-masks-all", maskedCount === 11, `masked=${maskedCount}`);
+    check("dictation-hides-original-switch",
+      !app().querySelector("#transcriptVisible").checked, "");
+
+    const firstRow = app().querySelector('#transcript .dictation-row[data-dictation="line-0"]');
+    const firstInput = firstRow.querySelector(".dictation-input");
+    firstInput.hidden = false;
+    firstInput.value = "every night when you close your eyes your brain begins a strange journey";
+    firstInput.dispatchEvent(new (win()).Event("input", { bubbles: true }));
+    firstInput.dispatchEvent(new KeyboardEvent("keydown", { key: "Enter", bubbles: true }));
+    await new Promise((resolve) => setTimeout(resolve, 200));
+    const okFeedback = app().querySelector('.dictation-feedback[data-feedback="line-0"]');
+    check("dictation-correct-accepts", okFeedback.classList.contains("ok"),
+      okFeedback.textContent.trim());
+    const doneRow = app().querySelector('#transcript .line[data-id="line-0"]');
+    const rowRevealed = app().querySelector("#line-0 .line-original").classList.contains("dictation-done")
+      || app().querySelector("#line-0").classList.contains("dictation-done");
+    check("dictation-reveals-row", !!rowRevealed, "");
+
+    const secondInput = app().querySelector('#transcript .dictation-row[data-dictation="line-1"] .dictation-input');
+    check("dictation-advances-focus", secondInput && !secondInput.hidden,
+      `hidden=${secondInput?.hidden}`);
+    secondInput.value = "for thousands of years people beleved that dreams was messages";
+    secondInput.dispatchEvent(new (win()).Event("input", { bubbles: true }));
+    secondInput.dispatchEvent(new KeyboardEvent("keydown", { key: "Enter", bubbles: true }));
+    await new Promise((resolve) => setTimeout(resolve, 200));
+    const badFeedback = app().querySelector('.dictation-feedback[data-feedback="line-1"]');
+    check("dictation-wrong-shows-diff", badFeedback.classList.contains("bad"),
+      badFeedback.textContent.trim().slice(0, 60));
+    const missCount = badFeedback.querySelectorAll(".diff-miss").length;
+    check("dictation-diff-marks-misses", missCount >= 2, `miss=${missCount}`);
+
+    // dictation persists across reload? (state saved to localStorage)
+    const dictPersisted = win().localStorage.getItem("echo-dictation-active");
+    check("dictation-persisted", dictPersisted === "true", String(dictPersisted));
+    win().localStorage.removeItem("echo-dictation-active");
+    win().localStorage.removeItem("echo-playback-rate");
   } catch (error) {
     check("unexpected-error", false, String(error));
   }

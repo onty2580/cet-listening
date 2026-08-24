@@ -382,6 +382,84 @@ body.resizing {
   font-size: 13px;
 }
 
+/* Dictation mode */
+.line .line-original.masked {
+  color: transparent;
+  background: #d9e2e8;
+  border-radius: 4px;
+  text-shadow: none;
+  user-select: none;
+}
+
+.line .line-original.masked .speaker {
+  color: transparent;
+}
+
+.line .line-original.masked::after {
+  content: "";
+}
+
+.line.dictation-done .line-original.masked {
+  color: inherit;
+  background: var(--accent-soft);
+  user-select: text;
+}
+
+.dictation-row {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 2px 0 8px;
+}
+
+.dictation-input {
+  width: 100%;
+  min-height: 36px;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: #09122d;
+  font: inherit;
+  font-size: 14px;
+}
+
+.dictation-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.dictation-feedback {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.dictation-feedback.ok {
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
+.dictation-feedback.bad .diff-ok {
+  color: #09122d;
+}
+
+.dictation-feedback.bad .diff-miss {
+  color: #b3261e;
+  font-weight: 800;
+}
+
+.dictation-feedback.bad .diff-extra {
+  color: #b3261e;
+  text-decoration: line-through;
+}
+
+.dictation-feedback.bad .diff-hint {
+  display: block;
+  color: #526273;
+  font-size: 12px;
+}
+
 .track-card {
   display: grid;
   gap: 6px;

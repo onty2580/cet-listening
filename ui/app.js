@@ -46,6 +46,10 @@ const state = {
   loopSectionId: null,
   abLoopA: null,
   abLoopB: null,
+  dictationActive:
+    localStorage.getItem("echo-dictation-active") === "true",
+  dictationCorrect: new Set(),
+  dictationOpenLineId: null,
   timingsReady: false,
   userSeeking: false,
   playerPinned: false,
@@ -74,6 +78,7 @@ const els = {
   abPointA: document.querySelector("#abPointA"),
   abPointB: document.querySelector("#abPointB"),
   abToggle: document.querySelector("#abToggle"),
+  dictationActive: document.querySelector("#dictationActive"),
   progress: document.querySelector("#progress"),
   currentTime: document.querySelector("#currentTime"),
   duration: document.querySelector("#duration"),
@@ -905,6 +910,10 @@ function bindEvents() {
   els.backBtn.addEventListener("click", () => seekBy(-5));
   els.forwardBtn.addEventListener("click", () => seekBy(5));
   els.sortTrackList?.addEventListener("click", toggleTrackSortDirection);
+  els.dictationActive?.addEventListener("change", () => {
+    setDictationActive(els.dictationActive.checked);
+  });
+  els.dictationActive.checked = state.dictationActive;
   els.prevLineBtn?.addEventListener("click", () => stepLine(-1));
   els.nextLineBtn?.addEventListener("click", () => stepLine(1));
   els.abPointA?.addEventListener("click", () => setAbLoopPoint("a"));
@@ -1602,6 +1611,10 @@ function renderTranscript() {
     row.className = `line ${line.type}`;
     row.dataset.index = String(state.lines.indexOf(line));
     row.classList.toggle("looping", state.loopLineId === line.id);
+    row.classList.toggle(
+      "dictation-done",
+      state.dictationActive && state.dictationCorrect.has(line.id),
+    );
 
     const time = document.createElement("span");
     time.className = "line-time";
@@ -1620,8 +1633,7 @@ function renderTranscript() {
       original.appendChild(speaker);
     }
 
-    const playButton = document.createElement("button");
-    playButton.type = "button";
+    const playButton = document.createElement("button");    playButton.type = "button";
     playButton.className = "line-play";
     playButton.title = "播放这一句";
     playButton.setAttribute("aria-label", `播放：${line.text}`);
@@ -1686,11 +1698,164 @@ function renderTranscript() {
     }
 
     row.append(time, text, actions);
+
+    if (state.dictationActive) {
+      original.classList.add("masked");
+      row.appendChild(buildDictationInput(line));
+      row.addEventListener("click", (event) => {
+        if (event.target.closest("button, input")) return;
+        openDictationLine(line);
+      });
+    }
+
     fragment.appendChild(row);
   });
 
   els.transcript.replaceChildren(fragment);
   updateFromTime();
+}
+
+// ---- Dictation (inline per-sentence) ----
+
+const DICTATION_KEY = "echo-dictation-active";
+
+function setDictationActive(active) {
+  state.dictationActive = Boolean(active);
+  state.dictationOpenLineId = null;
+  try {
+    localStorage.setItem(DICTATION_KEY, String(state.dictationActive));
+  } catch (error) {
+    console.info("Could not persist dictation state.", error);
+  }
+  if (state.dictationActive) {
+    state.dictationCorrect.clear();
+    // Blind-listening mode and dictation are the same mask; avoid fighting
+    // each other's checkbox.
+    if (els.transcriptVisible.checked) {
+      els.transcriptVisible.checked = false;
+    }
+  }
+  renderTranscript();
+}
+
+function openDictationLine(line) {
+  state.dictationOpenLineId = line.id;
+  seekToLine(line);
+  const input = document.querySelector(
+    `#transcript .dictation-row[data-dictation="${line.id}"] .dictation-input`,
+  );
+  if (input) {
+    input.hidden = false;
+    input.focus();
+  }
+}
+
+function buildDictationInput(line) {
+  const wrap = document.createElement("div");
+  wrap.className = "dictation-row";
+  wrap.dataset.dictation = line.id;
+
+  const input = document.createElement("input");
+  input.type = "text";
+  input.className = "dictation-input";
+  input.hidden = state.dictationOpenLineId !== line.id;
+  input.placeholder = "输入你听到的句子，回车提交…";
+  input.setAttribute("aria-label", `听写第 ${line.id} 句`);
+  input.value = line.dictationValue || "";
+
+  input.addEventListener("input", () => {
+    line.dictationValue = input.value;
+  });
+
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      submitDictation(line, input);
+    }
+    if (event.key === "Escape") {
+      event.preventDefault();
+      input.hidden = true;
+      input.blur();
+    }
+  });
+
+  const feedback = document.createElement("div");
+  feedback.className = "dictation-feedback";
+  feedback.dataset.feedback = line.id;
+
+  wrap.append(input, feedback);
+  return wrap;
+}
+
+function submitDictation(line, input) {
+  const result =
+    typeof gradeAttempt === "function"
+      ? gradeAttempt(line.text, input.value)
+      : { correct: normalizeAnswer(input.value) === normalizeAnswer(line.text), ops: [] };
+
+  const feedback = document.querySelector(
+    `#transcript .dictation-feedback[data-feedback="${line.id}"]`,
+  );
+  const row = document.getElementById(line.id);
+
+  if (result.correct) {
+    state.dictationCorrect.add(line.id);
+    row?.classList.add("dictation-done");
+    if (feedback) {
+      feedback.textContent = "✓ 完全正确";
+      feedback.className = "dictation-feedback ok";
+    }
+    input.hidden = true;
+    input.blur();
+    stopLineLoop();
+    // Advance focus to the next unfinished line's input.
+    const index = state.lines.indexOf(line);
+    for (let next = index + 1; next < state.lines.length; next += 1) {
+      const candidate = state.lines[next];
+      if (state.dictationCorrect.has(candidate.id)) continue;
+      seekToLine(candidate);
+      state.dictationOpenLineId = candidate.id;
+      const nextInput = document.querySelector(
+        `#transcript .dictation-row[data-dictation="${candidate.id}"] .dictation-input`,
+      );
+      if (nextInput) {
+        nextInput.hidden = false;
+        nextInput.focus();
+      }
+      break;
+    }
+    return;
+  }
+
+  if (feedback) {
+    feedback.className = "dictation-feedback bad";
+    feedback.replaceChildren();
+    result.ops.forEach((op) => {
+      if (op.type === "equal") {
+        const span = document.createElement("span");
+        span.className = "diff-ok";
+        span.textContent = `${op.expected} `;
+        feedback.appendChild(span);
+      } else if (op.type === "delete") {
+        const span = document.createElement("span");
+        span.className = "diff-miss";
+        span.textContent = `${op.expected} `;
+        span.title = "漏掉/写错的词";
+        feedback.appendChild(span);
+      } else {
+        const span = document.createElement("span");
+        span.className = "diff-extra";
+        span.textContent = `${op.actual} `;
+        span.title = "多写/写错的词";
+        feedback.appendChild(span);
+      }
+    });
+    const retry = document.createElement("span");
+    retry.className = "diff-hint";
+    retry.textContent = "红色为需修正的词，可修改后重新提交";
+    feedback.appendChild(retry);
+  }
+  input.focus();
 }
 
 function updateProgress() {
