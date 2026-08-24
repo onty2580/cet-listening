@@ -1,19 +1,37 @@
-const PLAYER_PINNED_KEY = "cet6-player-pinned";
-const PLAYER_POSITION_KEY = "cet6-player-position";
-const TRACK_SORT_KEY = "cet6-track-sort-direction";
-const TRANSLATION_VISIBLE_KEY = "cet6-translation-visible";
-const VIEW_STATE_KEY = "cet6-browser-state";
-const DEFAULT_EXAM = "cet6";
-const EXAM_LABELS = {
-  cet6: "CET-6",
-  cet4: "CET-4",
-};
+const PLAYER_PINNED_KEY = "echo-player-pinned";
+const PLAYER_POSITION_KEY = "echo-player-position";
+const TRACK_SORT_KEY = "echo-track-sort-direction";
+const TRANSLATION_VISIBLE_KEY = "echo-translation-visible";
+const VIEW_STATE_KEY = "echo-browser-state";
+
+// One-time migration from the upstream cet6-* keys so existing listeners
+// keep their saved positions, layout, and resume points.
+function migrateLegacyStorageKeys() {
+  const aliases = {
+    "cet6-player-pinned": PLAYER_PINNED_KEY,
+    "cet6-player-position": PLAYER_POSITION_KEY,
+    "cet6-track-sort-direction": TRACK_SORT_KEY,
+    "cet6-translation-visible": TRANSLATION_VISIBLE_KEY,
+    "cet6-browser-state": VIEW_STATE_KEY,
+    "cet6-left-sidebar-width": "echo-left-sidebar-width",
+    "cet6-right-sidebar-width": "echo-right-sidebar-width",
+    "cet6-left-sidebar-collapsed": "echo-left-sidebar-collapsed",
+    "cet6-right-sidebar-collapsed": "echo-right-sidebar-collapsed",
+  };
+  Object.entries(aliases).forEach(([legacyKey, modernKey]) => {
+    const legacyValue = localStorage.getItem(legacyKey);
+    if (legacyValue !== null && localStorage.getItem(modernKey) === null) {
+      localStorage.setItem(modernKey, legacyValue);
+    }
+  });
+}
+
+migrateLegacyStorageKeys();
 
 let lineLoopFrameId = null;
 
 const state = {
   catalog: [],
-  currentExam: DEFAULT_EXAM,
   currentTrack: null,
   sections: [],
   lines: [],
@@ -46,7 +64,6 @@ const els = {
   duration: document.querySelector("#duration"),
   trackList: document.querySelector("#trackList"),
   sortTrackList: document.querySelector("#sortTrackList"),
-  examTabs: document.querySelector("#examTabs"),
   sectionNav: document.querySelector("#sectionNav"),
   transcript: document.querySelector("#transcript"),
   trackName: document.querySelector("#trackName"),
@@ -75,49 +92,38 @@ async function init() {
     const response = await fetch("tracks.json", { cache: "no-store" });
     state.catalog = normalizeCatalog(await response.json());
 
-    const params = new URLSearchParams(window.location.search);
-    const route = getRouteFromLocation(params);
-    state.currentExam = route.exam;
-    state.pendingTrackListScrollTop = getSavedTrackListScrollTop(
-      state.currentExam,
-    );
-    renderExamTabs();
+    const route = getRouteFromLocation();
+    state.pendingTrackListScrollTop = getSavedTrackListScrollTop();
     renderTrackList();
 
-    const trackId = route.trackId || getSavedTrackId(state.currentExam);
-    const orderedCatalog = getOrderedCatalog(state.currentExam);
+    const trackId = route.trackId || getSavedTrackId();
+    const orderedCatalog = getOrderedCatalog();
     const track =
-      findTrack(trackId, state.currentExam) ||
+      findTrack(trackId) ||
       orderedCatalog.find((t) => t.available) ||
       orderedCatalog[0];
 
     if (track) {
-      await switchTrack(track.id, false, track.exam);
+      await switchTrack(track.id, false);
       replaceCurrentRouteWithTrack(track);
     } else {
-      renderEmptyExamState(state.currentExam);
+      renderEmptyState();
     }
   } catch (error) {
     console.error("Failed to load catalog:", error);
-    els.transcript.innerHTML = `<div class="empty-state">加载听力列表失败，请确认 tracks.json 存在。</div>`;
+    els.transcript.innerHTML = `<div class="empty-state">加载内容列表失败，请确认 tracks.json 存在。</div>`;
   }
 }
 
-async function switchTrack(
-  trackId,
-  pushState = true,
-  exam = state.currentExam,
-) {
-  const track = findTrack(trackId, exam);
+async function switchTrack(trackId, pushState = true) {
+  const track = findTrack(trackId);
   if (!track) return;
 
   persistCurrentViewState(true);
-  state.currentExam = track.exam;
-  state.browserState.currentExam = track.exam;
-  state.pendingTrackListScrollTop = getSavedTrackListScrollTop(track.exam);
+  state.browserState.currentTrackId = track.id;
+  state.pendingTrackListScrollTop = getSavedTrackListScrollTop();
   state.currentTrack = track;
-  state.browserState.currentTrackIds[track.exam] = track.id;
-  state.pendingTrackRestore = createPendingTrackRestore(track.id, track.exam);
+  state.pendingTrackRestore = createPendingTrackRestore(track.id);
   resetPlaybackState();
   els.trackName.textContent = track.title;
   els.audio.src = encodeURI(track.audio);
@@ -125,13 +131,10 @@ async function switchTrack(
 
   if (pushState) {
     const url = new URL(window.location);
-    url.pathname = getTrackPath(track.exam, trackId);
-    url.searchParams.delete("exam");
-    url.searchParams.delete("track");
+    url.searchParams.set("track", track.id);
     window.history.pushState({}, "", url);
   }
 
-  renderExamTabs();
   renderTrackList();
   els.trackMeta.textContent = "正在载入...";
   els.transcript.innerHTML = '<div class="empty-state">正在载入原文...</div>';
@@ -151,7 +154,8 @@ async function switchTrack(
     }
   } catch (error) {
     console.error(error);
-    els.transcript.innerHTML = `<div class="empty-state">没有读到 Markdown 原文，请确认 ${track.markdown} 和网页在同一目录。</div>`;
+    const sourcePath = track.transcript || track.markdown || track.id;
+    els.transcript.innerHTML = `<div class="empty-state">原文加载失败，请确认 ${sourcePath} 存在。</div>`;
   }
 }
 
@@ -184,29 +188,25 @@ function renderTrackList() {
 
   const fragment = document.createDocumentFragment();
   updateTrackSortButton();
-  getOrderedCatalog(state.currentExam).forEach((track) => {
+  getOrderedCatalog().forEach((track) => {
     const button = document.createElement("button");
     button.type = "button";
     button.textContent = track.title;
     button.className = "track-list-item";
     button.classList.toggle(
       "active",
-      state.currentTrack &&
-        track.id === state.currentTrack.id &&
-        track.exam === state.currentTrack.exam,
+      state.currentTrack && track.id === state.currentTrack.id,
     );
     button.classList.toggle("unavailable", !track.available);
-    // button.disabled = !track.available; // Allow clicking but handle it?
-    // For now, keep the behavior of disabling unavailable ones if they don't even have MD
 
     button.addEventListener("click", () => {
-      if (track.available || confirm("该听力暂无对齐时间轴，是否尝试打开？")) {
-        switchTrack(track.id, true, track.exam);
+      if (track.available || confirm("该内容暂无对齐时间轴，是否尝试打开？")) {
+        switchTrack(track.id, true);
       }
     });
 
     if (!track.available) {
-      button.title = "该听力尚未生成时间轴";
+      button.title = "该内容尚未生成时间轴";
     }
     fragment.appendChild(button);
   });
@@ -216,24 +216,33 @@ function renderTrackList() {
   ensureActiveTrackListItemVisible();
 }
 
-function getOrderedCatalog(exam = null) {
+function getOrderedCatalog() {
   const direction = state.trackSortDirection === "desc" ? -1 : 1;
-  const catalog = exam ? getCatalogForExam(exam) : state.catalog;
-  return [...catalog].sort((a, b) => compareTrackIds(a.id, b.id) * direction);
+  return [...state.catalog].sort((a, b) => compareTracks(a, b) * direction);
 }
 
-function compareTrackIds(a, b) {
-  const left = parseTrackId(a);
-  const right = parseTrackId(b);
-  for (let index = 0; index < left.length; index += 1) {
-    if (left[index] !== right[index]) return left[index] - right[index];
+// Dated ids (upstream exam archive, YYYY-M-N) sort chronologically; generic
+// items sort by title. Mixed lists keep dated items first in ascending order.
+const TRACK_DATE_PATTERN = /^(\d{4})-(\d{1,2})-(\d{1,2})$/;
+
+function compareTracks(a, b) {
+  const leftDated = TRACK_DATE_PATTERN.test(String(a.id));
+  const rightDated = TRACK_DATE_PATTERN.test(String(b.id));
+
+  if (leftDated && rightDated) {
+    const parse = (id) =>
+      String(id).match(TRACK_DATE_PATTERN).slice(1).map(Number);
+    const left = parse(a.id);
+    const right = parse(b.id);
+    for (let index = 0; index < left.length; index += 1) {
+      if (left[index] !== right[index]) return left[index] - right[index];
+    }
+    return 0;
   }
-  return String(a).localeCompare(String(b));
-}
-
-function parseTrackId(id) {
-  const match = String(id).match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
-  return match ? match.slice(1).map(Number) : [9999, 99, 99];
+  if (leftDated !== rightDated) {
+    return leftDated ? -1 : 1;
+  }
+  return String(a.title ?? a.id).localeCompare(String(b.title ?? b.id));
 }
 
 function toggleTrackSortDirection() {
@@ -256,149 +265,43 @@ function updateTrackSortButton() {
   );
 }
 
-function normalizeExam(exam) {
-  return exam === "cet4" ? "cet4" : DEFAULT_EXAM;
-}
-
-function getExamPath(exam = state.currentExam) {
-  return `/${normalizeExam(exam)}/`;
-}
-
-function getTrackPath(exam, trackId) {
-  return `${getExamPath(exam)}${encodeURIComponent(trackId)}`;
-}
-
-function getExamFromPathname(pathname = window.location.pathname) {
-  const match = String(pathname).match(/^\/(cet4|cet6)(?:\/|$)/i);
-  return match ? normalizeExam(match[1].toLowerCase()) : null;
-}
-
-function getTrackIdFromPathname(pathname = window.location.pathname) {
-  const match = String(pathname).match(
-    /^\/(?:cet4|cet6)\/([^/?#]+)\/?$/i,
-  );
-  return match ? decodeURIComponent(match[1]) : null;
-}
-
 function getRouteFromLocation(
   params = new URLSearchParams(window.location.search),
 ) {
-  const pathExam = getExamFromPathname(window.location.pathname);
-  const queryExam = params.has("exam")
-    ? normalizeExam(params.get("exam"))
-    : null;
-  const savedExam = normalizeExam(state.browserState.currentExam);
-  const exam = pathExam || queryExam || savedExam || DEFAULT_EXAM;
-
+  // Legacy deep links (/cet6/<id>) keep working; canonical URLs are
+  // <entry path>?track=<id>.
+  const legacyMatch = String(window.location.pathname).match(
+    /^\/(?:cet4|cet6)\/([^/?#]+)\/?$/i,
+  );
   return {
-    exam,
     trackId:
-      getTrackIdFromPathname(window.location.pathname) || params.get("track"),
+      (legacyMatch ? decodeURIComponent(legacyMatch[1]) : null) ||
+      params.get("track"),
   };
 }
 
 function replaceCurrentRouteWithTrack(track) {
-  if (!track?.id || !track?.exam) return;
+  if (!track?.id) return;
 
   const url = new URL(window.location);
-  const nextPath = getTrackPath(track.exam, track.id);
-  const alreadyCanonical =
-    url.pathname.replace(/\/$/, "") === nextPath.replace(/\/$/, "") &&
-    !url.searchParams.has("exam") &&
-    !url.searchParams.has("track");
+  if (url.searchParams.get("track") === track.id) return;
 
-  if (alreadyCanonical) return;
-
-  url.pathname = nextPath;
-  url.searchParams.delete("exam");
-  url.searchParams.delete("track");
+  url.searchParams.set("track", track.id);
   window.history.replaceState({}, "", url);
 }
 
 function normalizeCatalog(catalog) {
   return Array.isArray(catalog)
-    ? catalog.map((track) => ({
-        ...track,
-        exam: normalizeExam(track?.exam),
-      }))
+    ? catalog.filter((item) => item && item.id)
     : [];
 }
 
-function getAvailableExams() {
-  return Object.keys(EXAM_LABELS);
-}
-
-function renderExamTabs() {
-  if (!els.examTabs) return;
-
-  const exams = getAvailableExams();
-  els.examTabs.hidden = exams.length <= 1;
-  if (exams.length <= 1) {
-    els.examTabs.replaceChildren();
-    return;
-  }
-
-  const fragment = document.createDocumentFragment();
-  exams.forEach((exam) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "exam-tab";
-    button.textContent = EXAM_LABELS[exam] || exam.toUpperCase();
-    button.classList.toggle("active", exam === state.currentExam);
-    button.setAttribute("aria-pressed", String(exam === state.currentExam));
-    button.addEventListener("click", () => {
-      setCurrentExam(exam);
-    });
-    fragment.appendChild(button);
-  });
-
-  els.examTabs.replaceChildren(fragment);
-}
-
-function getCatalogForExam(exam = state.currentExam) {
-  return state.catalog.filter((track) => track.exam === normalizeExam(exam));
-}
-
-function findTrack(trackId, exam = state.currentExam) {
+function findTrack(trackId) {
   if (!trackId) return null;
-  return getCatalogForExam(exam).find((track) => track.id === trackId) || null;
+  return state.catalog.find((track) => track.id === trackId) || null;
 }
 
-async function setCurrentExam(exam, pushState = true) {
-  const nextExam = normalizeExam(exam);
-  if (nextExam === state.currentExam && state.currentTrack?.exam === nextExam) {
-    renderExamTabs();
-    return;
-  }
-
-  persistCurrentViewState(true);
-  state.currentExam = nextExam;
-  state.browserState.currentExam = nextExam;
-  state.pendingTrackListScrollTop = getSavedTrackListScrollTop(nextExam);
-
-  const orderedCatalog = getOrderedCatalog(nextExam);
-  if (!orderedCatalog.length) {
-    renderExamTabs();
-    renderTrackList();
-    renderEmptyExamState(nextExam, pushState);
-    return;
-  }
-
-  const preferredTrackId =
-    getSavedTrackId(nextExam) ||
-    (state.currentTrack ? state.currentTrack.id : null);
-  const track =
-    findTrack(preferredTrackId, nextExam) ||
-    orderedCatalog.find((item) => item.available) ||
-    orderedCatalog[0];
-
-  if (track) {
-    await switchTrack(track.id, pushState, nextExam);
-  }
-}
-
-function renderEmptyExamState(exam = state.currentExam, pushState = false) {
-  state.currentExam = normalizeExam(exam);
+function renderEmptyState(pushState = false) {
   state.currentTrack = null;
   state.sections = [];
   state.lines = [];
@@ -407,15 +310,13 @@ function renderEmptyExamState(exam = state.currentExam, pushState = false) {
   state.pendingTrackRestore = null;
 
   resetPlaybackState();
-  els.trackName.textContent =
-    EXAM_LABELS[state.currentExam] || state.currentExam;
+  els.trackName.textContent = "Echo";
   els.trackMeta.textContent = "暂无内容";
   els.sectionNav.replaceChildren();
-  els.transcript.innerHTML = `<div class="empty-state">当前还没有 ${EXAM_LABELS[state.currentExam] || state.currentExam} 听力材料。</div>`;
+  els.transcript.innerHTML = `<div class="empty-state">还没有可播放的内容。</div>`;
 
   if (pushState) {
     const url = new URL(window.location);
-    url.pathname = getExamPath(state.currentExam);
     url.searchParams.delete("track");
     window.history.pushState({}, "", url);
   }
@@ -423,9 +324,8 @@ function renderEmptyExamState(exam = state.currentExam, pushState = false) {
 
 function createEmptyBrowserState() {
   return {
-    currentExam: DEFAULT_EXAM,
-    currentTrackIds: {},
-    examTrackListScrollTop: {},
+    currentTrackId: null,
+    trackListScrollTop: 0,
     tracks: {},
   };
 }
@@ -450,36 +350,31 @@ function sanitizeBrowserState(value) {
     return normalized;
   }
 
-  if (typeof value.currentExam === "string") {
-    normalized.currentExam = normalizeExam(value.currentExam);
-  }
+  // Accept both the current shape and the pre-migration exam-keyed shape.
   if (typeof value.currentTrackId === "string") {
-    normalized.currentTrackIds[DEFAULT_EXAM] = value.currentTrackId;
-  }
-
-  if (value.currentTrackIds && typeof value.currentTrackIds === "object") {
-    Object.entries(value.currentTrackIds).forEach(([exam, trackId]) => {
-      if (typeof trackId === "string") {
-        normalized.currentTrackIds[normalizeExam(exam)] = trackId;
-      }
-    });
+    normalized.currentTrackId = value.currentTrackId;
+  } else if (
+    value.currentTrackIds &&
+    typeof value.currentTrackIds === "object"
+  ) {
+    normalized.currentTrackId =
+      typeof value.currentTrackIds.cet6 === "string"
+        ? value.currentTrackIds.cet6
+        : typeof value.currentTrackIds.cet4 === "string"
+          ? value.currentTrackIds.cet4
+          : null;
   }
 
   if (Number.isFinite(Number(value.trackListScrollTop))) {
-    normalized.examTrackListScrollTop[DEFAULT_EXAM] = toFiniteNumber(
-      value.trackListScrollTop,
-    );
-  }
-
-  if (
+    normalized.trackListScrollTop = toFiniteNumber(value.trackListScrollTop);
+  } else if (
     value.examTrackListScrollTop &&
     typeof value.examTrackListScrollTop === "object"
   ) {
-    Object.entries(value.examTrackListScrollTop).forEach(
-      ([exam, scrollTop]) => {
-        normalized.examTrackListScrollTop[normalizeExam(exam)] =
-          toFiniteNumber(scrollTop);
-      },
+    normalized.trackListScrollTop = toFiniteNumber(
+      value.examTrackListScrollTop.cet6 ??
+        value.examTrackListScrollTop.cet4 ??
+        0,
     );
   }
 
@@ -487,11 +382,12 @@ function sanitizeBrowserState(value) {
     return normalized;
   }
 
-  Object.entries(value.tracks).forEach(([trackId, trackState]) => {
+  Object.entries(value.tracks).forEach(([key, trackState]) => {
     if (!trackState || typeof trackState !== "object") {
       return;
     }
 
+    const trackId = String(key).replace(/^[a-z0-9]+:/i, "");
     normalized.tracks[trackId] = {
       audioTime: toFiniteNumber(trackState.audioTime),
       workspaceScrollTop: toFiniteNumber(trackState.workspaceScrollTop),
@@ -511,45 +407,38 @@ function roundPlaybackTime(value) {
   return Math.max(0, Math.round(toFiniteNumber(value) * 10) / 10);
 }
 
-function getSavedTrackId(exam = state.currentExam) {
-  const trackId = state.browserState.currentTrackIds[normalizeExam(exam)];
-  return typeof trackId === "string" ? trackId : null;
+function getSavedTrackId() {
+  return typeof state.browserState.currentTrackId === "string"
+    ? state.browserState.currentTrackId
+    : null;
 }
 
-function getSavedTrackListScrollTop(exam = state.currentExam) {
-  return toFiniteNumber(
-    state.browserState.examTrackListScrollTop[normalizeExam(exam)],
-  );
+function getSavedTrackListScrollTop() {
+  return toFiniteNumber(state.browserState.trackListScrollTop);
 }
 
-function getTrackStateKey(trackId, exam = state.currentExam) {
-  return `${normalizeExam(exam)}:${trackId}`;
+function getTrackViewState(trackId) {
+  return state.browserState.tracks[trackId] || null;
 }
 
-function getTrackViewState(trackId, exam = state.currentExam) {
-  return state.browserState.tracks[getTrackStateKey(trackId, exam)] || null;
-}
-
-function ensureTrackViewState(trackId, exam = state.currentExam) {
+function ensureTrackViewState(trackId) {
   if (!trackId) return null;
-  const key = getTrackStateKey(trackId, exam);
 
-  if (!state.browserState.tracks[key]) {
-    state.browserState.tracks[key] = {
+  if (!state.browserState.tracks[trackId]) {
+    state.browserState.tracks[trackId] = {
       audioTime: 0,
       workspaceScrollTop: 0,
       sectionNavScrollTop: 0,
     };
   }
 
-  return state.browserState.tracks[key];
+  return state.browserState.tracks[trackId];
 }
 
-function createPendingTrackRestore(trackId, exam = state.currentExam) {
-  const trackState = getTrackViewState(trackId, exam);
+function createPendingTrackRestore(trackId) {
+  const trackState = getTrackViewState(trackId);
   return {
     trackId,
-    exam: normalizeExam(exam),
     audioTime: toFiniteNumber(trackState?.audioTime),
     workspaceScrollTop: toFiniteNumber(trackState?.workspaceScrollTop),
     sectionNavScrollTop: toFiniteNumber(trackState?.sectionNavScrollTop),
@@ -557,24 +446,21 @@ function createPendingTrackRestore(trackId, exam = state.currentExam) {
 }
 
 function captureGlobalViewState() {
-  state.browserState.currentExam = normalizeExam(state.currentExam);
-  if (state.currentTrack?.id && state.currentTrack?.exam) {
-    state.browserState.currentTrackIds[state.currentTrack.exam] =
-      state.currentTrack.id;
+  if (state.currentTrack?.id) {
+    state.browserState.currentTrackId = state.currentTrack.id;
   }
   if (els.trackList) {
-    state.browserState.examTrackListScrollTop[
-      normalizeExam(state.currentExam)
-    ] = Math.round(els.trackList.scrollTop);
+    state.browserState.trackListScrollTop = Math.round(
+      els.trackList.scrollTop,
+    );
   }
 }
 
 function captureCurrentTrackViewState() {
   const trackId = state.currentTrack?.id;
-  const exam = state.currentTrack?.exam;
   if (!trackId) return;
 
-  const trackState = ensureTrackViewState(trackId, exam);
+  const trackState = ensureTrackViewState(trackId);
   trackState.audioTime = roundPlaybackTime(els.audio.currentTime);
   trackState.workspaceScrollTop = Math.round(els.workspace?.scrollTop || 0);
   trackState.sectionNavScrollTop = Math.round(els.sectionNav?.scrollTop || 0);
@@ -652,11 +538,7 @@ function ensureActiveTrackListItemVisible() {
 
 function maybeRestoreTrackViewState() {
   const pendingState = state.pendingTrackRestore;
-  if (
-    !pendingState ||
-    pendingState.trackId !== state.currentTrack?.id ||
-    pendingState.exam !== state.currentTrack?.exam
-  ) {
+  if (!pendingState || pendingState.trackId !== state.currentTrack?.id) {
     return false;
   }
 
@@ -679,10 +561,7 @@ function maybeRestoreTrackViewState() {
   updateFromTime(targetTime, { suppressAutoScroll: true });
 
   requestAnimationFrame(() => {
-    if (
-      state.currentTrack?.id !== pendingState.trackId ||
-      state.currentTrack?.exam !== pendingState.exam
-    ) {
+    if (state.currentTrack?.id !== pendingState.trackId) {
       return;
     }
 
@@ -1092,12 +971,12 @@ function bindLayoutEvents() {
 }
 
 function restoreLayoutState() {
-  const leftWidth = Number(localStorage.getItem("cet6-left-sidebar-width"));
-  const rightWidth = Number(localStorage.getItem("cet6-right-sidebar-width"));
+  const leftWidth = Number(localStorage.getItem("echo-left-sidebar-width"));
+  const rightWidth = Number(localStorage.getItem("echo-right-sidebar-width"));
   const leftCollapsed =
-    localStorage.getItem("cet6-left-sidebar-collapsed") === "true";
+    localStorage.getItem("echo-left-sidebar-collapsed") === "true";
   const rightCollapsed =
-    localStorage.getItem("cet6-right-sidebar-collapsed") === "true";
+    localStorage.getItem("echo-right-sidebar-collapsed") === "true";
 
   if (Number.isFinite(leftWidth) && leftWidth > 0) {
     setSidebarWidth("left", leftWidth);
@@ -1150,7 +1029,7 @@ function setSidebarCollapsed(side, collapsed, persist = true) {
   const className = side === "left" ? "left-collapsed" : "right-collapsed";
   els.shell?.classList.toggle(className, collapsed);
   if (persist) {
-    localStorage.setItem(`cet6-${side}-sidebar-collapsed`, String(collapsed));
+    localStorage.setItem(`echo-${side}-sidebar-collapsed`, String(collapsed));
   }
 }
 
@@ -1172,7 +1051,7 @@ function setSidebarWidth(side, width, persist = false) {
 
   document.documentElement.style.setProperty(variable, `${nextWidth}px`);
   if (persist) {
-    localStorage.setItem(`cet6-${side}-sidebar-width`, String(nextWidth));
+    localStorage.setItem(`echo-${side}-sidebar-width`, String(nextWidth));
   }
 }
 
