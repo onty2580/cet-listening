@@ -32,6 +32,7 @@ let lineLoopFrameId = null;
 
 const state = {
   catalog: [],
+  sources: [],
   currentTrack: null,
   sections: [],
   lines: [],
@@ -89,22 +90,10 @@ async function init() {
   bindEvents();
 
   try {
-    const response = await fetch("tracks.json", { cache: "no-store" });
-    state.catalog = normalizeCatalog(await response.json());
-
-    // Generic MP3+SRT items coexist with the upstream archive catalog.
-    try {
-      const catalogResponse = await fetch("catalog.json", {
-        cache: "no-store",
-      });
-      if (catalogResponse.ok) {
-        state.catalog = state.catalog.concat(
-          normalizeCatalogItems(await catalogResponse.json()),
-        );
-      }
-    } catch (error) {
-      console.info("Optional catalog.json unavailable.", error);
-    }
+    const response = await fetch("/api/library", { cache: "no-store" });
+    const library = await response.json();
+    state.sources = Array.isArray(library?.sources) ? library.sources : [];
+    state.catalog = flattenLibrary(state.sources);
 
     const route = getRouteFromLocation();
     state.pendingTrackListScrollTop = getSavedTrackListScrollTop();
@@ -124,8 +113,8 @@ async function init() {
       renderEmptyState();
     }
   } catch (error) {
-    console.error("Failed to load catalog:", error);
-    els.transcript.innerHTML = `<div class="empty-state">加载内容列表失败，请确认 tracks.json 存在。</div>`;
+    console.error("Failed to load library:", error);
+    els.transcript.innerHTML = `<div class="empty-state">加载内容列表失败，请确认 server.py 正在运行且 library/ 目录存在。</div>`;
   }
 }
 
@@ -235,27 +224,7 @@ function getOrderedCatalog() {
   return [...state.catalog].sort((a, b) => compareTracks(a, b) * direction);
 }
 
-// Dated ids (upstream exam archive, YYYY-M-N) sort chronologically; generic
-// items sort by title. Mixed lists keep dated items first in ascending order.
-const TRACK_DATE_PATTERN = /^(\d{4})-(\d{1,2})-(\d{1,2})$/;
-
 function compareTracks(a, b) {
-  const leftDated = TRACK_DATE_PATTERN.test(String(a.id));
-  const rightDated = TRACK_DATE_PATTERN.test(String(b.id));
-
-  if (leftDated && rightDated) {
-    const parse = (id) =>
-      String(id).match(TRACK_DATE_PATTERN).slice(1).map(Number);
-    const left = parse(a.id);
-    const right = parse(b.id);
-    for (let index = 0; index < left.length; index += 1) {
-      if (left[index] !== right[index]) return left[index] - right[index];
-    }
-    return 0;
-  }
-  if (leftDated !== rightDated) {
-    return leftDated ? -1 : 1;
-  }
   return String(a.title ?? a.id).localeCompare(String(b.title ?? b.id));
 }
 
@@ -282,16 +251,8 @@ function updateTrackSortButton() {
 function getRouteFromLocation(
   params = new URLSearchParams(window.location.search),
 ) {
-  // Legacy deep links (/cet6/<id>) keep working; canonical URLs are
-  // <entry path>?track=<id>.
-  const legacyMatch = String(window.location.pathname).match(
-    /^\/(?:cet4|cet6)\/([^/?#]+)\/?$/i,
-  );
-  return {
-    trackId:
-      (legacyMatch ? decodeURIComponent(legacyMatch[1]) : null) ||
-      params.get("track"),
-  };
+  // Canonical URLs are <entry path>?track=<id>.
+  return { trackId: params.get("track") };
 }
 
 function replaceCurrentRouteWithTrack(track) {
@@ -304,26 +265,42 @@ function replaceCurrentRouteWithTrack(track) {
   window.history.replaceState({}, "", url);
 }
 
-function normalizeCatalog(catalog) {
-  return Array.isArray(catalog)
-    ? catalog.filter((item) => item && item.id)
-    : [];
+// /api/library returns a Source -> Collection -> Item tree; the player works
+// on a flat item list, so walk the tree once and tag each item with its
+// source/collection titles for display and search.
+function flattenLibrary(sources) {
+  const items = [];
+  (Array.isArray(sources) ? sources : []).forEach((source) => {
+    if (!source) return;
+    const sourceTitle = String(source.title || source.id || "Library");
+    (Array.isArray(source.items) ? source.items : []).forEach((item) => {
+      items.push(normalizeLibraryItem(item, sourceTitle, ""));
+    });
+    (Array.isArray(source.collections) ? source.collections : []).forEach(
+      (collection) => {
+        if (!collection) return;
+        const collectionTitle = String(collection.title || collection.id || "");
+        (Array.isArray(collection.items) ? collection.items : []).forEach(
+          (item) => {
+            items.push(normalizeLibraryItem(item, sourceTitle, collectionTitle));
+          },
+        );
+      },
+    );
+  });
+  return items;
 }
 
-// catalog.json items are the generic MP3+SRT model:
-// { id, title, audio, transcript } with the transcript pointing at an .srt.
-function normalizeCatalogItems(items) {
-  return Array.isArray(items)
-    ? items
-        .filter((item) => item?.id && item?.audio && item?.transcript)
-        .map((item) => ({
-          id: String(item.id),
-          title: String(item.title || item.id),
-          audio: String(item.audio),
-          transcript: String(item.transcript),
-          available: true,
-        }))
-    : [];
+function normalizeLibraryItem(item, sourceTitle, collectionTitle) {
+  return {
+    id: String(item?.id ?? ""),
+    title: String(item?.title || item?.id || "Untitled"),
+    audio: String(item?.audio ?? ""),
+    transcript: String(item?.transcript ?? ""),
+    available: Boolean(item?.available),
+    source: sourceTitle,
+    collection: collectionTitle,
+  };
 }
 
 function findTrack(trackId) {
