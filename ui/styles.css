@@ -905,6 +905,9 @@ body.resizing {
     position: static;
     height: auto;
     padding: 16px;
+    /* 1fr 单列下若保留 grid-column:1/5 会撑出隐式轨道导致横向溢出，重置为自动堆放 */
+    grid-column: auto;
+    grid-row: auto;
   }
 
   .catalog {
@@ -923,6 +926,8 @@ body.resizing {
     order: 3;
     height: auto;
     overflow: visible;
+    grid-column: auto;
+    grid-row: auto;
   }
 
   .now-playing {
