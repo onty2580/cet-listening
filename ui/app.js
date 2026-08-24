@@ -33,6 +33,11 @@ let lineLoopFrameId = null;
 const state = {
   catalog: [],
   sources: [],
+  // Groups are expanded by default; this set holds explicitly collapsed ones.
+  collapsedGroups: new Set(JSON.parse(
+    localStorage.getItem("echo-collapsed-groups") || "[]",
+  )),
+  librarySearchText: "",
   currentTrack: null,
   sections: [],
   lines: [],
@@ -64,6 +69,7 @@ const els = {
   currentTime: document.querySelector("#currentTime"),
   duration: document.querySelector("#duration"),
   trackList: document.querySelector("#trackList"),
+  librarySearch: document.querySelector("#librarySearch"),
   sortTrackList: document.querySelector("#sortTrackList"),
   sectionNav: document.querySelector("#sectionNav"),
   transcript: document.querySelector("#transcript"),
@@ -191,32 +197,179 @@ function renderTrackList() {
 
   const fragment = document.createDocumentFragment();
   updateTrackSortButton();
-  getOrderedCatalog().forEach((track) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.textContent = track.title;
-    button.className = "track-list-item";
-    button.classList.toggle(
-      "active",
-      state.currentTrack && track.id === state.currentTrack.id,
-    );
-    button.classList.toggle("unavailable", !track.available);
+  const query = state.librarySearchText.trim().toLowerCase();
 
-    button.addEventListener("click", () => {
-      if (track.available || confirm("该内容暂无对齐时间轴，是否尝试打开？")) {
-        switchTrack(track.id, true);
-      }
-    });
-
-    if (!track.available) {
-      button.title = "该内容尚未生成时间轴";
+  if (query) {
+    // Search mode: flat list of matching items.
+    getOrderedCatalog()
+      .filter((track) => {
+        const haystack =
+          `${track.title} ${track.source} ${track.collection}`.toLowerCase();
+        return haystack.includes(query);
+      })
+      .forEach((track) => {
+        fragment.appendChild(buildTrackButton(track, track.collection || ""));
+      });
+    if (!fragment.childNodes.length) {
+      const empty = document.createElement("div");
+      empty.className = "tree-empty";
+      empty.textContent = "没有匹配的内容";
+      fragment.appendChild(empty);
     }
-    fragment.appendChild(button);
-  });
+  } else {
+    // Browse mode: Source -> Collection -> Item tree.
+    getOrderedSources().forEach((source) => {
+      fragment.appendChild(buildSourceNode(source));
+    });
+  }
 
   els.trackList.replaceChildren(fragment);
   restoreTrackListScrollIfNeeded();
   ensureActiveTrackListItemVisible();
+}
+
+function getOrderedSources() {
+  const direction = state.trackSortDirection === "desc" ? -1 : 1;
+  return [...state.sources].sort((a, b) => {
+    return (
+      String(a.title ?? a.id).localeCompare(String(b.title ?? b.id)) * direction
+    );
+  });
+}
+
+// A source node: header (collapsible) + optional direct items + collections.
+function buildSourceNode(source) {
+  const wrap = document.createElement("div");
+  wrap.className = "source-group";
+
+  const header = buildGroupHeader(
+    source,
+    "source-item",
+    source.items.length + source.collections.length,
+  );
+  wrap.appendChild(header);
+
+  if (!isGroupExpanded(source.id)) {
+    return wrap;
+  }
+
+  source.items.forEach((item) => {
+    wrap.appendChild(buildTrackButton(item, ""));
+  });
+
+  const direction = state.trackSortDirection === "desc" ? -1 : 1;
+  const orderedCollections = [...(source.collections || [])].sort(
+    (a, b) =>
+      String(a.title ?? a.id).localeCompare(String(b.title ?? b.id)) * direction,
+  );
+  orderedCollections.forEach((collection) => {
+    wrap.appendChild(buildCollectionNode(collection, source.id));
+  });
+
+  return wrap;
+}
+
+function buildCollectionNode(collection, sourceId) {
+  const wrap = document.createElement("div");
+  wrap.className = "collection-group";
+
+  // Collections from different sources may share an id ("BBC" under
+  // Podcasts and Music), so expansion keys include the owning source.
+  const groupKey = `${sourceId}::${collection.id}`;
+  const header = buildGroupHeader(
+    collection,
+    "collection-item",
+    collection.items.length,
+    groupKey,
+  );
+  wrap.appendChild(header);
+
+  if (!isGroupExpanded(groupKey)) {
+    return wrap;
+  }
+
+  collection.items.forEach((item) => {
+    wrap.appendChild(buildTrackButton(item, item.title));
+  });
+
+  return wrap;
+}
+
+function isGroupExpanded(key) {
+  return !state.collapsedGroups.has(key);
+}
+
+function toggleGroupExpanded(key) {
+  if (state.collapsedGroups.has(key)) {
+    state.collapsedGroups.delete(key);
+  } else {
+    state.collapsedGroups.add(key);
+  }
+  try {
+    localStorage.setItem(
+      "echo-collapsed-groups",
+      JSON.stringify([...state.collapsedGroups]),
+    );
+  } catch (error) {
+    console.info("Could not persist collapsed groups.", error);
+  }
+}
+
+function buildGroupHeader(node, className, count, expandKey = null) {
+  const key = expandKey ?? node.id;
+  const header = document.createElement("button");
+  header.type = "button";
+  header.className = `group-header ${className}`;
+  header.classList.toggle("expanded", isGroupExpanded(key));
+
+  const label = document.createElement("span");
+  label.className = "group-label";
+  label.textContent = node.title || node.id;
+
+  const badge = document.createElement("span");
+  badge.className = "group-count";
+  badge.textContent = String(count ?? "");
+
+  header.appendChild(label);
+  header.appendChild(badge);
+  header.addEventListener("click", () => {
+    toggleGroupExpanded(key);
+    renderTrackList();
+  });
+  return header;
+}
+
+function buildTrackButton(track, subtitleText) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "track-list-item";
+
+  const label = document.createElement("span");
+  label.className = "track-label";
+  label.textContent = track.title;
+
+  button.appendChild(label);
+  if (subtitleText) {
+    const subtitle = document.createElement("span");
+    subtitle.className = "track-subtitle";
+    subtitle.textContent = subtitleText;
+    button.appendChild(subtitle);
+  }
+
+  button.classList.toggle(
+    "active",
+    state.currentTrack && track.id === state.currentTrack.id,
+  );
+  button.classList.toggle("unavailable", !track.available);
+  button.addEventListener("click", () => {
+    if (track.available || confirm("该内容暂无对齐时间轴，是否尝试打开？")) {
+      switchTrack(track.id, true);
+    }
+  });
+  if (!track.available) {
+    button.title = "该内容尚未生成时间轴";
+  }
+  return button;
 }
 
 function getOrderedCatalog() {
@@ -742,6 +895,10 @@ function bindEvents() {
   els.backBtn.addEventListener("click", () => seekBy(-5));
   els.forwardBtn.addEventListener("click", () => seekBy(5));
   els.sortTrackList?.addEventListener("click", toggleTrackSortDirection);
+  els.librarySearch?.addEventListener("input", () => {
+    state.librarySearchText = els.librarySearch.value || "";
+    renderTrackList();
+  });
   els.transcriptVisible?.addEventListener("change", () => {
     els.workspace.hidden = !els.transcriptVisible.checked;
   });
