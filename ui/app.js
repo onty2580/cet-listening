@@ -65,6 +65,10 @@ const els = {
   playBtn: document.querySelector("#playBtn"),
   backBtn: document.querySelector("#backBtn"),
   forwardBtn: document.querySelector("#forwardBtn"),
+  prevLineBtn: document.querySelector("#prevLineBtn"),
+  nextLineBtn: document.querySelector("#nextLineBtn"),
+  speedSelect: document.querySelector("#speedSelect"),
+  speedCustom: document.querySelector("#speedCustom"),
   progress: document.querySelector("#progress"),
   currentTime: document.querySelector("#currentTime"),
   duration: document.querySelector("#duration"),
@@ -895,6 +899,8 @@ function bindEvents() {
   els.backBtn.addEventListener("click", () => seekBy(-5));
   els.forwardBtn.addEventListener("click", () => seekBy(5));
   els.sortTrackList?.addEventListener("click", toggleTrackSortDirection);
+  els.prevLineBtn?.addEventListener("click", () => stepLine(-1));
+  els.nextLineBtn?.addEventListener("click", () => stepLine(1));
   els.librarySearch?.addEventListener("input", () => {
     state.librarySearchText = els.librarySearch.value || "";
     renderTrackList();
@@ -963,18 +969,30 @@ function bindEvents() {
     { passive: true },
   );
 
-  document.querySelectorAll(".speed").forEach((button) => {
-    button.addEventListener("click", () => {
-      const speed = Number(button.dataset.speed);
-      els.audio.playbackRate = speed;
-      document
-        .querySelectorAll(".speed")
-        .forEach((item) => item.classList.toggle("active", item === button));
-    });
+  els.speedSelect?.addEventListener("change", () => {
+    if (els.speedSelect.value === "custom") {
+      els.speedCustom.hidden = false;
+      els.speedCustom.focus();
+      return;
+    }
+    els.speedCustom.hidden = true;
+    setPlaybackRate(Number(els.speedSelect.value));
   });
+
+  els.speedCustom?.addEventListener("change", () => {
+    const value = Number(els.speedCustom.value);
+    if (Number.isFinite(value) && value >= 0.25 && value <= 4) {
+      setPlaybackRate(value);
+    } else {
+      els.speedCustom.value = "";
+    }
+  });
+
+  restorePlaybackRate();
 
   window.addEventListener("keydown", (event) => {
     if (event.target instanceof HTMLInputElement) return;
+    if (event.target instanceof HTMLSelectElement) return;
 
     if (event.code === "Space") {
       event.preventDefault();
@@ -983,6 +1001,8 @@ function bindEvents() {
 
     if (event.key === "ArrowLeft") seekBy(-5);
     if (event.key === "ArrowRight") seekBy(5);
+    if (event.key === "[") stepLine(-1);
+    if (event.key === "]") stepLine(1);
   });
 
   window.addEventListener("pagehide", () => {
@@ -1976,6 +1996,61 @@ function seekBy(seconds) {
     els.audio.duration || 0,
   );
   updateProgress();
+}
+
+// Jump to the previous/next sentence relative to the active (or current
+// playback) position. A-B and sentence loops stop, matching seekBy.
+function stepLine(direction) {
+  if (!state.lines.length) return;
+
+  const index =
+    state.activeIndex >= 0
+      ? state.activeIndex
+      : findActiveLineIndex(els.audio.currentTime);
+  const target = state.lines[clamp(index + direction, 0, state.lines.length - 1)];
+  if (!target) return;
+
+  seekToLine(target);
+}
+
+const PLAYBACK_RATE_KEY = "echo-playback-rate";
+
+function setPlaybackRate(rate) {
+  if (!Number.isFinite(rate) || rate <= 0) return;
+  els.audio.playbackRate = rate;
+  try {
+    localStorage.setItem(PLAYBACK_RATE_KEY, String(rate));
+  } catch (error) {
+    console.info("Could not persist playback rate.", error);
+  }
+}
+
+function restorePlaybackRate() {
+  let rate = null;
+  try {
+    rate = Number(localStorage.getItem(PLAYBACK_RATE_KEY));
+  } catch (error) {
+    rate = null;
+  }
+  if (!Number.isFinite(rate) || rate <= 0) return;
+
+  els.audio.playbackRate = rate;
+
+  if (els.speedCustom) {
+    const preset = els.speedSelect
+      ? [...els.speedSelect.options].some(
+          (option) =>
+            option.value !== "custom" && Number(option.value) === rate,
+        )
+      : true;
+    if (preset) {
+      if (els.speedSelect) els.speedSelect.value = String(rate);
+    } else {
+      if (els.speedSelect) els.speedSelect.value = "custom";
+      els.speedCustom.hidden = false;
+      els.speedCustom.value = String(rate);
+    }
+  }
 }
 
 function formatTime(value) {

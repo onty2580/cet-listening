@@ -658,6 +658,72 @@ body.resizing {
   font-weight: 800;
 }
 
+/* Sentence step (prev/next) buttons reuse the seek-icon look */
+.line-step-btn {
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+}
+
+.line-step-icon,
+.line-step-icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.line-step-icon svg {
+  overflow: visible;
+}
+
+.line-step-icon path {
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Speed dropdown + custom input */
+.speed-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.speed-control select {
+  min-height: 38px;
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+}
+
+.speed-control select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.speed-custom {
+  width: 64px;
+  min-height: 38px;
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+}
+
+.speed-custom:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
 .toggle {
   display: inline-flex;
   align-items: center;
@@ -1082,12 +1148,18 @@ body.resizing {
   }
 
   .segmented,
+  .speed-control,
   .toggle,
   .switch-control {
     grid-column: 1 / -1;
   }
 
-  .segmented {
+  .segmented,
+  .speed-control {
     width: 100%;
+  }
+
+  .speed-control select {
+    flex: 1 1 auto;
   }
 }

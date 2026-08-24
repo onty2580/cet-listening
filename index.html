@@ -118,6 +118,26 @@
             aria-label="播放控制"
           >
             <button
+              id="prevLineBtn"
+              class="icon-btn line-step-btn"
+              type="button"
+              title="上一句（[）"
+              aria-label="播放上一句"
+            >
+              <span
+                class="line-step-icon"
+                aria-hidden="true"
+              >
+                <svg
+                  viewBox="0 0 32 32"
+                  focusable="false"
+                >
+                  <path d="M23 8l-10 8 10 8z" />
+                  <path d="M9 8v16" />
+                </svg>
+              </span>
+            </button>
+            <button
               id="backBtn"
               class="icon-btn seek-btn seek-back"
               type="button"
@@ -152,6 +172,26 @@
               Play
             </button>
             <button
+              id="nextLineBtn"
+              class="icon-btn line-step-btn"
+              type="button"
+              title="下一句（]）"
+              aria-label="播放下一句"
+            >
+              <span
+                class="line-step-icon"
+                aria-hidden="true"
+              >
+                <svg
+                  viewBox="0 0 32 32"
+                  focusable="false"
+                >
+                  <path d="M9 8l10 8-10 8z" />
+                  <path d="M23 8v16" />
+                </svg>
+              </span>
+            </button>
+            <button
               id="forwardBtn"
               class="icon-btn seek-btn seek-forward"
               type="button"
@@ -178,30 +218,32 @@
             </button>
 
             <div
-              class="segmented"
+              class="speed-control"
               aria-label="播放速度"
             >
-              <button
-                class="speed active"
-                type="button"
-                data-speed="1"
+              <select
+                id="speedSelect"
+                aria-label="播放速度"
               >
-                1x
-              </button>
-              <button
-                class="speed"
-                type="button"
-                data-speed="1.25"
-              >
-                1.25x
-              </button>
-              <button
-                class="speed"
-                type="button"
-                data-speed="1.5"
-              >
-                1.5x
-              </button>
+                <option value="0.5">0.5x</option>
+                <option value="0.75">0.75x</option>
+                <option value="1" selected>1x</option>
+                <option value="1.25">1.25x</option>
+                <option value="1.5">1.5x</option>
+                <option value="2">2x</option>
+                <option value="custom">自定义…</option>
+              </select>
+              <input
+                id="speedCustom"
+                class="speed-custom"
+                type="number"
+                min="0.25"
+                max="4"
+                step="0.05"
+                placeholder="1.0"
+                aria-label="自定义播放速度"
+                hidden
+              />
             </div>
 
             <label class="toggle">
