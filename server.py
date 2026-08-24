@@ -42,7 +42,7 @@ class ListeningHandler(SimpleHTTPRequestHandler):
             self.handle_admin_get(parsed)
             return
         if self.is_root_request(parsed.path):
-            self.send_error(404, "File not found")
+            self.serve_index()
             return
         if self.is_app_entry(parsed.path):
             self.serve_index()
@@ -60,7 +60,7 @@ class ListeningHandler(SimpleHTTPRequestHandler):
             self.serve_admin(head_only=True)
             return
         if self.is_root_request(parsed.path):
-            self.send_error(404, "File not found")
+            self.serve_index(head_only=True)
             return
         if self.is_app_entry(parsed.path):
             self.serve_index(head_only=True)
@@ -828,10 +828,9 @@ def run():
     if server is None:
         raise RuntimeError("No available local port found.")
 
-    print(f"CET-6 listening player: http://0.0.0.0:{port}/cet6/")
-    print(f"CET-4 listening player: http://0.0.0.0:{port}/cet4/")
+    print(f"Echo listening player: http://0.0.0.0:{port}/")
     print(f"Local admin manager: http://127.0.0.1:{port}/admin/")
-    print("Root path / is disabled. Open /cet6/ or /cet4/ directly.")
+    print("Legacy entry paths /cet6/ and /cet4/ still work for the archive.")
     print("Data tools are also available from /admin/ on this machine.")
     print("\n[IMPORTANT] If the page looks broken, please press Ctrl + F5 to force refresh your browser cache.")
     server.serve_forever()
