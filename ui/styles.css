@@ -1269,9 +1269,23 @@ body.resizing {
     font-size: 12px;
   }
 
+  /* prev / back / Play / next / forward share one row */
   .controls {
     display: grid;
-    grid-template-columns: 46px minmax(80px, 1fr) 46px;
+    grid-template-columns: 40px 40px minmax(0, 1fr) 40px 40px;
+    gap: 8px;
+  }
+
+  .icon-btn {
+    width: auto;
+    min-width: 40px;
+    padding: 0 4px;
+  }
+
+  .play-btn {
+    min-width: 0;
+    min-height: 38px;
+    padding: 0 10px;
   }
 
   .segmented,
