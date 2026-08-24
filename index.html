@@ -218,6 +218,53 @@
             </button>
 
             <div
+              class="ab-loop"
+              aria-label="A-B 区间循环"
+            >
+              <button
+                id="abPointA"
+                class="ab-btn"
+                type="button"
+                title="设置 A 点（A 键）；再按清除 A-B"
+                aria-label="设置循环起点 A"
+              >
+                A
+              </button>
+              <button
+                id="abPointB"
+                class="ab-btn"
+                type="button"
+                title="设置 B 点（B 键）；需先设 A"
+                aria-label="设置循环终点 B"
+              >
+                B
+              </button>
+              <button
+                id="abToggle"
+                class="ab-btn ab-clear"
+                type="button"
+                title="清除 A-B 循环"
+                aria-label="清除 A-B 循环"
+                aria-pressed="false"
+              >
+                <span
+                  class="ab-loop-icon"
+                  aria-hidden="true"
+                >
+                  <svg
+                    viewBox="0 0 32 32"
+                    focusable="false"
+                  >
+                    <path d="M8 12a8 8 0 0 1 14-2" />
+                    <path d="M24 20a8 8 0 0 1-14 2" />
+                    <path d="M22 6v4h-4" />
+                    <path d="M10 26v-4h4" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div
               class="speed-control"
               aria-label="播放速度"
             >

@@ -684,6 +684,55 @@ body.resizing {
   stroke-linejoin: round;
 }
 
+/* A-B loop buttons */
+.ab-loop {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ab-btn {
+  min-width: 34px;
+  min-height: 38px;
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: inherit;
+  font: inherit;
+  font-weight: 800;
+}
+
+.ab-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
+.ab-btn.active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.ab-loop-icon,
+.ab-loop-icon svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.ab-loop-icon svg {
+  overflow: visible;
+}
+
+.ab-loop-icon path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 /* Speed dropdown + custom input */
 .speed-control {
   display: inline-flex;
@@ -1149,13 +1198,15 @@ body.resizing {
 
   .segmented,
   .speed-control,
+  .ab-loop,
   .toggle,
   .switch-control {
     grid-column: 1 / -1;
   }
 
   .segmented,
-  .speed-control {
+  .speed-control,
+  .ab-loop {
     width: 100%;
   }
 

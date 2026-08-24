@@ -44,6 +44,8 @@ const state = {
   activeIndex: -1,
   loopLineId: null,
   loopSectionId: null,
+  abLoopA: null,
+  abLoopB: null,
   timingsReady: false,
   userSeeking: false,
   playerPinned: false,
@@ -69,6 +71,9 @@ const els = {
   nextLineBtn: document.querySelector("#nextLineBtn"),
   speedSelect: document.querySelector("#speedSelect"),
   speedCustom: document.querySelector("#speedCustom"),
+  abPointA: document.querySelector("#abPointA"),
+  abPointB: document.querySelector("#abPointB"),
+  abToggle: document.querySelector("#abToggle"),
   progress: document.querySelector("#progress"),
   currentTime: document.querySelector("#currentTime"),
   duration: document.querySelector("#duration"),
@@ -182,6 +187,7 @@ function resetPlaybackState() {
   els.playBtn.textContent = "Play";
   state.activeIndex = -1;
   stopLineLoop();
+  clearAbLoop();
   state.timingsReady = false;
   state.lastPlaybackStateSaveAt = 0;
   if (els.workspace) {
@@ -901,6 +907,9 @@ function bindEvents() {
   els.sortTrackList?.addEventListener("click", toggleTrackSortDirection);
   els.prevLineBtn?.addEventListener("click", () => stepLine(-1));
   els.nextLineBtn?.addEventListener("click", () => stepLine(1));
+  els.abPointA?.addEventListener("click", () => setAbLoopPoint("a"));
+  els.abPointB?.addEventListener("click", () => setAbLoopPoint("b"));
+  els.abToggle?.addEventListener("click", clearAbLoop);
   els.librarySearch?.addEventListener("input", () => {
     state.librarySearchText = els.librarySearch.value || "";
     renderTrackList();
@@ -1003,6 +1012,8 @@ function bindEvents() {
     if (event.key === "ArrowRight") seekBy(5);
     if (event.key === "[") stepLine(-1);
     if (event.key === "]") stepLine(1);
+    if (event.key === "a" || event.key === "A") setAbLoopPoint("a");
+    if (event.key === "b" || event.key === "B") setAbLoopPoint("b");
   });
 
   window.addEventListener("pagehide", () => {
@@ -1784,6 +1795,7 @@ function toggleSectionLoop(section) {
 }
 
 function startLineLoop(line) {
+  clearAbLoop();
   state.loopSectionId = null;
   state.loopLineId = line.id;
   updateLineLoopControls();
@@ -1795,6 +1807,7 @@ function startSectionLoop(section) {
   const firstLine = getFirstLineForSection(section);
   if (!firstLine) return;
 
+  clearAbLoop();
   state.loopLineId = null;
   state.loopSectionId = section.id;
   updateLineLoopControls();
@@ -1849,7 +1862,11 @@ function updateLineLoopControls() {
 }
 
 function startLineLoopMonitor() {
-  if (lineLoopFrameId !== null || !hasActiveLoopTarget() || els.audio.paused) {
+  if (
+    lineLoopFrameId !== null ||
+    (!hasActiveLoopTarget() && !hasAbLoop()) ||
+    els.audio.paused
+  ) {
     return;
   }
 
@@ -1865,9 +1882,10 @@ function stopLineLoopMonitor() {
 
 function checkLineLoop() {
   lineLoopFrameId = null;
-  if (!hasActiveLoopTarget() || els.audio.paused) return;
+  if ((!hasActiveLoopTarget() && !hasAbLoop()) || els.audio.paused) return;
 
   enforceLineLoop();
+  enforceAbLoop();
   startLineLoopMonitor();
 }
 
@@ -1888,6 +1906,82 @@ function enforceLineLoop() {
     updateProgress();
     updateFromTime(start);
   }
+}
+
+// A-B loop: jump back to A once playback passes B. Kept in the same rAF
+// monitor as the sentence loop; the two are mutually exclusive.
+function enforceAbLoop() {
+  if (!hasAbLoop() || state.userSeeking) return;
+
+  if (els.audio.currentTime >= state.abLoopB) {
+    els.audio.currentTime = state.abLoopA;
+    updateProgress();
+    updateFromTime(state.abLoopA);
+  }
+}
+
+function hasAbLoop() {
+  return (
+    Number.isFinite(state.abLoopA) &&
+    Number.isFinite(state.abLoopB) &&
+    state.abLoopB > state.abLoopA
+  );
+}
+
+// First press sets A; second press (after A) sets B and starts the monitor;
+// a third press clears. Setting A-B stops any sentence/section loop.
+function setAbLoopPoint(point) {
+  if (point === "a") {
+    if (hasAbLoop()) {
+      clearAbLoop();
+      return;
+    }
+    state.abLoopA = els.audio.currentTime;
+    state.abLoopB = null;
+    updateAbLoopControls();
+    return;
+  }
+
+  // point === "b"
+  if (!Number.isFinite(state.abLoopA)) return;
+  const candidate = els.audio.currentTime;
+  if (candidate <= state.abLoopA) {
+    // B must land after A; restart the pair from here instead.
+    state.abLoopA = candidate;
+    state.abLoopB = null;
+    updateAbLoopControls();
+    return;
+  }
+
+  state.abLoopB = candidate;
+  stopLineLoop();
+  updateAbLoopControls();
+  startLineLoopMonitor();
+  if (els.audio.paused) {
+    els.audio.play();
+  }
+}
+
+function clearAbLoop() {
+  if (!Number.isFinite(state.abLoopA) && !Number.isFinite(state.abLoopB)) {
+    return;
+  }
+  state.abLoopA = null;
+  state.abLoopB = null;
+  updateAbLoopControls();
+  if (!hasActiveLoopTarget()) {
+    stopLineLoopMonitor();
+  }
+}
+
+function updateAbLoopControls() {
+  els.abPointA?.classList.toggle("active", Number.isFinite(state.abLoopA));
+  els.abPointB?.classList.toggle(
+    "active",
+    Number.isFinite(state.abLoopB),
+  );
+  els.abToggle?.classList.toggle("active", hasAbLoop());
+  els.abToggle?.setAttribute("aria-pressed", String(hasAbLoop()));
 }
 
 function restartLineLoop() {
