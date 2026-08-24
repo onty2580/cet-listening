@@ -289,7 +289,7 @@ function buildCollectionNode(collection, sourceId) {
   }
 
   collection.items.forEach((item) => {
-    wrap.appendChild(buildTrackButton(item, item.title));
+    wrap.appendChild(buildTrackButton(item, ""));
   });
 
   return wrap;
