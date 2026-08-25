@@ -1,0 +1,18 @@
+# Echo — N100 自托管部署
+# 用法：仓库 clone 到 N100 后在本目录执行 `docker compose up -d`。
+# 代码目录整体挂载进容器（无镜像构建）；更新方式：git pull && docker compose restart。
+# 端口只绑定 Tailscale IP——Echo 无认证，不向局域网暴露。
+
+services:
+  echo:
+    image: python:3.13-slim
+    container_name: echo
+    working_dir: /app
+    command: python3 server.py
+    environment:
+      PORT: "5173"
+    ports:
+      - "100.96.175.68:5173:5173"
+    volumes:
+      - ./:/app
+    restart: unless-stopped
