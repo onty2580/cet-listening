@@ -1,6 +1,15 @@
 const TRACK_SORT_KEY = "echo-track-sort-direction";
 const TRANSLATION_VISIBLE_KEY = "echo-translation-visible";
 const VIEW_STATE_KEY = "echo-browser-state";
+const THEME_MODE_KEY = "echo-theme-mode";
+// Declared here because init() runs immediately at parse time; a later
+// top-level const would still be in its temporal dead zone.
+const THEME_LABELS = { auto: "自动", light: "亮", dark: "暗" };
+const THEME_TITLES = {
+  auto: "主题：跟随系统（点击切换为亮色）",
+  light: "主题：亮色（点击切换为暗色）",
+  dark: "主题：暗色（点击切换为跟随系统）",
+};
 
 // One-time migration from the upstream cet6-* keys so existing listeners
 // keep their saved positions, layout, and resume points.
@@ -82,6 +91,7 @@ const els = {
   transcriptVisible: document.querySelector("#transcriptVisible"),
   translationVisible: document.querySelector("#translationVisible"),
   libraryToggle: document.querySelector("#libraryToggle"),
+  themeToggle: document.querySelector("#themeToggle"),
   drawerBackdrop: document.querySelector("#drawerBackdrop"),
   catalog: document.querySelector("#catalog"),
 };
@@ -834,6 +844,7 @@ async function mergeSupplementalLineData(track, lines) {
 }
 
 function bindEvents() {
+  bindThemeToggle();
   bindLibraryDrawer();
 
   if (els.translationVisible) {
@@ -1040,6 +1051,35 @@ function setLibraryDrawerOpen(open) {
   if (open) {
     els.librarySearch?.focus();
   }
+}
+
+function getThemeMode() {
+  const saved = localStorage.getItem(THEME_MODE_KEY);
+  return saved === "light" || saved === "dark" ? saved : "auto";
+}
+
+function applyThemeMode(mode) {
+  if (mode === "auto") {
+    delete document.documentElement.dataset.theme;
+  } else {
+    document.documentElement.dataset.theme = mode;
+  }
+  if (els.themeToggle) {
+    els.themeToggle.textContent = THEME_LABELS[mode];
+    els.themeToggle.title = THEME_TITLES[mode];
+    els.themeToggle.setAttribute("aria-label", THEME_TITLES[mode]);
+  }
+}
+
+function cycleThemeMode() {
+  const next = { auto: "light", light: "dark", dark: "auto" }[getThemeMode()];
+  localStorage.setItem(THEME_MODE_KEY, next);
+  applyThemeMode(next);
+}
+
+function bindThemeToggle() {
+  applyThemeMode(getThemeMode());
+  els.themeToggle?.addEventListener("click", cycleThemeMode);
 }
 
 function parseMarkdown(markdown) {

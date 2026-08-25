@@ -115,6 +115,7 @@ echo/
 | 断点续听持久化 | browser-state 系列 |
 | 排序 | `getOrderedSources` / `getOrderedCatalog` / `compareTracks`（title localeCompare） |
 | 内容库抽屉 | `bindLibraryDrawer` / `setLibraryDrawerOpen`（#libraryToggle / backdrop / Escape 关闭，打开聚焦搜索框） |
+| 主题三态切换（自动/亮/暗） | `getThemeMode` / `applyThemeMode` / `cycleThemeMode` / `bindThemeToggle`（`echo-theme-mode`；index.html 头部内联脚本防首帧闪烁） |
 
 ## 3. Git 工作流
 
@@ -157,7 +158,7 @@ node --test tests/dictation.test.mjs                # 听写 normalize/diff 单�
 3. 听写 normalize/diff/grading（撇号保留、NFKC、词级 LCS diff）— ✅ 16 条
 4. 音频 Range 服务 — curl 断言 206/Content-Range（冒烟命令覆盖）
 5. 前端全链路 — headless Chrome + e2e_driver.html（同源 iframe 驱动：树/折叠/搜索/SRT/
-   步进/A-B 状态机/倍速下拉含自定义/听写全链路/抽屉开合，30 项断言）
+   步进/A-B 状态机/倍速下拉含自定义/听写全链路/抽屉开合/主题三态切换，34 项断言）
 
 ## 6. 已知技术债清单（记录在案，勿顺手修）
 

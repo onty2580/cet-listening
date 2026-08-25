@@ -1,6 +1,7 @@
 /* ==========================================================================
    Echo — 冷灰 studio 设计令牌
-   亮色为默认；@media (prefers-color-scheme: dark) 提供暗色覆盖。
+   亮色为默认；暗色有两个入口：系统偏好（prefers-color-scheme）与
+   手动覆盖（html[data-theme="dark"]，见顶栏主题按钮）。
    ========================================================================== */
 
 :root {
@@ -49,8 +50,46 @@
   --shadow-2: 0 24px 60px rgba(16, 24, 40, 0.16);
 }
 
+/* 手动切换到暗色（顶栏主题按钮；优先级高于系统偏好） */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #0b1220;
+  --panel: #16202f;
+  --panel-soft: #101827;
+
+  --text: #e5eaf1;
+  --text-soft: #c3ccd9;
+  --muted: #8b99ab;
+
+  --line: #273445;
+  --line-soft: #202c3c;
+
+  --hover-bg: #1c2940;
+  --hover-border: #3b4d66;
+
+  --accent: #4f74a4;
+  --accent-strong: #9dbde4;
+  --accent-soft: #1d2c42;
+  --on-accent: #ffffff;
+  --accent-ring: #5d84b8;
+
+  --danger: #f28b82;
+  --warning: #e5b567;
+
+  --mask: #33415a;
+
+  --sb-track-color: transparent;
+  --sb-thumb-color: #35455c;
+
+  --glass: rgba(13, 20, 33, 0.88);
+  --shadow-1: 0 10px 30px rgba(0, 0, 0, 0.4);
+  --shadow-2: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* 跟随系统：除非手动锁定为亮色，系统暗色时应用同一套暗色令牌 */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     color-scheme: dark;
 
     --bg: #0b1220;
@@ -209,8 +248,23 @@ select:focus-visible {
   font-size: 12px;
 }
 
-.library-toggle {
+.top-actions {
   justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-toggle {
+  min-height: 34px;
+  min-width: 56px;
+  padding: 0 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.library-toggle {
   min-height: 34px;
   padding: 0 14px;
   border-radius: 10px;

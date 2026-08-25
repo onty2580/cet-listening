@@ -190,6 +190,29 @@ async function run() {
       !app().querySelector("#catalog").classList.contains("open")
         && !app().querySelector("#drawerBackdrop").classList.contains("visible"),
       "");
+
+    // J: three-state theme toggle (auto → light → dark → auto)
+    win().localStorage.setItem("echo-theme-mode", "auto");
+    win().eval("applyThemeMode(getThemeMode())");
+    check("theme-auto-initial",
+      !app().documentElement.hasAttribute("data-theme"),
+      "");
+    app().querySelector("#themeToggle").click();
+    check("theme-light-after-click",
+      app().documentElement.dataset.theme === "light"
+        && win().localStorage.getItem("echo-theme-mode") === "light",
+      "");
+    app().querySelector("#themeToggle").click();
+    check("theme-dark-after-click",
+      app().documentElement.dataset.theme === "dark"
+        && win().localStorage.getItem("echo-theme-mode") === "dark",
+      "");
+    app().querySelector("#themeToggle").click();
+    check("theme-back-to-auto",
+      !app().documentElement.hasAttribute("data-theme")
+        && win().localStorage.getItem("echo-theme-mode") === "auto",
+      "");
+    win().localStorage.removeItem("echo-theme-mode");
   } catch (error) {
     check("unexpected-error", false, String(error));
   }

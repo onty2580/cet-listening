@@ -16,6 +16,15 @@
       rel="stylesheet"
       href="./ui/styles.css"
     />
+    <script>
+      // Apply the saved theme before first paint to avoid a flash of the wrong theme.
+      try {
+        const savedMode = localStorage.getItem("echo-theme-mode");
+        if (savedMode === "light" || savedMode === "dark") {
+          document.documentElement.dataset.theme = savedMode;
+        }
+      } catch {}
+    </script>
     <script
       defer
       src="./ui/srt.js"
@@ -44,16 +53,27 @@
         <strong id="trackName">Echo</strong>
         <span id="trackMeta">正在载入...</span>
       </div>
-      <button
-        id="libraryToggle"
-        class="library-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="catalog"
-        title="打开内容库"
-      >
-        内容库
-      </button>
+      <div class="top-actions">
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          title="主题：跟随系统（点击切换为亮色）"
+          aria-label="主题模式：跟随系统，点击切换"
+        >
+          自动
+        </button>
+        <button
+          id="libraryToggle"
+          class="library-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="catalog"
+          title="打开内容库"
+        >
+          内容库
+        </button>
+      </div>
     </header>
 
     <main
