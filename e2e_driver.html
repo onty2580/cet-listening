@@ -177,6 +177,19 @@ async function run() {
     check("dictation-persisted", dictPersisted === "true", String(dictPersisted));
     win().localStorage.removeItem("echo-dictation-active");
     win().localStorage.removeItem("echo-playback-rate");
+
+    // I: library drawer open/close
+    app().querySelector("#libraryToggle").click();
+    check("drawer-opens",
+      app().querySelector("#catalog").classList.contains("open")
+        && app().querySelector("#drawerBackdrop").classList.contains("visible"),
+      "");
+    win().dispatchEvent(new (win()).KeyboardEvent("keydown", { key: "Escape" }));
+    await new Promise((resolve) => setTimeout(resolve, 100));
+    check("drawer-escape-closes",
+      !app().querySelector("#catalog").classList.contains("open")
+        && !app().querySelector("#drawerBackdrop").classList.contains("visible"),
+      "");
   } catch (error) {
     check("unexpected-error", false, String(error));
   }

@@ -1,5 +1,3 @@
-const PLAYER_PINNED_KEY = "echo-player-pinned";
-const PLAYER_POSITION_KEY = "echo-player-position";
 const TRACK_SORT_KEY = "echo-track-sort-direction";
 const TRANSLATION_VISIBLE_KEY = "echo-translation-visible";
 const VIEW_STATE_KEY = "echo-browser-state";
@@ -8,15 +6,9 @@ const VIEW_STATE_KEY = "echo-browser-state";
 // keep their saved positions, layout, and resume points.
 function migrateLegacyStorageKeys() {
   const aliases = {
-    "cet6-player-pinned": PLAYER_PINNED_KEY,
-    "cet6-player-position": PLAYER_POSITION_KEY,
     "cet6-track-sort-direction": TRACK_SORT_KEY,
     "cet6-translation-visible": TRANSLATION_VISIBLE_KEY,
     "cet6-browser-state": VIEW_STATE_KEY,
-    "cet6-left-sidebar-width": "echo-left-sidebar-width",
-    "cet6-right-sidebar-width": "echo-right-sidebar-width",
-    "cet6-left-sidebar-collapsed": "echo-left-sidebar-collapsed",
-    "cet6-right-sidebar-collapsed": "echo-right-sidebar-collapsed",
   };
   Object.entries(aliases).forEach(([legacyKey, modernKey]) => {
     const legacyValue = localStorage.getItem(legacyKey);
@@ -52,7 +44,6 @@ const state = {
   dictationOpenLineId: null,
   timingsReady: false,
   userSeeking: false,
-  playerPinned: false,
   trackSortDirection:
     localStorage.getItem(TRACK_SORT_KEY) === "desc" ? "desc" : "asc",
   translationVisible: localStorage.getItem(TRANSLATION_VISIBLE_KEY) === "true",
@@ -64,10 +55,7 @@ const state = {
 };
 
 const els = {
-  shell: document.querySelector("#shell"),
   audio: document.querySelector("#audio"),
-  nowPlaying: document.querySelector(".now-playing"),
-  pinPlayer: document.querySelector("#pinPlayer"),
   playBtn: document.querySelector("#playBtn"),
   backBtn: document.querySelector("#backBtn"),
   forwardBtn: document.querySelector("#forwardBtn"),
@@ -93,20 +81,14 @@ const els = {
   workspace: document.querySelector(".workspace"),
   transcriptVisible: document.querySelector("#transcriptVisible"),
   translationVisible: document.querySelector("#translationVisible"),
-  hideLeftSidebar: document.querySelector("#hideLeftSidebar"),
-  hideRightSidebar: document.querySelector("#hideRightSidebar"),
-  showLeftSidebar: document.querySelector("#showLeftSidebar"),
-  showRightSidebar: document.querySelector("#showRightSidebar"),
-  leftResizer: document.querySelector("#leftResizer"),
-  rightResizer: document.querySelector("#rightResizer"),
+  libraryToggle: document.querySelector("#libraryToggle"),
+  drawerBackdrop: document.querySelector("#drawerBackdrop"),
+  catalog: document.querySelector("#catalog"),
 };
 
 init();
 
 async function init() {
-  restoreLayoutState();
-  restorePlayerPinned();
-  restorePlayerPosition();
   bindEvents();
 
   try {
@@ -852,8 +834,7 @@ async function mergeSupplementalLineData(track, lines) {
 }
 
 function bindEvents() {
-  bindLayoutEvents();
-  bindFloatingPlayer();
+  bindLibraryDrawer();
 
   if (els.translationVisible) {
     els.translationVisible.checked = state.translationVisible;
@@ -1036,226 +1017,28 @@ function bindEvents() {
   });
 }
 
-function bindFloatingPlayer() {
-  if (!els.nowPlaying) return;
-
-  els.pinPlayer?.addEventListener("click", () => {
-    setPlayerPinned(!state.playerPinned);
+function bindLibraryDrawer() {
+  els.libraryToggle?.addEventListener("click", () => {
+    setLibraryDrawerOpen(!els.catalog.classList.contains("open"));
   });
 
-  let startX = 0;
-  let startY = 0;
-  let startLeft = 0;
-  let startTop = 0;
+  els.drawerBackdrop?.addEventListener("click", () => setLibraryDrawerOpen(false));
 
-  els.nowPlaying.addEventListener("pointerdown", (event) => {
-    if (
-      state.playerPinned ||
-      event.button !== 0 ||
-      event.target.closest("button, input, label")
-    ) {
-      return;
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && els.catalog?.classList.contains("open")) {
+      setLibraryDrawerOpen(false);
     }
-
-    event.preventDefault();
-    els.nowPlaying.setPointerCapture(event.pointerId);
-    els.nowPlaying.classList.add("dragging");
-
-    const rect = els.nowPlaying.getBoundingClientRect();
-    startX = event.clientX;
-    startY = event.clientY;
-    startLeft = rect.left;
-    startTop = rect.top;
-
-    const movePlayer = (moveEvent) => {
-      setPlayerPosition(
-        startLeft + moveEvent.clientX - startX,
-        startTop + moveEvent.clientY - startY,
-        rect,
-      );
-    };
-
-    const stopDrag = () => {
-      els.nowPlaying.classList.remove("dragging");
-      savePlayerPosition();
-      els.nowPlaying.removeEventListener("pointermove", movePlayer);
-      els.nowPlaying.removeEventListener("pointerup", stopDrag);
-      els.nowPlaying.removeEventListener("pointercancel", stopDrag);
-    };
-
-    els.nowPlaying.addEventListener("pointermove", movePlayer);
-    els.nowPlaying.addEventListener("pointerup", stopDrag);
-    els.nowPlaying.addEventListener("pointercancel", stopDrag);
   });
 }
 
-function restorePlayerPosition() {
-  if (!els.nowPlaying) return;
+function setLibraryDrawerOpen(open) {
+  if (!els.catalog) return;
 
-  const savedPosition = localStorage.getItem(PLAYER_POSITION_KEY);
-  if (!savedPosition) return;
-
-  try {
-    const position = JSON.parse(savedPosition);
-    if (!Number.isFinite(position.left) || !Number.isFinite(position.top)) {
-      return;
-    }
-
-    const rect = els.nowPlaying.getBoundingClientRect();
-    setPlayerPosition(position.left, position.top, rect);
-  } catch (error) {
-    localStorage.removeItem(PLAYER_POSITION_KEY);
-  }
-}
-
-function savePlayerPosition() {
-  if (!els.nowPlaying) return;
-
-  const rect = els.nowPlaying.getBoundingClientRect();
-  localStorage.setItem(
-    PLAYER_POSITION_KEY,
-    JSON.stringify({
-      left: Math.round(rect.left),
-      top: Math.round(rect.top),
-    }),
-  );
-}
-
-function setPlayerPosition(
-  left,
-  top,
-  rect = els.nowPlaying.getBoundingClientRect(),
-) {
-  const maxLeft = Math.max(12, window.innerWidth - rect.width - 12);
-  const maxTop = Math.max(0, window.innerHeight - rect.height);
-
-  els.nowPlaying.style.left = `${clamp(left, 12, maxLeft)}px`;
-  els.nowPlaying.style.top = `${clamp(top, 0, maxTop)}px`;
-  els.nowPlaying.style.right = "auto";
-  els.nowPlaying.style.bottom = "auto";
-  els.nowPlaying.style.transform = "none";
-}
-
-function restorePlayerPinned() {
-  setPlayerPinned(localStorage.getItem(PLAYER_PINNED_KEY) === "true", false);
-}
-
-function setPlayerPinned(pinned, persist = true) {
-  state.playerPinned = pinned;
-  els.nowPlaying?.classList.toggle("pinned", pinned);
-  if (persist) {
-    localStorage.setItem(PLAYER_PINNED_KEY, String(pinned));
-  }
-  if (!els.pinPlayer) return;
-
-  els.pinPlayer.setAttribute("aria-pressed", String(pinned));
-  els.pinPlayer.setAttribute(
-    "aria-label",
-    pinned ? "取消固定播放器" : "固定播放器",
-  );
-  els.pinPlayer.title = pinned ? "取消固定播放器" : "固定播放器";
-}
-
-function bindLayoutEvents() {
-  els.hideLeftSidebar?.addEventListener("click", () =>
-    setSidebarCollapsed("left", true),
-  );
-  els.showLeftSidebar?.addEventListener("click", () =>
-    setSidebarCollapsed("left", false),
-  );
-  els.hideRightSidebar?.addEventListener("click", () =>
-    setSidebarCollapsed("right", true),
-  );
-  els.showRightSidebar?.addEventListener("click", () =>
-    setSidebarCollapsed("right", false),
-  );
-
-  bindSidebarResizer(els.leftResizer, "left");
-  bindSidebarResizer(els.rightResizer, "right");
-}
-
-function restoreLayoutState() {
-  const leftWidth = Number(localStorage.getItem("echo-left-sidebar-width"));
-  const rightWidth = Number(localStorage.getItem("echo-right-sidebar-width"));
-  const leftCollapsed =
-    localStorage.getItem("echo-left-sidebar-collapsed") === "true";
-  const rightCollapsed =
-    localStorage.getItem("echo-right-sidebar-collapsed") === "true";
-
-  if (Number.isFinite(leftWidth) && leftWidth > 0) {
-    setSidebarWidth("left", leftWidth);
-  }
-  if (Number.isFinite(rightWidth) && rightWidth > 0) {
-    setSidebarWidth("right", rightWidth);
-  }
-  setSidebarCollapsed("left", leftCollapsed, false);
-  setSidebarCollapsed("right", rightCollapsed, false);
-}
-
-function bindSidebarResizer(handle, side) {
-  if (!handle || !els.shell) return;
-
-  handle.addEventListener("pointerdown", (event) => {
-    if (side === "left" && els.shell.classList.contains("left-collapsed"))
-      return;
-    if (side === "right" && els.shell.classList.contains("right-collapsed"))
-      return;
-
-    event.preventDefault();
-    handle.setPointerCapture(event.pointerId);
-    handle.classList.add("active");
-    document.body.classList.add("resizing");
-
-    const startX = event.clientX;
-    const startWidth = getSidebarWidth(side);
-
-    const onPointerMove = (moveEvent) => {
-      const delta = moveEvent.clientX - startX;
-      const width = side === "left" ? startWidth + delta : startWidth - delta;
-      setSidebarWidth(side, width, true);
-    };
-
-    const stopResize = () => {
-      handle.classList.remove("active");
-      document.body.classList.remove("resizing");
-      handle.removeEventListener("pointermove", onPointerMove);
-      handle.removeEventListener("pointerup", stopResize);
-      handle.removeEventListener("pointercancel", stopResize);
-    };
-
-    handle.addEventListener("pointermove", onPointerMove);
-    handle.addEventListener("pointerup", stopResize);
-    handle.addEventListener("pointercancel", stopResize);
-  });
-}
-
-function setSidebarCollapsed(side, collapsed, persist = true) {
-  const className = side === "left" ? "left-collapsed" : "right-collapsed";
-  els.shell?.classList.toggle(className, collapsed);
-  if (persist) {
-    localStorage.setItem(`echo-${side}-sidebar-collapsed`, String(collapsed));
-  }
-}
-
-function getSidebarWidth(side) {
-  const variable =
-    side === "left" ? "--left-sidebar-width" : "--right-sidebar-width";
-  const value = getComputedStyle(document.documentElement).getPropertyValue(
-    variable,
-  );
-  return Number.parseFloat(value) || (side === "left" ? 280 : 300);
-}
-
-function setSidebarWidth(side, width, persist = false) {
-  const min = side === "left" ? 180 : 220;
-  const max = side === "left" ? 420 : 460;
-  const nextWidth = clamp(Math.round(width), min, max);
-  const variable =
-    side === "left" ? "--left-sidebar-width" : "--right-sidebar-width";
-
-  document.documentElement.style.setProperty(variable, `${nextWidth}px`);
-  if (persist) {
-    localStorage.setItem(`echo-${side}-sidebar-width`, String(nextWidth));
+  els.catalog.classList.toggle("open", open);
+  els.drawerBackdrop?.classList.toggle("visible", open);
+  els.libraryToggle?.setAttribute("aria-expanded", String(open));
+  if (open) {
+    els.librarySearch?.focus();
   }
 }
 
