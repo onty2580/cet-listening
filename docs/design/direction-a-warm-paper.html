@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Echo — Listening Player</title>
+<style>
+:root {
+  --paper: #FAF7F1;
+  --surface: #F5F1E8;
+  --ink: #1C1917;
+  --muted: #78716C;
+  --border: #E7E5E0;
+  --accent: #0F766E;
+  --accent-bg: #F0FDFA;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1C1917;
+    --surface: #292524;
+    --ink: #FAF7F1;
+    --muted: #A8A29E;
+    --border: #44403C;
+    --accent: #5EEAD4;
+    --accent-bg: #134E4A;
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.5;
+  padding-bottom: 140px;
+}
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--border);
+  background: var(--paper);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+.logo-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--accent);
+}
+.wordmark {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.track-info {
+  text-align: center;
+  flex: 1;
+}
+.track-title {
+  font-size: 15px;
+  font-weight: 500;
+}
+.track-meta {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.lib-btn {
+  background: none;
+  border: none;
+  color: var(--ink);
+  font-size: 15px;
+  cursor: pointer;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+}
+.lib-btn:hover { background: var(--surface); }
+.main {
+  max-width: 72ch;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+.section-heading {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--space-lg);
+  position: sticky;
+  top: 65px;
+  background: var(--paper);
+  padding: var(--space-sm) 0;
+  z-index: 5;
+}
+.sentence-row {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  gap: var(--space-md);
+  align-items: start;
+  padding: var(--space-md) var(--space-md);
+  margin: 0 calc(-1 * var(--space-md));
+  border-radius: var(--radius-md);
+  transition: background 0.15s;
+}
+.sentence-row:hover { background: var(--surface); }
+.sentence-row:hover .row-actions { opacity: 1; }
+.sentence-row.active {
+  background: var(--accent-bg);
+  font-weight: 500;
+}
+.sentence-row.active .timestamp { color: var(--accent); font-weight: 600; }
+.timestamp {
+  font-family: ui-monospace, 'SF Mono', monospace;
+  font-size: 13px;
+  color: var(--muted);
+  padding-top: 2px;
+}
+.sentence-text {
+  font-size: 19px;
+  line-height: 1.65;
+}
+.translation {
+  font-size: 15px;
+  color: var(--muted);
+  margin-top: var(--space-xs);
+  line-height: 1.5;
+}
+.dictation-mask {
+  background: var(--border);
+  height: 28px;
+  border-radius: var(--radius-sm);
+  margin: 4px 0;
+}
+.dictation-input {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 15px;
+  margin-top: var(--space-sm);
+}
+.dictation-feedback {
+  font-size: 14px;
+  margin-top: var(--space-xs);
+  line-height: 1.5;
+}
+.word-missed { color: #DC2626; font-weight: 600; }
+.word-extra { text-decoration: line-through; opacity: 0.5; }
+.row-actions {
+  display: flex;
+  gap: var(--space-xs);
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+@media (max-width: 768px) {
+  .row-actions { opacity: 1; }
+}
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: var(--space-xs);
+  border-radius: var(--radius-sm);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-btn:hover { background: var(--border); color: var(--ink); }
+.player-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: var(--space-md) var(--space-lg);
+  z-index: 20;
+}
+.timeline {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+.time {
+  font-family: ui-monospace, 'SF Mono', monospace;
+  font-size: 13px;
+  color: var(--muted);
+  min-width: 42px;
+}
+.slider {
+  flex: 1;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+}
+.slider-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  width: 28%;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+.transport {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+.ctrl-btn {
+  background: none;
+  border: none;
+  color: var(--ink);
+  cursor: pointer;
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+.ctrl-btn:hover { background: var(--border); }
+.ctrl-btn.primary {
+  background: var(--accent);
+  color: white;
+  width: 44px;
+  height: 44px;
+}
+.ctrl-btn.primary:hover { opacity: 0.9; }
+.ab-group {
+  display: flex;
+  gap: var(--space-xs);
+  margin-left: var(--space-sm);
+}
+.ab-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--ink);
+  cursor: pointer;
+  padding: var(--space-xs) 10px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+}
+.ab-btn:hover { background: var(--surface); }
+.ab-btn.engaged {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+.speed-select {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: var(--space-sm);
+}
+.switches {
+  display: flex;
+  gap: var(--space-md);
+  margin-left: auto;
+}
+@media (max-width: 520px) {
+  .switches { margin-left: 0; width: 100%; justify-content: space-between; margin-top: var(--space-sm); }
+}
+.switch-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+.switch-label {
+  font-size: 12px;
+  color: var(--muted);
+}
+.switch {
+  width: 36px;
+  height: 20px;
+  background: var(--border);
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.switch.on { background: var(--accent); }
+.switch-knob {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.2s;
+}
+.switch.on .switch-knob { left: 18px; }
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 30;
+  display: none;
+}
+.drawer-backdrop.open { display: block; }
+.drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 85vw;
+  background: var(--paper);
+  z-index: 40;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+  overflow-y: auto;
+  padding: var(--space-lg);
+}
+.drawer.open { transform: translateX(0); }
+.drawer-search {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 14px;
+  margin-bottom: var(--space-lg);
+}
+.tree-group {
+  margin-bottom: var(--space-md);
+}
+.tree-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+.caret {
+  font-size: 10px;
+  color: var(--muted);
+  transition: transform 0.2s;
+}
+.tree-group.open .caret { transform: rotate(90deg); }
+.badge {
+  background: var(--border);
+  color: var(--muted);
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+.tree-items {
+  display: none;
+  padding-left: var(--space-lg);
+}
+.tree-group.open .tree-items { display: block; }
+.tree-item {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+.tree-item:hover { background: var(--surface); }
+.tree-item.current { background: var(--accent-bg); color: var(--accent); font-weight: 500; }
+.item-title { font-size: 14px; }
+.item-subtitle { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: var(--space-lg) 0;
+}
+.sections-heading {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--space-md);
+}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="logo-group">
+    <svg class="logo-svg" viewBox="0 0 24 24">
+      <path d="M12 4C7 4 3 8 3 12s4 8 9 8c1.5 0 3-.4 4.3-1.1.4-.2.6-.6.6-1V12c0-1.1-.9-2-2-2H9v2h4v3.3c-.9.4-1.9.7-3 .7-3.9 0-7-3.1-7-7s3.1-7 7-7c2.1 0 4 .9 5.3 2.4l1.5-1.5C14.6 4.7 12.4 4 12 4z"/>
+    </svg>
+    <span class="wordmark">Echo</span>
+  </div>
+  <div class="track-info">
+    <div class="track-title">The Future of AI</div>
+    <div class="track-meta">12 sentences · 02:40</div>
+  </div>
+  <button class="lib-btn" onclick="toggleDrawer()">Library</button>
+</div>
+
+<main class="main">
+  <div class="section-heading">CONVERSATION ONE</div>
+
+  <div class="sentence-row">
+    <div class="timestamp">00:01</div>
+    <div>
+      <div class="sentence-text">W: I must say, I really love our campus canteen.</div>
+    </div>
+    <div class="row-actions">
+      <button class="icon-btn">▶</button>
+      <button class="icon-btn">↻</button>
+    </div>
+  </div>
+
+  <div class="sentence-row">
+    <div class="timestamp">00:06</div>
+    <div>
+      <div class="sentence-text">M: Yeah, it is great, both for students and teachers.</div>
+    </div>
+    <div class="row-actions">
+      <button class="icon-btn">▶</button>
+      <button class="icon-btn">↻</button>
+    </div>
+  </div>
+
+  <div class="sentence-row active">
+    <div class="timestamp">00:14</div>
+    <div>
+      <div class="sentence-text">W: What I really appreciate is the variety of healthy options available.</div>
+    </div>
+    <div class="row-actions">
+      <button class="icon-btn">▶</button>
+      <button class="icon-btn">↻</button>
+    </div>
+  </div>
+
+  <div class="sentence-row">
+    <div class="timestamp">00:22</div>
+    <div>
+      <div class="sentence-text">M: Absolutely, and the pricing is quite reasonable considering the quality.</div>
+    </div>
+    <div class="row-actions">
+      <button class="icon-btn">▶</button>
+      <button class="icon-btn">↻</button>
+    </div>
+  </div>
+
+  <div class="sentence-row">
+    <div class="timestamp">00:31</div>
+    <div>
+      <div class="sentence-text">W: I particularly enjoy their international cuisine section.</div>
+      <div class="translation">我特别喜欢他们的国际美食区。</div>
+    </div>
+    <div class="row-actions">
+      <button class="icon-btn">▶</button>
+      <button class="icon-btn">↻</button>
+    </div>
+  </div>
+
+  <div class="sentence-row">
+    <div class="timestamp">00:38</div>
+    <div>
+      <div class="sentence-text">M: Right, you can find dishes from all around the world there.</div>
+    </div>
+    <div class="row-actions">
+      <button class="icon-btn">▶</button>
+      <button class="icon-btn">↻</button>
+    </div>
+  </div>
+
+  <div class="sentence-row">
+    <div class="timestamp">00:46</div>
+    <div>
+      <div class="dictation-mask"></div>
+      <input type="text" class="dictation-input" placeholder="Type what you hear...">
+      <div class="dictation-feedback">
+        W: The <span class="word-missed">seating</span> <span class="word-extra">arrangement</span> area is also very comfortable and spacious.
+      </div>
+    </div>
+    <div class="row-actions">
+      <button class="icon-btn">▶</button>
+      <button class="icon-btn">↻</button>
+    </div>
+  </div>
+
+  <div class="sentence-row">
+    <div class="timestamp">00:55</div>
+    <div>
+      <div class="dictation-mask"></div>
+    </div>
+    <div class="row-actions">
+      <button class="icon-btn">▶</button>
+      <button class="icon-btn">↻</button>
+    </div>
+  </div>
+
+  <div class="sentence-row">
+    <div class="timestamp">01:03</div>
+    <div>
+      <div class="sentence-text">W: And they've recently added more vegetarian and vegan options.</div>
+    </div>
+    <div class="row-actions">
+      <button class="icon-btn">▶</button>
+      <button class="icon-btn">↻</button>
+    </div>
+  </div>
+
+  <div class="sentence-row">
+    <div class="timestamp">01:12</div>
+    <div>
+      <div class="sentence-text">M: That's wonderful, it really caters to everyone's dietary needs now.</div>
+    </div>
+    <div class="row-actions">
+      <button class="icon-btn">▶</button>
+      <button class="icon-btn">↻</button>
+    </div>
+  </div>
+
+  <div class="sentence-row">
+    <div class="timestamp">02:36</div>
+    <div>
+      <div class="sentence-text">W: I hope they maintain this quality as the semester progresses.</div>
+    </div>
+    <div class="row-actions">
+      <button class="icon-btn">▶</button>
+      <button class="icon-btn">↻</button>
+    </div>
+  </div>
+</main>
+
+<div class="player-bar">
+  <div class="timeline">
+    <div class="time">00:42</div>
+    <div class="slider"><div class="slider-fill"></div></div>
+    <div class="time">02:40</div>
+  </div>
+  <div class="controls">
+    <div class="transport">
+      <button class="ctrl-btn">⏮</button>
+      <button class="ctrl-btn">⏪</button>
+      <button class="ctrl-btn primary">▶</button>
+      <button class="ctrl-btn">⏩</button>
+      <button class="ctrl-btn">⏭</button>
+    </div>
+    <div class="ab-group">
+      <button class="ab-btn">A</button>
+      <button class="ab-btn engaged">B</button>
+      <button class="ab-btn">↺</button>
+    </div>
+    <select class="speed-select">
+      <option>1.25x</option>
+    </select>
+    <div class="switches">
+      <div class="switch-group">
+        <span class="switch-label">Auto-scroll</span>
+        <div class="switch"><div class="switch-knob"></div></div>
+      </div>
+      <div class="switch-group">
+        <span class="switch-label">Transcript</span>
+        <div class="switch on"><div class="switch-knob"></div></div>
+      </div>
+      <div class="switch-group">
+        <span class="switch-label">Dictation</span>
+        <div class="switch"><div class="switch-knob"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="drawer-backdrop" onclick="toggleDrawer()"></div>
+<div class="drawer">
+  <input type="search" class="drawer-search" placeholder="Search titles / sources...">
+  
+  <div class="tree-group open">
+    <div class="tree-label" onclick="this.parentElement.classList.toggle('open')">
+      <span class="caret">▶</span>
+      <span>Podcasts</span>
+      <span class="badge">6</span>
+    </div>
+    <div class="tree-items">
+      <div class="tree-group open">
+        <div class="tree-label" onclick="this.parentElement.classList.toggle('open')">
+          <span class="caret">▶</span>
+          <span>BBC News</span>
+          <span class="badge">2</span>
+        </div>
+        <div class="tree-items">
+          <div class="tree-item current">
+            <div class="item-title">The Future of AI</div>
+            <div class="item-subtitle">BBC News</div>
+          </div>
+          <div class="tree-item">
+            <div class="item-title">Climate Policy Update</div>
+            <div class="item-subtitle">BBC News</div>
+          </div>
+        </div>
+      </div>
+      <div class="tree-group">
+        <div class="tree-label" onclick="this.parentElement.classList.toggle('open')">
+          <span class="caret">▶</span>
+          <span>TED</span>
+          <span class="badge">4</span>
+        </div>
+        <div class="tree-items">
+          <div class="tree-item">
+            <div class="item-title">Innovation in Education</div>
+            <div class="item-subtitle">TED</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tree-group">
+    <div class="tree-label" onclick="this.parentElement.classList.toggle('open')">
+      <span class="caret">▶</span>
+      <span>Samples</span>
+      <span class="badge">1</span>
+    </div>
+    <div class="tree-items">
+      <div class="tree-item">
+        <div class="item-title">Dreams</div>
+        <div class="item-subtitle">Sample</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sections-heading">SECTIONS</div>
+  <div class="tree-item">Conversation One</div>
+  <div class="tree-item">Conversation Two</div>
+  <div class="tree-item">Passage One</div>
+</div>
+
+<script>
+function toggleDrawer() {
+  document.querySelector('.drawer').classList.toggle('open');
+  document.querySelector('.drawer-backdrop').classList.toggle('open');
+}
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelector('.drawer').classList.remove('open');
+    document.querySelector('.drawer-backdrop').classList.remove('open');
+  }
+});
+document.querySelectorAll('.switch').forEach(sw => {
+  sw.addEventListener('click', () => sw.classList.toggle('on'));
+});
+</script>
+
+</body>
+</html>
