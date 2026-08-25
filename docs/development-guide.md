@@ -1,6 +1,6 @@
 # Echo 开发指南
 
-> Phase 0 Repository Audit 产出 · 2026-08-24；Phase 2（v0.2-library）更新
+> Phase 0 Repository Audit 产出 · 2026-08-24；Phase 2（v0.2-library）更新；Phase 4（v0.3.1-redesign）更新结构与债表
 > 面向对象：本项目的维护者（一个人）与 AI 协作者。
 
 ## 1. 快速开始
@@ -64,12 +64,12 @@ curl -s -D - -o /dev/null -H "Range: bytes=0-99" \
 ```text
 echo/
 ├── server.py              # 全部后端：路由 + scan_library() + Range 媒体服务（~300 行）
-├── index.html             # 播放器页骨架；侧栏搜索框 + 播放器条（步进/A-B/听写/倍速下拉）
+├── index.html             # 应用骨架：顶栏（品牌/标题/内容库钮）+ 字幕画布 + 底部播放条 + 内容库抽屉
 ├── ui/
-│   ├── app.js             # ★ 核心：播放器 + 库树/搜索/听写交互（原生 JS，已去 CET 域）
+│   ├── app.js             # ★ 核心：播放器 + 库树/搜索/听写/抽屉交互（原生 JS，已去 CET 域）
 │   ├── srt.js             # ★ 通用 SRT 解析器 parseSrt()（零依赖，可被 node:test 单测）
 │   ├── dictation.js       # ★ 听写纯函数 normalizeAnswer/diffWords/gradeAttempt（零依赖）
-│   ├── styles.css         # 全部样式（三栏布局 + 树/搜索/听写样式 + 移动端断点 860px/520px）
+│   ├── styles.css         # 全部样式：设计令牌（亮/暗双主题）+ 骨架 + 树/搜索/字幕/听写 + 断点 860px/520px
 │   └── echo-icon.svg      # Echo 图标
 ├── library/               # ★ 唯一内容源：MP3 + 同名 .srt（+ 可选 .txt 标题覆盖）
 ├── tests/
@@ -80,7 +80,7 @@ echo/
 ├── transcripts/cet6/      # 历史 CET 档案，不再被加载
 ├── audio/cet6/            # 历史 CET 音频（不入库）
 ├── data_tools/            # whisper 对齐管线（仅 CET 格式，已冻结；维护历史档案时仍可用）
-└── docs/                  # 本文档套件
+└── docs/                  # 本文档套件 + design/（UI 革新设计稿）
 ```
 
 ### server.py 内部地图（Phase 2 后）
@@ -114,6 +114,7 @@ echo/
 | 听写模式 | `setDictationActive` / `openDictationLine` / `submitDictation`；纯函数在 ui/dictation.js |
 | 断点续听持久化 | browser-state 系列 |
 | 排序 | `getOrderedSources` / `getOrderedCatalog` / `compareTracks`（title localeCompare） |
+| 内容库抽屉 | `bindLibraryDrawer` / `setLibraryDrawerOpen`（#libraryToggle / backdrop / Escape 关闭，打开聚焦搜索框） |
 
 ## 3. Git 工作流
 
@@ -156,7 +157,7 @@ node --test tests/dictation.test.mjs                # 听写 normalize/diff 单�
 3. 听写 normalize/diff/grading（撇号保留、NFKC、词级 LCS diff）— ✅ 16 条
 4. 音频 Range 服务 — curl 断言 206/Content-Range（冒烟命令覆盖）
 5. 前端全链路 — headless Chrome + e2e_driver.html（同源 iframe 驱动：树/折叠/搜索/SRT/
-   步进/A-B 状态机/倍速下拉含自定义/听写全链路，28 项断言）
+   步进/A-B 状态机/倍速下拉含自定义/听写全链路/抽屉开合，30 项断言）
 
 ## 6. 已知技术债清单（记录在案，勿顺手修）
 
@@ -166,11 +167,10 @@ node --test tests/dictation.test.mjs                # 听写 normalize/diff 单�
 | HTTP/1.0 协议版本（keep-alive 依赖头 hack） | server.py | 观察即可，无实际影响 |
 | SRT 无内嵌时间轴时退化为 buildAutoTimings 估算（非精确） | app.js applyTimings | 固有取舍；精确需 whisper 或人工 SRT |
 | 普通模式点击句子文字仍不跳转（仅行内按钮；听写模式已支持点击句子） | app.js renderTranscript | Phase 4 评估（一行 click 委托） |
-| 移动端面板先后顺序（当前音频卡片居中、字幕偏下） | styles.css 860 断点 | Phase 4 移动端细化 |
 | `/api/library` 全量返回，库达数百条后扫描/传输成本上升 | server.py | 观察即可；必要时加缓存/分页 |
 | loadTrack 仍保留 transcript.json/.md 回退分支（library 条目不会走到） | app.js loadTrack | Phase 4 评估清理 |
 | 听写进度（dictationCorrect）仅会话级，刷新丢失（开关状态本身持久化） | app.js state.dictationCorrect | 观察即可；持久化需权衡"重测"价值 |
-| 无暗色主题（color-scheme 仅 light） | styles.css:2 | 低优先级 backlog |
 
 已清偿（Phase 2）：admin 无认证 / `/api/admin/run` 子进程面 / JOBS 泄漏（随 admin 整体移除）；catalog.json 与 tracks.json 双索引（归一为 /api/library 实时扫描）。
 已清偿（Phase 3）：上一句/下一句缺失；自定义倍速缺失；A-B 循环缺失；听写模式缺失；520px 控制行布局。
+已清偿（Phase 4 v0.3.1-redesign）：无暗色主题（令牌化 + prefers-color-scheme 双主题）；移动端面板先后顺序（字幕优先 IA，侧栏不复存在）。悬浮播放器拖拽/固定、侧栏拖宽/折叠功能随 IA 重构移除（用户决策），相关 localStorage 键（echo-player-pinned/echo-player-position/echo-*-sidebar-*）成为无害残留。

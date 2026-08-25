@@ -1,16 +1,21 @@
 # Echo 架构文档
 
-> Phase 0 Repository Audit 产出 · 2026-08-24；Phase 2（v0.2-library）更新当前架构节
+> Phase 0 Repository Audit 产出 · 2026-08-24；Phase 2（v0.2-library）更新当前架构节；Phase 4（v0.3.1-redesign）更新前端骨架与能力表
 > 基线：upstream/main @ 1876536（tag `v0-original`）
 
 ---
 
-## 1. 当前架构（Phase 2 后）
+## 1. 当前架构（Phase 4 v0.3.1-redesign 后）
 
-仍是**零框架、零数据库、零构建**的单体本地 Web 应用，但内容源已完全通用化：
+仍是**零框架、零数据库、零构建**的单体本地 Web 应用，内容源完全通用化，前端为字幕优先的沉浸式信息架构：
 
 ```text
 Browser (原生 HTML/CSS/JS，无框架无构建)
+│  布局：header.top-bar（品牌 · 当前标题 · 内容库钮）
+│      + main.workspace（全屏字幕阅读列，840px 居中；.workspace[hidden]=盲听）
+│      + footer.now-playing（底部固定播放条）
+│      + aside.catalog.drawer（内容库抽屉：树 + 搜索 + 段落导航；backdrop/Escape 关闭）
+│  主题：styles.css 设计令牌，:root 亮色 + prefers-color-scheme 暗色
    ↓ HTTP (默认 :5173)
 server.py — Python 标准库 ThreadingHTTPServer（~300 行，零第三方依赖）
    ↓ /api/library（实时扫描）+ 静态文件 + 自定义 Media 处理
@@ -51,24 +56,24 @@ Phase 1 的 `/cet6/<id>`、`/cet4/<id>` 深链入口与全部 `/api/admin/*`
 
 ## 2. Player 数据流（核心资产）
 
-播放器是本项目质量最高的部分（ui/app.js，1912 行原生 JS）：
+播放器是本项目质量最高的部分（ui/app.js，2120 行原生 JS）：
 
 ```text
 audio.mp3
-   ↓ <audio id="audio"> (index.html:238)
+   ↓ <audio id="audio">（底部播放条内）
 currentTime
-   ↓ timeupdate 事件 (~250ms) (app.js:780)
-updateFromTime (1594)
-   ↓ findActiveLineIndex —— 二分查找 line.start ≤ t < line.end (1636)
+   ↓ timeupdate 事件 (~250ms)
+updateFromTime
+   ↓ findActiveLineIndex —— 二分查找 line.start ≤ t < line.end
 current segment
-   ↓ .line.active / .line.passed class 切换 (1624)
+   ↓ .line.active / .line.passed class 切换
 highlight
-   ↓ scrollIntoView({behavior:"smooth", block:"center"}) (1632)
+   ↓ scrollIntoView({behavior:"smooth", block:"center"})
 auto scroll
 ```
 
 另有独立于 timeupdate 的 **requestAnimationFrame 循环监控器**
-（startLineLoopMonitor:1740 / checkLineLoop:1755 / enforceLineLoop:1763），
+（startLineLoopMonitor / checkLineLoop / enforceLineLoop），
 用于单句循环的精确回跳——比 timeupdate 的 250ms 粒度更精准。
 
 ### 字幕数据加载优先级（loadTrack，Phase 2 后）
@@ -96,7 +101,7 @@ auto scroll
 | Seek | ✅ | 进度条 pointer 拖拽（含 userSeeking 冲突保护）、±5s 按钮、←→ 键 |
 | 速度调节 | ✅ | 下拉 0.5/0.75/1/1.25/1.5/2 + 自定义（0.25–4）；echo-playback-rate 持久化 |
 | 上一句 / 下一句 | ✅ | 播放器条按钮 + `[` `]` 快捷键；activeIndex 步进 |
-| 当前句高亮 | ✅ | active 白底卡片 + passed 变灰 |
+| 当前句高亮 | ✅ | active 强调色底卡片 + passed 变灰 |
 | 自动滚动 | ✅ | smooth 居中滚动 |
 | 单句循环 | ✅ | rAF 精确回跳，还有段落(section)循环 |
 | A-B 循环 | ✅ | A/B/清除按钮 + A/B 键；rAF 监控 enforceAbLoop；与句循环互斥 |
@@ -107,8 +112,9 @@ auto scroll
 
 ### 断点续听（值得继承的隐性资产）
 
-localStorage key `cet6-browser-state`（app.js:424-503）：每个 track 记录
-audioTime + 两个侧栏 scrollTop；160ms debounce 保存、播放态 1s 节流、pagehide/visibilitychange 兜底刷写。刷新/重开恢复体验完善。
+localStorage key `echo-browser-state`：每个 track 记录
+audioTime + 内容库/字幕/段落导航三个滚动位置；160ms debounce 保存、播放态 1s 节流、pagehide/visibilitychange 兜底刷写。刷新/重开恢复体验完善。
+（Phase 4 IA 重构移除了侧栏拖宽/折叠与播放器位置持久化键，属无害残留。）
 
 ## 3. Library 数据流（Phase 2 已实现）
 

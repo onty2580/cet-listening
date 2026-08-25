@@ -93,6 +93,24 @@
 
 ---
 
+## Phase 3.5 — UI 全面革新 → `v0.3.1-redesign` ✅
+
+**目标**：把"三栏后台工具"界面重构为字幕优先的极简沉浸布局（用户四项决策：极简沉浸 / 明暗跟随系统 / 彻底重构信息架构 / 低调单一强调色）。设计方案由 Open Design（OD）生成两个方向，用户拍板 **B 冷灰 studio**（存档 `docs/design/`）。
+
+- [x] OD 生成 A 暖纸墨 / B 冷灰 studio 两方向完整原型（含全部交互状态），headless 截图 QA 后用户选定 B
+- [x] styles.css 全量令牌化重写：`:root` 亮色 + `prefers-color-scheme: dark` 暗色（清偿「无暗色主题」债）；冷灰阶 + 单一 slate 强调色；字幕排版升级（19px/1.62、840px 阅读列）
+- [x] IA 骨架切换：顶栏（品牌/标题/内容库钮）+ 全屏字幕画布（`.workspace[hidden]` 盲听机制保留）+ 底部固定播放条（保留 `.now-playing` 类）+ 内容库抽屉（树 + 搜索 + 段落导航，backdrop/Escape 关闭、打开聚焦搜索框）
+- [x] 随 IA 移除：悬浮播放器拖拽/固定、侧栏拖宽、侧栏折叠（用户决策接受）；app.js 净删 ~220 行布局代码，新增抽屉逻辑 ~30 行
+- [x] 全部功能 ID 与内容 builder class 契约原位保留 → 既有 E2E 零改动通过
+
+**验收**：
+- [x] 单测 28 条（srt 12 + dictation 16）+ unittest 11 条全绿
+- [x] headless Chrome E2E 30 项全 PASS（28 项既有 + 抽屉开合 2 项新增）
+- [x] curl 冒烟 200/200/206；430/520/860/1400 四视口 × 亮/暗双主题截图矩阵 console 零错误、零横向溢出
+- [x] 文档四件套同步（README/development-guide/architecture/roadmap）+ 新 UI 预览图
+
+---
+
 ## Phase 4 — Optional AI Enhancement → `v0.4-ai`
 
 **目标**：不破坏核心的前提下加 AI。
