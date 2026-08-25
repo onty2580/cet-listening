@@ -1,0 +1,722 @@
+1
+00:02:12,680 --> 00:02:16,620
+CONVERSATION 1
+OK then, this here is your yearly performance review.
+
+2
+00:02:16,620 --> 00:02:22,980
+You've been with the company for 3 years and under my direct supervision for the past 12 months.
+
+3
+00:02:22,980 --> 00:02:25,260
+Your report is mostly good.
+
+4
+00:02:25,260 --> 00:02:28,420
+But there are a couple of issues we must discuss.
+
+5
+00:02:28,420 --> 00:02:30,940
+The report is yours to take with you.
+
+6
+00:02:30,940 --> 00:02:33,600
+We'll go through the main points together now.
+
+7
+00:02:33,600 --> 00:02:37,560
+And you can come through it in greater detail later.
+
+8
+00:02:37,560 --> 00:02:40,060
+Do you have any questions before we start?
+
+9
+00:02:40,060 --> 00:02:41,200
+No, sir.
+
+10
+00:02:41,200 --> 00:02:42,580
+I'll get straight to it then.
+
+11
+00:02:42,580 --> 00:02:47,200
+It is evident that you are a hard worker.
+
+12
+00:02:47,200 --> 00:02:50,200
+You are punctual and industrious.
+
+13
+00:02:50,200 --> 00:02:54,720
+Furthermore, you have strong analytical skills and attention to detail.
+
+14
+00:02:54,720 --> 00:03:00,760
+The company, myself included, are happy with your productivity and overall performance.
+
+15
+00:03:00,760 --> 00:03:01,520
+Thank you.
+
+16
+00:03:01,520 --> 00:03:03,760
+I appreciate the recognition.
+
+17
+00:03:03,760 --> 00:03:06,960
+Do you agree, then, with this depiction so far?
+
+18
+00:03:06,960 --> 00:03:10,980
+Yeah, it's a little simplistic perhaps.
+
+19
+00:03:10,980 --> 00:03:14,500
+But that's to be expected from this kind of evaluation.
+
+20
+00:03:14,500 --> 00:03:15,640
+Sure.
+
+21
+00:03:15,640 --> 00:03:17,940
+Would you want to add anything?
+
+22
+00:03:17,940 --> 00:03:22,260
+Your comments can be added to the report if you wish.
+
+23
+00:03:22,260 --> 00:03:23,520
+Oh, there's no need.
+
+24
+00:03:23,520 --> 00:03:25,680
+It's a flattering portrayal really.
+
+25
+00:03:25,680 --> 00:03:27,220
+Thank you, though.
+
+26
+00:03:27,220 --> 00:03:28,760
+OK.
+
+27
+00:03:28,760 --> 00:03:32,720
+This leads me to the not-so-good part.
+
+28
+00:03:32,720 --> 00:03:39,840
+This mostly centers around one behavioral aspect—your ability to work with others.
+
+29
+00:03:39,840 --> 00:03:41,000
+I see.
+
+30
+00:03:41,000 --> 00:03:42,180
+Yes.
+
+31
+00:03:42,180 --> 00:03:50,280
+As you already know, over the last several months, there have been some complaints raised about your communication style.
+
+32
+00:03:50,280 --> 00:03:54,140
+Of course, we already had like three meetings about this.
+
+33
+00:03:54,140 --> 00:03:59,560
+Look, all I'm going to say is that it was never my intention to offend anyone.
+
+34
+00:03:59,560 --> 00:04:06,220
+Simply put, I don't like to write long emails, because, frankly, I think they're a waste of time.
+
+35
+00:04:06,220 --> 00:04:08,620
+Conciseness is efficiency.
+
+36
+00:04:08,620 --> 00:04:15,180
+I feel that writing long emails hurts that same productivity you praised me for just a minute ago.
+
+37
+00:04:15,180 --> 00:04:18,620
+And I already apologized if anyone was offended.
+
+38
+00:04:18,620 --> 00:04:32,360
+But to be perfectly honest, I think anyone who was offended was being a little too sensitive.
+
+39
+00:04:32,360 --> 00:04:50,040
+Q1. What are the speakers most probably doing?
+
+40
+00:04:50,040 --> 00:05:07,560
+Q2. What does the woman say she appreciates?
+
+41
+00:05:07,560 --> 00:05:26,260
+Q3. What has given rise to some complaints about the woman?
+
+42
+00:05:26,260 --> 00:05:45,580
+Q4. Why doesn't the woman like to write long emails?
+
+43
+00:05:45,580 --> 00:05:50,080
+CONVERSATION 2
+So tell me, why do you wish to study medicine?
+
+44
+00:05:50,080 --> 00:05:52,120
+I've always wanted to be a doctor.
+
+45
+00:05:52,120 --> 00:05:55,820
+I come from a small town where healthcare was never the best.
+
+46
+00:05:55,820 --> 00:05:58,820
+And I think that had a profound effect on me.
+
+47
+00:05:58,820 --> 00:06:05,020
+As a child, I remember thinking how great it would be to serve the community and cure people!
+
+48
+00:06:05,020 --> 00:06:10,120
+What other people or events in your life have shaped your interest in becoming a doctor?
+
+49
+00:06:10,120 --> 00:06:12,260
+Well, that's hard to say.
+
+50
+00:06:12,260 --> 00:06:15,660
+I would certainly say my parents have been a key factor.
+
+51
+00:06:15,660 --> 00:06:17,960
+They always pushed me to study hard.
+
+52
+00:06:17,960 --> 00:06:21,360
+And I certainly wouldn't be here without their support.
+
+53
+00:06:21,360 --> 00:06:26,500
+I guess I was also immensely fortunate to have good teachers and friends around me.
+
+54
+00:06:26,500 --> 00:06:34,600
+At the end of the day, I've always been surrounded by a positive environment conducive to my working hard and pursuing my dreams.
+
+55
+00:06:34,600 --> 00:06:37,920
+Is there any medical branch that you would like to specialize in?
+
+56
+00:06:37,920 --> 00:06:40,180
+I haven't decided yet.
+
+57
+00:06:40,180 --> 00:06:42,200
+It's still early days.
+
+58
+00:06:42,200 --> 00:06:46,300
+However, if I had to say, internal medicine.
+
+59
+00:06:46,300 --> 00:06:48,400
+Why internal medicine?
+
+60
+00:06:48,400 --> 00:06:49,960
+I know it's no picnic.
+
+61
+00:06:49,960 --> 00:06:56,980
+But I find it the most intriguing, because it covers so much and ties together so many other specialties.
+
+62
+00:06:56,980 --> 00:06:57,820
+Thank you.
+
+63
+00:06:57,820 --> 00:07:01,080
+Now I'd like to address your academic history and projected grades.
+
+64
+00:07:01,080 --> 00:07:10,860
+We like to think of ourselves as a prestigious institution with a highly competitive and promising student body.
+
+65
+00:07:10,860 --> 00:07:17,160
+As you know, to get into our programmes, you need at least 85% score in the entrance exam.
+
+66
+00:07:17,160 --> 00:07:19,080
+Do you think you can attain this?
+
+67
+00:07:19,080 --> 00:07:20,160
+I think so.
+
+68
+00:07:20,160 --> 00:07:21,240
+Yes.
+
+69
+00:07:21,240 --> 00:07:25,160
+I'm looking at your school grades now and I'll be honest.
+
+70
+00:07:25,160 --> 00:07:27,060
+It's a bit of a mixed bag.
+
+71
+00:07:27,060 --> 00:07:31,640
+You do get top grades here and there, but you are not very...
+
+72
+00:07:31,640 --> 00:07:34,180
+Shall we say "consistent"?
+
+73
+00:07:34,180 --> 00:07:53,297
+I see no problem in making you a conditional offer, but consider yourself warned, our entrance exam is, to use your own words, no picnic.
+
+74
+00:07:53,297 --> 00:08:10,120
+Q5. What does the woman say she has always wanted to do since childhood?
+
+75
+00:08:10,120 --> 00:08:28,320
+Q6. What do we learn about the woman's parents from the conversation?
+
+76
+00:08:28,320 --> 00:08:47,220
+Q7. Why does the woman say she wants to choose internal medicine as her specialty?
+
+77
+00:08:47,220 --> 00:09:31,980
+Q8. How does the man describe the woman's school grades?
+
+78
+00:09:31,980 --> 00:09:36,960
+PASSAGE 1
+Logging into your email account can sometimes feel like trying to hack into the Pentagon.
+
+79
+00:09:36,960 --> 00:09:56,820
+If you follow all of the guidelines, you need to use a different password for every one of your accounts; use an incomprehensible variety of letters, numbers, and symbols; sign up for two-step verification; and change every password every time one of them is compromised.
+
+80
+00:09:56,820 --> 00:10:09,940
+More often than not, you then have to choose photos that include a street sign, as this apparently provides solid evidence to your computer that you are, in fact, a human being.
+
+81
+00:10:09,940 --> 00:10:16,160
+It's no small wonder most of us forget our passwords more often than our keys.
+
+82
+00:10:16,160 --> 00:10:30,720
+Now a new peer-reviewed study by researchers at Aalto University in Finland is attempting to figure out why we forget our passwords in order to help put an end to this frustrating phenomenon.
+
+83
+00:10:30,720 --> 00:10:42,360
+Their findings suggest that how likely you are to remember your password has less to do with the intricacy of the password itself and more to do with how often you anticipate using it.
+
+84
+00:10:42,360 --> 00:10:59,500
+Which is to say: you are far more likely to remember a complicated password if you know you'll frequently be using it to log into an account than you are to remember a simple password for an account that you don't expect to log into very often.
+
+85
+00:10:59,500 --> 00:11:17,060
+The researchers advise websites to include more of an incentive for users to log in more often in order to help them remember their secret codes.
+
+86
+00:11:17,060 --> 00:11:38,220
+Q9. Why do we often have to choose photos that include a street sign to log into our email accounts?
+
+87
+00:11:38,220 --> 00:11:58,360
+Q10. What do researchers at a university in Finland aim to do in their new study?
+
+88
+00:11:58,360 --> 00:12:18,420
+Q11. What do the researchers advise websites to do at the end of the passage?
+
+89
+00:12:18,420 --> 00:12:22,900
+PASSAGE 2
+Four years ago, Jenny Weiner was in a fitness slump.
+
+90
+00:12:22,900 --> 00:12:26,620
+She wanted to improve her physical and mental health.
+
+91
+00:12:26,620 --> 00:12:31,520
+However, her workouts lacked intensity without a proper training programme to follow.
+
+92
+00:12:31,520 --> 00:12:44,120
+When she went to the gym, her daily ritual predominantly involved easy exercise options like jogging; she avoided more formidable exercises like lifting weights.
+
+93
+00:12:44,120 --> 00:12:48,400
+A personal trainer who might push her was out of the question.
+
+94
+00:12:48,400 --> 00:12:52,020
+The extravagant cost was just unaffordable.
+
+95
+00:12:52,020 --> 00:12:55,600
+She then discovered the fitness phone app Slimmeretics.
+
+96
+00:12:55,600 --> 00:13:05,400
+To use the app, you first input your profile about your previous training experiences and preferences, as well as your desired goals.
+
+97
+00:13:05,400 --> 00:13:12,720
+A virtual coach then uses that information to suggest a personalised training regime.
+
+98
+00:13:12,720 --> 00:13:27,520
+After the workout, the app's artificial intelligence software system uses feedback from Ms. Weiner and its other 53 million users around the world to adjust future training sessions.
+
+99
+00:13:27,520 --> 00:13:30,960
+Now Ms. Weiner finds the workouts exciting.
+
+100
+00:13:30,960 --> 00:13:34,160
+This is because no two are ever the same.
+
+101
+00:13:34,160 --> 00:13:38,800
+As a result, the app has helped her to lose more than 25 kilograms.
+
+102
+00:13:38,800 --> 00:13:45,600
+The app's mathematical approach can arrange a more meticulous workout schedule.
+
+103
+00:13:45,600 --> 00:13:48,840
+This has led to optimal results.
+
+104
+00:13:48,840 --> 00:13:54,780
+However, some experts think that apps cannot replace human personal trainers.
+
+105
+00:13:54,780 --> 00:13:58,100
+An app cannot understand human behavior.
+
+106
+00:13:58,100 --> 00:14:03,920
+It will not comprehend that there are competing interests outside of health and fitness.
+
+107
+00:14:03,920 --> 00:14:08,540
+Additionally, a human trainer can add compassion to the workout.
+
+108
+00:14:08,540 --> 00:14:13,400
+He can also make exercise fun and sustainable.
+
+109
+00:14:13,400 --> 00:14:18,340
+Trainers can monitor whether a person is doing exercises correctly.
+
+110
+00:14:18,340 --> 00:14:21,240
+This can safeguard against injuries.
+
+111
+00:14:21,240 --> 00:14:28,627
+An app cannot perceive such subtleties.
+
+112
+00:14:28,627 --> 00:14:52,020
+Q12. What was the problem Jenny Weiner encountered four years ago?
+
+113
+00:14:52,020 --> 00:15:11,880
+Q13. What can the fitness phone app Slimmeretics do according to the passage?
+
+114
+00:15:11,880 --> 00:15:32,000
+Q14. Why does the passage say Jenny Weiner now finds the workouts exciting?
+
+115
+00:15:32,000 --> 00:16:18,540
+Q15. What do some experts think of fitness apps like Slimmeretics?
+
+116
+00:16:18,540 --> 00:16:28,820
+RECORDING 1
+All societies are held together by seven universal moral rules, which include deferring to superiors and respecting the property of others, Oxford University has concluded.
+
+117
+00:16:28,820 --> 00:16:46,520
+Although many cultures are moving towards more liberal, less hierarchical organizations, the new research suggests that traditional power structures and basic values of charity and brotherhood are the cornerstones of successful societies.
+
+118
+00:16:46,520 --> 00:16:54,560
+The huge study of 60 different cultures around the world found that all communities operate under seven basic moral codes.
+
+119
+00:16:54,560 --> 00:17:08,940
+Those universal rules are: help your family, help your group, return favours, be brave, defer to superiors, divide resources fairly and respect the property of others.
+
+120
+00:17:08,940 --> 00:17:25,440
+The character traits held for every kind of community, be they traditional hunter-gatherers or advanced civilizations, helping to uphold civilized society and foster social cooperation, researchers found.
+
+121
+00:17:25,440 --> 00:17:35,400
+"Everyone everywhere shares a common moral code," said Dr. Oliver Scott Curry, lead author and senior researcher at Oxford.
+
+122
+00:17:35,400 --> 00:17:45,240
+"These seven moral rules appear to be universal across cultures because people face the same social problems.
+
+123
+00:17:45,240 --> 00:18:03,700
+Even if some of these traits look right-wing or conservative, for example, deferring to authority, left-wing people will still have a group loyalty and deference to someone or something."
+
+124
+00:18:03,700 --> 00:18:20,080
+The study, published in Current Anthropology, is the largest and most comprehensive cross-cultural survey of morality ever conducted.
+
+125
+00:18:20,080 --> 00:18:29,360
+The team examined the ethnographic records of 60 societies from around the world.
+
+126
+00:18:29,360 --> 00:19:59,900
+They found that the seven rules were considered morally good in all societies and were observed across all continents, religions, and politics.
+
+127
+00:19:59,900 --> 00:20:08,221
+Q16. What did the researchers at Oxford University conclude?
+
+128
+00:20:08,221 --> 00:20:18,500
+Q17. What was the purpose of the huge study of 60 different cultures?
+
+129
+00:20:18,500 --> 00:20:39,580
+Q18. What does Dr. Oliver Scott Curry suggest researchers do?
+
+130
+00:20:39,580 --> 00:20:43,300
+RECORDING 2
+When it comes to food, color is money.
+
+131
+00:20:43,300 --> 00:20:53,060
+Food companies know that better color gives better prices, so they ensure that their products are attractive in color to bolster earnings.
+
+132
+00:20:53,060 --> 00:20:58,680
+Oranges, for example, have to meet specific color standards, and oranges are just the beginning.
+
+133
+00:20:58,680 --> 00:21:09,160
+There are color standards for foods including French fries, tomatoes, pumpkins, olives, honey, and cherries.
+
+134
+00:21:09,160 --> 00:21:12,180
+The attention to color is for good reason.
+
+135
+00:21:12,180 --> 00:21:19,340
+For all the talk of the tongue, our eyes really might be the most important part of our eating experience.
+
+136
+00:21:19,340 --> 00:21:34,440
+A great number of our brain functions are dedicated to processing vision, while only a percent or two is given over to taste faculties, and the result is that color actually changes how we taste food.
+
+137
+00:21:34,440 --> 00:21:39,920
+Scientists have demonstrated many times the importance of color to taste.
+
+138
+00:21:39,920 --> 00:21:49,580
+In a 1980s study, for example, test participants were asked to name the flavor of the beverage they were drinking without being able to see that beverage.
+
+139
+00:21:49,580 --> 00:21:54,440
+Only one in five was able to identify it as orange.
+
+140
+00:21:54,440 --> 00:22:01,500
+But when they were allowed to see what they were drinking which was orange in color, each of them identified the orange flavor.
+
+141
+00:22:01,500 --> 00:22:09,900
+And when a drink that was lime flavor was colored orange, nearly half of respondents identified the flavor of the beverage as orange.
+
+142
+00:22:09,900 --> 00:22:14,020
+None made that mistake when the beverage was green in color.
+
+143
+00:22:14,020 --> 00:22:21,240
+What's happening when someone fails to identify the flavor of a beverage they can't see or that has an abnormal color?
+
+144
+00:22:21,240 --> 00:22:26,900
+Is it that participants can't discern what the flavor is, and so rely on visual cues?
+
+145
+00:22:26,900 --> 00:22:31,340
+Or does color actually change the experience of taste?
+
+146
+00:22:31,340 --> 00:22:36,200
+The key to these questions is the effect of color on expectation.
+
+147
+00:22:36,200 --> 00:22:39,440
+The brain makes predictions using color.
+
+148
+00:22:39,440 --> 00:22:44,680
+These predictions rely on expectations that come from experience.
+
+149
+00:22:44,680 --> 00:22:54,100
+Research shows that we're all born liking sweet things and desire to eat them, but we aren't born knowing what the sweet things we crave look like.
+
+150
+00:22:54,100 --> 00:22:57,320
+So we need to learn this over time.
+
+151
+00:22:57,320 --> 00:23:45,560
+Q19. What does the speaker say about our eyes?
+
+152
+00:23:45,560 --> 00:24:04,660
+Q20. What does color actually do according to this lecture?
+
+153
+00:24:04,660 --> 00:24:23,320
+Q21. What does the brain use color to do?
+
+154
+00:24:23,320 --> 00:24:27,900
+RECORDING 3
+Searching for meaning is something many of us experience throughout our lives.
+
+155
+00:24:27,900 --> 00:24:33,960
+For some, this meaning is religious, some political and some interpersonal.
+
+156
+00:24:33,960 --> 00:24:37,900
+And having a sense of meaning can bring us happiness.
+
+157
+00:24:37,900 --> 00:24:46,840
+A new study looks at the relationship between meaning and happiness in the context of financial resources.
+
+158
+00:24:46,840 --> 00:25:02,700
+Rhia Catapano from the University of Toronto and colleagues find meaning is a far weaker predictor of happiness for rich people than poorer people, suggesting economic resources can impact how we experience meaning.
+
+159
+00:25:02,700 --> 00:25:08,800
+The team analysed data from over 500,000 people across 123 countries.
+
+160
+00:25:08,800 --> 00:25:19,240
+The first study used data from a daily poll of US residents collected between 2013 and 2015.
+
+161
+00:25:19,240 --> 00:25:34,640
+Well-being was tracked using measures of positive affect—whether, during the day before they were surveyed, participants had smiled or laughed a lot or experienced a lot of happiness.
+
+162
+00:25:34,640 --> 00:25:49,640
+Meaning was measured through a daily "purpose index", which explored the extent to which participants felt that they like what they do every day and are motivated to achieve their goals.
+
+163
+00:25:49,640 --> 00:25:53,340
+Finally, income levels were assessed.
+
+164
+00:25:53,340 --> 00:26:03,440
+The results showed that the correlation between meaning and happiness was strongest among those in lower income brackets.
+
+165
+00:26:03,440 --> 00:26:08,880
+But as income levels increased, the correlation became weaker.
+
+166
+00:26:08,880 --> 00:26:13,300
+The second study looked at worldwide data.
+
+167
+00:26:13,300 --> 00:26:26,980
+Happiness was measured using the same questions as in the first study, while meaning was measured using the single question: "Do you feel your life has an important purpose or meaning?"
+
+168
+00:26:26,980 --> 00:26:34,140
+Again, the strength of the relationship between meaning and happiness depended on participants' income.
+
+169
+00:26:34,140 --> 00:26:42,520
+Meaning had a greater influence on happiness for those on lower incomes compared to those in higher brackets.
+
+170
+00:26:42,520 --> 00:26:57,600
+In the final study, French participants indicated the extent to which they felt they led a purposeful and meaningful life and how much they considered themselves a happy person.
+
+171
+00:26:57,600 --> 00:27:12,760
+Finally, rather than using specific income brackets, they placed themselves on a social ladder, representing where they stood in terms of wealth, education and occupation.
+
+172
+00:27:12,760 --> 00:27:19,180
+The results from the study duplicated those of the first two.
+
+173
+00:27:19,180 --> 00:27:29,020
+So overall, meaning and happiness had a stronger relationship for those with fewer resources than those with more.
+
+174
+00:27:29,020 --> 00:27:39,840
+This might be the case because richer individuals have more access to other sources of happiness, many of which will be external, like lack of stress or community.
+
+175
+00:27:39,840 --> 00:27:55,108
+Thus, a focus on an internal sense of satisfaction, purpose or meaning is less important.
+
+176
+00:27:55,108 --> 00:28:17,500
+Q22. What does the speaker say many of us search for throughout our lives?
+
+177
+00:28:17,500 --> 00:28:38,340
+Q23. What do Rhia Catapano and colleagues find about economic resources?
+
+178
+00:28:38,340 --> 00:28:38,390
+Q24. What do we learn about the second study conducted by the team?
+
+179
+00:28:38,390 --> 00:29:31,366
+Q25. Why is meaning less important for richer people according to the speaker?

@@ -1,0 +1,750 @@
+1
+00:00:36,540 --> 00:00:39,960
+CONVERSATION 1
+You are a professor of physics at the University of Oxford.
+
+2
+00:00:39,960 --> 00:00:44,680
+You're a senior advisor at the European Organization for Nuclear Research.
+
+3
+00:00:44,680 --> 00:00:49,200
+You also seem to tour the globe tirelessly giving talks.
+
+4
+00:00:49,200 --> 00:00:54,040
+And in addition, you have your own weekly TV show on science.
+
+5
+00:00:54,040 --> 00:00:55,700
+Where do you get the energy?
+
+6
+00:00:55,700 --> 00:00:59,420
+Oh, well, I just love what I do.
+
+7
+00:00:59,420 --> 00:01:04,220
+I am extremely fortunate to have this life doing what I love doing.
+
+8
+00:01:04,220 --> 00:01:07,480
+Professor, what exactly is your goal?
+
+9
+00:01:07,480 --> 00:01:09,800
+Why do you do all of this?
+
+10
+00:01:09,800 --> 00:01:13,320
+Well, as you said, I do have different things going on.
+
+11
+00:01:13,320 --> 00:01:21,680
+But these, I think, can be divided into two groups: the education of science and the further understanding of science.
+
+12
+00:01:21,680 --> 00:01:25,160
+Don't these two things get in the way of each other?
+
+13
+00:01:25,160 --> 00:01:30,320
+What I mean is, doesn't giving lectures take time away from the lab?
+
+14
+00:01:30,320 --> 00:01:37,700
+Not really, no. I love teaching, and I don't mind spending more time doing that now than in the past.
+
+15
+00:01:37,700 --> 00:01:42,960
+Also what I will say is that teaching a subject helps me comprehend it better myself.
+
+16
+00:01:42,960 --> 00:01:54,560
+I find that it furthers my own knowledge when I have to explain something clearly, when I have to aid others in understanding it, and when I have to answer questions about it.
+
+17
+00:01:54,560 --> 00:02:03,600
+Teaching at a high level can be very stimulating for anyone, no matter how much expertise they may already have in the field they are instructing.
+
+18
+00:02:03,600 --> 00:02:08,000
+Any scientific breakthroughs that you see on the near horizon?
+
+19
+00:02:08,000 --> 00:02:11,520
+A significant discovery or invention we can expect soon?
+
+20
+00:02:11,520 --> 00:02:18,400
+The world is always conducting science and there are constantly new things being discovered.
+
+21
+00:02:18,400 --> 00:02:23,160
+In fact, right now we have too much data sitting in computers.
+
+22
+00:02:23,160 --> 00:02:29,820
+For example, we have thousands of photos of planet Mars taken by telescopes that nobody has ever seen.
+
+23
+00:02:29,820 --> 00:02:44,280
+We have them, yet nobody has had time to look at them with their own eyes, let alone analyze them.
+
+24
+00:02:44,280 --> 00:03:02,460
+Q1. Why does the woman say she can be so energetic?
+
+25
+00:03:02,460 --> 00:03:19,700
+Q2. What has the woman been engaged in?
+
+26
+00:03:19,700 --> 00:03:38,320
+Q3. What does the woman say about the benefit teaching brings to her?
+
+27
+00:03:38,320 --> 00:03:57,840
+Q4. How does the woman say new scientific breakthroughs can be made possible?
+
+28
+00:03:57,840 --> 00:04:00,640
+CONVERSATION 2
+Do you think dreams have special meanings?
+
+29
+00:04:00,640 --> 00:04:03,060
+No, I don't think they do.
+
+30
+00:04:03,060 --> 00:04:04,240
+Don't either.
+
+31
+00:04:04,240 --> 00:04:05,840
+But some people do.
+
+32
+00:04:05,840 --> 00:04:11,400
+I would say people who believe that dreams have meanings are superstitious, especially nowadays.
+
+33
+00:04:11,400 --> 00:04:20,540
+In the past, during the times of ancient Egypt, Greece or China, people used to believe that dreams could foresee the future.
+
+34
+00:04:20,540 --> 00:04:28,500
+But today, with all the scientific knowledge that we have, I think it's much harder to believe in these sorts of things.
+
+35
+00:04:28,500 --> 00:04:33,880
+My grandmother is superstitious, and she thinks dreams can predict the future.
+
+36
+00:04:33,880 --> 00:04:40,420
+Once she dreamed that the flight she was due to take the following day crashed, can you guess what she did?
+
+37
+00:04:40,420 --> 00:04:42,280
+She didn't take that flight.
+
+38
+00:04:42,280 --> 00:04:45,840
+She didn't even bother to go to the airport the following day.
+
+39
+00:04:45,840 --> 00:04:50,380
+Instead she took the same flight but a week later, and everything was fine.
+
+40
+00:04:50,380 --> 00:04:53,340
+Of course, no plane ever crashed.
+
+41
+00:04:53,340 --> 00:04:54,580
+How funny!
+
+42
+00:04:54,580 --> 00:04:59,340
+Did you know that flying is actually safer than any other mode of transport?
+
+43
+00:04:59,340 --> 00:05:01,680
+It's been statistically proven.
+
+44
+00:05:01,680 --> 00:05:03,700
+People can be so irrational sometimes.
+
+45
+00:05:03,700 --> 00:05:06,140
+Yes, absolutely.
+
+46
+00:05:06,140 --> 00:05:12,220
+But even if we think they are ridiculous, emotions can be just as powerful as rational thinking.
+
+47
+00:05:12,220 --> 00:05:12,900
+Exactly.
+
+48
+00:05:12,900 --> 00:05:17,180
+People do all sorts of crazy things because of their irrational feelings.
+
+49
+00:05:17,180 --> 00:05:24,480
+But in fact, some psychologists believe that our dreams are the result of our emotions and memories from that day.
+
+50
+00:05:24,480 --> 00:05:33,860
+I think it was Sigmund Freud who said that children's dreams were usually simple representations of their wishes, things they wished would happen.
+
+51
+00:05:33,860 --> 00:05:41,000
+But in adults, dreams are much more complicated reflections of their more sophisticated sentiments.
+
+52
+00:05:41,000 --> 00:05:48,820
+Isn't it interesting how psychologists try to understand using the scientific method something as bizarre as dreams?
+
+53
+00:05:48,820 --> 00:06:00,420
+Psychology is like the rational study of irrational feelings.
+
+54
+00:06:00,420 --> 00:06:18,080
+Q5. What do both speakers think of dreams?
+
+55
+00:06:18,080 --> 00:06:36,440
+Q6. Why didn't the woman's grandmother take her scheduled flight?
+
+56
+00:06:36,440 --> 00:06:54,220
+Q7. What does the woman say about people's emotions?
+
+57
+00:06:54,220 --> 00:07:41,190
+Q8. What did psychologist Sigmund Freud say about adults' dreams?
+
+58
+00:07:41,190 --> 00:07:52,830
+PASSAGE 1
+While some scientists explore the surface of Antarctica, others are learning more about a giant body of water four kilometres beneath the ice pack.
+
+59
+00:07:52,830 --> 00:08:00,210
+Scientists first discovered Lake Vostok in the 1970s by using radio waves that penetrate the ice.
+
+60
+00:08:00,210 --> 00:08:07,010
+Since then, they have used sound waves and even satellites to map this massive body of water.
+
+61
+00:08:07,010 --> 00:08:11,370
+How does the water in Lake Vostok remain liquid beneath an ice sheet?
+
+62
+00:08:11,370 --> 00:08:22,390
+"The thick glacier above acts like an insulating blanket and keeps the water from freezing," says Martin Siegert, a glaciologist from the University of Wales.
+
+63
+00:08:22,390 --> 00:08:28,430
+In addition, geothermal heat from deep within the earth may warm the hidden lake.
+
+64
+00:08:28,430 --> 00:08:37,550
+The scientists suspect that microorganisms may be living in Lake Vostok, closed off from the outside world for more than 2 million years.
+
+65
+00:08:37,550 --> 00:08:44,690
+"Anything found there will be totally alien to what's on the surface of the earth," says Siegert.
+
+66
+00:08:44,690 --> 00:08:51,690
+Scientists are trying to find a way to drill into the ice and draw water samples without causing contamination.
+
+67
+00:08:51,690 --> 00:08:55,090
+Again, robots might be the solution.
+
+68
+00:08:55,090 --> 00:09:01,390
+If all goes as planned, a drill-shaped robot will cut through the surface ice.
+
+69
+00:09:01,390 --> 00:09:09,830
+When it reaches the lake, it will release another robot that can swim in the lake, take pictures, and look for signs of life.
+
+70
+00:09:09,830 --> 00:09:19,030
+The scientists hope their discoveries will shed light on life in outer space, which might exist in similar dark and airless conditions.
+
+71
+00:09:19,030 --> 00:09:26,810
+Recently, close-up pictures of Jupiter's moon Europa show signs of water beneath its icy surface.
+
+72
+00:09:26,810 --> 00:09:39,950
+Once tested in Antarctica, robots could be sent to Europa to search for life there too.
+
+73
+00:09:39,950 --> 00:10:00,330
+Q9. What did scientists first use to discover Lake Vostok in the 1970s?
+
+74
+00:10:00,330 --> 00:10:17,850
+Q10. What do scientists think about Lake Vostok?
+
+75
+00:10:17,850 --> 00:10:33,530
+Q11. What do the scientists hope their discoveries will do?
+
+76
+00:10:33,530 --> 00:10:48,210
+PASSAGE 2
+The idea to study the American Indian tribe Tarahumaras came to James Copeland in 1984, when he discovered that very little research had been done on their language.
+
+77
+00:10:48,210 --> 00:10:54,650
+He contacted a tribe member through a social worker who worked with the tribesmen in Mexico.
+
+78
+00:10:54,650 --> 00:11:00,170
+At first, the tribe member named Gonzalez was very reluctant to cooperate.
+
+79
+00:11:00,170 --> 00:11:04,190
+He told Copeland that no amount of money could buy his language.
+
+80
+00:11:04,190 --> 00:11:13,290
+But after Copeland explained to him what he intended to do with his research and how it would benefit the Tarahumaras, Gonzalez agreed to help.
+
+81
+00:11:13,290 --> 00:11:18,230
+He took Copeland to his village and served as an intermediary.
+
+82
+00:11:18,230 --> 00:11:26,010
+Copeland says, "Thanks to him, the Tarahumaras understood what our mission was and started trusting us."
+
+83
+00:11:26,010 --> 00:11:31,390
+Entering the world of the Tarahumaras has been a laborious project for Copeland.
+
+84
+00:11:31,390 --> 00:11:34,370
+To reach their homeland, he must drive 2.
+
+85
+00:11:34,370 --> 00:11:36,790
+5 days from Houston, Texas.
+
+86
+00:11:36,790 --> 00:11:44,550
+He loads up his vehicle with goods that the tribesmen can't easily get and gives the goods to them as a gesture of friendship.
+
+87
+00:11:44,550 --> 00:11:51,790
+The Tarahumaras, who don't believe in accumulating wealth, take the food and share it among themselves.
+
+88
+00:11:51,790 --> 00:12:00,230
+For Copeland, the experience has not only been academically satisfying, but also has enriched his life in several ways.
+
+89
+00:12:00,230 --> 00:12:11,390
+"I see people rejecting technology and living a very hard, traditional life, which offers me another notion about the meaning of progress in the western tradition," he says.
+
+90
+00:12:11,390 --> 00:12:17,690
+"I experience the simplicity of living in nature that I would otherwise only be able to read about.
+
+91
+00:12:17,690 --> 00:12:30,430
+I see a lot of beauty in their sense of sharing and concern for each other."
+
+92
+00:12:30,430 --> 00:12:50,690
+Q12. Why did James Copeland want to study the American Indian tribe Tarahumaras?
+
+93
+00:12:50,690 --> 00:13:09,010
+Q13. How did Gonzalez help James Copeland?
+
+94
+00:13:09,010 --> 00:13:28,690
+Q14. What does the speaker say about James Copeland's trip to the Tarahumaras' village?
+
+95
+00:13:28,690 --> 00:14:14,510
+Q15. What impresses James Copeland about the Tarahumara tribe?
+
+96
+00:14:14,510 --> 00:14:16,790
+RECORDING 1
+What is a radical?
+
+97
+00:14:16,790 --> 00:14:23,790
+It seems today that people are terrified of the term, particularly of having the label attached to them.
+
+98
+00:14:23,790 --> 00:14:43,730
+Accusing individuals or groups of being radical often serves to silence them into submission, thereby maintaining the existing state of affairs, and more important, preserving the power of a select minority who are mostly wealthy white males in western society.
+
+99
+00:14:43,730 --> 00:14:47,190
+Feminism is a perfect example of this phenomenon.
+
+100
+00:14:47,190 --> 00:14:56,710
+The women's movement has been plagued by stereotypes, misrepresentations by the media, and accusations of man-hating and radicalism.
+
+101
+00:14:56,710 --> 00:15:04,610
+When the basic foundation of feminism is simply that women deserve equal rights in all facets of life.
+
+102
+00:15:04,610 --> 00:15:15,050
+When faced with a threat of being labeled radical, women back down from their worthy cause and consequently participate in their own oppression.
+
+103
+00:15:15,050 --> 00:15:23,370
+It has gotten to the point that many women are afraid to call themselves feminists because of the stigma attached to the word.
+
+104
+00:15:23,370 --> 00:15:30,350
+If people refuse to be controlled and intimidated by stigmas, the stigmas lose all their power.
+
+105
+00:15:30,350 --> 00:15:35,390
+Without fear on which to feed, such stigmas can only die.
+
+106
+00:15:35,390 --> 00:15:44,150
+To me, a radical is simply someone who rebels against the norm, who advocates a change in the existing state of affairs.
+
+107
+00:15:44,150 --> 00:15:53,310
+On closer inspection, it becomes clear that the norm is constantly evolving and therefore is not a constant entity.
+
+108
+00:15:53,310 --> 00:16:04,490
+So why is deviation from the present situation such a threat when the state of affairs itself is unstable and subject to relentless transformation?
+
+109
+00:16:04,490 --> 00:16:11,890
+It all goes back to maintaining the power of those who have it and preventing the rise of those who don't.
+
+110
+00:16:11,890 --> 00:16:24,830
+In fact, when we look at the word "radical" in a historical context, nearly every figure we now hold up as a hero was considered a radical in his or her time.
+
+111
+00:16:24,830 --> 00:16:27,690
+Radicals are people who affect change.
+
+112
+00:16:27,690 --> 00:16:31,470
+They are the people about whom history is written.
+
+113
+00:16:31,470 --> 00:16:33,890
+Abolitionists were radicals.
+
+114
+00:16:33,890 --> 00:16:36,650
+Civil rights activists were radicals.
+
+115
+00:16:36,650 --> 00:16:42,570
+Even the founders of our country in their fight to win independence from England were radicals.
+
+116
+00:16:42,570 --> 00:16:53,170
+Their presence in history has changed the way our society functions, mainly by shifting the balance of power that previously existed.
+
+117
+00:16:53,170 --> 00:17:03,350
+There are some radicals who have made a negative impact on humanity, but undeniably, there would simply be no progress without radicals.
+
+118
+00:17:03,350 --> 00:17:17,450
+That being said, next time someone calls me a radical, I will accept that label with pride.
+
+119
+00:17:17,450 --> 00:17:35,990
+Q16. What usually happens when people are accused of being radical?
+
+120
+00:17:35,990 --> 00:17:52,670
+Q17. What is the speaker's definition of a radical?
+
+121
+00:17:52,670 --> 00:18:12,270
+Q18. What does the speaker think of most radicals in American history?
+
+122
+00:18:12,270 --> 00:18:17,350
+RECORDING 2
+We are very susceptible to the influence of the people around us.
+
+123
+00:18:17,350 --> 00:18:26,010
+For instance, you may have known somebody who has gone overseas for a year or so and has returned with an accent perhaps.
+
+124
+00:18:26,010 --> 00:18:29,090
+We become part of our immediate environment.
+
+125
+00:18:29,090 --> 00:18:32,870
+None of us are immune to the influences of our own world.
+
+126
+00:18:32,870 --> 00:18:38,670
+And let us not kid ourselves that we are untouched by the things and the people in our life.
+
+127
+00:18:38,670 --> 00:18:42,650
+Fred goes off to his new job at a factory.
+
+128
+00:18:42,650 --> 00:18:47,810
+Fred takes his 10-minute coffee break, but the other workers take a half an hour.
+
+129
+00:18:47,810 --> 00:18:51,030
+Fred says, "What's the matter with you guys?"
+
+130
+00:18:51,030 --> 00:18:55,250
+Two weeks later, Fred is taking 20-minute breaks.
+
+131
+00:18:55,250 --> 00:18:58,590
+A month later, Fred takes his half hour.
+
+132
+00:18:58,590 --> 00:19:02,230
+Fred is saying, "If you can't beat them, join them.
+
+133
+00:19:02,230 --> 00:19:04,730
+Why should I work any harder than the next guy?"
+
+134
+00:19:04,730 --> 00:19:13,730
+The fascinating thing about being human is that generally we are unaware that there are changes taking place in our mentality.
+
+135
+00:19:13,730 --> 00:19:18,530
+It is like returning to the city smog after some weeks in the fresh air.
+
+136
+00:19:18,530 --> 00:19:24,270
+Only then do we realize that we have become accustomed to the nasty smells.
+
+137
+00:19:24,270 --> 00:19:28,250
+Mix with critical people and we learn to criticize.
+
+138
+00:19:28,250 --> 00:19:31,510
+Mix with happy people and we learn about happiness.
+
+139
+00:19:31,510 --> 00:19:38,910
+What this means is that we need to decide what we want from life and then choose our company accordingly.
+
+140
+00:19:38,910 --> 00:19:42,290
+You may well say, "That is going to take some effort.
+
+141
+00:19:42,290 --> 00:19:44,030
+It may not be comfortable.
+
+142
+00:19:44,030 --> 00:19:46,770
+I may offend some of my present company."
+
+143
+00:19:46,770 --> 00:19:47,450
+Right?
+
+144
+00:19:47,450 --> 00:19:49,870
+But it is your life.
+
+145
+00:19:49,870 --> 00:19:53,530
+Fred may say, "I'm always broke, frequently depressed.
+
+146
+00:19:53,530 --> 00:19:56,270
+I'm going nowhere and I never do anything exciting."
+
+147
+00:19:56,270 --> 00:20:06,450
+Then we discover that Fred's best friends are always broke, frequently depressed, going nowhere and wishing that life was more exciting.
+
+148
+00:20:06,450 --> 00:20:08,650
+This is not coincidence.
+
+149
+00:20:08,650 --> 00:20:12,410
+Nor is it our business to stand in judgment of Fred.
+
+150
+00:20:12,410 --> 00:20:21,690
+However, if Fred ever wants to improve his quality of life, the first thing he'll need to do is recognize what has been going on all these years.
+
+151
+00:20:21,690 --> 00:20:30,030
+It's no surprise that doctors as a profession suffer a lot of ill health because they spend their lives around sick people.
+
+152
+00:20:30,030 --> 00:20:36,010
+Psychiatrists have a higher incidence of suicide in their profession for related reasons.
+
+153
+00:20:36,010 --> 00:20:41,710
+Traditionally, nine out of ten children whose parents smoke smoke themselves.
+
+154
+00:20:41,710 --> 00:20:45,310
+Obesity is in part an environmental problem.
+
+155
+00:20:45,310 --> 00:20:48,030
+Successful people have successful friends.
+
+156
+00:20:48,030 --> 00:20:58,810
+And so the story goes on.
+
+157
+00:20:58,810 --> 00:21:16,450
+Q19. What does the speaker say about us as human beings?
+
+158
+00:21:16,450 --> 00:21:37,710
+Q20. What does the speaker say Fred should do first to improve his quality of life?
+
+159
+00:21:37,710 --> 00:21:55,610
+Q21. What does the speaker say about psychiatrists?
+
+160
+00:21:55,610 --> 00:21:59,810
+RECORDING 3
+Virtually every American can recognize a dollar bill at a mere glance.
+
+161
+00:21:59,810 --> 00:22:12,550
+Many can identify it by its sound or texture, but few people indeed can accurately describe the world's most powerful, important currency.
+
+162
+00:22:12,550 --> 00:22:18,990
+The American dollar bill is colored with black ink on one side and green on the other.
+
+163
+00:22:18,990 --> 00:22:24,590
+The exact composition of the paper and ink is a closely guarded government secret.
+
+164
+00:22:24,590 --> 00:22:31,090
+Despite its weighty importance, the dollar bill actually weighs little.
+
+165
+00:22:31,090 --> 00:22:36,830
+It requires nearly 500 bills to tip the scales at a pound.
+
+166
+00:22:36,830 --> 00:22:43,450
+Not only is the dollar bill lightweight, but it also has a brief lifespan.
+
+167
+00:22:43,450 --> 00:22:48,010
+Few dollar bills survive longer than 18 months.
+
+168
+00:22:48,010 --> 00:22:56,390
+The word "dollar" is taken from the German word "taler," the name for the world's most important currency in the 16th century.
+
+169
+00:22:56,390 --> 00:23:04,450
+The taler was a silver coin first minted in 1518 under the reign of Charles V, Emperor of Germany.
+
+170
+00:23:04,450 --> 00:23:11,270
+The concept of paper money is a relatively recent innovation in the history of American currency.
+
+171
+00:23:11,270 --> 00:23:19,950
+When the Constitution was signed, people had little regard for paper money because of its steadily decreasing value during the colonial era.
+
+172
+00:23:19,950 --> 00:23:26,190
+Because of this lack of faith, the new American government minted only coins for common currency.
+
+173
+00:23:26,190 --> 00:23:39,030
+Interest-bearing bank notes were issued at the same time, but their purpose was limited to providing money for urgent government crises, such as American involvement in the War of 1812.
+
+174
+00:23:39,030 --> 00:23:48,410
+The first noninterest-bearing paper currency was authorized by Congress in 1862, at the height of the Civil War.
+
+175
+00:23:48,410 --> 00:23:55,850
+At this point, citizens' old fears of devalued paper currency had calmed, and the dollar bill was born.
+
+176
+00:23:55,850 --> 00:24:00,210
+The new green-colored paper money quickly earned the nickname "greenback."
+
+177
+00:24:00,210 --> 00:24:10,710
+Today, the American dollar bill is a product of the Federal Reserve and is issued from the 12 Federal Reserve banks around the United States.
+
+178
+00:24:10,710 --> 00:24:18,710
+The government keeps a steady supply of approximately 2 billion bills in circulation at all times.
+
+179
+00:24:18,710 --> 00:24:23,230
+Controversy continues to surround the true value of the dollar bill.
+
+180
+00:24:23,230 --> 00:24:31,130
+American history has seen generations of politicians argue in favor of a gold standard for American currency.
+
+181
+00:24:31,130 --> 00:24:38,170
+However, for the present, the American dollar bill holds the value that is printed on it and little more.
+
+182
+00:24:38,170 --> 00:24:54,690
+The only other guarantee on the bill is a Federal Reserve pledge as a confirmation in the form of government securities.
+
+183
+00:24:54,690 --> 00:25:12,010
+Q22. What does the speaker say about the American dollar bill?
+
+184
+00:25:12,010 --> 00:25:32,770
+Q23. What does the speaker say about the exact composition of the American dollar bill?
+
+185
+00:25:32,770 --> 00:25:53,210
+Q24. Why did the new American government mint only coins for common currency?
+
+186
+00:25:53,210 --> 00:26:16,101
+Q25. What have generations of American politicians argued for?

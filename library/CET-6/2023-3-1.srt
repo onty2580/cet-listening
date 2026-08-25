@@ -1,0 +1,750 @@
+1
+00:00:36,240 --> 00:00:38,480
+CONVERSATION 1
+Thanks for inviting me out tonight.
+
+2
+00:00:38,480 --> 00:00:41,660
+I've been wanting to try this place for weeks.
+
+3
+00:00:41,660 --> 00:00:46,920
+I usually pass it on my way home from work but never seem to have time to stop.
+
+4
+00:00:46,920 --> 00:00:49,120
+I've been dying to come here as well.
+
+5
+00:00:49,120 --> 00:00:52,100
+I was worried that the menu might not be accommodating.
+
+6
+00:00:52,100 --> 00:00:55,000
+But one of my close friends ate here last week.
+
+7
+00:00:55,000 --> 00:00:55,600
+She's a vegetarian.
+
+8
+00:00:55,600 --> 00:01:02,080
+She told me that there were a lot of options for her, and they offered alternative dishes.
+
+9
+00:01:02,080 --> 00:01:04,420
+But you're not vegetarian, are you?
+
+10
+00:01:04,420 --> 00:01:06,300
+Well, not entirely.
+
+11
+00:01:06,300 --> 00:01:12,180
+I don't eat meat at all, but I don't have a problem eating fish, seafood, or eggs.
+
+12
+00:01:12,180 --> 00:01:13,920
+Isn't that very difficult?
+
+13
+00:01:13,920 --> 00:01:18,560
+I can't imagine giving up a premium juicy steak or bacon cheeseburgers.
+
+14
+00:01:18,560 --> 00:01:19,820
+I wouldn't know.
+
+15
+00:01:19,820 --> 00:01:22,200
+My parents followed the same diet.
+
+16
+00:01:22,200 --> 00:01:25,640
+Even when I was younger, we never had meat during meals.
+
+17
+00:01:25,640 --> 00:01:28,640
+And I never really had a craving to try it.
+
+18
+00:01:28,640 --> 00:01:33,360
+I bet it would be hard though, giving up something you're accustomed to eating.
+
+19
+00:01:33,360 --> 00:01:37,560
+I tried cutting back on coffee in the morning and it was awful.
+
+20
+00:01:37,560 --> 00:01:43,860
+Come to think of it, it was probably even worse for my colleagues that had to deal with me at morning meetings.
+
+21
+00:01:43,860 --> 00:01:47,480
+That's even harder to imagine you without coffee.
+
+22
+00:01:47,480 --> 00:01:52,420
+So you say your parents also followed a partially vegetarian diet.
+
+23
+00:01:52,420 --> 00:01:54,500
+Why did they decide to do that?
+
+24
+00:01:54,500 --> 00:01:56,280
+That's an interesting question.
+
+25
+00:01:56,280 --> 00:01:58,640
+I never thought to ask them though.
+
+26
+00:01:58,640 --> 00:02:01,500
+My best guess is for health reasons.
+
+27
+00:02:01,500 --> 00:02:08,620
+They're not terribly active or knowledgeable about animal preservation efforts, but they're serious about their health.
+
+28
+00:02:08,620 --> 00:02:16,040
+Both are in their 70s now, eat organic as often as possible and take part in regular physical exercise.
+
+29
+00:02:16,040 --> 00:02:20,260
+Neither of them has any health problems, and they hardly ever get sick.
+
+30
+00:02:20,260 --> 00:02:23,500
+In that case, I might give it a try someday.
+
+31
+00:02:23,500 --> 00:02:24,920
+Now back to the menu.
+
+32
+00:02:24,920 --> 00:02:33,260
+What are you going to have?
+
+33
+00:02:33,260 --> 00:02:51,500
+Q1. Where does the conversation most probably take place?
+
+34
+00:02:51,500 --> 00:03:08,200
+Q2. What do we learn about the woman?
+
+35
+00:03:08,200 --> 00:03:26,880
+Q3. What would be a difficult thing to do according to the woman?
+
+36
+00:03:26,880 --> 00:03:45,440
+Q4. What does the woman say about her parents?
+
+37
+00:03:45,440 --> 00:03:49,700
+CONVERSATION 2
+How did your annual performance evaluation meeting with your manager go?
+
+38
+00:03:49,700 --> 00:03:51,680
+Did you get much in the way of praise?
+
+39
+00:03:51,680 --> 00:03:53,160
+Next to zero.
+
+40
+00:03:53,160 --> 00:04:00,640
+When we came to the part about discussing my areas for growth, he bluntly told me that I had an attitude problem.
+
+41
+00:04:00,640 --> 00:04:03,760
+But he wouldn't really expand on that description.
+
+42
+00:04:03,760 --> 00:04:06,600
+He said it's the little things I do and say.
+
+43
+00:04:06,600 --> 00:04:09,600
+Did you ask him for a specific example?
+
+44
+00:04:09,600 --> 00:04:13,960
+I did ask him a few more questions to try to narrow it down.
+
+45
+00:04:13,960 --> 00:04:19,920
+He said my constant questioning of him and his decisions was the most obvious example he could give.
+
+46
+00:04:19,920 --> 00:04:24,180
+Then our conversation was swiftly brought to a close.
+
+47
+00:04:24,180 --> 00:04:29,360
+I had a similar experience once, my manager told me I was too honest.
+
+48
+00:04:29,360 --> 00:04:36,460
+In most cases, I thought my honesty was helpful, as did my colleagues, but my manager thought otherwise.
+
+49
+00:04:36,460 --> 00:04:43,220
+Some managers really adopt manipulative language to disguise the unreasonable choices they have made.
+
+50
+00:04:43,220 --> 00:04:50,860
+They don't use the rational power of arguments to resolve issues of conflict or complaints about unfairness.
+
+51
+00:04:50,860 --> 00:04:52,100
+Right.
+
+52
+00:04:52,100 --> 00:05:02,640
+Some employ their persuasive and influential communication style to win workplace arguments by compelling people to perform the intended action.
+
+53
+00:05:02,640 --> 00:05:03,820
+Exactly.
+
+54
+00:05:03,820 --> 00:05:06,620
+Too honest, isn't that a good thing?
+
+55
+00:05:06,620 --> 00:05:13,280
+I thought that's surely something we should have covered earlier in the section discussing strengths and talents.
+
+56
+00:05:13,280 --> 00:05:24,240
+But now, honesty was deemed to be more of a sin than a virtue, since it made people feel uncomfortable or at least it made the most powerful folks feel uncomfortable.
+
+57
+00:05:24,240 --> 00:05:32,440
+Indeed, rhetoric is viewed by many philosophers as the method through which the powerful accumulate more power.
+
+58
+00:05:32,440 --> 00:05:39,660
+By virtue of having the loudest voice, they're able to command greater attention and to further assert their dominance.
+
+59
+00:05:39,660 --> 00:05:43,480
+Even when what they're saying doesn't really make much sense.
+
+60
+00:05:43,480 --> 00:05:47,420
+And retaining their power and prestige is their priority.
+
+61
+00:05:47,420 --> 00:05:56,760
+It's what makes the most sense to a lot of them.
+
+62
+00:05:56,760 --> 00:06:16,840
+Q5. What was the manager's reason for giving little praise for the man's performance?
+
+63
+00:06:16,840 --> 00:06:34,760
+Q6. What does the woman say about some managers?
+
+64
+00:06:34,760 --> 00:06:53,640
+Q7. According to the woman, what do some managers think of honesty?
+
+65
+00:06:53,640 --> 00:07:39,780
+Q8. What does the woman think is the priority of many managers?
+
+66
+00:07:39,780 --> 00:07:45,200
+PASSAGE 1
+Athletes are seen as heroes because they can do things that most of us can't do.
+
+67
+00:07:45,200 --> 00:07:55,980
+They can hit fast balls coming at them at nearly 100 miles an hour, and leap and hang in the air, seemingly defying gravity.
+
+68
+00:07:55,980 --> 00:08:05,720
+They get paid millions of dollars for their efforts, and their names and faces appear on everything from running shoes to advertising boards.
+
+69
+00:08:05,720 --> 00:08:15,220
+Athletes who are champions also show qualities such as perseverance, dedication, and the ability to keep their cool under pressure.
+
+70
+00:08:15,220 --> 00:08:19,920
+Many show those same qualities off the playing field, too.
+
+71
+00:08:19,920 --> 00:08:28,620
+Stories about superstar athletes teach us about working hard and believing in ourselves and in being passionate about what we do.
+
+72
+00:08:28,620 --> 00:08:39,500
+Although it's usually bad behavior that gets an athlete a spot on the 6 o'clock news, many high-profile players work hard to be positive role models to children.
+
+73
+00:08:39,500 --> 00:08:51,900
+They raise money for charities and act as mentors, talking to student groups and volunteering their time to programs that help children keep off drugs and stay in school.
+
+74
+00:08:51,900 --> 00:08:55,580
+Still, even the greatest champions have flaws.
+
+75
+00:08:55,580 --> 00:09:03,700
+Just because an athlete has the perfect golf swing doesn't mean he is the perfect parent, friend, or spokesperson.
+
+76
+00:09:03,700 --> 00:09:06,280
+They also make mistakes.
+
+77
+00:09:06,280 --> 00:09:11,600
+Separating an athlete's professional and personal lives can be tough.
+
+78
+00:09:11,600 --> 00:09:20,240
+When a sports star gets in trouble with the law or does something wrong in their private life, fans are often left disappointed.
+
+79
+00:09:20,240 --> 00:09:38,680
+Before he died, baseball star, Mickey Mantle, who was plagued with alcohol problems, told young ball players and the fans who admired him "To play like me; don't be like me".
+
+80
+00:09:38,680 --> 00:09:56,720
+Q9. Why does the speaker say athletes are often viewed as heroes?
+
+81
+00:09:56,720 --> 00:10:15,076
+Q10. What does the speaker say many high-profile players do?
+
+82
+00:10:15,076 --> 00:10:31,500
+Q11. What does the speaker say can be difficult?
+
+83
+00:10:31,500 --> 00:10:36,440
+PASSAGE 2
+We don't need to tell you that weddings can get expensive.
+
+84
+00:10:36,440 --> 00:10:42,800
+Even with the most meticulous budgeting, a few unexpected costs are bound to occur.
+
+85
+00:10:42,800 --> 00:10:52,160
+While most brides tend to accept this as fact, one Canadian woman who is only known as Susan, attempted to avoid all wedding costs.
+
+86
+00:10:52,160 --> 00:10:57,300
+She did this by asking her friends and family to pay up to attend her wedding.
+
+87
+00:10:57,300 --> 00:11:00,480
+It went about as well as you'd expect.
+
+88
+00:11:00,480 --> 00:11:09,280
+Susan is causing quite the debate online after posting a bizarre Facebook complaint about her now canceled wedding.
+
+89
+00:11:09,280 --> 00:11:25,020
+Yes, the couple called off the wedding just days before their wedding vows, since the guests refused to pay the $1500 attendance fee, the $60000 dream wedding was put on permanent hold.
+
+90
+00:11:25,020 --> 00:11:34,620
+In her long explanation filled with cursing and swearing, the bride accused her friends and family of ruining her marriage and her life.
+
+91
+00:11:34,620 --> 00:11:41,360
+She stated that each guest would only need to pay $1500, while she sacrificed everything for the day.
+
+92
+00:11:41,360 --> 00:11:51,000
+Her maid of honour told her to stick to the budget as she was asking too much from her guests, but Susan ignored her.
+
+93
+00:11:51,000 --> 00:11:58,960
+Not surprisingly, only 8 people responded positively to the wedding invitations and money requests.
+
+94
+00:11:58,960 --> 00:12:06,060
+Realizing they would not be able to afford their dream wedding, Susan's future husband suggested getting married in Las Vegas.
+
+95
+00:12:06,060 --> 00:12:13,800
+The bride quickly shut down the idea, saying she did not want a wedding of gambling and heavy drinking.
+
+96
+00:12:13,800 --> 00:12:24,792
+It seems her dream wedding has now become a nightmare.
+
+97
+00:12:24,792 --> 00:12:42,380
+Q12. What does the speaker say about weddings?
+
+98
+00:12:42,380 --> 00:13:01,260
+Q13. What do we learn about the wedding of the Canadian woman, Susan?
+
+99
+00:13:01,260 --> 00:13:19,800
+Q14. What did Susan's maid of honor advise her to do?
+
+100
+00:13:19,800 --> 00:14:04,700
+Q15. How did Susan respond to her future husband's suggestion?
+
+101
+00:14:04,700 --> 00:14:10,960
+RECORDING 1
+It has long been scientifically established that weather changes can affect people's moods.
+
+102
+00:14:10,960 --> 00:14:17,980
+Now a new study has provided evidence that temperature can influence people's personalities.
+
+103
+00:14:17,980 --> 00:14:19,760
+This study of over 1.
+
+104
+00:14:19,760 --> 00:14:26,800
+6 million people revealed that 22-degrees Celsius is the perfect air temperature to live in.
+
+105
+00:14:26,800 --> 00:14:38,600
+A city with an average annual temperature closer to 22 tends to have a population who are more agreeable, conscientious, emotionally stable, and outgoing.
+
+106
+00:14:38,600 --> 00:14:43,660
+It is the least taxing temperature for the body to regulate its own temperature.
+
+107
+00:14:43,660 --> 00:14:54,620
+The study was observational and didn't show cause and effect, but the scientists behind it theorized that better weather leads people to leave their home more often.
+
+108
+00:14:54,620 --> 00:15:03,680
+This in turn leads to more social interaction, which encourages them to develop a friendlier and socially more acceptable personality.
+
+109
+00:15:03,680 --> 00:15:07,900
+Warmer climates also make people feel more positive in general.
+
+110
+00:15:07,900 --> 00:15:11,460
+They tend to be more agreeable and conscientious.
+
+111
+00:15:11,460 --> 00:15:18,440
+The findings might help explain why colder and warmer countries tend to produce people with different personalities.
+
+112
+00:15:18,440 --> 00:15:30,040
+Roughly speaking, about 40% of a person's personality is determined by their genes, the other 60% by their environment.
+
+113
+00:15:30,040 --> 00:15:36,500
+It was already well-known that personality traits vary across geographic regions.
+
+114
+00:15:36,500 --> 00:15:43,720
+Scientists also knew that these geographic personality traits are associated with a broad range of consequential outcomes.
+
+115
+00:15:43,720 --> 00:15:56,840
+These outcomes include economic activity, for example entrepreneurial startup rates, and also crime rates, health behaviors, and health outcomes.
+
+116
+00:15:56,840 --> 00:16:02,000
+And it is well established that personality traits differ between countries.
+
+117
+00:16:02,000 --> 00:16:06,580
+The research team speculated the two might be linked.
+
+118
+00:16:06,580 --> 00:16:14,620
+To test this, they gave online personality tests to 5587 Chinese students and 1.
+
+119
+00:16:14,620 --> 00:16:17,180
+66 million Americans.
+
+120
+00:16:17,180 --> 00:16:22,540
+They then compared the results with the average annual temperature where they grew up.
+
+121
+00:16:22,540 --> 00:16:28,060
+The tests measured personality along 5 well-studied characteristics.
+
+122
+00:16:28,060 --> 00:16:38,140
+The 5 were agreeability, conscientiousness, emotional stability, outgoingness, and openness to new experiences.
+
+123
+00:16:38,140 --> 00:16:51,080
+In both groups, the researchers found the closer a town's average annual temperature was to 22 degrees, the more its population exhibited those personality characteristics.
+
+124
+00:16:51,080 --> 00:17:03,080
+However, the findings were much stronger for the Chinese group than the Americans studied, which suggests that though temperature plays a role, it does not play a dominant role.
+
+125
+00:17:03,080 --> 00:17:06,060
+The effects are fairly weak.
+
+126
+00:17:06,060 --> 00:17:18,580
+It's unlikely to lead to many arguments over the temperature setting of the office air conditioner.
+
+127
+00:17:18,580 --> 00:17:36,460
+Q16. What has a new study revealed about temperature?
+
+128
+00:17:36,460 --> 00:17:53,320
+Q17. What does the speaker say about warmer climates?
+
+129
+00:17:53,320 --> 00:18:11,240
+Q18. What did the online personality tests suggest?
+
+130
+00:18:11,240 --> 00:18:15,940
+RECORDING 2
+Today we're talking about loneliness.
+
+131
+00:18:15,940 --> 00:18:26,060
+Loneliness and social isolation are growing public health concerns for people of all ages in the United States, from adolescence to the elderly.
+
+132
+00:18:26,060 --> 00:18:30,280
+Public health experts are worried because loneliness seems to be on the rise.
+
+133
+00:18:30,280 --> 00:18:40,360
+And studies have long found correlations between loneliness and an assortment of medical conditions that threaten health and longevity.
+
+134
+00:18:40,360 --> 00:18:44,460
+The problem of loneliness may be even greater than we thought.
+
+135
+00:18:44,460 --> 00:18:53,100
+A new national poll found that about a third of older Americans are lonely; and almost as many seniors feel isolated.
+
+136
+00:18:53,100 --> 00:19:07,420
+This is a serious problem, as research shows that chronic loneliness in particular can impair older adults' memory and damage their physical and mental health.
+
+137
+00:19:07,420 --> 00:19:15,860
+Chronic loneliness even impacts the life expectancy of seniors, increasing their risk of early mortality.
+
+138
+00:19:15,860 --> 00:19:19,500
+Let's take a closer look at that poll now.
+
+139
+00:19:19,500 --> 00:19:30,540
+More than a third of seniors in the poll said they felt lonely at least some of the time, and 27% said they sometimes or often felt isolated.
+
+140
+00:19:30,540 --> 00:19:35,220
+This reflects how much time the seniors spent with others.
+
+141
+00:19:35,220 --> 00:19:43,060
+Almost 30% said they socialized with friends, family, or neighbors once a week or less.
+
+142
+00:19:43,060 --> 00:19:47,140
+Women were more likely than men to report loneliness.
+
+143
+00:19:47,140 --> 00:19:49,020
+But there is good news.
+
+144
+00:19:49,020 --> 00:19:51,580
+It looks like loneliness can be reversed.
+
+145
+00:19:51,580 --> 00:19:56,040
+But researchers are still trying to determine the best way to do so.
+
+146
+00:19:56,040 --> 00:19:57,820
+Why is that?
+
+147
+00:19:57,820 --> 00:20:06,020
+Resolving the problem of loneliness among seniors often isn't as simple as getting them together with others or moving them in with their children.
+
+148
+00:20:06,020 --> 00:20:15,780
+In fact, the poll found that seniors who lived with their children were more likely to report feeling lonely than those who didn't.
+
+149
+00:20:15,780 --> 00:20:23,160
+This may be because loneliness refers to the discrepancy between actual and desired relationships.
+
+150
+00:20:23,160 --> 00:20:33,320
+So it's possible that someone who lives alone doesn't meet that definition, while someone in a house full of busy people does.
+
+151
+00:20:33,320 --> 00:20:34,900
+How can we solve the problem?
+
+152
+00:20:34,900 --> 00:20:52,200
+Well, the researchers assert that it's important to address each person's underlying cause of loneliness, whether it's the death of a spouse, medical problems, or social expectations that haven't been fulfilled.
+
+153
+00:20:52,200 --> 00:20:56,460
+It's noteworthy that there is one general recommendation.
+
+154
+00:20:56,460 --> 00:21:08,840
+While finding solutions for loneliness is highly personal, research suggests the best interventions are those that involve meaningful social contact at least once a week.
+
+155
+00:21:08,840 --> 00:21:23,360
+Depending on the person, that could mean volunteering, calling an old friend, or something else.
+
+156
+00:21:23,360 --> 00:21:44,320
+Q19. Why does the speaker say the finding of a new national poll reveals a serious problem?
+
+157
+00:21:44,320 --> 00:22:02,140
+Q20. What is the good news the speaker talks about?
+
+158
+00:22:02,140 --> 00:22:20,620
+Q21. What is the key to solving the loneliness problem, according to the speaker?
+
+159
+00:22:20,620 --> 00:22:28,800
+RECORDING 3
+Hello, I am co-founder of the popular female travel community, We Are Travel Girls.
+
+160
+00:22:28,800 --> 00:22:34,040
+We collect and publish stories from women traveling all over the world.
+
+161
+00:22:34,040 --> 00:22:35,940
+We promote women's blogs.
+
+162
+00:22:35,940 --> 00:22:44,820
+We host meetings and events and are getting ready to launch our Travel with Us trips in Bali, Japan and Malawi.
+
+163
+00:22:44,820 --> 00:22:55,720
+Before I started We Are Travel Girls, I had a successful 10-year career in finance in London where I advised private clients on their investments.
+
+164
+00:22:55,720 --> 00:23:05,480
+Having always had a huge love for travel, I finally took the leap and left finance to pursue my dream of starting a travel company.
+
+165
+00:23:05,480 --> 00:23:09,820
+For as long as I can remember, I wanted to be a travel writer.
+
+166
+00:23:09,820 --> 00:23:20,420
+Before blogs existed, and everything we read was online, I would go to travel writing seminars by writers who were published in travel magazines.
+
+167
+00:23:20,420 --> 00:23:26,860
+I was desperate to write for one of those magazines but didn't know how to break into that industry.
+
+168
+00:23:26,860 --> 00:23:34,020
+After university, I ended up working in finance, but always had a desire to travel and write about it.
+
+169
+00:23:34,020 --> 00:23:46,600
+In 2015, I was looking at ways to leave finance, and my friend Vanessa, who grew up on a ranch on the central coast of California, suggested starting a blog.
+
+170
+00:23:46,600 --> 00:23:52,280
+But when we started creating it, we realized that was the same thing every girl was doing.
+
+171
+00:23:52,280 --> 00:23:56,640
+So we turned our attention to creating a community among these women.
+
+172
+00:23:56,640 --> 00:24:05,300
+This led us to start We Are Travel Girls, which has now grown into a community of over 200,000 followers.
+
+173
+00:24:05,300 --> 00:24:14,040
+To anyone thinking about becoming a travel writer, I would suggest they first try and look for a unique way to enter the industry.
+
+174
+00:24:14,040 --> 00:24:26,404
+There are a lot of travel writers now and it can be hard to stand out from the crowd.
+
+175
+00:24:26,404 --> 00:24:34,213
+My advice would be to find a niche and focus on that.
+
+176
+00:24:34,213 --> 00:24:40,720
+For example, if you love adventure travel, focus on that.
+
+177
+00:24:40,720 --> 00:24:42,033
+If you love food, focus on food travel.
+
+178
+00:24:42,033 --> 00:24:44,331
+The more specific you are, the easier it will be to build an audience.
+
+179
+00:24:44,331 --> 00:24:46,465
+Another thing I would suggest is to avoid too much advertising early on.
+
+180
+00:24:46,465 --> 00:24:49,256
+When you first start out, your audience is there for your content, not to be sold to.
+
+181
+00:24:49,256 --> 00:24:51,390
+If you start bombarding them with ads too early, they will lose interest.
+
+182
+00:24:51,390 --> 00:24:54,180
+Wait until you have built up a loyal following before you start introducing any kind of advertising.
+
+183
+00:24:54,180 --> 00:25:14,620
+Q22. What do we learn about the speaker before she started We Are Travel Girls?
+
+184
+00:25:14,620 --> 00:25:24,320
+Q23. What did the speaker's friend Vanessa suggest she do in 2015?
+
+185
+00:25:24,320 --> 00:25:34,020
+Q24. What does the speaker suggest people do to become travel writers?
+
+186
+00:25:34,020 --> 00:26:15,079
+Q25. What does the speaker advise travel writers to do when they first start out?

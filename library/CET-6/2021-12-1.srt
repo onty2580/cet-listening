@@ -1,0 +1,758 @@
+1
+00:00:47,640 --> 00:00:49,060
+CONVERSATION 1
+Hi, David.
+
+2
+00:00:49,060 --> 00:00:52,400
+I haven’t seen you in class for almost two weeks.
+
+3
+00:00:52,400 --> 00:00:55,520
+We thought you had disappeared on holiday early or something.
+
+4
+00:00:55,520 --> 00:00:57,060
+Hi, Sarah.
+
+5
+00:00:57,060 --> 00:01:00,200
+Well, it’s a bit of a long story I’m afraid.
+
+6
+00:01:00,200 --> 00:01:07,940
+I got a throat infection last week and had to go to the hospital to get some antibiotics as I really wasn’t getting any better.
+
+7
+00:01:07,940 --> 00:01:08,980
+Oh yeah.
+
+8
+00:01:08,980 --> 00:01:12,080
+There have been so many viruses going around this winter.
+
+9
+00:01:12,080 --> 00:01:15,860
+The weather has been so awful for the last few weeks.
+
+10
+00:01:15,860 --> 00:01:29,380
+And, on the way back from the hospital, I slipped on some ice and fell and then had to go to the hospital to get an X-ray because I basically thought I broke my wrist, although, thankfully, it’s not broken.
+
+11
+00:01:29,380 --> 00:01:33,160
+But I need to be careful with it for the next few weeks.
+
+12
+00:01:33,160 --> 00:01:35,020
+Oh, that’s too bad!
+
+13
+00:01:35,020 --> 00:01:36,820
+How unfortunate!
+
+14
+00:01:36,820 --> 00:01:42,960
+To make things worse, I managed to fall right in front of four girls from the ninth grade.
+
+15
+00:01:42,960 --> 00:01:45,860
+So I was utterly humiliated.
+
+16
+00:01:45,860 --> 00:01:50,160
+Plus, the laptop in my bag was broken too.
+
+17
+00:01:50,160 --> 00:01:52,380
+No, what a complete catastrophe!
+
+18
+00:01:52,380 --> 00:01:54,900
+Is the laptop still under warranty?
+
+19
+00:01:54,900 --> 00:02:02,540
+If it is, then you can easily send it back to the manufacturer, and they'll send you a brand-new one for free surely.
+
+20
+00:02:02,540 --> 00:02:06,340
+The warranty ran out three days before I broke it.
+
+21
+00:02:06,340 --> 00:02:12,920
+And all my essays are in there, and I need to hand them in before we break for the Christmas holidays.
+
+22
+00:02:12,920 --> 00:02:18,160
+Listen, I have the number of a really good, affordable computer repair shop at home.
+
+23
+00:02:18,160 --> 00:02:23,420
+My dad has used this guy before and he can work miracles.
+
+24
+00:02:23,420 --> 00:02:29,760
+Let’s go back to my house and we can call the repair shop, and you can have some tea and cookies too.
+
+25
+00:02:29,760 --> 00:02:30,960
+Wow, thanks, Sara!
+
+26
+00:02:30,960 --> 00:02:32,260
+That would be great!
+
+27
+00:02:32,260 --> 00:02:44,540
+Let me just call my mom and let her know I’ll be home a little bit later.
+
+28
+00:02:44,540 --> 00:03:02,680
+Q1. What did Sara think David was doing for the last two weeks?
+
+29
+00:03:02,680 --> 00:03:20,960
+Q2. What happened to David on his way back from the hospital?
+
+30
+00:03:20,960 --> 00:03:39,080
+Q3. What does Sarah say they should do with the damaged computer?
+
+31
+00:03:39,080 --> 00:03:56,280
+Q4. What does Sarah say she is going to do?
+
+32
+00:03:56,280 --> 00:04:00,840
+CONVERSATION 2
+Welcome to this week’s episode of Book Talk.
+
+33
+00:04:00,840 --> 00:04:08,440
+With me today is Heidi Brown, a historian who has written five critically acclaimed books about military history.
+
+34
+00:04:08,440 --> 00:04:10,620
+Thanks for having me, John.
+
+35
+00:04:10,620 --> 00:04:15,880
+I’m so excited to talk about my latest book, which was published last month.
+
+36
+00:04:15,880 --> 00:04:20,280
+So this book is a novel, your first attempt at that genre.
+
+37
+00:04:20,280 --> 00:04:22,500
+I thought it was a bit of a departure for you.
+
+38
+00:04:22,500 --> 00:04:26,980
+I’d say it’s a major departure as it’s not just a work of fiction.
+
+39
+00:04:26,980 --> 00:04:30,040
+It’s set 200 years in the future.
+
+40
+00:04:30,040 --> 00:04:30,760
+Right.
+
+41
+00:04:30,760 --> 00:04:32,500
+So how did that happen?
+
+42
+00:04:32,500 --> 00:04:38,600
+You spent three decades writing about the past and focusing on the 18th and 19th centuries.
+
+43
+00:04:38,600 --> 00:04:42,120
+And now you're speculating about the future.
+
+44
+00:04:42,120 --> 00:04:54,660
+Well, after years of researching soldiers and chronicling their lives during battle, I just started wondering about other facets of their lives, especially their personal lives.
+
+45
+00:04:54,660 --> 00:04:55,900
+I can see that.
+
+46
+00:04:55,900 --> 00:05:04,720
+Your novel is about soldiers and it focuses on their relationships，especially the bond between sons and mothers and men and their wives.
+
+47
+00:05:04,720 --> 00:05:06,100
+Yes.
+
+48
+00:05:06,100 --> 00:05:11,260
+That focus came about when I still intended to write another book of history.
+
+49
+00:05:11,260 --> 00:05:17,600
+I started by researching soldiers’ actual personal lives, studying their letters home.
+
+50
+00:05:17,600 --> 00:05:20,720
+So how did that history book become a novel?
+
+51
+00:05:20,720 --> 00:05:25,280
+Well, I realized that the historical record was incomplete.
+
+52
+00:05:25,280 --> 00:05:31,780
+So I’d either have to leave a lot of gaps or make a lot more assumptions than a historian should.
+
+53
+00:05:31,780 --> 00:05:38,460
+But why write a novel set in the future when your credentials are perfect for a historical novel?
+
+54
+00:05:38,460 --> 00:05:44,400
+As a historian, any historical novel you write would have a lot of credibility.
+
+55
+00:05:44,400 --> 00:05:56,600
+I felt too constrained working with the past, like what I wrote needed to be fact as opposed to fiction, but writing about the future gave me more freedom to imagine, to invent.
+
+56
+00:05:56,600 --> 00:06:10,860
+Well, having read your book, I’m glad you made that choice to move into fiction.
+
+57
+00:06:10,860 --> 00:06:26,960
+Q5. What does the man say about the woman?
+
+58
+00:06:26,960 --> 00:06:45,980
+Q6. What does the woman say about her newly published book?
+
+59
+00:06:45,980 --> 00:07:03,660
+Q7. What did the woman do before writing her new book?
+
+60
+00:07:03,660 --> 00:07:48,640
+Q8. What does the woman say about her writing history books?
+
+61
+00:07:48,640 --> 00:07:59,520
+PASSAGE 1
+Whether it’s in the hands of animated polar bears or Santa Claus, there’s one thing you'll find in nearly all ads for Coca-Cola: the characteristic glass bottle.
+
+62
+00:07:59,520 --> 00:08:05,080
+Most Americans don’t drink soda out of the glass bottles seen in Coke’s ads anymore.
+
+63
+00:08:05,080 --> 00:08:14,100
+But this week, the company is celebrating a century of the bottle that’s been sold in more than 200 countries.
+
+64
+00:08:14,100 --> 00:08:19,740
+Flash back to 1915, when a bottle of Coca-Cola cost just a nickel.
+
+65
+00:08:19,740 --> 00:08:28,780
+As the soft drink gained in popularity, it faced a growing number of competitors—counterfeits even trying to copy Coke’s logo.
+
+66
+00:08:28,780 --> 00:08:37,960
+So, according to Coca-Cola historian Ted Ryan, the company decided to come up with packaging that couldn’t be duplicated.
+
+67
+00:08:37,960 --> 00:08:42,420
+A product request was sent to eight different glass makers.
+
+68
+00:08:42,420 --> 00:08:51,700
+Workers at the Root Glass Company got the request and began flipping through the encyclopedia at the local library, landing on cocoa seed.
+
+69
+00:08:51,700 --> 00:09:00,320
+Though cocoa seed is not an ingredient of the soda, they designed their bottle based on the seed’s shape and large middle.
+
+70
+00:09:00,320 --> 00:09:14,660
+It won over Coke executives in Atlanta and would go on to receive its own trademark, spur collections and earn Coca-Cola an iconic image that made it part of American culture for a century.
+
+71
+00:09:14,660 --> 00:09:19,100
+It was 100 years ago this week that the bottle earned a patent.
+
+72
+00:09:19,100 --> 00:09:24,200
+By World War II, Coke bottle sales had ballooned into billions.
+
+73
+00:09:24,200 --> 00:09:43,895
+Americans mostly consume Coke out of aluminum or plastic today, but the glass bottle remains a symbol of America that’s readily recognized around the world.
+
+74
+00:09:43,895 --> 00:10:00,560
+Q9. What does the passage say appears in almost all ads for Coca-Cola?
+
+75
+00:10:00,560 --> 00:10:19,840
+Q10. Why did the Coca-Cola Company decide to have special packaging designed?
+
+76
+00:10:19,840 --> 00:10:38,920
+Q11. What do we learn about the Coca-Cola bottle designed by the Root Glass Company?
+
+77
+00:10:38,920 --> 00:10:45,500
+PASSAGE 2
+Research shows that a few moments of conversation with a stranger creates a measurable improvement in mood.
+
+78
+00:10:45,500 --> 00:10:51,840
+But most of us are reluctant to start these conversations because we presume the opposite.
+
+79
+00:10:51,840 --> 00:10:59,660
+In an experiment, commuters who talked to nearby strangers found their commute more enjoyable than those who didn’t.
+
+80
+00:10:59,660 --> 00:11:05,580
+They were asked to predict whether they’d enjoy the commute more if they conversed with other people.
+
+81
+00:11:05,580 --> 00:11:10,860
+Intriguingly, most expected the more solitary experience to be more pleasurable.
+
+82
+00:11:10,860 --> 00:11:12,500
+Why is this?
+
+83
+00:11:12,500 --> 00:11:16,520
+Social anxiety appears to be the problem.
+
+84
+00:11:16,520 --> 00:11:24,700
+People’s reluctance to start conversations with nearby strangers comes partly from “underestimating others’ interest in connecting”.
+
+85
+00:11:24,700 --> 00:11:33,000
+The sad thing is that people presume that a nearby stranger doesn’t want to converse and don’t start a conversation.
+
+86
+00:11:33,000 --> 00:11:41,300
+Only those who forced themselves to chat because it was required by the experiment found out what a pleasant experience it could be.
+
+87
+00:11:41,300 --> 00:11:43,940
+Human beings are social animals.
+
+88
+00:11:43,940 --> 00:11:52,000
+Those who misunderstand the impact of social interactions may not, in some contexts, be social enough for their own well-being.
+
+89
+00:11:52,000 --> 00:11:54,660
+You should be chatting with the strangers you encounter.
+
+90
+00:11:54,660 --> 00:11:59,420
+You may occasionally have a negative encounter that might stick in your memory.
+
+91
+00:11:59,420 --> 00:12:04,020
+This is because the human brain is biased to dwell on negative events.
+
+92
+00:12:04,020 --> 00:12:10,060
+But starting conversations with strangers is still well worth the risk of rejection.
+
+93
+00:12:10,060 --> 00:12:15,460
+It may surprise you that conversing with strangers will make them happier too.
+
+94
+00:12:15,460 --> 00:12:17,960
+The pleasure of connection seems contagious.
+
+95
+00:12:17,960 --> 00:12:33,751
+People who are talked to have equally positive experiences as those who initiate a conversation.
+
+96
+00:12:33,751 --> 00:12:52,700
+Q12. What does research show about a conversation between strangers?
+
+97
+00:12:52,700 --> 00:13:11,560
+Q13. What prevents people from starting a conversation with strangers?
+
+98
+00:13:11,560 --> 00:13:30,660
+Q14. Why does a negative encounter with strangers stick in one’s memory?
+
+99
+00:13:30,660 --> 00:14:14,600
+Q15. What does the passage say the pleasure of connection seems to be?
+
+100
+00:14:14,600 --> 00:14:21,820
+RECORDING 1
+The Caribbean islands are divided into two worlds, a rich one and a poor one.
+
+101
+00:14:21,820 --> 00:14:25,720
+This tropical region’s economy is based mainly on farming.
+
+102
+00:14:25,720 --> 00:14:27,900
+Farmers are of two types.
+
+103
+00:14:27,900 --> 00:14:32,900
+One is the plantation owner who may have hundreds of thousands of acres.
+
+104
+00:14:32,900 --> 00:14:38,960
+In contrast, the small cultivator is working only a few acres of land.
+
+105
+00:14:38,960 --> 00:14:44,180
+Most visitors to the Caribbean are rich, like the plantation owner.
+
+106
+00:14:44,180 --> 00:14:52,680
+They do not realize or do not want to realize that many farm families barely managed to get by on what they grow.
+
+107
+00:14:52,680 --> 00:14:55,700
+The Caribbean produces many things.
+
+108
+00:14:55,700 --> 00:14:58,440
+Sugar is the main product.
+
+109
+00:14:58,440 --> 00:15:07,700
+Other export crops are tobacco, coffee, bananas, spices and citrus fruits, such as orange, lemon or grapefruit.
+
+110
+00:15:07,700 --> 00:15:14,280
+From the West Indies also come oil, mineral pitch and many forest products.
+
+111
+00:15:14,280 --> 00:15:17,780
+Jamaica’s aluminum ore supplies are the world’s largest.
+
+112
+00:15:17,780 --> 00:15:21,440
+Oil comes from Trinidad, Aruba and Curacao.
+
+113
+00:15:21,440 --> 00:15:25,420
+But for many of the smaller islands, sugar is the only export.
+
+114
+00:15:25,420 --> 00:15:33,060
+Rum, a strong alcoholic drink, which is distilled from sugar cane, is also an export.
+
+115
+00:15:33,060 --> 00:15:36,480
+The world’s best rum comes from this area.
+
+116
+00:15:36,480 --> 00:15:44,060
+Local kinds vary from the light rums of Puerto Rico to the heavier darker rums of Barbados and Jamaica.
+
+117
+00:15:44,060 --> 00:15:51,360
+American tourists enjoy stocking up on inexpensive high quality Caribbean rum while they’re on vacation.
+
+118
+00:15:51,360 --> 00:16:00,560
+In Curacao, the well-known liquor of that name is made from the thick outer skin of a native orange.
+
+119
+00:16:00,560 --> 00:16:06,740
+Ever since America’s colonial days, the Caribbean islands have been favorite places to visit.
+
+120
+00:16:06,740 --> 00:16:10,680
+Since World War II, tourism has increased rapidly.
+
+121
+00:16:10,680 --> 00:16:23,600
+Because great numbers of people go there, the islanders have built elaborate resorts, developed harbors and airfields, improved the beaches and have expanded sea and air routes.
+
+122
+00:16:23,600 --> 00:16:29,600
+Everything is at the resort—hotel, beach, shopping and recreation.
+
+123
+00:16:29,600 --> 00:16:34,140
+The vacationer never has any reason to explore the island.
+
+124
+00:16:34,140 --> 00:16:39,240
+As in most places, those who have money live well indeed.
+
+125
+00:16:39,240 --> 00:16:43,000
+Those who don’t have money live at various levels of poverty.
+
+126
+00:16:43,000 --> 00:16:47,640
+But here the poor greatly outnumber the wealthy.
+
+127
+00:16:47,640 --> 00:16:55,320
+A visitor will find rich people living in apartments or Spanish houses at the seaside or in the countryside.
+
+128
+00:16:55,320 --> 00:17:00,720
+Their servants might include a cook, a maid, and a nurse for their children.
+
+129
+00:17:00,720 --> 00:17:03,880
+Most of the people live well below the poverty level.
+
+130
+00:17:03,880 --> 00:17:08,280
+In towns, they live crowded together in tiny houses.
+
+131
+00:17:08,280 --> 00:17:10,840
+Islanders make the best they can of what they have.
+
+132
+00:17:10,840 --> 00:17:13,880
+Their homes are quite shabby.
+
+133
+00:17:13,880 --> 00:17:23,667
+Sadly, most tourists never see the side of the Caribbean.
+
+134
+00:17:23,667 --> 00:17:44,220
+Q16. What does the speaker say about the economy of the Caribbean islands?
+
+135
+00:17:44,220 --> 00:18:02,240
+Q17. What is the main product of the Caribbean islands?
+
+136
+00:18:02,240 --> 00:18:21,620
+Q18. What do we learn about the majority of people in the Caribbean islands?
+
+137
+00:18:21,620 --> 00:18:29,400
+RECORDING 2
+Talk to anyone who’s a generation not too older and they would most likely comment that children are more spoiled these days.
+
+138
+00:18:29,400 --> 00:18:41,940
+No one wants to have or be around demanding, selfish and spoiled children, those who get bad-tempered or silently-brute when they are not given everything they want immediately.
+
+139
+00:18:41,940 --> 00:18:52,960
+Paradoxically, the parents of such children encourage this demanding behavior in the mistaken belief that by giving their children everything they can their children will be happy.
+
+140
+00:18:52,960 --> 00:18:55,940
+In the short term, perhaps they are right.
+
+141
+00:18:55,940 --> 00:19:06,700
+But in the longer term, such children end up lonely, dependent, chronically dissatisfied and resentful of the parents who tried so hard to please them.
+
+142
+00:19:06,700 --> 00:19:14,860
+Undoubtedly parents want to raise happy children who are confident, capable and likable rather than spoiled and miserable.
+
+143
+00:19:14,860 --> 00:19:26,700
+One factor hindering this is that parents can’t or don’t spend enough quality time with their kids, and substitute this deficit with toys, games, gadgets and the like.
+
+144
+00:19:26,700 --> 00:19:32,920
+Rather than getting material things, children need parents’ devoted attention.
+
+145
+00:19:32,920 --> 00:19:38,700
+The quantity of time spent together is less important than the content of that time.
+
+146
+00:19:38,700 --> 00:19:46,640
+Instead of instantly satisfying their wishes, parents should help them work out a plan to earn things they’d like to have.
+
+147
+00:19:46,640 --> 00:19:52,100
+This teaches them to value the effort as well as what it achieves.
+
+148
+00:19:52,100 --> 00:19:54,600
+Allow them to enjoy anticipation.
+
+149
+00:19:54,600 --> 00:20:04,460
+Numerous psychological studies have demonstrated that children who learn to wait for things they desire are more likely to succeed in a number of ways later in life.
+
+150
+00:20:04,460 --> 00:20:10,740
+One famous experiment in the 1960s involved 3- to 6-year-old children.
+
+151
+00:20:10,740 --> 00:20:19,340
+They were given a choice between receiving a small reward, such as a cookie, immediately, or if they waited 15 minutes, they could have two.
+
+152
+00:20:19,340 --> 00:20:31,720
+Follow up studies have found that those who chose to delay satisfaction are now more academically successful, have greater selfworth, and even tend to be healthier.
+
+153
+00:20:31,720 --> 00:20:39,740
+If they fail, children should be encouraged to keep trying rather than to give up if they really want the desired result.
+
+154
+00:20:39,740 --> 00:20:52,480
+This teaches them how to handle and recover from disappointment, which is associated with greater success and satisfaction academically, financially and in personal relationships.
+
+155
+00:20:52,480 --> 00:20:59,360
+And lastly, parents should encourage their children to look at life from other points of view, as well as their own.
+
+156
+00:20:59,360 --> 00:21:16,600
+This teaches them to be understanding of and sympathetic towards others—qualities sure to take them a long way in life.
+
+157
+00:21:16,600 --> 00:21:36,360
+Q19. what will happen to children if they always get immediate satisfaction?
+
+158
+00:21:36,360 --> 00:21:56,380
+Q20. What may prevent parents from raising confident and capable children?
+
+159
+00:21:56,380 --> 00:22:15,720
+Q21. Why should children be encouraged to keep trying when they fail?
+
+160
+00:22:15,720 --> 00:22:18,000
+RECORDING 3
+It is not hard to mess up an interview.
+
+161
+00:22:18,000 --> 00:22:26,660
+Most people feel nervous sitting across from a hiring manager, answering questions that effectively open themselves up for judgment.
+
+162
+00:22:26,660 --> 00:22:37,240
+And your chances of being more carefully considered for the job can quickly go downhill just by saying the wrong thing at the wrong time.
+
+163
+00:22:37,240 --> 00:22:40,720
+The most obvious thing not to do is complain.
+
+164
+00:22:40,720 --> 00:22:43,400
+Employers want to hire positive people.
+
+165
+00:22:43,400 --> 00:22:55,680
+Talking about a previous job negatively raises concerns that you might be difficult to manage, or you might be someone that blames management for your own poor performance.
+
+166
+00:22:55,680 --> 00:23:03,200
+Don’t say that you’ve moved around in jobs because you haven’t found the right fit or feel that you were not challenged enough.
+
+167
+00:23:03,200 --> 00:23:07,180
+Statements like these will make you sound aimless and lost.
+
+168
+00:23:07,180 --> 00:23:12,080
+An interviewer may well think, why would this role be any different for you?
+
+169
+00:23:12,080 --> 00:23:14,480
+You will probably leave here in six months.
+
+170
+00:23:14,480 --> 00:23:20,500
+It also bags the question of what type of relationship you had with your manager.
+
+171
+00:23:20,500 --> 00:23:25,040
+It doesn’t sound like you had open communication with him or her.
+
+172
+00:23:25,040 --> 00:23:37,860
+Managers usually love people who can self-sustain and enable growth through taking initiative, who are strong at following through their work, and who bring ideas and solutions to the table.
+
+173
+00:23:37,860 --> 00:23:47,140
+If you were in a management or leadership position, when discussing your current role, never take all the credit for accomplishments or achievements.
+
+174
+00:23:47,140 --> 00:23:52,340
+Emphasize your team and how through their talents, your vision was realized.
+
+175
+00:23:52,340 --> 00:23:56,840
+Most successful leaders know that they are only as good as their team.
+
+176
+00:23:56,840 --> 00:24:07,020
+And acknowledging this in an interview will go a long way towards suggesting that you might be the right person for the position you are applying for.
+
+177
+00:24:07,020 --> 00:24:15,000
+Lastly, have a good idea of what your role will be and try and convey the idea that you’re flexible.
+
+178
+00:24:15,000 --> 00:24:21,160
+Asking what your role will be suggests you will limit yourself purely to what is expected of you.
+
+179
+00:24:21,160 --> 00:24:24,780
+In reality, your role is whatever you make of it.
+
+180
+00:24:24,780 --> 00:24:33,400
+This is especially true in small companies, where the ability to adapt and take on new responsibilities is highly valued.
+
+181
+00:24:33,400 --> 00:24:36,640
+And this is equally important if you’re just starting out.
+
+182
+00:24:36,640 --> 00:24:44,760
+Entry level interviewees would do well to demonstrate a broad set of skills in most interviews.
+
+183
+00:24:44,760 --> 00:24:51,880
+It’s important to have a wide skill set as many startups and small companies are moving really fast.
+
+184
+00:24:51,880 --> 00:25:07,160
+Employers are looking for candidates that are intelligent and can quickly adapt and excel in a growing company.
+
+185
+00:25:07,160 --> 00:25:26,920
+Q22. What does the speaker say can easily prevent an interviewee from getting a job?
+
+186
+00:25:26,920 --> 00:25:46,360
+Q23. What should the interviewee avoid doing in an interview?
+
+187
+00:25:46,360 --> 00:26:04,880
+Q24. What kind of employees do companies like to recruit?
+
+188
+00:26:04,880 --> 00:26:26,945
+Q25. What is especially important for those working in a small company?

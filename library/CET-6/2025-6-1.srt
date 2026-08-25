@@ -1,0 +1,666 @@
+1
+00:00:53,820 --> 00:00:55,040
+CONVERSATION 1
+Good morning.
+
+2
+00:00:55,040 --> 00:00:56,860
+My name is Bob Fetterman.
+
+3
+00:00:56,860 --> 00:00:58,420
+I'm the computer technician.
+
+4
+00:00:58,420 --> 00:01:00,940
+Didn't I call for you last week?
+
+5
+00:01:00,940 --> 00:01:01,800
+Maybe.
+
+6
+00:01:01,800 --> 00:01:03,620
+I work for Alpha Maintenance.
+
+7
+00:01:03,620 --> 00:01:09,520
+I imagine someone from your office called our central office, and I'm the engineer designated to your case.
+
+8
+00:01:09,520 --> 00:01:14,420
+Yeah, I spoke to a lady there last Tuesday, which is now ten days ago.
+
+9
+00:01:14,420 --> 00:01:20,700
+I made it clear it was an urgent matter, and please send someone as soon as possible.
+
+10
+00:01:20,700 --> 00:01:23,540
+Couldn't you or someone else have come sooner?
+
+11
+00:01:23,540 --> 00:01:27,180
+I'm sorry, but I'm not in charge of scheduling all logistics.
+
+12
+00:01:27,180 --> 00:01:28,580
+I simply do not know.
+
+13
+00:01:28,580 --> 00:01:32,980
+All I can tell you is I got the call this week and came as soon as I could.
+
+14
+00:01:32,980 --> 00:01:34,140
+I see.
+
+15
+00:01:34,140 --> 00:01:39,460
+Well, I'll have you know, my manager is rather indignant that it's taken you this long to come.
+
+16
+00:01:39,460 --> 00:01:45,460
+I understand it might not be your fault, but nevertheless, you should know what the feeling is around here.
+
+17
+00:01:45,460 --> 00:01:48,980
+I understand, and I'm sorry for any inconvenience.
+
+18
+00:01:48,980 --> 00:01:53,560
+I will try to resolve your computer problem as swiftly and optimally as I can.
+
+19
+00:01:53,560 --> 00:01:55,620
+What and where is the issue?
+
+20
+00:01:55,620 --> 00:01:57,140
+It's this machine right here.
+
+21
+00:01:57,140 --> 00:02:02,120
+It was running slow for a while, I guess, and gradually got worse and worse.
+
+22
+00:02:02,120 --> 00:02:05,200
+Last Tuesday, it just stopped working altogether.
+
+23
+00:02:05,200 --> 00:02:09,260
+If you switch it on, you will see what I mean.
+
+24
+00:02:09,260 --> 00:02:10,640
+OK, do you know if it's backed up?
+
+25
+00:02:10,640 --> 00:02:12,160
+Backed up?
+
+26
+00:02:12,160 --> 00:02:16,440
+I mean, do you know if its contents have been copied and saved somewhere else?
+
+27
+00:02:16,440 --> 00:02:18,000
+I don't know.
+
+28
+00:02:18,000 --> 00:02:32,580
+Well, depending on the ensuing operative scenario, if I need to wipe the system directories clean in order to reconfigure default protocols, then my first intervention should be to intricately retrieve all inventories that I can.
+
+29
+00:02:32,580 --> 00:02:37,320
+Otherwise, all data that was stored on its hard drive will be forever lost.
+
+30
+00:02:37,320 --> 00:02:38,880
+My manager would know.
+
+31
+00:02:38,880 --> 00:02:47,380
+Let me go get him.
+
+32
+00:02:47,380 --> 00:03:04,800
+Q1. What did the woman do last Tuesday?
+
+33
+00:03:04,800 --> 00:03:22,460
+Q2. What does the man say he did when he got the call?
+
+34
+00:03:22,460 --> 00:03:41,080
+Q3. What is the feeling about the problem around the woman's workplace?
+
+35
+00:03:41,080 --> 00:03:57,940
+Q4. What does the woman say her manager would know?
+
+36
+00:03:57,940 --> 00:04:01,120
+CONVERSATION 2
+Have you given more thought to studying law?
+
+37
+00:04:01,120 --> 00:04:03,340
+I've been thinking about it a lot.
+
+38
+00:04:03,340 --> 00:04:03,840
+Yes.
+
+39
+00:04:03,840 --> 00:04:06,980
+In fact, this is why I wished to speak to you.
+
+40
+00:04:06,980 --> 00:04:09,560
+I wanted to hear more about what it's like.
+
+41
+00:04:09,560 --> 00:04:13,300
+A career in law is a beautiful thing, in my opinion.
+
+42
+00:04:13,300 --> 00:04:17,300
+Many people will say it's a boring field, but I disagree.
+
+43
+00:04:17,300 --> 00:04:22,020
+The thing is, there are many different branches of law and many different jobs.
+
+44
+00:04:22,020 --> 00:04:25,500
+You are involved with buildings and construction, right?
+
+45
+00:04:25,500 --> 00:04:26,500
+Correct.
+
+46
+00:04:26,500 --> 00:04:29,580
+I'm a solicitor specializing in real estate.
+
+47
+00:04:29,580 --> 00:04:32,700
+Most of my work involves mediating land disputes.
+
+48
+00:04:32,700 --> 00:04:34,960
+Do you mind giving me an example?
+
+49
+00:04:34,960 --> 00:04:36,160
+Sure.
+
+50
+00:04:36,160 --> 00:04:41,540
+So in many cases, I am employed to arbitrate between two clashing parties.
+
+51
+00:04:41,540 --> 00:04:49,780
+Let's say, for example, there are two landowners who are in a thorny disagreement about something like the borders of their adjacent plots.
+
+52
+00:04:49,780 --> 00:04:54,160
+Someone may employ me to break the deadlock and resolve the dispute.
+
+53
+00:04:54,160 --> 00:04:58,500
+Often, my work involves negotiating agreements, plain and simple.
+
+54
+00:04:58,500 --> 00:05:08,900
+So you are saying that a lot of what you do is fix people's legal issues, like you try to find a solution that benefits everyone and that prevents a problem from escalating.
+
+55
+00:05:08,900 --> 00:05:10,680
+Exactly.
+
+56
+00:05:10,680 --> 00:05:11,760
+Well put.
+
+57
+00:05:11,760 --> 00:05:18,660
+You need to remember that courts, like all bureaucracies, really can be very messy, frustrating and expensive.
+
+58
+00:05:18,660 --> 00:05:24,060
+For this reason, it's usually better to resolve problems outside of court whenever possible.
+
+59
+00:05:24,060 --> 00:05:25,040
+I see.
+
+60
+00:05:25,040 --> 00:05:29,720
+So besides knowing the law inside out, you need good people skills, right?
+
+61
+00:05:29,720 --> 00:05:40,140
+Of course, any job that involves people requires good interpersonal skills, and any law professional needs to be very eloquent at articulating their argument.
+
+62
+00:05:40,140 --> 00:05:40,600
+Right.
+
+63
+00:05:40,600 --> 00:05:43,580
+So I've been thinking about studying criminal law.
+
+64
+00:05:43,580 --> 00:05:45,980
+I think it sounds very interesting.
+
+65
+00:05:45,980 --> 00:05:47,320
+Hmm, yes.
+
+66
+00:05:47,320 --> 00:05:52,100
+I'd say there's more money in property law, but the stakes are higher in criminal law.
+
+67
+00:05:52,100 --> 00:06:01,420
+I can see how you would find it more interesting.
+
+68
+00:06:01,420 --> 00:06:19,300
+Q5. What will many people say about a career in law?
+
+69
+00:06:19,300 --> 00:06:36,920
+Q6. What does the man say most of his work involves?
+
+70
+00:06:36,920 --> 00:06:57,320
+Q7. Why does the man say it's usually better to resolve problems outside of court whenever possible?
+
+71
+00:06:57,320 --> 00:07:45,200
+Q8. What does the man think is required of any law professional?
+
+72
+00:07:45,200 --> 00:07:53,460
+PASSAGE 1
+When a person tries to access a memory, their brains quickly examine everything stored in it to find the relevant information.
+
+73
+00:07:53,460 --> 00:07:56,800
+But as we age, many of us have difficulty retrieving memories.
+
+74
+00:07:56,800 --> 00:08:19,180
+In a review published in the journal _Trends in Cognitive Sciences_ on February 11, researchers propose an explanation for why this might be happening: the brains of older adults allocate more space to accumulated knowledge and have more material to navigate when attempting to access memories.
+
+75
+00:08:19,180 --> 00:08:32,340
+While this wealth of prior knowledge can make memory retrieval challenging, the researchers say it has its upsides—this life experience can aid with creativity and decision-making.
+
+76
+00:08:32,340 --> 00:08:53,860
+Researchers Tarek Amer, Jordana Wynn and Lynn Hasher looked at several behavioral and brain-imaging studies, which show that older adults have difficulty suppressing information that is no longer relevant and that when searching for a specific memory, they often retrieve other, irrelevant memories along with it.
+
+77
+00:08:53,860 --> 00:09:04,140
+The studies also showed that when given a cognitive task, older adults rely more heavily on previous knowledge than younger adults do.
+
+78
+00:09:04,140 --> 00:09:17,880
+While the researchers focus primarily on the difficulties that these disorderly-crowded memories may pose, they also highlight a few situations in which these same memory patterns may be useful.
+
+79
+00:09:17,880 --> 00:09:28,960
+Evidence suggests that older adults show preserved, and at times enhanced, creativity as a function of enriched memories, the researchers write.
+
+80
+00:09:28,960 --> 00:09:46,980
+They further hypothesize that older adults may be well served by their prior knowledge when it comes to decision-making, where they can pull on their accumulated wisdom.
+
+81
+00:09:46,980 --> 00:10:07,000
+Q9. What did the researchers do in their review in the journal _Trends in Cognitive Sciences_?
+
+82
+00:10:07,000 --> 00:10:25,700
+Q10. What do several behavioral and brain-imaging studies show?
+
+83
+00:10:25,700 --> 00:10:43,500
+Q11. What does evidence suggest regarding older adults?
+
+84
+00:10:43,500 --> 00:10:48,700
+PASSAGE 2
+There are at least four major problems with work in America today.
+
+85
+00:10:48,700 --> 00:10:52,720
+First, work can be alienating.
+
+86
+00:10:52,720 --> 00:11:03,120
+Workers are often not in control of how they work, when they work, what is done with the goods and services they produce, and what is done with the profits made from their work.
+
+87
+00:11:03,120 --> 00:11:07,680
+Second, workers are not paid the full value of their labor.
+
+88
+00:11:07,680 --> 00:11:16,580
+Real wages have not kept pace with productivity, driving economic inequality and a decline in labor's share of income.
+
+89
+00:11:16,580 --> 00:11:19,420
+Third, people are time poor.
+
+90
+00:11:19,420 --> 00:11:23,500
+In the U.S., full-time employees work an average of 8.
+
+91
+00:11:23,500 --> 00:11:28,840
+72 hours per day despite productivity increases.
+
+92
+00:11:28,840 --> 00:11:38,160
+Long working hours contribute to the feeling of time poverty, which has an adverse effect on psychological well-being.
+
+93
+00:11:38,160 --> 00:11:42,860
+Fourth, automation puts jobs and wages at risk.
+
+94
+00:11:42,860 --> 00:11:58,080
+Technological innovation could in theory liberate people from the 40-hour workweek, but unless changes are made to the structure of work, automation will simply exert downward pressure on wages and further diminish work opportunities.
+
+95
+00:11:58,080 --> 00:12:02,380
+So, what can be done to alleviate these problems?
+
+96
+00:12:02,380 --> 00:12:07,360
+There are competing visions of the best way to arrive at a solution.
+
+97
+00:12:07,360 --> 00:12:11,280
+One vision is what's known as the post-work position.
+
+98
+00:12:11,280 --> 00:12:19,400
+The post-work theorists believe that work should not hold a central position in our lives or take up so much of our time.
+
+99
+00:12:19,400 --> 00:12:31,620
+They assert that, although doing some work might be necessary, meaning, purpose and social value reside in the communities and relationships built and sustained outside of the workplace.
+
+100
+00:12:31,620 --> 00:12:42,720
+Thus, life should be seen as an end in itself.
+
+101
+00:12:42,720 --> 00:13:00,960
+Q12. What do we learn about American workers from the passage?
+
+102
+00:13:00,960 --> 00:13:19,860
+Q13. What does the passage say long working hours contribute to?
+
+103
+00:13:19,860 --> 00:13:37,440
+Q14. What does automation do according to the passage?
+
+104
+00:13:37,440 --> 00:14:21,920
+Q15. What do post-work theorists advocate?
+
+105
+00:14:21,920 --> 00:14:52,420
+RECORDING 1
+Recent studies show that self-control and persistence are important predictors of academic success.
+
+106
+00:14:52,420 --> 00:14:57,647
+But how do children learn these skills?
+
+107
+00:14:57,647 --> 00:15:05,862
+Previous research has shown that children can learn persistence from adults.
+
+108
+00:15:05,862 --> 00:15:23,785
+For example, if children see an adult work hard to achieve a goal, they are more likely to persist in their own difficult tasks.
+
+109
+00:15:23,785 --> 00:15:36,480
+But what if children only see the end result of an adult's hard work, not the process?
+
+110
+00:15:36,480 --> 00:15:43,948
+To explore this question, researchers studied 15-month-old babies.
+
+111
+00:15:43,948 --> 00:15:57,391
+In one experiment, the babies watched an adult struggle to open a container for 30 seconds before succeeding.
+
+112
+00:15:57,391 --> 00:16:09,340
+In another experiment, the babies watched the adult open the container easily on the first try.
+
+113
+00:16:09,340 --> 00:16:12,100
+Then, the babies were given a toy that played music when they pressed a hidden button.
+
+114
+00:16:12,100 --> 00:16:40,941
+The researchers found that the babies who had watched the adult struggle pressed the button more times and for longer periods of time than the babies who had watched the adult succeed easily.
+
+115
+00:16:40,941 --> 00:16:51,429
+The results suggest that babies can learn persistence from watching adults struggle.
+
+116
+00:16:51,429 --> 00:17:04,538
+This is important because it shows that children don't need to be explicitly taught persistence.
+
+117
+00:17:04,538 --> 00:17:15,900
+They can learn it simply by observing the behavior of adults around them.
+
+118
+00:17:15,900 --> 00:17:29,563
+The researchers also found that the babies were more likely to persist if the adult made eye contact with them and talked to them while struggling.
+
+119
+00:17:29,563 --> 00:17:35,870
+This suggests that social interaction plays an important role in learning persistence.
+
+120
+00:17:35,870 --> 00:17:46,380
+Q16. What are important predictors of academic success according to recent studies?
+
+121
+00:17:46,380 --> 00:18:08,660
+Q17. How did the babies in the experiment activate the music-playing toy?
+
+122
+00:18:08,660 --> 00:18:26,060
+Q18. What can babies learn from watching adults struggle according to the study?
+
+123
+00:18:26,060 --> 00:19:13,880
+RECORDING 2
+If chronic lateness is a problem for you, you're not alone.
+
+124
+00:19:13,880 --> 00:19:49,945
+Many people struggle with being on time, and it can have negative consequences for their careers, relationships and self-esteem.
+
+125
+00:19:49,945 --> 00:20:09,780
+But there are things you can do to overcome habitual lateness.
+
+126
+00:20:09,780 --> 00:20:17,880
+First, if mornings are a struggle for you, do as much as you can to ready yourself the night before.
+
+127
+00:20:17,880 --> 00:20:19,708
+Lay out your clothes, pack your bag, and prepare your lunch.
+
+128
+00:20:19,708 --> 00:20:22,200
+This will save you time in the morning and reduce the stress of rushing around.
+
+129
+00:20:22,200 --> 00:20:27,457
+Second, learn to leave time in between tasks and meetings.
+
+130
+00:20:27,457 --> 00:20:33,240
+It's easy to overschedule yourself, but this often leads to lateness.
+
+131
+00:20:33,240 --> 00:20:52,780
+If you have back-to-back meetings, you won't have time to get from one place to another, and you'll end up being late.
+
+132
+00:20:52,780 --> 00:20:55,174
+Third, calculate transit time between activities and then add 10 to 30 minutes for unexpected delays.
+
+133
+00:20:55,174 --> 00:20:58,316
+Traffic, public transportation problems, and other unforeseen events can all make you late, so it's important to build in a buffer.
+
+134
+00:20:58,316 --> 00:20:59,662
+Finally, be honest with yourself about why you're late.
+
+135
+00:20:59,662 --> 00:21:00,710
+Are you trying to do too much?
+
+136
+00:21:00,710 --> 00:21:01,757
+Do you underestimate how long tasks take?
+
+137
+00:21:01,757 --> 00:21:04,151
+Once you identify the root cause of your lateness, you can take steps to address it.
+
+138
+00:21:04,151 --> 00:21:06,844
+Remember, being on time is a habit, and like any habit, it takes time and effort to change.
+
+139
+00:21:06,844 --> 00:21:08,340
+But with practice, you can become a more punctual person.
+
+140
+00:21:08,340 --> 00:21:25,980
+Q19. What is the speaker's purpose of giving this talk?
+
+141
+00:21:25,980 --> 00:21:44,120
+Q20. What should you do if mornings are a struggle for you?
+
+142
+00:21:44,120 --> 00:22:03,420
+Q21. According to the speaker, what can we do to combat unexpected delays?
+
+143
+00:22:03,420 --> 00:22:07,780
+RECORDING 3
+Do you think Bostonians put out the welcome mat?
+
+144
+00:22:07,780 --> 00:22:11,340
+Do you find other cities to be more or less polite?
+
+145
+00:22:11,340 --> 00:22:38,247
+Different cities have different feels, and one of the things that contributes to that feel is the level of politeness of the people who live there.
+
+146
+00:22:38,247 --> 00:22:58,945
+Some cities are known for being friendly and welcoming, while others are known for being more reserved or even rude.
+
+147
+00:22:58,945 --> 00:23:08,259
+Boston, for example, is often criticized for being unfriendly.
+
+148
+00:23:08,259 --> 00:23:25,853
+Many people say that Bostonians are not as willing to help strangers as people in other cities.
+
+149
+00:23:25,853 --> 00:23:42,411
+They also say that Bostonians are more likely to be rude or impatient in public places.
+
+150
+00:23:42,411 --> 00:23:47,585
+But is this really true?
+
+151
+00:23:47,585 --> 00:24:05,179
+Some people argue that Bostonians are just more direct and less likely to engage in small talk.
+
+152
+00:24:05,179 --> 00:24:25,877
+They say that this doesn't mean they're unfriendly; it just means they have a different way of interacting with people.
+
+153
+00:24:25,877 --> 00:24:41,400
+Other cities, like Paris and New York City, are also known for being less polite.
+
+154
+00:24:41,400 --> 00:24:43,300
+But these cities are also major tourist destinations, and the large number of tourists can make it difficult for locals to be friendly all the time.
+
+155
+00:24:43,300 --> 00:24:44,397
+In contrast, cities like Nashville and Austin are known for being very friendly and welcoming.
+
+156
+00:24:44,397 --> 00:24:45,932
+People in these cities are more likely to smile at strangers, hold doors open for them, and offer help when needed.
+
+157
+00:24:45,932 --> 00:24:46,589
+So, what can cities do to become more polite?
+
+158
+00:24:46,589 --> 00:24:48,271
+Some experts say that cities can follow the examples set by Paris and New York City, which have launched campaigns to encourage politeness.
+
+159
+00:24:48,271 --> 00:24:49,221
+These campaigns include posters, advertisements, and public events that promote kindness and respect.
+
+160
+00:24:49,221 --> 00:24:50,902
+Other experts say that cities should focus on improving public spaces, such as parks and sidewalks, to make them more pleasant and inviting.
+
+161
+00:24:50,902 --> 00:24:52,071
+When people feel good about their surroundings, they are more likely to be polite to others.
+
+162
+00:24:52,071 --> 00:24:53,460
+Q22. What is said about different cities according to the speaker?
+
+163
+00:24:53,460 --> 00:25:26,110
+Q23. What do many people say about Bostonians?
+
+164
+00:25:26,110 --> 00:25:26,160
+Q24. Why does the speaker say Paris and New York City are less polite?
+
+165
+00:25:26,160 --> 00:26:11,004
+Q25. What can cities do to become more polite according to some experts?

@@ -1,0 +1,734 @@
+1
+00:00:38,200 --> 00:00:41,060
+CONVERSATION 1
+I must say, I love our canteen!
+
+2
+00:00:41,060 --> 00:00:43,200
+It's such a great meeting point!
+
+3
+00:00:43,200 --> 00:00:46,940
+Yeah, it really is, both for students and teachers.
+
+4
+00:00:46,940 --> 00:00:48,280
+Shame about the food.
+
+5
+00:00:48,280 --> 00:00:49,220
+What do you mean?
+
+6
+00:00:49,220 --> 00:00:51,140
+I think the food is fine.
+
+7
+00:00:51,140 --> 00:00:55,400
+I would say the food is just OK, but the prices are absurd.
+
+8
+00:00:55,400 --> 00:00:56,540
+Don't you agree?
+
+9
+00:00:56,540 --> 00:00:58,080
+I don't, actually.
+
+10
+00:00:58,080 --> 00:01:01,520
+I personally think they're perfectly appropriate.
+
+11
+00:01:01,520 --> 00:01:06,320
+If it's overpriced, why does it get so frantically busy at lunchtimes?
+
+12
+00:01:06,320 --> 00:01:08,860
+Hmm, you make a good point.
+
+13
+00:01:08,860 --> 00:01:12,820
+I guess a lot of it is good value, maybe even most of it.
+
+14
+00:01:12,820 --> 00:01:19,060
+However, don't you think 6 bucks for a slice of apple crumble is beyond most students' budgets?
+
+15
+00:01:19,060 --> 00:01:21,480
+Um, yes, desserts are overpriced.
+
+16
+00:01:21,480 --> 00:01:22,840
+I'll give you that.
+
+17
+00:01:22,840 --> 00:01:26,300
+To be honest, I've forgotten about those, as I never eat them.
+
+18
+00:01:26,300 --> 00:01:31,940
+I never really crave sweet things or any fancy delicacies.
+
+19
+00:01:31,940 --> 00:01:35,080
+What I always go for is their scrambled eggs.
+
+20
+00:01:35,080 --> 00:01:37,680
+They have such a great variety.
+
+21
+00:01:37,680 --> 00:01:39,700
+Yeah, those are good.
+
+22
+00:01:39,700 --> 00:01:42,120
+They also come out really fast.
+
+23
+00:01:42,120 --> 00:01:46,660
+Actually, that's one of the best things about the canteen - the speed.
+
+24
+00:01:46,660 --> 00:01:54,420
+If I fancy something more substantial than a sandwich, but I don't have much time for lunch, the university canteen is always a good option.
+
+25
+00:01:54,420 --> 00:01:58,080
+The kitchen staff work at such a brisk pace.
+
+26
+00:01:58,080 --> 00:02:00,840
+They really deserve to be complimented for it.
+
+27
+00:02:00,840 --> 00:02:04,020
+Totally, and it's such a great environment too.
+
+28
+00:02:04,020 --> 00:02:06,560
+Like the entire building is beautiful.
+
+29
+00:02:06,560 --> 00:02:07,860
+It is very nice.
+
+30
+00:02:07,860 --> 00:02:10,800
+The massive glass windows make all the difference.
+
+31
+00:02:10,800 --> 00:02:12,580
+I think they're so cool.
+
+32
+00:02:12,580 --> 00:02:16,040
+Apparently, they did a massive renovation a few years ago.
+
+33
+00:02:16,040 --> 00:02:17,940
+It cost them a pretty penny.
+
+34
+00:02:17,940 --> 00:02:19,320
+Yeah, I'm not surprised.
+
+35
+00:02:19,320 --> 00:02:23,560
+It's a very versatile space, suitable both for eating and relaxing.
+
+36
+00:02:23,560 --> 00:02:25,260
+And for working.
+
+37
+00:02:25,260 --> 00:02:27,400
+You're right, working too.
+
+38
+00:02:27,400 --> 00:02:29,820
+I've used my laptop there once or twice.
+
+39
+00:02:29,820 --> 00:02:40,480
+And there's always a group project or meeting going on at the far end.
+
+40
+00:02:40,480 --> 00:02:58,660
+Q1. What does the woman say about the food at the canteen?
+
+41
+00:02:58,660 --> 00:03:18,640
+Q2. How does the woman feel about the canteen's sweet things or fancy delicacies?
+
+42
+00:03:18,640 --> 00:03:37,240
+Q3. What does the man say is one of the best things about the canteen?
+
+43
+00:03:37,240 --> 00:03:55,800
+Q4. What did the canteen undergo a few years ago?
+
+44
+00:03:55,800 --> 00:04:01,920
+CONVERSATION 2
+Hi, Tony, today we're talking about how managers can get along better with young people at work.
+
+45
+00:04:01,920 --> 00:04:06,140
+We often hear young people today have a poor work ethic.
+
+46
+00:04:06,140 --> 00:04:09,220
+That's not really justified though, is it?
+
+47
+00:04:09,220 --> 00:04:10,300
+Not really.
+
+48
+00:04:10,300 --> 00:04:16,940
+In reality, young people of this age group are as varied and multifaceted as any other generation.
+
+49
+00:04:16,940 --> 00:04:22,580
+Yeah, but if you are struggling to work with young people in your workspace, what can you do?
+
+50
+00:04:22,580 --> 00:04:25,940
+Well, it's essential to connect with them to learn about their values.
+
+51
+00:04:25,940 --> 00:04:33,960
+It's also really important to recognize the way young people want to balance their work life with their personal life.
+
+52
+00:04:33,960 --> 00:04:39,640
+So they generally don't want to defer happiness in return for career advancement?
+
+53
+00:04:39,640 --> 00:04:40,580
+Absolutely.
+
+54
+00:04:40,580 --> 00:04:48,640
+They are not willing to sacrifice their personal lives for their work lives and this leads people to equate that with an unwillingness to work hard.
+
+55
+00:04:48,640 --> 00:04:49,300
+Right.
+
+56
+00:04:49,300 --> 00:04:52,040
+But that couldn't be further from the truth, could it?
+
+57
+00:04:52,040 --> 00:05:01,900
+Young people will work extremely hard during their defined work hours, but they expect to have their time off, like weekends and nights free from work.
+
+58
+00:05:01,900 --> 00:05:07,040
+So how should managers go about assessing young people's productivity?
+
+59
+00:05:07,040 --> 00:05:17,000
+Generally, young people believe their productivity should not be measured by the number of hours they work, since someone can work for eight hours and accomplish next to nothing of significance for the company.
+
+60
+00:05:17,000 --> 00:05:23,700
+Instead, young people measure their productivity levels by the quality of the work they perform.
+
+61
+00:05:23,700 --> 00:05:29,680
+But we often hear that young people want to feel more than just being a part of a big machine.
+
+62
+00:05:29,680 --> 00:05:33,540
+Such a perspective can be hard to discredit, can't it?
+
+63
+00:05:33,540 --> 00:05:36,520
+It's important to legitimize their work.
+
+64
+00:05:36,520 --> 00:05:42,320
+Young workers want to work on projects that matter to themselves, the company or the world at large.
+
+65
+00:05:42,320 --> 00:05:47,780
+They must feel the need to stay working at a company whose values align with their own.
+
+66
+00:05:47,780 --> 00:05:57,760
+Thanks for your advice.
+
+67
+00:05:57,760 --> 00:06:18,040
+Q5. According to the woman, what view about today's young people is not really justified?
+
+68
+00:06:18,040 --> 00:06:37,980
+Q6. What does the man say is important for managers to get along better with young workers?
+
+69
+00:06:37,980 --> 00:06:57,380
+Q7. How do young people measure their productivity levels according to the man?
+
+70
+00:06:57,380 --> 00:07:45,980
+Q8. What companies does the man think would appeal to young workers?
+
+71
+00:07:45,980 --> 00:07:56,180
+PASSAGE 1
+Many restaurants are trying to persuade customers to eat more sustainably, moving away from environmentally unfriendly meat towards greener dishes.
+
+72
+00:07:56,180 --> 00:08:09,500
+Although it sounds counter-intuitive, restaurants which include specific vegetarian sections on their menus may be unintentionally encouraging customers to eat meat, a new study suggests.
+
+73
+00:08:09,500 --> 00:08:25,080
+Behavioral scientist Linda Bacon, one of the study's authors, said, "Restaurants can have a positive impact on the environment by encouraging their customers to choose more plant-based food and less meat.
+
+74
+00:08:25,080 --> 00:08:38,480
+However, our findings suggest that while certain restaurant menu designs can encourage some consumers to make pro-environmental food choices, they can have the opposite effect on others."
+
+75
+00:08:38,480 --> 00:08:47,040
+The study involved 750 people, half of whom frequently ate vegetarian food and half of whom rarely ate it.
+
+76
+00:08:47,040 --> 00:08:50,140
+No vegetarians were included.
+
+77
+00:08:50,140 --> 00:08:56,240
+They were given different menus and asked to choose a meal as if they were eating out with friends.
+
+78
+00:08:56,240 --> 00:09:05,460
+Placing vegetarian dishes in a separate section did not have a significant effect on the choices made by infrequent vegetarian food eaters.
+
+79
+00:09:05,460 --> 00:09:14,820
+But it did have a notable effect on the frequent eaters, lowering their chance of picking a vegetarian option by 65%.
+
+80
+00:09:14,820 --> 00:09:32,480
+The researchers also discovered that presenting a vegetarian dish as the chef's recommendation, or including a more appealing description of a non-meat meal, leads to a greater proportion of infrequent vegetarian eaters choosing a vegetarian option.
+
+81
+00:09:32,480 --> 00:09:50,760
+But again, these altered menu designs backfired with those who ate vegetarian food more frequently, leading them to be less likely to choose a vegetarian dish.
+
+82
+00:09:50,760 --> 00:10:12,773
+Q9. What does a new study suggest about restaurants including vegetarian sections on their menus?
+
+83
+00:10:12,773 --> 00:10:30,000
+Q10. How was the study carried out on 750 participants?
+
+84
+00:10:30,000 --> 00:10:50,180
+Q11. How do altered menu designs affect frequent eaters of vegetarian food?
+
+85
+00:10:50,180 --> 00:11:00,520
+PASSAGE 2
+Nottingham Trent University and the Chinese Academy of Sciences have been trying to find a way to prevent deadly outdoor air pollution from penetrating indoors.
+
+86
+00:11:00,520 --> 00:11:13,280
+They found that if pollution is frozen to around -18°C in a condensing tube, the particles gather together and fall to the bottom, allowing fresh, clean air to pass through.
+
+87
+00:11:13,280 --> 00:11:17,040
+Their method was able to remove 99% of pollutants.
+
+88
+00:11:17,040 --> 00:11:26,820
+It is hoped that the work could pave the way for simple modification of air conditioning units so that they can also clean polluted indoor air.
+
+89
+00:11:26,820 --> 00:11:37,880
+Outdoor air pollution in cities is a global problem, whether it be haze plaguing Calcutta or poor air impacting the health of children in London schools.
+
+90
+00:11:37,880 --> 00:11:46,980
+While there are some existing technologies to purify indoor air, they can be inefficient, expensive or produce harmful by-products.
+
+91
+00:11:46,980 --> 00:11:51,820
+When outdoor air quality is poor, people tend to spend even more time indoors.
+
+92
+00:11:51,820 --> 00:11:58,140
+But outdoor pollution also leads to indoor pollution, and people still suffer.
+
+93
+00:11:58,140 --> 00:12:04,400
+It is estimated that pollution is linked to over 40,000 early deaths in Britain each year.
+
+94
+00:12:04,400 --> 00:12:18,300
+Professor Gang Pan of the Chinese Academy of Sciences said, "We have shown in our experiments that simply by circulating polluted air through a small freezing chamber, we can remove most of the fine particles and gas pollutants.
+
+95
+00:12:18,300 --> 00:12:27,960
+Our study makes it possible to add an air cleaner option to household appliances in areas which might experience extremely poor air conditions.
+
+96
+00:12:27,960 --> 00:12:43,780
+By controlling indoor air pollution and improving air quality in this way, this work could be greatly beneficial to public health."
+
+97
+00:12:43,780 --> 00:13:05,040
+Q12. What does the passage say about Nottingham Trent University and the Chinese Academy of Sciences?
+
+98
+00:13:05,040 --> 00:13:25,760
+Q13. What do we learn from the passage about existing technologies to purify indoor air?
+
+99
+00:13:25,760 --> 00:13:44,700
+Q14. What do people tend to do when outdoor air quality is poor?
+
+100
+00:13:44,700 --> 00:14:31,280
+Q15. What did Professor Gang Pan of the Chinese Academy of Sciences say about their study?
+
+101
+00:14:31,280 --> 00:14:37,420
+RECORDING 1
+Research recently carried out by my team suggests that fish may be self-aware.
+
+102
+00:14:37,420 --> 00:14:42,280
+A certain species of fish recently passed the well-known mirror test.
+
+103
+00:14:42,280 --> 00:14:47,720
+This is a test that demonstrates self-recognition in animals.
+
+104
+00:14:47,720 --> 00:14:55,620
+Only a few animals, such as humans, apes, dolphins and some birds, can recognize themselves in a mirror.
+
+105
+00:14:55,620 --> 00:15:05,620
+And only these animals, capable of self-recognition, will attempt to remove marks placed on their skin after noticing them in the reflection.
+
+106
+00:15:05,620 --> 00:15:09,620
+This ability suggests a level of higher intelligence and awareness.
+
+107
+00:15:09,620 --> 00:15:15,400
+This is not shown by children until around 18 months.
+
+108
+00:15:15,400 --> 00:15:19,040
+Until now, no fish has demonstrated the ability.
+
+109
+00:15:19,040 --> 00:15:31,820
+But our experiments show the fish in question will scrape up against hard surfaces to remove marks placed on its body by our researchers after viewing itself in a mirror.
+
+110
+00:15:31,820 --> 00:15:43,040
+The behaviors we observe leave little doubt that this fish behaviorally fulfills all criteria of the mirror test as originally laid out.
+
+111
+00:15:43,040 --> 00:15:51,760
+The fish in our study never attempted to remove the marks when no mirror was present or when the marks were just placed on the mirror.
+
+112
+00:15:51,760 --> 00:16:00,440
+Unmarked fish also did not attempt to remove marks from themselves when interacting with a marked fish on the other side of a window.
+
+113
+00:16:00,440 --> 00:16:13,320
+These results show either that fish are self-aware or that the mirror test, which is considered to be the gold standard test used to denote higher intelligence, may be flawed.
+
+114
+00:16:13,320 --> 00:16:26,860
+What is less clear is whether these behaviors should be considered as evidence that fish are self-aware, even though in the past these same behaviors have been interpreted as self-awareness in so many other animals.
+
+115
+00:16:26,860 --> 00:16:35,480
+Depending on your position, you might reject the interpretation that these behaviors in a fish satisfy passing the test at all.
+
+116
+00:16:35,480 --> 00:16:45,140
+But on what objective basis can you do this when the behaviors they show are so functionally similar to those of other species that have passed the test?
+
+117
+00:16:45,140 --> 00:16:49,380
+Results from our research raise more questions than answers.
+
+118
+00:16:49,380 --> 00:16:57,040
+What if self-awareness develops like an onion, building layer upon layer rather than appearing all at once?
+
+119
+00:16:57,040 --> 00:17:05,140
+Perhaps in order to explore self-awareness further, we should stop looking at responses to the mirror as a decisive test.
+
+120
+00:17:05,140 --> 00:17:26,080
+Only with a richer theory of the self and a larger test battery will we be able to determine all of the various levels of self-awareness, including where exactly fish fit in.
+
+121
+00:17:26,080 --> 00:17:43,940
+Q16. What do we learn about the well-known mirror test?
+
+122
+00:17:43,940 --> 00:18:04,020
+Q17. What does the study by the speaker's team show about the fish they experimented with?
+
+123
+00:18:04,020 --> 00:18:22,260
+Q18. What does the speaker say about the results of their research?
+
+124
+00:18:22,260 --> 00:18:25,200
+RECORDING 2
+Reading with a young child is important.
+
+125
+00:18:25,200 --> 00:18:30,020
+But does it matter whether you read from an electronic book or traditional print?
+
+126
+00:18:30,020 --> 00:18:34,580
+As any parent knows, small children are generally keen on screens.
+
+127
+00:18:34,580 --> 00:18:53,780
+So the finding from a new study that very young children enjoy electronic books more than printed picture books may not come as a huge surprise - but the following additional findings might: both parents and children behaved differently when reading electronic versus printed picture books.
+
+128
+00:18:53,780 --> 00:18:58,520
+And the children who read the electronic books learned more.
+
+129
+00:18:58,520 --> 00:19:10,160
+Previous studies of young children have suggested that electronic books, which incorporate extra features such as dictionaries and images that depict story events, may have advantages over print.
+
+130
+00:19:10,160 --> 00:19:21,800
+In fact, multiple studies have found that electronic books support story comprehension and vocabulary gains beyond what is provided by printed books.
+
+131
+00:19:21,800 --> 00:19:33,860
+But there's also work suggesting that children sometimes invest less mental effort in learning from electronic books, and that parents talk less about content when sharing such books.
+
+132
+00:19:33,860 --> 00:19:41,920
+The study we're looking at today aims to give us a better understanding of how good electronic books are for young children.
+
+133
+00:19:41,920 --> 00:19:49,780
+For this study, researchers videoed children aged 17 to 26 months reading with one of their parents.
+
+134
+00:19:49,780 --> 00:19:59,980
+Each parent-child pair was randomly assigned to read either two educational electronic books or two printed books with the same content.
+
+135
+00:19:59,980 --> 00:20:08,420
+While the parent read the words in the printed books aloud, the electronic books had audio of voice actors reading the text.
+
+136
+00:20:08,420 --> 00:20:17,160
+The researchers found that parents who read the printed books pointed more frequently to pages than parents who read the electronic books.
+
+137
+00:20:17,160 --> 00:20:20,160
+But the opposite was true for the children.
+
+138
+00:20:20,160 --> 00:20:29,660
+Children who read the electronic books also commented more on the content and learned more new words than the children who read printed books.
+
+139
+00:20:29,660 --> 00:20:36,020
+This greater learning is ascribed to greater engagement with the electronic books.
+
+140
+00:20:36,020 --> 00:20:40,220
+It's important to note that the electronic books in the study were simple.
+
+141
+00:20:40,220 --> 00:20:47,280
+While they included background music, animation and sound effects, there were no other extra features.
+
+142
+00:20:47,280 --> 00:20:55,880
+It's also important to note that there's research on older children, finding that electronic books don't always bolster learning.
+
+143
+00:20:55,880 --> 00:20:57,880
+Parents and educators need to beware.
+
+144
+00:20:57,880 --> 00:21:22,456
+Extra features in electronic books may increase children's participation with them; however, if these features don't draw attention to the educational content, they may not serve as a supportive feature.
+
+145
+00:21:22,456 --> 00:21:39,660
+Q19. What finding from the new study might come as a huge surprise?
+
+146
+00:21:39,660 --> 00:22:00,020
+Q20. What do we learn about previous studies of young children reading electronic books?
+
+147
+00:22:00,020 --> 00:22:21,480
+Q21. What extra features should be included in electronic books to bolster children's learning?
+
+148
+00:22:21,480 --> 00:22:23,720
+RECORDING 3
+Let me be honest with you.
+
+149
+00:22:23,720 --> 00:22:28,480
+If you're living your life full of regrets, you're wasting your time.
+
+150
+00:22:28,480 --> 00:22:33,880
+Why would you go through life regretting the very decisions that made you who you are today?
+
+151
+00:22:33,880 --> 00:22:39,620
+There are plenty of unfavorable decisions we've made, but does that mean we should regret them?
+
+152
+00:22:39,620 --> 00:22:40,900
+No!
+
+153
+00:22:40,900 --> 00:22:46,800
+I've had many moments where I sit and think about all the things I wish I could have done differently.
+
+154
+00:22:46,800 --> 00:22:53,120
+However, just because things could be different, it doesn't necessarily mean they would be better.
+
+155
+00:22:53,120 --> 00:22:59,760
+You don't have to continually be thinking of all your past decisions and whether or not you made the right one.
+
+156
+00:22:59,760 --> 00:23:05,060
+You can't go back and change anything, so what's the point in worrying about it?
+
+157
+00:23:05,060 --> 00:23:11,920
+Every single decision you've ever made, positive or negative, has made you the person you are today.
+
+158
+00:23:11,920 --> 00:23:17,380
+We want to go back and change parts of our past, but what would be the benefit of that?
+
+159
+00:23:17,380 --> 00:23:22,260
+We would have lost the valuable knowledge from the lessons we learned.
+
+160
+00:23:22,260 --> 00:23:27,840
+There are reasons you make the choices you do, and that tells us about who you are.
+
+161
+00:23:27,840 --> 00:23:32,680
+So when it comes to any decision in life, be unapologetically yourself.
+
+162
+00:23:32,680 --> 00:23:37,240
+Because at the end of the day, it was you who made that decision.
+
+163
+00:23:37,240 --> 00:23:45,000
+With less time spent focused on regrets, you'll finally have time to focus on the more essential things in life.
+
+164
+00:23:45,000 --> 00:23:50,520
+In any situation, you grow more as a person with every decision you make.
+
+165
+00:23:50,520 --> 00:23:56,600
+Life is full of lessons to learn, so we can't let regret stop us from moving forward.
+
+166
+00:23:56,600 --> 00:24:05,940
+We don't know if we've made the right or wrong choice until after it's already been made, so it can be easy to start regretting your decision.
+
+167
+00:24:05,940 --> 00:24:11,120
+But if the decision has already been made, what's the purpose of dwelling on it?
+
+168
+00:24:11,120 --> 00:24:12,780
+There isn't one.
+
+169
+00:24:12,780 --> 00:24:15,360
+All you can do is move forward.
+
+170
+00:24:15,360 --> 00:24:19,240
+You can't let yourself sit there and worry about every past choice.
+
+171
+00:24:19,240 --> 00:24:21,960
+We aren't all perfect.
+
+172
+00:24:21,960 --> 00:24:29,500
+Whenever you make a decision, there will always be a possibility for regret later, but that's how life is supposed to be.
+
+173
+00:24:29,500 --> 00:24:37,620
+You will make poor decisions in life - we all do - but it's what you do with the lessons learned that matters.
+
+174
+00:24:37,620 --> 00:24:40,200
+Think about every decision you've ever made.
+
+175
+00:24:40,200 --> 00:24:41,740
+Were they always the best?
+
+176
+00:24:41,740 --> 00:24:42,940
+Of course not.
+
+177
+00:24:42,940 --> 00:24:47,540
+But look at how far you've come since then.
+
+178
+00:24:47,540 --> 00:24:55,180
+**Questions:**
+
+179
+00:24:55,180 --> 00:25:13,840
+Q22. What should we do with the unfavorable decisions we've made?
+
+180
+00:25:13,840 --> 00:25:32,960
+Q23. What does the speaker say about every single decision we've ever made?
+
+181
+00:25:32,960 --> 00:25:51,220
+Q24. What is life full of according to the speaker?
+
+182
+00:25:51,220 --> 00:26:12,408
+Q25. What is said to be of real importance when we make poor decisions in life?

@@ -1,0 +1,718 @@
+1
+00:00:37,280 --> 00:00:41,640
+CONVERSATION 1
+Thank you for meeting with me, Stephen, at such short notice.
+
+2
+00:00:41,640 --> 00:00:43,380
+Not a problem, Margaret.
+
+3
+00:00:43,380 --> 00:00:45,960
+Now, please give me some good news.
+
+4
+00:00:45,960 --> 00:00:48,020
+Have you agreed to my last proposal?
+
+5
+00:00:48,020 --> 00:00:49,060
+I have, indeed.
+
+6
+00:00:49,060 --> 00:00:53,840
+And I wish to sign the agreement pending one small change to be made to the contract.
+
+7
+00:00:53,840 --> 00:01:00,300
+Margaret, we have been through this for almost a year now, back and forth, making alterations.
+
+8
+00:01:00,300 --> 00:01:04,580
+Are you sure you want to make a sponsorship deal for your clients, or not?
+
+9
+00:01:04,580 --> 00:01:09,380
+I ask this, because, frankly, some people at my end are running out of patience.
+
+10
+00:01:09,380 --> 00:01:10,920
+I understand your concerns.
+
+11
+00:01:10,920 --> 00:01:17,920
+But as I’m sure you understand, we hold our clients’ best interests to be of the utmost concern.
+
+12
+00:01:17,920 --> 00:01:26,440
+We therefore come through the fine details of all contracts, rest assured, we all appreciate your firm’s patience.
+
+13
+00:01:26,440 --> 00:01:27,520
+OK, fine.
+
+14
+00:01:27,520 --> 00:01:30,600
+So what changes do you wish to make?
+
+15
+00:01:30,600 --> 00:01:34,560
+Essentially, we would like the new deal to exclude the Middle East.
+
+16
+00:01:34,560 --> 00:01:35,460
+That’s all.
+
+17
+00:01:35,460 --> 00:01:36,620
+The Middle East.
+
+18
+00:01:36,620 --> 00:01:37,720
+Why?
+
+19
+00:01:37,720 --> 00:01:43,120
+My client has a couple of other prospective marketing deals from companies in the Middle East.
+
+20
+00:01:43,120 --> 00:01:50,020
+Those offers, should they materialize, would exclusively employ my client’s image in the Middle East only.
+
+21
+00:01:50,020 --> 00:01:59,100
+Therefore, in order to avoid any conflict, we would need to ensure that both marketing campaigns do not overlap geographically.
+
+22
+00:01:59,100 --> 00:02:03,240
+What business sector in the Middle East are we talking about here?
+
+23
+00:02:03,240 --> 00:02:04,560
+Real estate.
+
+24
+00:02:04,560 --> 00:02:07,080
+Well, that should be okay then.
+
+25
+00:02:07,080 --> 00:02:13,720
+So long as the product is very different from our food and beverage market, there should be no conflict of interest.
+
+26
+00:02:13,720 --> 00:02:17,360
+Nevertheless, I will have to run this through my people.
+
+27
+00:02:17,360 --> 00:02:20,080
+I don’t foresee any problem, though.
+
+28
+00:02:20,080 --> 00:02:36,792
+The Middle East is a negligible market for us, but I still need to check this with a couple of departments.
+
+29
+00:02:36,792 --> 00:02:50,320
+Q1. What does the woman say she will do?
+
+30
+00:02:50,320 --> 00:03:08,460
+Q2. What does the man say about some people he represents?
+
+31
+00:03:08,460 --> 00:03:27,840
+Q3. What reason does the woman give for the new deal to exclude the Middle East?
+
+32
+00:03:27,840 --> 00:03:46,160
+Q4. What does the man say about the Middle East?
+
+33
+00:03:46,160 --> 00:03:49,820
+CONVERSATION 2
+Next, we have a special science-related news story.
+
+34
+00:03:49,820 --> 00:03:53,920
+Paula Hancock is at the Denver Observatory.
+
+35
+00:03:53,920 --> 00:03:57,620
+Paula, what is the big story over there?
+
+36
+00:03:57,620 --> 00:03:58,740
+Hi, John.
+
+37
+00:03:58,740 --> 00:04:03,040
+Yes, all the astronomers on site here are very excited.
+
+38
+00:04:03,040 --> 00:04:14,080
+In fact, space enthusiasts all across North America and the rest of the Northern Hemisphere will be congregating on mountain tops tonight to watch the night sky.
+
+39
+00:04:14,080 --> 00:04:15,280
+Why?
+
+40
+00:04:15,280 --> 00:04:16,540
+What’s the big event?
+
+41
+00:04:16,540 --> 00:04:18,060
+Is there an eclipse happening soon?
+
+42
+00:04:18,060 --> 00:04:23,940
+Tonight, the Earth will come into close proximity with the Oppenheimer comet.
+
+43
+00:04:23,940 --> 00:04:29,440
+It is the closest our planet has been to such a phenomenon in over 100 years.
+
+44
+00:04:29,440 --> 00:04:38,040
+For this reason, it is expected that thousands of people will gaze up at the sky tonight in order to see this formidable object.
+
+45
+00:04:38,040 --> 00:04:40,980
+How far away is this comet?
+
+46
+00:04:40,980 --> 00:04:43,000
+Will people be able to see it with the naked eye?
+
+47
+00:04:43,000 --> 00:04:57,800
+The Oppenheimer comet will still be millions of miles away, on the edge of our galaxy, but nevertheless, this is a relatively close distance, close enough for people to observe in good detail through a telescope.
+
+48
+00:04:57,800 --> 00:05:00,740
+People will only see a blur without one.
+
+49
+00:05:00,740 --> 00:05:04,760
+However, that does not mean one needs professional equipment.
+
+50
+00:05:04,760 --> 00:05:12,060
+Even the most ordinary of telescopes should be conducive for people to observe and wonder at this flying object.
+
+51
+00:05:12,060 --> 00:05:19,220
+Many of our viewers will be wondering how they too can take part in this once-in-a-lifetime event.
+
+52
+00:05:19,220 --> 00:05:21,640
+Where will this comet be in the sky?
+
+53
+00:05:21,640 --> 00:05:23,660
+How can people find it?
+
+54
+00:05:23,660 --> 00:05:29,780
+The comet will be almost exactly due north, at 60 degrees above the equator.
+
+55
+00:05:29,780 --> 00:05:38,300
+However, finding the comet is indeed very tricky, and scientists here have told me there are plenty of phone apps that will facilitate this.
+
+56
+00:05:38,300 --> 00:05:40,600
+How fantastic.
+
+57
+00:05:40,600 --> 00:05:49,300
+Thank you, Paula, for the information.
+
+58
+00:05:49,300 --> 00:06:08,980
+Q5. What does the woman say about all the astronomers at the Denver Observatory?
+
+59
+00:06:08,980 --> 00:06:27,680
+Q6. What do we learn from the conversation about the Oppenheimer comet?
+
+60
+00:06:27,680 --> 00:06:46,940
+Q7. What does the woman say people will only see in the sky without a telescope?
+
+61
+00:06:46,940 --> 00:07:39,520
+Q8. What do scientists at the Denver Observatory advise amateurs to do to facilitate their observation?
+
+62
+00:07:39,520 --> 00:07:47,300
+PASSAGE 1
+Dietary guidelines form the basis for nutrition advice and regulations around the world.
+
+63
+00:07:47,300 --> 00:07:59,800
+While there is strong scientific consensus around most existing guidelines, one question has recently stirred debate: Should consumers be warned to avoid ultra-processed foods?
+
+64
+00:07:59,800 --> 00:08:16,100
+Two papers published today in The American Journal of Clinical Nutrition outline the case for and against using the concept of ultra-processed foods to help inform dietary guidelines beyond conventional food classification systems.
+
+65
+00:08:16,100 --> 00:08:33,420
+The authors, Carlos Monteiro of the University of São Paulo and Arne Astrup of Novo Nordisk Foundation will discuss the issue in a live virtual debate August 14, during NUTRITION 2024 LIVE ONLINE.
+
+66
+00:08:33,420 --> 00:08:46,020
+The debate centers around a system developed by Monteiro and colleagues that classifies foods by their degree of industrial processing, ranging from unprocessed to ultra-processed.
+
+67
+00:08:46,020 --> 00:09:00,620
+The system defines ultra-processed foods as those made using sequences of processes that extract substances from foods and alter them with chemicals in order to formulate the final product.
+
+68
+00:09:00,620 --> 00:09:17,600
+Ultra-processed foods are characteristically designed to be cheap, tasty and convenient; examples include soft drinks and candy, packaged snacks and pastries, ready-to-heat products, and reconstituted meat products.
+
+69
+00:09:17,600 --> 00:09:33,360
+Studies have linked consumption of ultra-processed foods — which are often high in salt, sugar and fat — with weight gain and an increased risk of chronic diseases, even after adjusting for the amount of salt, sugar and fat in the diet.
+
+70
+00:09:33,360 --> 00:10:00,138
+While the mechanisms behind these associations are not fully understood, Monteiro argues that the existing evidence is sufficient to justify discouraging consumption of ultra-processed foods in dietary recommendations and government policies.
+
+71
+00:10:00,138 --> 00:10:15,200
+Q9. What question is said to have recently stirred debate?
+
+72
+00:10:15,200 --> 00:10:36,060
+Q10. How does the system developed by Monteiro and colleagues classify foods?
+
+73
+00:10:36,060 --> 00:10:55,520
+Q11. What is consumption of ultra-processed foods linked with according to studies?
+
+74
+00:10:55,520 --> 00:11:01,500
+PASSAGE 2
+Believe it or not, human creativity benefits from constraints.
+
+75
+00:11:01,500 --> 00:11:08,040
+According to psychologists, when you have less to work with, you actually begin to see the world differently.
+
+76
+00:11:08,040 --> 00:11:13,860
+With constraints, you dedicate your mental energy to acting more resourcefully.
+
+77
+00:11:13,860 --> 00:11:16,980
+When challenged, you figure out new ways to be better.
+
+78
+00:11:16,980 --> 00:11:25,900
+The most successful creative people know that constraints give their minds the impetus to leap higher.
+
+79
+00:11:25,900 --> 00:11:32,260
+People who invent new products are not limited by what they don’t have or can’t do.
+
+80
+00:11:32,260 --> 00:11:37,260
+They leverage their limitations to push themselves even further.
+
+81
+00:11:37,260 --> 00:11:43,240
+Many products and services are created because the founders saw a limitation in what they use.
+
+82
+00:11:43,240 --> 00:11:50,140
+They created innovation based on what was not working for them at the moment.
+
+83
+00:11:50,140 --> 00:11:54,900
+Innovation is a creative person’s response to limitation.
+
+84
+00:11:54,900 --> 00:12:16,740
+In a 2015 study, which examined how thinking about scarcity or abundance influences how creatively people use their resources, Ravi Mehta at the University of Illinois and Meng Zhu at Johns Hopkins University found that people simply have no incentive to use what’s available to them in novel ways.
+
+85
+00:12:16,740 --> 00:12:25,980
+When people face scarcity, they give themselves the freedom to use resources in less conventional ways because they have to.
+
+86
+00:12:25,980 --> 00:12:30,740
+Obstacles can broaden your perception and open up your thinking processes.
+
+87
+00:12:30,740 --> 00:12:38,520
+Consistent constraints help you improve at connecting unrelated ideas and concepts.
+
+88
+00:12:38,520 --> 00:12:47,240
+Marissa Mayer, former vice-president for search products and user experience at Google, once wrote in a publication on Bloomberg.
+
+89
+00:12:47,240 --> 00:12:53,480
+“Constraints shape and focus problems and provide clear challenges to overcome.
+
+90
+00:12:53,480 --> 00:12:59,391
+Creativity thrives best when constrained.
+
+91
+00:12:59,391 --> 00:13:04,120
+”
+
+92
+00:13:04,120 --> 00:13:23,600
+Q12. What do psychologists say people do when they are short of resources?
+
+93
+00:13:23,600 --> 00:13:41,060
+Q13. What does the passage say about innovation?
+
+94
+00:13:41,060 --> 00:14:00,200
+Q14. What did a 2015 study by Ravi Mehta and Meng Zhu find?
+
+95
+00:14:00,200 --> 00:14:43,680
+Q15. What did Marissa Mayer once write concerning creativity?
+
+96
+00:14:43,680 --> 00:14:48,180
+RECORDING 1
+Different people use different strategies for managing conflicts.
+
+97
+00:14:48,180 --> 00:14:51,060
+These strategies are learned in childhood.
+
+98
+00:14:51,060 --> 00:14:55,280
+Usually, we are not aware of how we act in conflict situations.
+
+99
+00:14:55,280 --> 00:14:58,740
+We just do whatever seems to come naturally.
+
+100
+00:14:58,740 --> 00:15:07,900
+But we do have a personal strategy; and because it is learned, we can always change it by learning new and more effective ways of managing conflicts.
+
+101
+00:15:07,900 --> 00:15:20,180
+When you get involved in a conflict, there are two major concerns you have to take into account: achieving your personal goals and keeping a good relationship with the other person.
+
+102
+00:15:20,180 --> 00:15:28,160
+How important your personal goals are and how important the relationship is to you affect how you act in a conflict.
+
+103
+00:15:28,160 --> 00:15:34,400
+Given these two concerns, five styles of managing conflicts can be identified:
+
+104
+00:15:34,400 --> 00:15:35,640
+1.
+
+105
+00:15:35,640 --> 00:15:37,220
+The turtle.
+
+106
+00:15:37,220 --> 00:15:40,440
+Turtles withdraw into their shells to avoid conflicts.
+
+107
+00:15:40,440 --> 00:15:43,780
+They give up their personal goals and relationships.
+
+108
+00:15:43,780 --> 00:15:48,800
+They believe it is easier to withdraw from a conflict than to face it.
+
+109
+00:15:48,800 --> 00:15:49,820
+2.
+
+110
+00:15:49,820 --> 00:15:51,700
+The shark.
+
+111
+00:15:51,700 --> 00:15:57,800
+Sharks try to overpower opponents by forcing them to accept their solution to the conflict.
+
+112
+00:15:57,800 --> 00:16:02,020
+They seek to achieve their goals at all costs.
+
+113
+00:16:02,020 --> 00:16:07,780
+Sharks assume that conflicts are settled by one person winning and one person losing.
+
+114
+00:16:07,780 --> 00:16:11,420
+Winning gives sharks a sense of pride and achievement.
+
+115
+00:16:11,420 --> 00:16:17,140
+Losing gives them a sense of weakness, inadequacy and failure.
+
+116
+00:16:17,140 --> 00:16:17,740
+3.
+
+117
+00:16:17,740 --> 00:16:19,360
+The Teddy bear.
+
+118
+00:16:19,360 --> 00:16:22,800
+Teddy bears want to be accepted and liked by other people.
+
+119
+00:16:22,800 --> 00:16:31,780
+They think that conflicts should be avoided in favor of harmony, and believe that conflicts cannot be discussed without damaging relationships.
+
+120
+00:16:31,780 --> 00:16:36,260
+They give up their goals to preserve the relationship.
+
+121
+00:16:36,260 --> 00:16:36,760
+4.
+
+122
+00:16:36,760 --> 00:16:38,420
+The fox.
+
+123
+00:16:38,420 --> 00:16:44,640
+Foxes are moderately concerned with their own goals and about their relationships with other people.
+
+124
+00:16:44,640 --> 00:16:50,840
+They give up part of their goals and persuade the other person in a conflict to give up part of his goals.
+
+125
+00:16:50,840 --> 00:16:56,040
+They seek a solution to conflicts where both sides gain something.
+
+126
+00:16:56,040 --> 00:16:56,820
+5.
+
+127
+00:16:56,820 --> 00:16:57,980
+The owl.
+
+128
+00:16:57,980 --> 00:17:01,400
+Owls view conflicts as problems to be solved.
+
+129
+00:17:01,400 --> 00:17:07,320
+They see conflicts as improving relationships by reducing tension between two people.
+
+130
+00:17:07,320 --> 00:17:12,060
+They try to begin a discussion that identifies the conflict as a problem.
+
+131
+00:17:12,060 --> 00:17:19,920
+By seeking solutions that satisfy both themselves and the other person, owls maintain the relationship.
+
+132
+00:17:19,920 --> 00:17:44,702
+Owls are not satisfied until a solution is found that achieves their own goals and the other person’s goals, and they are not satisfied until the tensions and negative feelings have been fully resolved.
+
+133
+00:17:44,702 --> 00:18:00,280
+Q16. Why does the speaker say strategies for managing conflicts can always be changed?
+
+134
+00:18:00,280 --> 00:18:18,740
+Q17. What is said to affect the way you want to act in a conflict?
+
+135
+00:18:18,740 --> 00:18:40,120
+Q18. Of the five styles the speaker discusses, which views conflicts as problems to be solved?
+
+136
+00:18:40,120 --> 00:18:41,780
+RECORDING 2
+The genetic code of all 1.
+
+137
+00:18:41,780 --> 00:18:52,320
+5 million known species of animals and plants living on earth will be mapped to help save species from extinction and boost human health.
+
+138
+00:18:52,320 --> 00:19:07,840
+Scientists hope that cracking the genetic code of plants and animals could help uncover new treatments for infectious diseases, slow aging, improve crops in agriculture and create new bio-materials.
+
+139
+00:19:07,840 --> 00:19:23,240
+In Britain, organizations including the Natural History Museum, the Royal Botanic Gardens at Kew and the Wellcome Sanger Institute have joined forces to sequence Britain’s 66,000 species of animals and plants.
+
+140
+00:19:23,240 --> 00:19:30,120
+Dubbed the Darwin Tree of Life Project, it is expected to take 10 years and cost 100 million pounds.
+
+141
+00:19:30,120 --> 00:19:35,260
+Once completed, all the information will be publicly available to researchers.
+
+142
+00:19:35,260 --> 00:19:52,640
+Many scientists believe that earth has now entered the sixth mass extinction, with humans creating a toxic mix of habitat loss, pollution and climate change, which has already led to the loss of at least 77 species of mammals and 140 types of birds since 1500.
+
+143
+00:19:52,640 --> 00:20:00,680
+It is the biggest loss of species since the dinosaurs were wiped out 66 million years ago.
+
+144
+00:20:00,680 --> 00:20:13,180
+Scientists say that sequencing every species will revolutionize the understanding of biology and evolution, bolster efforts to conserve as well as protect and restore biodiversity.
+
+145
+00:20:13,180 --> 00:20:29,100
+Dr. Tim Littlewood, head of Life Sciences Department at the Natural History Museum, said whether you are interested in food or disease, the history of how every organism on the planet has adapted to its environment is recorded in its genetic makeup.
+
+146
+00:20:29,100 --> 00:20:34,240
+How you then harness that is dependent on your ability to understand it.
+
+147
+00:20:34,240 --> 00:20:40,300
+We will be using modern methods to get a really good window on the present and the past.
+
+148
+00:20:40,300 --> 00:20:45,060
+And of course, a window on the past gives you a prospective model on the future.
+
+149
+00:20:45,060 --> 00:20:59,300
+Sir Jim Smith, Director of Science at Wellcome, said, “Try as I might, I can’t think of a more exciting, more relevant, more timely or more internationally inspirational project.
+
+150
+00:20:59,300 --> 00:21:05,300
+Since 1970, humanity has wiped out 60% of animal populations.
+
+151
+00:21:05,300 --> 00:21:10,560
+About 23,000 of 80,000 species surveyed are approaching extinction.
+
+152
+00:21:10,560 --> 00:21:23,560
+We are in the midst of the sixth great extinction event of life on our planet, which not only threatens wildlife species, but also imperils the global food supply.
+
+153
+00:21:23,560 --> 00:21:30,100
+As scientists, we all realize we desperately need to catalog life on our fragile planet now.
+
+154
+00:21:30,100 --> 00:21:36,580
+I think we’re making history.
+
+155
+00:21:36,580 --> 00:21:40,900
+”
+
+156
+00:21:40,900 --> 00:22:00,540
+Q19. What do scientists hope to do by cracking the genetic code of plants and animals?
+
+157
+00:22:00,540 --> 00:22:18,860
+Q20. What do many scientists believe with regard to earth?
+
+158
+00:22:18,860 --> 00:22:41,540
+Q21. How does Sir Jim Smith, Director of Science at Welcome, describe the Darwin Tree of Life Project?
+
+159
+00:22:41,540 --> 00:22:52,980
+RECORDING 3
+John Donne, the English poet, wrote in the 17th century: “No man is an island, entire of itself; every man is a piece of the continent, a part of the main.
+
+160
+00:22:52,980 --> 00:23:06,300
+” Now, a British academic has claimed that human individuality is indeed just an illusion, because societies are far more interconnected at a mental, physical and cultural level than people realise.
+
+161
+00:23:06,300 --> 00:23:23,460
+In his new book, The Self Delusion, Professor Tom Oliver, a researcher in the Ecology and Evolution group at the University of Reading, argues there is no such thing as “self” and not even our bodies are truly “us”.
+
+162
+00:23:23,460 --> 00:23:40,300
+Just as Copernicus realised the Earth is not the center of the universe, Professor Oliver said society urgently needs a Copernican-like revolution to understand people are not detached beings but rather part of one connected identity.
+
+163
+00:23:40,300 --> 00:23:52,480
+“A significant milestone in the cultural evolution of human minds was the acceptance that the Earth is not the center of the universe, the so-called Copernican Revolution,” he writes.
+
+164
+00:23:52,480 --> 00:24:01,640
+“However, we have one more big myth to dispose of: that we exist as independent selves at the center of a subjective universe.
+
+165
+00:24:01,640 --> 00:24:16,480
+You may feel as if you are an independent individual, acting autonomously in the world; that you have unchanging inner self that persists throughout your lifetime, acting as a central anchor-point with the world changing around you.
+
+166
+00:24:16,480 --> 00:24:19,180
+This is the illusion I seek to tackle.
+
+167
+00:24:19,180 --> 00:24:23,140
+We are intimately connected to the world around us.
+
+168
+00:24:23,140 --> 00:24:36,020
+” Professor Oliver argues there are around 37 trillion cells in the body but most have a lifespan of just a few days or weeks, so the material “us” is constantly changing.
+
+169
+00:24:36,020 --> 00:24:42,080
+In fact, there is no part of your body that has existed for more than 10 years.
+
+170
+00:24:42,080 --> 00:24:53,240
+“Since our bodies are essentially made anew every few weeks, the material in them alone is clearly insufficient to explain the persistent thread of an identity.
+
+171
+00:24:53,240 --> 00:25:06,060
+” Professor Oliver claims that individualism is actually bad for society, and only by realising we are a part of a bigger entity can we solve pressing environmental and societal problems.
+
+172
+00:25:06,060 --> 00:25:14,900
+Through selfish over-consumption we are destroying the natural world and using non-renewable resources at an accelerating rate.
+
+173
+00:25:14,900 --> 00:25:25,280
+“We are at a critical crossroads as a species where we must rapidly reform our mindsets and behavior to act in less selfish ways,” he said.
+
+174
+00:25:25,280 --> 00:25:37,508
+So let’s open our eyes to the hidden connections all around us.
+
+175
+00:25:37,508 --> 00:25:56,320
+Q22. What is indeed just an illusion according to Professor Tom Oliver?
+
+176
+00:25:56,320 --> 00:26:18,440
+Q23. What does Professor Tom Oliver think of the idea that we exist as independent selves at the center of a subjective universe?
+
+177
+00:26:18,440 --> 00:26:38,380
+Q24. Why does Professor Tom Oliver claim that the material “us” is constantly changing?
+
+178
+00:26:38,380 --> 00:27:01,124
+Q25. How can we solve pressing environmental and societal problems according to Professor Tom Oliver?

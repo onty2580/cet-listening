@@ -1,0 +1,730 @@
+1
+00:02:12,520 --> 00:02:16,380
+CONVERSATION 1
+Hi Alan, sorry for not calling you back sooner.
+
+2
+00:02:16,380 --> 00:02:20,020
+You said on the phone you had something you needed to discuss with me?
+
+3
+00:02:20,020 --> 00:02:25,500
+Well, to get right down to it, I'm having second thoughts about my major.
+
+4
+00:02:25,500 --> 00:02:36,600
+With my family situation getting more complicated, and the end of my university education nearing, persisting with art history just doesn't seem the right choice.
+
+5
+00:02:36,600 --> 00:02:44,680
+Alan, in the last three years, I have heard nothing but how passionate you are about the art history program.
+
+6
+00:02:44,680 --> 00:02:51,260
+You often told fellow classmates how fabulous the instructors were, and that you finally felt accepted.
+
+7
+00:02:51,260 --> 00:02:54,080
+What would cause you to abandon it?
+
+8
+00:02:54,080 --> 00:03:04,680
+My father's current financial situation has helped me realize that a more financially viable employment opportunity is not necessarily a bad thing.
+
+9
+00:03:04,680 --> 00:03:11,860
+Art history nourishes my soul, but does nothing to put food on my plate.
+
+10
+00:03:11,860 --> 00:03:15,940
+What about all the work opportunities I discussed with you last month?
+
+11
+00:03:15,940 --> 00:03:24,820
+Have you gone to those places of business to investigate whether any legitimate positions might be available for someone with your background?
+
+12
+00:03:24,820 --> 00:03:25,380
+Um, well...
+
+13
+00:03:25,380 --> 00:03:33,520
+Look, Alan, if your heart is set on working in the art industry, you need to be more assertive and start talking with people.
+
+14
+00:03:33,520 --> 00:03:39,960
+Networking is key if you want to become a celebrity in the world of museums and galleries.
+
+15
+00:03:39,960 --> 00:03:42,840
+Time is a very precious commodity right now.
+
+16
+00:03:42,840 --> 00:03:45,260
+My social life does not exist.
+
+17
+00:03:45,260 --> 00:03:51,560
+I can barely keep up with my studies and thesis is due by the end of this year.
+
+18
+00:03:51,560 --> 00:03:56,720
+When can I find time to research jobs when I have so much to do as it is?
+
+19
+00:03:56,720 --> 00:04:00,900
+What you do now will determine your future options.
+
+20
+00:04:00,900 --> 00:04:05,540
+Now is the optimum time to put forth your best effort.
+
+21
+00:04:05,540 --> 00:04:08,940
+I will take what you said into consideration.
+
+22
+00:04:08,940 --> 00:04:17,900
+The advice is much appreciated.
+
+23
+00:04:17,900 --> 00:04:35,200
+Q1. What did the man want to discuss with the woman?
+
+24
+00:04:35,200 --> 00:04:52,680
+Q2. Why does the man want to give up art history?
+
+25
+00:04:52,680 --> 00:05:10,220
+Q3. What does the woman advise the man to do?
+
+26
+00:05:10,220 --> 00:05:28,980
+Q4. What does the man say he really lacks right now?
+
+27
+00:05:28,980 --> 00:05:33,480
+CONVERSATION 2
+Have you decided yet what your end of semester business project will be on?
+
+28
+00:05:33,480 --> 00:05:35,840
+Yes, how about you?
+
+29
+00:05:35,840 --> 00:05:37,760
+Yes, go on.
+
+30
+00:05:37,760 --> 00:05:39,100
+You go first.
+
+31
+00:05:39,100 --> 00:05:41,820
+I'm going to do it about beef.
+
+32
+00:05:41,820 --> 00:05:42,380
+Beef?
+
+33
+00:05:42,380 --> 00:05:43,940
+Yeah, beef.
+
+34
+00:05:43,940 --> 00:05:51,000
+I'm going to design a business case study for a cow farm that supplies beef for the domestic market.
+
+35
+00:05:51,000 --> 00:05:54,620
+Wow, that sounds very interesting and original.
+
+36
+00:05:54,620 --> 00:05:56,260
+Where ever did you get that idea?
+
+37
+00:05:56,260 --> 00:05:59,220
+I don't know, it just came to me I guess.
+
+38
+00:05:59,220 --> 00:06:00,140
+But think about it.
+
+39
+00:06:00,140 --> 00:06:04,900
+Beef consumption has been rising strongly over the past 20 years.
+
+40
+00:06:04,900 --> 00:06:12,480
+As the economy continues to grow, consumer demand is expected to continue to increase, for the foreseeable future.
+
+41
+00:06:12,480 --> 00:06:17,900
+And currently, most of the beef is imported, which brings with it added fees.
+
+42
+00:06:17,900 --> 00:06:20,560
+So why not raise cattle here?
+
+43
+00:06:20,560 --> 00:06:22,020
+Of course.
+
+44
+00:06:22,020 --> 00:06:23,580
+Makes perfect sense.
+
+45
+00:06:23,580 --> 00:06:31,340
+There's plenty of land out west, so if done right, it should be very profitable to raise our own cattle.
+
+46
+00:06:31,340 --> 00:06:33,100
+Exactly.
+
+47
+00:06:33,100 --> 00:06:36,040
+Seriously, that sounds like a great idea.
+
+48
+00:06:36,040 --> 00:06:40,060
+You should genuinely look into it once we get our degrees.
+
+49
+00:06:40,060 --> 00:06:40,940
+Thanks.
+
+50
+00:06:40,940 --> 00:06:42,580
+So, your turn now.
+
+51
+00:06:42,580 --> 00:06:45,020
+What are you doing your case study on?
+
+52
+00:06:45,020 --> 00:06:51,680
+I was thinking about a car wash, but it now seems like such a boring notion after hearing your brilliant idea.
+
+53
+00:06:51,680 --> 00:06:52,480
+That's cool.
+
+54
+00:06:52,480 --> 00:06:53,500
+I could see that working.
+
+55
+00:06:53,500 --> 00:06:59,800
+After all, there's plenty of cars about, and those aren't going away anytime soon.
+
+56
+00:06:59,800 --> 00:07:04,320
+While many people don't care how their car looks, many other people do.
+
+57
+00:07:04,320 --> 00:07:07,700
+You've got yourself a vast and continual market.
+
+58
+00:07:07,700 --> 00:07:09,120
+Right.
+
+59
+00:07:09,120 --> 00:07:12,980
+So the idea is a large, self cleaning car wash.
+
+60
+00:07:12,980 --> 00:07:17,300
+But I mean really big and well outfitted, like they have in America.
+
+61
+00:07:17,300 --> 00:07:21,620
+I was thinking of having it cater to high end consumers in large cities.
+
+62
+00:07:21,620 --> 00:07:36,280
+It could charge a profitable mark up by offering just a bit more technical equipment and professional service than competitors.
+
+63
+00:07:36,280 --> 00:07:54,320
+Q5. What are the speakers mainly talking about in the conversation?
+
+64
+00:07:54,320 --> 00:08:11,580
+Q6. What does the man say makes perfect sense?
+
+65
+00:08:11,580 --> 00:08:30,840
+Q7. What business does the man say has a vast and continual market?
+
+66
+00:08:30,840 --> 00:09:15,680
+Q8. Who would the man's imagined business cater to?
+
+67
+00:09:15,680 --> 00:09:23,680
+PASSAGE 1
+Increased television time for young children has long been linked with poorer progress in some areas of development.
+
+68
+00:09:23,680 --> 00:09:29,500
+One possible way to counter those negative effects is talking while watching the screen.
+
+69
+00:09:29,500 --> 00:09:42,800
+As a new study suggests, the more parents engaged in conversation with preschoolers during TV time, the more likely those children were to have higher curiosity levels when they reached kindergarten.
+
+70
+00:09:42,800 --> 00:09:49,280
+This was particularly true for children with socioeconomic disadvantages.
+
+71
+00:09:49,280 --> 00:10:04,460
+"Our findings reinforce the importance of parent conversation to promote early childhood development and curiosity," said lead author Prachi Shah at University of Michigan Health C.S. Mott Children's Hospital.
+
+72
+00:10:04,460 --> 00:10:14,640
+Researchers assessed hours of daily television exposure and frequency of parent screen time conversation among 1,500 preschoolers.
+
+73
+00:10:14,640 --> 00:10:19,200
+And then measured early childhood curiosity in kindergarten.
+
+74
+00:10:19,200 --> 00:10:29,960
+The study specifically focused on curiosity levels, which are associated with enhanced learning and higher academic achievement in reading and math at kindergarten.
+
+75
+00:10:29,960 --> 00:10:38,220
+And behavioral developmental benefits, especially for children from families with lower socioeconomic status.
+
+76
+00:10:38,220 --> 00:10:45,660
+While many young children are now growing up with digital media exposure through mobile devices like tablets and phones.
+
+77
+00:10:45,660 --> 00:10:53,640
+Television remains a dominant screen activity, accounting for 72% of all screen time.
+
+78
+00:10:53,640 --> 00:11:02,860
+TVs are in 98% of all homes, keeping television exposure a relevant developmental context in young children.
+
+79
+00:11:02,860 --> 00:11:15,920
+Excessive media exposure, including television, can displace exploratory activities such as play and parent child interactions, which are believed to be key to cultivating curiosity in kids.
+
+80
+00:11:15,920 --> 00:11:37,160
+Our findings suggest the importance of parents finding opportunities to foster conversational exchanges in daily routines with their young children, including while watching television, Shah said.
+
+81
+00:11:37,160 --> 00:11:55,340
+Q9. What do we learn from a new study about young children?
+
+82
+00:11:55,340 --> 00:12:13,460
+Q10. What did Prachi Shah's study specifically focus on?
+
+83
+00:12:13,460 --> 00:12:34,180
+Q11. What does the passage say about excessive media exposure?
+
+84
+00:12:34,180 --> 00:12:38,080
+PASSAGE 2
+Humans are aspirational, goal seeking beings.
+
+85
+00:12:38,080 --> 00:12:41,780
+Each of us, according to research, has an inborn drive to acquire.
+
+86
+00:12:41,780 --> 00:12:57,860
+The dark side of this drive to acquire is being mindlessly driven to possess more and more things and to socially compare our stuff with all the stuff other people have in their lives.
+
+87
+00:12:57,860 --> 00:13:08,540
+So the question is, how do we ensure we tap into our drive to acquire in positive ways that will benefit our well being?
+
+88
+00:13:08,540 --> 00:13:13,360
+One way is to become more intentionally aspirational.
+
+89
+00:13:13,360 --> 00:13:23,380
+To be intentionally aspirational includes consciously aspiring to be the person you need to be to succeed in your professional and personal life.
+
+90
+00:13:23,380 --> 00:13:32,440
+It also includes consciously aspiring to acquire things in your life that will positively impact your sense of well being.
+
+91
+00:13:32,440 --> 00:13:46,560
+If you're not consciously, mindfully, and intentionally harnessing your inborn drive to acquire, you might be mindlessly pursuing all the wrong things.
+
+92
+00:13:46,560 --> 00:14:02,640
+While your intentional, aspirational goals will include the pursuit of acquiring things that will increase your sense of well being, they ought to also include goals to help other people in your various life roles.
+
+93
+00:14:02,640 --> 00:14:14,540
+Your intentional, aspirational goals will also include striving to be your personal best, a person of good character, integrity, and trustworthiness.
+
+94
+00:14:14,540 --> 00:14:20,160
+Think about this from a practical rather than theoretical viewpoint.
+
+95
+00:14:20,160 --> 00:14:26,720
+If you're not pursuing intentional aspirational goals, you have nothing to strive for.
+
+96
+00:14:26,720 --> 00:14:53,282
+If you have nothing to strive for, you're putting yourself in the dangerous position of simply drifting through life, and you'll not be able to experience, live, and enjoy all that life has to offer.
+
+97
+00:14:53,282 --> 00:15:08,460
+Q12. What is the dark side of our inborn drive to acquire?
+
+98
+00:15:08,460 --> 00:15:27,580
+Q13. What might happen if we do not harness our inborn drive to acquire?
+
+99
+00:15:27,580 --> 00:15:47,140
+Q14. What does the passage say about our intentional aspirational goals?
+
+100
+00:15:47,140 --> 00:16:34,480
+Q15. What will you end up doing without pursuing intentional aspirational goals?
+
+101
+00:16:34,480 --> 00:16:38,360
+RECORDING 1
+It's revision time for exams and dissertations.
+
+102
+00:16:38,360 --> 00:16:45,380
+The pressure is on, so you'll want all the help you can get to age your memory and raise your grades.
+
+103
+00:16:45,380 --> 00:16:52,880
+As a nutrition expert, I want to say that eating well can make a real difference to your revision regime.
+
+104
+00:16:52,880 --> 00:16:57,400
+So, what brain boosting food and drink would I recommend?
+
+105
+00:16:57,400 --> 00:16:59,760
+Coffee can have numerous benefits.
+
+106
+00:16:59,760 --> 00:17:08,540
+However, while coffee may make you more alert, Individuals can build up a tolerance, meaning this is short lived.
+
+107
+00:17:08,540 --> 00:17:14,280
+Coffee can also increase blood sugar and eventually cause lack of focus and energy.
+
+108
+00:17:14,280 --> 00:17:17,780
+It's also worth noting that people react differently to coffee.
+
+109
+00:17:17,780 --> 00:17:27,340
+Some people can drink it at midnight and go straight to sleep, whereas others get feelings of anxiety after a small amount.
+
+110
+00:17:27,340 --> 00:17:35,700
+Also remember that coffee from a coffee shop may be stronger than coffee made at home, so stop drinking coffee by 2 p.
+
+111
+00:17:35,700 --> 00:17:36,200
+m.
+
+112
+00:17:36,200 --> 00:17:39,980
+and have a maximum of two cups of coffee a day.
+
+113
+00:17:39,980 --> 00:17:44,140
+But be aware of your own reaction to it.
+
+114
+00:17:44,140 --> 00:17:48,080
+Whole grain foods will ward off hunger.
+
+115
+00:17:48,080 --> 00:17:51,800
+Examples include porridge and whole wheat bread.
+
+116
+00:17:51,800 --> 00:18:01,820
+Combining whole grain foods with protein will help keep your blood sugar levels balanced, which is essential for mood and concentration.
+
+117
+00:18:01,820 --> 00:18:05,040
+Berries and nuts are a convenient and nutritious snack.
+
+118
+00:18:05,040 --> 00:18:14,260
+Blueberries, like many dark colored fruits and vegetables, can slow down brain damage and age-related decline.
+
+119
+00:18:14,260 --> 00:18:17,160
+Frozen berries are also a good choice.
+
+120
+00:18:17,160 --> 00:18:23,340
+They are usually cheap, last longer, and don't lose their nutrients when frozen.
+
+121
+00:18:23,340 --> 00:18:31,300
+But flavored and coated nuts are less healthy, as they contain added oil, salt, and sugar.
+
+122
+00:18:31,300 --> 00:18:37,180
+Doctors often recommend taking vitamin supplements to top up on the nutrients you need.
+
+123
+00:18:37,180 --> 00:18:51,520
+But I would say food should always come before supplements, and the key to getting as many nutrients as possible is to eat a varied diet, with lots of different colors such as frozen berries and dark green vegetables.
+
+124
+00:18:51,520 --> 00:18:55,640
+It's better to get everything you need from food and drink.
+
+125
+00:18:55,640 --> 00:19:07,780
+For example, oranges contain not only vitamin C, which boosts the immune system, but also fiber and other components that you can't get packaged together in a tablet.
+
+126
+00:19:07,780 --> 00:19:17,220
+Don't forget to drink a proper amount of water, which can boost attention by almost 25%, and can elevate your mood as well.
+
+127
+00:19:17,220 --> 00:19:19,740
+Finally, don't skip meals.
+
+128
+00:19:19,740 --> 00:19:34,200
+Eating regularly will help keep blood sugar balanced, and feed the brain with the fuel it needs.
+
+129
+00:19:34,200 --> 00:19:52,420
+Q16. What does the speaker recommend in this talk?
+
+130
+00:19:52,420 --> 00:20:11,780
+Q17. What does the speaker warn against about coffee?
+
+131
+00:20:11,780 --> 00:20:31,240
+Q18. How can we get sufficient nutrients according to the speaker?
+
+132
+00:20:31,240 --> 00:20:37,320
+RECORDING 2
+A late Swedish academic has identified a worrying trend.
+
+133
+00:20:37,320 --> 00:20:49,100
+Not only do many people across advanced economies have no idea that the world is becoming a much better place, but they actually even think the opposite.
+
+134
+00:20:49,100 --> 00:20:58,760
+This is no wonder, when the news focuses on reporting catastrophes, terrorist attacks, wars, and famines.
+
+135
+00:20:58,760 --> 00:21:08,820
+Who wants to hear about the fact that every day some 200,000 people around the world are lifted above the two dollar a day poverty line?
+
+136
+00:21:08,820 --> 00:21:17,600
+Or that more than 300,000 people get access to electricity and clean water for the first time every day?
+
+137
+00:21:17,600 --> 00:21:24,820
+These stories of people in low income countries simply don't make for exciting news coverage.
+
+138
+00:21:24,820 --> 00:21:29,420
+But as Rosling pointed out in his book Factfulness.
+
+139
+00:21:29,420 --> 00:21:33,840
+It's important to put all the bad news in perspective.
+
+140
+00:21:33,840 --> 00:21:50,760
+While it is true that globalization has put some downward pressure on middle class wages in advanced economies in recent decades, it has also helped lift hundreds of millions of people out of poverty.
+
+141
+00:21:50,760 --> 00:22:06,860
+If we really care about global welfare, globalization is the only way forward to ensure that economic prosperity is shared among all countries and not only a select few advanced economies.
+
+142
+00:22:06,860 --> 00:22:19,690
+While some people glorify the past, One of the big facts of economic history is that until quite recently, a significant part of the world's population has lived under quite miserable conditions.
+
+143
+00:22:19,690 --> 00:22:24,840
+And this is true throughout most of human history.
+
+144
+00:22:24,840 --> 00:22:38,360
+While there were many long lasting ups and downs, like the Great Depression or the recent Great Recession, the constancy of the long run growth rate is actually quite miraculous.
+
+145
+00:22:38,360 --> 00:22:49,620
+Low income countries, including China and India, have been growing at a significantly faster pace in recent decades, and are quickly catching up to the West.
+
+146
+00:22:49,620 --> 00:22:57,240
+A 10 percent growth rate over a prolonged period means that income levels double roughly every seven years.
+
+147
+00:22:57,240 --> 00:23:04,960
+It is obviously good news if prosperity is more shared across the globe.
+
+148
+00:23:04,960 --> 00:23:16,980
+While inequality within countries has gone up as a result of globalization, global inequality has been on a steady downward trend for several decades.
+
+149
+00:23:16,980 --> 00:23:23,840
+This is mostly a result of the improvement of hundreds of millions of people's living standards.
+
+150
+00:23:23,840 --> 00:23:41,560
+In fact, for the first time ever since the Industrial Revolution, about half of the global population can be considered middle class.
+
+151
+00:23:41,560 --> 00:24:00,880
+Q19. What is the worrying trend the late Swedish academic has identified?
+
+152
+00:24:00,880 --> 00:24:18,840
+Q20. What does the speaker say about globalization?
+
+153
+00:24:18,840 --> 00:24:38,020
+Q21. What do we learn about half of the global population?
+
+154
+00:24:38,020 --> 00:24:41,380
+RECORDING 3
+We all know that the sense of smell is powerful.
+
+155
+00:24:41,380 --> 00:24:45,860
+The delicious scent of bread, for example, can act like a time machine.
+
+156
+00:24:45,860 --> 00:24:49,820
+One sniff can bring back a memory from many years ago.
+
+157
+00:24:49,820 --> 00:24:56,440
+Indeed, scent particles, in general, can revive memories that have been long forgotten.
+
+158
+00:24:56,440 --> 00:25:02,520
+But why do smells sometimes trigger powerful memories, especially emotional ones?
+
+159
+00:25:02,520 --> 00:25:09,820
+The short answer is that the brain regions that handle smells, memories, and emotions are linked.
+
+160
+00:25:09,820 --> 00:25:22,580
+A scent is a chemical particle that floats in through the nose and into the region of the brain responsible for smell, where the sensation is first processed into a form that the brain can read.
+
+161
+00:25:22,580 --> 00:25:35,520
+Brain cells then carry that information to the area of the brain where emotions are processed, and then to an adjacent area of the brain where learning and memory formation take place.
+
+162
+00:25:35,520 --> 00:25:41,680
+Sense are the only sensations that travel such a direct path to the emotional and memory centers of the brain.
+
+163
+00:25:41,680 --> 00:25:47,920
+That results in an intimate connection between emotions, memories, and sense.
+
+164
+00:25:47,920 --> 00:25:56,100
+Which is why memories triggered by sense are experienced as more emotional than those triggered by sight or sound.
+
+165
+00:25:56,100 --> 00:26:00,880
+Let's take a closer look at how those memories are activated.
+
+166
+00:26:00,880 --> 00:26:12,860
+Usually, when a person smells something that's connected to a meaningful event in their past, they'll first have an emotional response to the sensation, and then a memory might follow.
+
+167
+00:26:12,860 --> 00:26:16,320
+But sometimes, the memory doesn't come to the surface.
+
+168
+00:26:16,320 --> 00:26:22,880
+The person might feel the emotion of something that happened in the past, but won't remember what they experienced.
+
+169
+00:26:22,880 --> 00:26:25,960
+What causes this baffling phenomenon?
+
+170
+00:26:25,960 --> 00:26:28,700
+The explanation is context.
+
+171
+00:26:28,700 --> 00:26:30,380
+Imagine this scenario.
+
+172
+00:26:30,380 --> 00:26:39,520
+A person is walking down the street, smelling a scent that they first encountered decades ago, which activates an emotional response.
+
+173
+00:26:39,520 --> 00:26:53,880
+If the person had first come across that smell in a very different context, it will be much more difficult to recover the associated memory, because the brain uses the context to give meaning to the information and find that memory.
+
+174
+00:26:53,880 --> 00:27:01,220
+The special nature of memories brought back by scents notwithstanding, they have the same drawbacks as other memories.
+
+175
+00:27:01,220 --> 00:27:05,180
+They aren't always accurate, and they can change over time.
+
+176
+00:27:05,180 --> 00:27:11,020
+In fact, each time we remember something, that memory can become distorted.
+
+177
+00:27:11,020 --> 00:27:34,636
+But, because of the strong emotional associations these memories evoke, people who remember something due to a scent are often convinced that the memories are accurate, even when they aren't.
+
+178
+00:27:34,636 --> 00:27:50,380
+Q22. What question does the speaker try to answer in this talk?
+
+179
+00:27:50,380 --> 00:28:13,000
+Q23. What is said to result in an intimate connection between emotions, memories, and sense?
+
+180
+00:28:13,000 --> 00:28:33,760
+Q24. What does the brain use to give meaning to information and find a memory?
+
+181
+00:28:33,760 --> 00:29:03,224
+Q25. What drawback do memories of sense have in common with other memories?

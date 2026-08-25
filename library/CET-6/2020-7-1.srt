@@ -1,0 +1,722 @@
+1
+00:00:37,540 --> 00:00:40,500
+CONVERSATION 1
+Tonight, we have a very special guest.
+
+2
+00:00:40,500 --> 00:00:48,360
+Mrs. Anna Sanchez is a three-time Olympic champion and author of the new book To the Edge.
+
+3
+00:00:48,360 --> 00:00:51,340
+Mrs. Sanchez, thank you for joining us.
+
+4
+00:00:51,340 --> 00:00:53,000
+Thank you for having me.
+
+5
+00:00:53,000 --> 00:00:54,840
+Let's start with your book.
+
+6
+00:00:54,840 --> 00:00:57,600
+What does the title "To the Edge" mean?
+
+7
+00:00:57,600 --> 00:00:59,340
+What are you referring to?
+
+8
+00:00:59,340 --> 00:01:05,780
+The book is about how science and technology has helped push humans to the edge of their physical abilities.
+
+9
+00:01:05,780 --> 00:01:11,920
+I argue that in the past 20 years, we have had the best athletes the world has ever seen.
+
+10
+00:01:11,920 --> 00:01:14,240
+But is this a fair comparison?
+
+11
+00:01:14,240 --> 00:01:19,740
+How do you know how, say, a football player from 50 years ago would compare to one today?
+
+12
+00:01:19,740 --> 00:01:22,140
+Well, you are right.
+
+13
+00:01:22,140 --> 00:01:25,680
+That comparison would be perhaps impossible to make.
+
+14
+00:01:25,680 --> 00:01:32,540
+But the point is more about our knowledge today of human biochemistry, nutrition, and mechanics.
+
+15
+00:01:32,540 --> 00:01:39,960
+I believe that while our bodies have not changed in thousands of years, what has changed is the scientific knowledge.
+
+16
+00:01:39,960 --> 00:01:44,240
+This has allowed athletes to push the limits of what was previously thought possible.
+
+17
+00:01:44,240 --> 00:01:46,740
+That's interesting.
+
+18
+00:01:46,740 --> 00:01:50,340
+Please tell us more about these perceived limits.
+
+19
+00:01:50,340 --> 00:02:03,800
+The world is seeing sports records being broken that could only be broken with the aid of technology, whether this be the speed of a tennis serve or the fastest time in a hundred-meter dash or 200-meter swimming race.
+
+20
+00:02:03,800 --> 00:02:09,820
+Is there any concern that technology is giving some athletes an unfair advantage over others?
+
+21
+00:02:09,820 --> 00:02:11,860
+That is an interesting question.
+
+22
+00:02:11,860 --> 00:02:15,820
+And one that has to be considered very carefully.
+
+23
+00:02:15,820 --> 00:02:23,760
+Skis, for example, went from being made of wood to a metal alloy which allows for better control and faster speed.
+
+24
+00:02:23,760 --> 00:02:26,480
+There is no stopping technological progress.
+
+25
+00:02:26,480 --> 00:02:40,600
+But, as I said, each situation should be considered carefully on a case by case basis.
+
+26
+00:02:40,600 --> 00:02:57,700
+Q1. What do we learn about Anna Sanchez?
+
+27
+00:02:57,700 --> 00:03:14,880
+Q2. What is the woman's book mainly about?
+
+28
+00:03:14,880 --> 00:03:33,080
+Q3. What has changed in the past thousands of years?
+
+29
+00:03:33,080 --> 00:03:53,260
+Q4. What is the man's concern about the use of technology in sports competitions?
+
+30
+00:03:53,260 --> 00:03:56,880
+CONVERSATION 2
+I've worked in international trade all my life.
+
+31
+00:03:56,880 --> 00:03:59,500
+My father did so too before me.
+
+32
+00:03:59,500 --> 00:04:02,360
+So I guess you could say it runs in the family.
+
+33
+00:04:02,360 --> 00:04:04,660
+What products have you worked with?
+
+34
+00:04:04,660 --> 00:04:05,580
+All sorts, really.
+
+35
+00:04:05,580 --> 00:04:13,940
+I've imported textiles, machinery, toys, solar panels, all kinds of things over the years.
+
+36
+00:04:13,940 --> 00:04:16,020
+Trends and demand come and go.
+
+37
+00:04:16,020 --> 00:04:20,120
+So one needs to be very flexible to succeed in this industry.
+
+38
+00:04:20,120 --> 00:04:21,180
+I see.
+
+39
+00:04:21,180 --> 00:04:23,360
+What goods are you trading now?
+
+40
+00:04:23,360 --> 00:04:29,660
+I now import furniture from China into Italy and foods from Italy into China.
+
+41
+00:04:29,660 --> 00:04:31,600
+I even use the same container.
+
+42
+00:04:31,600 --> 00:04:34,840
+It's a very efficient way of conducting trade.
+
+43
+00:04:34,840 --> 00:04:36,380
+The same container?
+
+44
+00:04:36,380 --> 00:04:39,920
+You mean you own a 40-foot cargo container?
+
+45
+00:04:39,920 --> 00:04:41,160
+Yeah, that's right.
+
+46
+00:04:41,160 --> 00:04:45,460
+I have a warehouse in Genoa, Italy and another in Shanghai.
+
+47
+00:04:45,460 --> 00:04:50,360
+I source mid-century modern furniture from different factories in China.
+
+48
+00:04:50,360 --> 00:04:52,640
+It's very good value for money.
+
+49
+00:04:52,640 --> 00:04:58,580
+I collect it all in my warehouse and then dispatch it to my other warehouse in Italy.
+
+50
+00:04:58,580 --> 00:05:07,160
+Over there I do the same, but with Italian foods instead of furniture, things like pasta, cheese, wine, chocolates.
+
+51
+00:05:07,160 --> 00:05:13,120
+And I send all that to my warehouse in China in the same freight container I use for the furniture.
+
+52
+00:05:13,120 --> 00:05:19,200
+So I presume you sell both lines of products wholesale in each respective country.
+
+53
+00:05:19,200 --> 00:05:20,140
+Of course.
+
+54
+00:05:20,140 --> 00:05:23,940
+I possess a network of clients and partners in both countries.
+
+55
+00:05:23,940 --> 00:05:26,640
+That's the main benefit of having done this for so long.
+
+56
+00:05:26,640 --> 00:05:30,180
+I've made great business contacts over time.
+
+57
+00:05:30,180 --> 00:05:32,380
+How many times do you ship?
+
+58
+00:05:32,380 --> 00:05:39,000
+I did 12 shipments last year, 18 this year, and I hope to grow to around 25 next year.
+
+59
+00:05:39,000 --> 00:05:41,820
+That's both ways, there and back again.
+
+60
+00:05:41,820 --> 00:05:46,120
+Demand for authentic Italian food in China is growing rapidly.
+
+61
+00:05:46,120 --> 00:05:52,500
+And similarly, sales of affordable, yet stylish wooden furniture are also increasing in Italy.
+
+62
+00:05:52,500 --> 00:06:06,720
+Furniture is marginally more profitable, mostly because it enjoys lower customs duties.
+
+63
+00:06:06,720 --> 00:06:26,800
+Q5. What does the woman think is required to be successful in international trade?
+
+64
+00:06:26,800 --> 00:06:45,460
+Q6. What does the woman say is special about her way of doing trade?
+
+65
+00:06:45,460 --> 00:07:03,560
+Q7. What does the woman have in both Italy and China?
+
+66
+00:07:03,560 --> 00:07:52,060
+Q8. What does the woman say makes furniture marginally more profitable?
+
+67
+00:07:52,060 --> 00:08:06,620
+PASSAGE 1
+Too many people view their jobs as a five-day prison, which they are paroled every Friday, says Joel Goodman, founder of the Humor Project, a humor consulting group in Saratoga Springs, New York.
+
+68
+00:08:06,620 --> 00:08:20,600
+Humor unlocks the office prison because it lets adults bring some of their childlike spirit to the job, according to Howard Pollio, professor of psychology at the University of Tennessee Knoxville.
+
+69
+00:08:20,600 --> 00:08:27,880
+An office with humor breaks is an office with satisfied and productive employees.
+
+70
+00:08:27,880 --> 00:08:35,400
+Pollio conducted a study that proved humor can help workers excel at routine production tasks.
+
+71
+00:08:35,400 --> 00:08:38,220
+Employees perform better when they have fun.
+
+72
+00:08:38,220 --> 00:08:46,620
+In large corporations with a hierarchy of power, there is often no outlet for stress.
+
+73
+00:08:46,620 --> 00:08:59,100
+Every company needs underground ways of poking fun at the organization, says Lynn Mark, a speaker on workplace humor for Saint Mary's Health Center in St. Louis.
+
+74
+00:08:59,100 --> 00:09:07,320
+Kodak's Rochester, New York branch, discovered a way for its 20,000 employees to uncork their bottled-up resentments.
+
+75
+00:09:07,320 --> 00:09:13,600
+Their 1,000 square foot humor room features a toy store.
+
+76
+00:09:13,600 --> 00:09:22,940
+Among the room's many stress-reducing gadgets, the main attraction is a boss doll with detachable arms and legs.
+
+77
+00:09:22,940 --> 00:09:30,480
+Employees can take the doll apart as long as they put its arms and legs back in place.
+
+78
+00:09:30,480 --> 00:09:42,840
+Sandy Cohan, owner of a graphic print production business, created the quote board to document the bizarre phrases people say when under strict deadlines.
+
+79
+00:09:42,840 --> 00:09:47,360
+"When you're under stress, you say stupid things," says Cohen.
+
+80
+00:09:47,360 --> 00:09:59,680
+"Now we just look at each other and say, that's one for the quote board."
+
+81
+00:09:59,680 --> 00:10:18,080
+Q9. What does the passage say about humor in the workplace?
+
+82
+00:10:18,080 --> 00:10:35,820
+Q10. What does the study by Howard Pollio show?
+
+83
+00:10:35,820 --> 00:10:54,540
+Q11. What can Kodak's employees do in the humor room?
+
+84
+00:10:54,540 --> 00:11:00,740
+PASSAGE 2
+Public interest was aroused by the latest discovery of a changed gene in obese mice.
+
+85
+00:11:00,740 --> 00:11:05,680
+The news was made known by Rockefeller University geneticist Jeffrey Friedman.
+
+86
+00:11:05,680 --> 00:11:15,380
+The researchers believe this gene influences development of a hormone that tells an organism how fat or full it is.
+
+87
+00:11:15,380 --> 00:11:26,260
+Those with the changed gene may not sense when they have eaten enough or if they have sufficient fatty tissue, and thus can't tell when to stop eating.
+
+88
+00:11:26,260 --> 00:11:32,840
+The researchers also reported finding a gene nearly identical to the mouse obesity gene in humans.
+
+89
+00:11:32,840 --> 00:11:38,820
+The operation of this gene in humans has not yet been demonstrated, however.
+
+90
+00:11:38,820 --> 00:11:46,080
+Still, professionals like University of Vermont psychologist Eyster Ross Bloom reacted enthusiastically.
+
+91
+00:11:46,080 --> 00:11:56,200
+This research indicates that people really are born with a tendency to have a certain weight, just as they are to have a particular skin color or height.
+
+92
+00:11:56,200 --> 00:12:08,120
+Actually, behavioral geneticists believe that less than half of the total weight variation is programmed in the genes, while height is almost entirely genetically determined.
+
+93
+00:12:08,120 --> 00:12:12,200
+Whatever role genes play, Americans are getting fatter.
+
+94
+00:12:12,200 --> 00:12:19,600
+A survey by the Center for Disease Control found that obesity has increased greatly over the last 10 years.
+
+95
+00:12:19,600 --> 00:12:27,340
+Such rapid change underlines the role of environmental factors like the abundance of rich foods in Americans' overeating.
+
+96
+00:12:27,340 --> 00:12:37,440
+The Center for Disease Control has also found that teens are far less physically active than they were even a decade ago.
+
+97
+00:12:37,440 --> 00:12:41,320
+Excepting that weight is predetermined can relieve guilt for overweight people.
+
+98
+00:12:41,320 --> 00:12:55,180
+But people's belief that they cannot control their weight can itself contribute to obesity.
+
+99
+00:12:55,180 --> 00:13:14,160
+Q12. What does the speaker say has aroused public interest?
+
+100
+00:13:14,160 --> 00:13:32,540
+Q13. What do we learn about the changed gene?
+
+101
+00:13:32,540 --> 00:13:52,460
+Q14. What does University of Vermont psychologist Eyster Ross Bloom say?
+
+102
+00:13:52,460 --> 00:14:40,700
+Q15. What accounts for Americans' obesity according to a survey by the Center for Disease Control?
+
+103
+00:14:40,700 --> 00:14:50,200
+RECORDING 1
+Qualities of a relationship such as openness, compassion and mental stimulation are of concern to most of us regardless of sex.
+
+104
+00:14:50,200 --> 00:14:57,100
+But judging from the questionnaire response, they are more important to women than to men.
+
+105
+00:14:57,100 --> 00:15:04,600
+Asked to consider the ingredients of close friendship, women rated these qualities above all others.
+
+106
+00:15:04,600 --> 00:15:20,040
+Men assigned a lower priority to them in favor of similarity in interests, selected by 77% of men, and responsiveness in a crisis, chosen by 61% of male respondents.
+
+107
+00:15:20,040 --> 00:15:28,520
+Mental stimulation ranked 3rd in popularity by men as well as women, the only area of overlap.
+
+108
+00:15:28,520 --> 00:15:34,260
+Among men, only 28% named openness as an important quality.
+
+109
+00:15:34,260 --> 00:15:37,960
+Caring was picked by just 23%.
+
+110
+00:15:37,960 --> 00:15:44,760
+It is evident by their selections that when women speak of close friendships, they are referring to emotional factors.
+
+111
+00:15:44,760 --> 00:15:49,520
+While men emphasized the pleasure they find in a friend's company.
+
+112
+00:15:49,520 --> 00:16:01,500
+That is, when a man speaks of a friend, he is likely to be talking about someone he does things with—a teammate, a fellow hobbyist, a drinking buddy.
+
+113
+00:16:01,500 --> 00:16:04,580
+These activities are the fabric of the friendship.
+
+114
+00:16:04,580 --> 00:16:11,340
+It is a "doing" relationship in which similarity in interests is the key bond.
+
+115
+00:16:11,340 --> 00:16:15,300
+This factor was a consideration of less than 11% of women.
+
+116
+00:16:15,300 --> 00:16:23,160
+Women opt for a warm, emotional atmosphere where communication flows freely.
+
+117
+00:16:23,160 --> 00:16:25,960
+Activity is mere background.
+
+118
+00:16:25,960 --> 00:16:31,920
+Lastly, men, as we have seen, have serious questions about each other's loyalty.
+
+119
+00:16:31,920 --> 00:16:40,780
+Perhaps this is why they placed such strong emphasis on responsiveness in a crisis—someone I can call on for help.
+
+120
+00:16:40,780 --> 00:16:50,200
+Women, as their testimonies indicate, are generally more secure with each other and consequently are more likely to treat this issue lightly.
+
+121
+00:16:50,200 --> 00:17:01,100
+In follow-up interviews, this was confirmed numerous times as woman after woman indicated that being there when needed was taken for granted.
+
+122
+00:17:01,100 --> 00:17:09,080
+As for the hazards of friendship, more than a few relationships have been shattered because of cutthroat competition and feelings of betrayal.
+
+123
+00:17:09,080 --> 00:17:13,860
+This applies to both men and women, but unequally.
+
+124
+00:17:13,860 --> 00:17:19,860
+In comparison, nearly twice as many men complained about these issues as women.
+
+125
+00:17:19,860 --> 00:17:34,300
+Further, while competition and betrayal are the main thorns to female friendship, men are plagued in almost equal amounts by two additional issues: lack of frankness and a fear of appearing unmanly.
+
+126
+00:17:34,300 --> 00:17:46,920
+Obviously, for a man, a good friendship is hard to find.
+
+127
+00:17:46,920 --> 00:18:07,980
+Q16. What quality do men value most concerning friendship according to a questionnaire response?
+
+128
+00:18:07,980 --> 00:18:26,240
+Q17. What do women refer to when speaking of close friendships?
+
+129
+00:18:26,240 --> 00:18:45,960
+Q18. What may threaten a friendship for both men and women?
+
+130
+00:18:45,960 --> 00:18:58,300
+RECORDING 2
+The partial skeletons of more than 20 dinosaurs and scattered bones of about 300 more have been discovered in Utah and Colorado at what is now the Dinosaur National Monument.
+
+131
+00:18:58,300 --> 00:19:08,460
+Many of the best specimens may be seen today at museums of natural history in the larger cities of the United States and Canada.
+
+132
+00:19:08,460 --> 00:19:15,400
+This dinosaur pit is the largest and best-preserved deposit of dinosaurs known today.
+
+133
+00:19:15,400 --> 00:19:29,660
+Many people get the idea from the mass of bones in the pit wall that some disaster, such as a volcanic explosion or a sudden flood, killed a whole herd of dinosaurs in this area.
+
+134
+00:19:29,660 --> 00:19:34,100
+This could have happened, but it probably did not.
+
+135
+00:19:34,100 --> 00:19:40,400
+The main reasons for thinking otherwise are the scattered bones and the thickness of the deposit.
+
+136
+00:19:40,400 --> 00:19:52,260
+In other deposits where the animals were thought to have died together, the skeletons were usually complete and often all the bones were in their proper places.
+
+137
+00:19:52,260 --> 00:19:55,600
+Rounded pieces of fossil bone have been found here.
+
+138
+00:19:55,600 --> 00:20:01,520
+These fragments got their smooth, round shape by rolling along the stream bottom.
+
+139
+00:20:01,520 --> 00:20:07,900
+In a mass killing, the bones would have been left on the stream or lake bottom together at the same level.
+
+140
+00:20:07,900 --> 00:20:16,000
+But in this deposit, the bones occur throughout a zone of sandstone about 12 feet thick.
+
+141
+00:20:16,000 --> 00:20:26,060
+The mixture of swamp dwellers and dry land types also seems to indicate that the deposit is a mixture from different places.
+
+142
+00:20:26,060 --> 00:20:32,040
+The pit area is a large dinosaur graveyard—not a place where they died.
+
+143
+00:20:32,040 --> 00:20:40,720
+Most of the remains probably floated down an eastward flowing river until they were left on a shallow sandbar.
+
+144
+00:20:40,720 --> 00:20:46,220
+Some of them may have come from faraway dry land areas to the west.
+
+145
+00:20:46,220 --> 00:20:52,840
+Perhaps they drowned trying to cross a small stream, or were washed away during floods.
+
+146
+00:20:52,840 --> 00:20:58,860
+Some of the swamp dwellers may have got stuck in the very sandbar that became their grave.
+
+147
+00:20:58,860 --> 00:21:04,120
+Others may have floated for miles before being stranded.
+
+148
+00:21:04,120 --> 00:21:14,860
+Even today, similar events take place: When floods come in the spring, sheep, cattle, and deer are often trapped by rising waters and often drown.
+
+149
+00:21:14,860 --> 00:21:26,200
+Their dead bodies float downstream until the flood recedes, and leaves them stranded on a bar or shore where they lie, half buried in the sand until they decay.
+
+150
+00:21:26,200 --> 00:21:46,060
+Early travelers on the Missouri River reported that shores and bars were often lined with the decaying bodies of buffalo that had died during spring floods.
+
+151
+00:21:46,060 --> 00:22:05,620
+Q19. Where can many of the best dinosaur specimens be found in North America?
+
+152
+00:22:05,620 --> 00:22:25,400
+Q20. What occurs to many people when they see the massive bones in the pit wall?
+
+153
+00:22:25,400 --> 00:22:45,000
+Q21. What does the speaker suggest about the large number of dinosaur bones found in the pit?
+
+154
+00:22:45,000 --> 00:22:53,140
+RECORDING 3
+I would like particularly to talk about the need to develop a new style of aging in our own society.
+
+155
+00:22:53,140 --> 00:23:00,420
+Young people in this country have been accused of not caring for their parents the way they would have in the old country.
+
+156
+00:23:00,420 --> 00:23:01,920
+And this is true.
+
+157
+00:23:01,920 --> 00:23:08,780
+But it is also true that old people have been influenced by an American ideal of independence and autonomy.
+
+158
+00:23:08,780 --> 00:23:15,920
+So we live alone, perhaps on the verge of starvation, in time without friends.
+
+159
+00:23:15,920 --> 00:23:18,580
+But we are independent.
+
+160
+00:23:18,580 --> 00:23:23,660
+This standard American style has been forced on every ethnic group.
+
+161
+00:23:23,660 --> 00:23:33,680
+Although there are many groups for whom the ideal is not practical, it is a poor ideal and pursuing it does a great deal of harm.
+
+162
+00:23:33,680 --> 00:23:39,820
+This ideal of independence also contains a tremendous amount of unselfishness.
+
+163
+00:23:39,820 --> 00:23:46,560
+In talking to today's young mothers, I have asked them what kind of grandmothers they think they are going to be.
+
+164
+00:23:46,560 --> 00:23:55,240
+I hear devoted loving mothers say that when they are through raising their children, they have no intention of becoming grandmothers.
+
+165
+00:23:55,240 --> 00:24:07,180
+They are astonished to hear that in most of the world, throughout most of its history, families have been three or four generation-families living under the same roof.
+
+166
+00:24:07,180 --> 00:24:13,240
+We have over-emphasized the small family unit—father, mother, small children.
+
+167
+00:24:13,240 --> 00:24:19,580
+We think it is wonderful if grandma and grandpa, if they're still alive, can live alone.
+
+168
+00:24:19,580 --> 00:24:26,040
+We have reached the point where we think the only thing we can do for our children is to stay out of their way.
+
+169
+00:24:26,040 --> 00:24:31,680
+The only thing we can do for our daughter-in-law is to see as little of her as possible.
+
+170
+00:24:31,680 --> 00:24:43,480
+Old people's nursing homes, even the best ones, are filled with older people who believe the only thing they can do for their children is to look cheerful when they come to visit.
+
+171
+00:24:43,480 --> 00:24:50,340
+So in the end, older people have to devote all their energies to not being a burden.
+
+172
+00:24:50,340 --> 00:24:57,560
+We are beginning to see what a tremendous price we've paid for our emphasis on independence and autonomy.
+
+173
+00:24:57,560 --> 00:25:03,080
+We've isolated old people and we've cut off the children from their grandparents.
+
+174
+00:25:03,080 --> 00:25:10,880
+One of the reasons we have as bad a generation gap today as we do is that grandparents have stepped out.
+
+175
+00:25:10,880 --> 00:25:30,920
+Young people are being deprived of the thing they need most: perspective—to know why their parents behave so peculiarly and why their grandparents say the things they do.
+
+176
+00:25:30,920 --> 00:25:48,700
+Q22. What have young Americans been accused of?
+
+177
+00:25:48,700 --> 00:26:08,420
+Q23. What does the speaker say about old people in the United States?
+
+178
+00:26:08,420 --> 00:26:27,740
+Q24. What is astonishing to the young mothers interviewed by the speaker?
+
+179
+00:26:27,740 --> 00:26:51,121
+Q25. What does the speaker say older people try their best to do?

@@ -1,0 +1,762 @@
+1
+00:00:40,280 --> 00:00:41,440
+CONVERSATION 1
+Good morning.
+
+2
+00:00:41,440 --> 00:00:42,780
+Safe House Insurance.
+
+3
+00:00:42,780 --> 00:00:43,980
+My name is Paul.
+
+4
+00:00:43,980 --> 00:00:45,260
+How can I help you today?
+
+5
+00:00:45,260 --> 00:00:46,840
+Morning.
+
+6
+00:00:46,840 --> 00:00:50,420
+I wouldn’t say that it’s good from where I am standing.
+
+7
+00:00:50,420 --> 00:00:58,380
+This is Miss Wilson, and this is the third time I’ve called this week since receiving your letter about our insurance claim.
+
+8
+00:00:58,380 --> 00:01:04,140
+I’m getting a little fed up with my calls about my claim being completely disregarded.
+
+9
+00:01:04,140 --> 00:01:06,880
+Miss Wilson, thank you for calling back.
+
+10
+00:01:06,880 --> 00:01:10,840
+Can I take some details to help me look at your claim?
+
+11
+00:01:10,840 --> 00:01:20,460
+It’s Miss May Wilson of 15 South Sea Road in Cornwall, and the details are that our village was extensively flooded two months ago.
+
+12
+00:01:20,460 --> 00:01:28,800
+The entire ground floor of our cottage was submerged in water, and five of us have been living in a caravan ever since.
+
+13
+00:01:28,800 --> 00:01:34,580
+You people are still withholding the money we are entitled to over a bizarre technical detail.
+
+14
+00:01:34,580 --> 00:01:36,300
+And it’s not acceptable, Paul!
+
+15
+00:01:36,300 --> 00:01:50,180
+Miss Wilson, according to the notes on your account, the bizarre technical detail that you mentioned refers to the fact that you hadn’t paid house insurance the month before the incident.
+
+16
+00:01:50,180 --> 00:01:52,400
+That money left our account.
+
+17
+00:01:52,400 --> 00:01:58,180
+And now that you should be paying out, you are suddenly saying that you didn’t receive it on time.
+
+18
+00:01:58,180 --> 00:02:00,180
+I’m really skeptical about this claim.
+
+19
+00:02:00,180 --> 00:02:10,640
+The contract does say that any missed payment in a year will affect the terms and conditions of the insurance contract and may affect claims.
+
+20
+00:02:10,640 --> 00:02:16,080
+Of course, I can pass you on to my manager to talk to you more about this.
+
+21
+00:02:16,080 --> 00:02:23,300
+I’ve already spoken to him, and you can tell him I’m furious now, and that your company has a lawsuit on its hands.
+
+22
+00:02:23,300 --> 00:02:25,460
+You will be hearing from my lawyer.
+
+23
+00:02:25,460 --> 00:02:33,820
+Goodbye.
+
+24
+00:02:33,820 --> 00:02:50,620
+Q1. What is the woman complaining about?
+
+25
+00:02:50,620 --> 00:03:08,880
+Q2. What is the problem the woman’s family encountered?
+
+26
+00:03:08,880 --> 00:03:29,340
+Q3. What has caused the so-called “bizarre technical detail” according to the man?
+
+27
+00:03:29,340 --> 00:03:48,620
+Q4. What does the woman say she would do at the end of the conversation?
+
+28
+00:03:48,620 --> 00:03:51,440
+CONVERSATION 2
+How do you feel about the future of artificial intelligence?
+
+29
+00:03:51,440 --> 00:03:55,380
+Personally, I feel quite optimistic about it.
+
+30
+00:03:55,380 --> 00:03:56,920
+AI?
+
+31
+00:03:56,920 --> 00:03:59,080
+I’m not so optimistic actually.
+
+32
+00:03:59,080 --> 00:04:02,680
+In fact, it’s something we should be concerned about.
+
+33
+00:04:02,680 --> 00:04:06,480
+Well, it will help us humans understand ourselves better.
+
+34
+00:04:06,480 --> 00:04:11,320
+And, when we have a better understanding of ourselves, we can improve the world.
+
+35
+00:04:11,320 --> 00:04:17,200
+Well, one thing is for sure: Technology is evolving faster than our ability to understand it.
+
+36
+00:04:17,200 --> 00:04:20,280
+And in the future, AI will make jobs kind of pointless.
+
+37
+00:04:20,280 --> 00:04:31,020
+I think artificial intelligence will actually help create new kinds of jobs, which would require less of our time and allow us to be centered on creative tasks.
+
+38
+00:04:31,020 --> 00:04:32,920
+I doubt that very much.
+
+39
+00:04:32,920 --> 00:04:36,900
+Probably the last job that we will remain will be writing AI software.
+
+40
+00:04:36,900 --> 00:04:40,620
+And then eventually, AI will just write its own software.
+
+41
+00:04:40,620 --> 00:04:51,440
+At that time, we are going to have a lot of jobs which nobody will want to do, so we will need artificial intelligence for the robots to take care of the old guys, like us.
+
+42
+00:04:51,440 --> 00:04:52,580
+I don’t know.
+
+43
+00:04:52,580 --> 00:04:58,280
+There’s a risk that human civilization could be replaced by a superior type of digital life.
+
+44
+00:04:58,280 --> 00:05:03,100
+AI will be able to completely simulate a person in every way possible.
+
+45
+00:05:03,100 --> 00:05:07,240
+In fact, some people think we’re in the simulation, right now.
+
+46
+00:05:07,240 --> 00:05:08,460
+That’s impossible.
+
+47
+00:05:08,460 --> 00:05:11,240
+Humans can’t even make a mosquito.
+
+48
+00:05:11,240 --> 00:05:13,320
+Computers only have chips.
+
+49
+00:05:13,320 --> 00:05:17,200
+People have brains, and that’s where the wisdom comes from.
+
+50
+00:05:17,200 --> 00:05:25,900
+Once it’s fully developed, AI will become tired of trying to communicate with humans, as we would be much slower thinkers in comparison.
+
+51
+00:05:25,900 --> 00:05:27,120
+I’m not so sure.
+
+52
+00:05:27,120 --> 00:05:31,480
+A computer is a computer, and a computer is just a toy.
+
+53
+00:05:31,480 --> 00:05:35,140
+Computers can easily communicate incredibly fast.
+
+54
+00:05:35,140 --> 00:05:39,060
+So the computer will just get impatient talking to humans.
+
+55
+00:05:39,060 --> 00:05:42,100
+It’ll be barely getting any information out.
+
+56
+00:05:42,100 --> 00:05:45,700
+Well, I believe there’s a benevolent future with AI.
+
+57
+00:05:45,700 --> 00:05:56,220
+I also think you watch too many science fiction films.
+
+58
+00:05:56,220 --> 00:06:14,420
+Q5. What do we learn about the speakers from the conversation?
+
+59
+00:06:14,420 --> 00:06:32,940
+Q6. What will new kinds of jobs be like, according to the woman?
+
+60
+00:06:32,940 --> 00:06:50,520
+Q7. What is the risk the man anticipates?
+
+61
+00:06:50,520 --> 00:07:37,240
+Q8. What is the man’s concern about AI technology?
+
+62
+00:07:37,240 --> 00:07:46,160
+PASSAGE 1
+To achieve financial security, how much you save is always more important than the amount you earn or how shrewdly you invest.
+
+63
+00:07:46,160 --> 00:07:53,300
+If you’re under 30 years old, your goal should be to save 20% of your monthly income after tax deductions.
+
+64
+00:07:53,300 --> 00:07:58,780
+This is irrespective of how much you earn.
+
+65
+00:07:58,780 --> 00:08:03,980
+Approximately 50% should be reserved for essentials like food and accommodation.
+
+66
+00:08:03,980 --> 00:08:08,780
+The remaining 30% is for recreation and entertainment.
+
+67
+00:08:08,780 --> 00:08:16,000
+But for many young people, it'll be difficult to designate such a large proportion of their income for savings.
+
+68
+00:08:16,000 --> 00:08:23,040
+If you find it hard to save any money at all, start by cutting all unnecessary spending.
+
+69
+00:08:23,040 --> 00:08:30,660
+Allocate a tiny amount of 1 or 2 percent for savings and gradually increase that amount.
+
+70
+00:08:30,660 --> 00:08:36,700
+Always keep that 20% goal in mind to prevents yourself from becoming complacent.
+
+71
+00:08:36,700 --> 00:08:40,440
+It can be challenging to stick to such a strict plan.
+
+72
+00:08:40,440 --> 00:08:45,440
+But if you adopt the right mindset, you should be apt to make it work for you.
+
+73
+00:08:45,440 --> 00:08:48,420
+So, what should you be doing with the money that you're saving?
+
+74
+00:08:48,420 --> 00:08:54,540
+Some must be kept easily accessible in case you need some cash in an emergency.
+
+75
+00:08:54,540 --> 00:09:01,280
+The largest proportion should be invested in retirement plans, either through your employer or privately.
+
+76
+00:09:01,280 --> 00:09:07,080
+And you can keep some money for high-risk but potentially lucrative investments.
+
+77
+00:09:07,080 --> 00:09:11,740
+Dividends can be reinvested or used to purchase something you like.
+
+78
+00:09:11,740 --> 00:09:25,620
+By following this plan, you should hopefully be able to enjoy your life now, and still be financially secure in the future.
+
+79
+00:09:25,620 --> 00:09:46,280
+Q9. What are people under 30 advised to do to achieve financial security?
+
+80
+00:09:46,280 --> 00:10:06,840
+Q10. What should people do if they find it difficult to follow the speaker’s advice on their financial plan?
+
+81
+00:10:06,840 --> 00:10:23,920
+Q11. What does he speaker think is important for achieving financial security?
+
+82
+00:10:23,920 --> 00:10:35,020
+PASSAGE 2
+I work in advertising and I like to keep up with current trends, mainly because I’m aware that we live in an image-obsessed world.
+
+83
+00:10:35,020 --> 00:10:44,560
+However, when I first started my job, occasionally, I'd catch a glimpse of myself in the lifts and find myself thinking that I looked a total mess.
+
+84
+00:10:44,560 --> 00:10:47,960
+Was I being held back by my choice of clothing?
+
+85
+00:10:47,960 --> 00:10:54,760
+The short answer is yes, especially when clients are quick to judge you on your style rather than your work.
+
+86
+00:10:54,760 --> 00:10:58,040
+But no one can be unique with their outfit every day.
+
+87
+00:10:58,040 --> 00:11:01,240
+I mean that’s why uniforms were invented.
+
+88
+00:11:01,240 --> 00:11:03,340
+So, here’s what I did.
+
+89
+00:11:03,340 --> 00:11:06,260
+I created my own uniform.
+
+90
+00:11:06,260 --> 00:11:08,700
+To do this, I chose an appropriate outfit.
+
+91
+00:11:08,700 --> 00:11:14,000
+Then I bought multiple items of the same style in different shades.
+
+92
+00:11:14,000 --> 00:11:21,980
+Now, I never worry about what I’m wearing in the morning even if I do get a bit tired of just wearing the same classic pieces.
+
+93
+00:11:21,980 --> 00:11:29,280
+Overall, when it comes to work, you have to ask yourself: “Will looking smarter enhance my ability to do my job?
+
+94
+00:11:29,280 --> 00:11:37,980
+” For some, this question may not be an issue at all, especially if you work remotely and rarely see your colleagues or clients face to face.
+
+95
+00:11:37,980 --> 00:11:45,120
+But if your job involves interacting with other people, the answer to this is often yes.
+
+96
+00:11:45,120 --> 00:11:51,520
+So rather than fighting the system, I think we should just do whatever helps us to achieve our goals at work.
+
+97
+00:11:51,520 --> 00:11:55,480
+If that means playing it safe with your image, then let’s face it.
+
+98
+00:11:55,480 --> 00:12:04,240
+It’s probably worth it.
+
+99
+00:12:04,240 --> 00:12:22,900
+Q12. What do we learn about the speaker when she first started her job?
+
+100
+00:12:22,900 --> 00:12:41,120
+Q13. Why were uniforms invented according to the speaker?
+
+101
+00:12:41,120 --> 00:12:59,120
+Q14. What does the speaker say about looking smarter?
+
+102
+00:12:59,120 --> 00:13:44,160
+Q15. What does the speaker advise people to do in an image-obsessed world?
+
+103
+00:13:44,160 --> 00:13:51,240
+RECORDING 1
+Did you know that Americans have approximately three times the amount of space we had 50 years ago?
+
+104
+00:13:51,240 --> 00:13:56,180
+Therefore, you’d think we’d have sufficient room for all of our possessions.
+
+105
+00:13:56,180 --> 00:14:01,180
+On the contrary, the personal storage business is now a growing industry.
+
+106
+00:14:01,180 --> 00:14:09,060
+We've got triple the space, but we’ve become such enthusiastic consumers that we require even more.
+
+107
+00:14:09,060 --> 00:14:23,220
+This phenomenon has resulted in significant credit card debt, enormous environmental footprints, and perhaps not coincidentally, our happiness levels have failed to increase over the same half century.
+
+108
+00:14:23,220 --> 00:14:29,480
+I’m here to suggest an alternative that having less might actually be a preferable decision.
+
+109
+00:14:29,480 --> 00:14:33,960
+Many of us have experienced, at some stage, the pleasure of possessing less.
+
+110
+00:14:33,960 --> 00:14:43,160
+I propose that less stuff and less space can not only help you economize, but also simplify your life.
+
+111
+00:14:43,160 --> 00:14:50,940
+I recently started an innovative project to discover some creative solutions that offered me everything I required.
+
+112
+00:14:50,940 --> 00:14:59,240
+By purchasing an apartment that was 40 square meters, instead of 60, I immediately saved $200,000.
+
+113
+00:14:59,240 --> 00:15:06,300
+Smaller space leads to reduced utility bills, and also a smaller carbon footprint.
+
+114
+00:15:06,300 --> 00:15:15,000
+Because it is designed around an edited collection of possessions, limited to my favorite stuff, I'm really excited to live there.
+
+115
+00:15:15,000 --> 00:15:17,360
+How can we live more basically?
+
+116
+00:15:17,360 --> 00:15:22,540
+Firstly, we must ruthlessly cut the unnecessary objects out of our lives.
+
+117
+00:15:22,540 --> 00:15:30,640
+To stem consumption, we should think before we buy and ask ourselves, “Will it truly make me happier?
+
+118
+00:15:30,640 --> 00:15:33,540
+” Obviously, we should possess some great stuff.
+
+119
+00:15:33,540 --> 00:15:37,960
+But we want belongings that we’re going to love for years.
+
+120
+00:15:37,960 --> 00:15:41,560
+Secondly, we require space efficiency.
+
+121
+00:15:41,560 --> 00:15:46,980
+We want appliances that are designed for use most of the time, not for occasional use.
+
+122
+00:15:46,980 --> 00:15:53,840
+Why own a six-burner stove when you rarely use even three burners?
+
+123
+00:15:53,840 --> 00:15:58,100
+Finally, we need multifunctional spaces and housewares.
+
+124
+00:15:58,100 --> 00:16:04,320
+I combined a moveable wall with transforming furniture to get more out of my limited space.
+
+125
+00:16:04,320 --> 00:16:06,040
+Consider my coffee table.
+
+126
+00:16:06,040 --> 00:16:09,300
+It increases in size to accommodate ten.
+
+127
+00:16:09,300 --> 00:16:12,940
+My office is tucked away, easily hidden.
+
+128
+00:16:12,940 --> 00:16:15,300
+My bed simply pops out of the wall.
+
+129
+00:16:15,300 --> 00:16:23,420
+For guests, I can relocate the moveable wall and utilize the foldable guest beds I installed.
+
+130
+00:16:23,420 --> 00:16:30,440
+I’m not saying we should all live in tiny apartments, but consider the benefits of an edited life.
+
+131
+00:16:30,440 --> 00:16:38,920
+When you return home and walk through your front door, take a moment to ask yourself, “Could I do with a little life editing?
+
+132
+00:16:38,920 --> 00:16:46,175
+Would that give me more freedom and more time?
+
+133
+00:16:46,175 --> 00:16:49,400
+”
+
+134
+00:16:49,400 --> 00:17:08,380
+Q16. What has prevened Americans' happiness levels from increasing?
+
+135
+00:17:08,380 --> 00:17:26,480
+Q17. What things should we possess according to the speaker?
+
+136
+00:17:26,480 --> 00:17:44,940
+Q18. What do we learn about the items in the speaker's home?
+
+137
+00:17:44,940 --> 00:17:54,240
+RECORDING 2
+Now, believe it or not, people sometimes lie in order to maintain a good, honest reputation—even if it hurts them to do so.
+
+138
+00:17:54,240 --> 00:18:00,620
+At least, this is what a team of scientists is suggesting, with evidence to prove it.
+
+139
+00:18:00,620 --> 00:18:07,920
+Picture this scenario: You often drive for work and can be compensated for up to 400 miles per month.
+
+140
+00:18:07,920 --> 00:18:12,180
+Most people at your company drive about 300 miles each month.
+
+141
+00:18:12,180 --> 00:18:15,900
+But this month, you drove 400 miles.
+
+142
+00:18:15,900 --> 00:18:19,920
+How many miles do you think you'd claim in your expense report?
+
+143
+00:18:19,920 --> 00:18:24,880
+The scientists asked this exact question as part of the study we’re discussing today.
+
+144
+00:18:24,880 --> 00:18:38,320
+With surprising results, they found that 12% of respondents reported the distance they drove as less than the actual figure, giving an average answer of 384 miles.
+
+145
+00:18:38,320 --> 00:18:44,760
+In other words, they lied about the number of miles, even though they would forfeit money they were owed.
+
+146
+00:18:44,760 --> 00:18:53,740
+The researchers believe this was to seem honest, with the assumption being that others would be suspicious of a high expense claim.
+
+147
+00:18:53,740 --> 00:18:57,860
+But why would people fabricate numbers to their own detriment?
+
+148
+00:18:57,860 --> 00:19:05,440
+The researchers explain that many people care a great deal about their reputation and how they'll be judged by others.
+
+149
+00:19:05,440 --> 00:19:14,720
+If they care enough, their concern about appearing honest and not losing the respect of others may be greater than their desire to actually be honest.
+
+150
+00:19:14,720 --> 00:19:30,880
+The researchers assert that the findings suggest that when people obtain very favorable outcomes, they anticipate other people’s suspicious reactions and prefer lying and appearing honest to telling the truth and appearing as selfish liars.
+
+151
+00:19:30,880 --> 00:19:33,620
+So why is this research important?
+
+152
+00:19:33,620 --> 00:19:41,960
+Well, experts generally agree there are two main types of lie: selfish lies and lies that are meant to benefit others.
+
+153
+00:19:41,960 --> 00:19:59,420
+The first, as you may predict, is for selfish gain, such as submitting a fraudulent claim to an insurance company, while the second involves lying to help others or not offend others, for example, telling a friend whose outfit you don’t like that they look great.
+
+154
+00:19:59,420 --> 00:20:05,860
+But the researchers are suggesting a third type of lying—lying to maintain a good reputation.
+
+155
+00:20:05,860 --> 00:20:11,800
+Now this hypothesis is new and some skeptics argue that this isn’t a whole new category of lie.
+
+156
+00:20:11,800 --> 00:20:15,120
+But the findings seem intuitive to me.
+
+157
+00:20:15,120 --> 00:20:37,217
+After all, one of the main motivations for lying is to increase our worth in the eyes of others, so it seems highly likely that people will lie to seem honest.
+
+158
+00:20:37,217 --> 00:20:50,760
+Q19. What did a team of scientists find in their study?
+
+159
+00:20:50,760 --> 00:21:10,180
+Q20. Why would people fabricate numbers to their own detriment according to the researchers?
+
+160
+00:21:10,180 --> 00:21:28,140
+Q21. What does the speaker think of the researchers’ findings?
+
+161
+00:21:28,140 --> 00:21:31,620
+RECORDING 3
+Why do old people dislike new music?
+
+162
+00:21:31,620 --> 00:21:40,500
+As I’ve grown older, I often hear people my age say things like “They just don’t make good music like they used to.
+
+163
+00:21:40,500 --> 00:21:42,500
+” Why does this happen?
+
+164
+00:21:42,500 --> 00:21:47,100
+Luckily, psychology can give us some insights into this puzzle.
+
+165
+00:21:47,100 --> 00:21:51,600
+Musical tastes begin to crystallize as early as age 13 or 14.
+
+166
+00:21:51,600 --> 00:21:58,620
+By the time we’re in our early 20s, these tastes get locked into place pretty firmly.
+
+167
+00:21:58,620 --> 00:22:06,060
+In fact, studies have found that by the time we turn 33, most of us have stopped listening to new music.
+
+168
+00:22:06,060 --> 00:22:14,440
+Meanwhile, popular songs released when you’re in your early teens are likely to remain quite popular among your age group through the rest of your life.
+
+169
+00:22:14,440 --> 00:22:27,780
+There could be a biological explanation for this, as there is evidence that the brain’s ability to make subtle distinctions between different chords, rhythms and melodies deteriorates with age.
+
+170
+00:22:27,780 --> 00:22:32,429
+So to older people, newer, less familiar songs might all “sound the same.
+
+171
+00:22:32,429 --> 00:22:33,860
+”
+
+172
+00:22:33,860 --> 00:22:38,540
+But there may be some simpler reasons for older people’s aversion to newer music.
+
+173
+00:22:38,540 --> 00:22:50,940
+One of the most researched laws of social psychology is something called the “mere exposure effect,” which, in essence, means that the more we're exposed to something, the more we tend to like it.
+
+174
+00:22:50,940 --> 00:22:56,520
+This happens with people we know, the advertisements we see and the songs we listen to.
+
+175
+00:22:56,520 --> 00:23:03,700
+When you’re in your early teens, you probably spend a fair amount of time listening to music or watching music videos.
+
+176
+00:23:03,700 --> 00:23:08,200
+Your favorite songs and artists become familiar, comforting parts of your routine.
+
+177
+00:23:08,200 --> 00:23:18,040
+For many people over 30, job and family obligations increase, so there’s less time to spend discovering new music.
+
+178
+00:23:18,040 --> 00:23:25,920
+Instead, many will simply listen to old, familiar favorites from that period of their lives when they had more free time.
+
+179
+00:23:25,920 --> 00:23:31,280
+Of course those teen years weren’t necessarily carefree.
+
+180
+00:23:31,280 --> 00:23:37,680
+They’re famously confusing, which is why so many TV shows and movies revolve around high school turmoil.
+
+181
+00:23:37,680 --> 00:23:46,600
+Psychology research has shown that the emotions that we experience as teens seem more intense than those that come later.
+
+182
+00:23:46,600 --> 00:23:54,020
+And we also know that intense emotions are associated with stronger memories and preferences.
+
+183
+00:23:54,020 --> 00:24:01,420
+Both of these might explain why the songs we listen to during this period become so memorable and beloved.
+
+184
+00:24:01,420 --> 00:24:05,860
+So there’s nothing wrong with your parents because they don’t like your music.
+
+185
+00:24:05,860 --> 00:24:18,360
+Rather it’s all part of the natural order of things.
+
+186
+00:24:18,360 --> 00:24:36,880
+Q22. What does the speaker mainly discites in this talk?
+
+187
+00:24:36,880 --> 00:24:57,220
+Q23. What have studies found about most people by the time they turn 33?
+
+188
+00:24:57,220 --> 00:25:17,380
+Q24. What do we learn from one of the most researched laws of social psychology?
+
+189
+00:25:17,380 --> 00:25:40,507
+Q25. What might explain the fact that songs people listen to in their teen years are memorable and beloved?

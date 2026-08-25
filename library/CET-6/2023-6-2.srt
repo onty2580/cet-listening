@@ -1,0 +1,702 @@
+1
+00:00:36,880 --> 00:00:39,580
+CONVERSATION 1
+Have you decided what you wish to study?
+
+2
+00:00:39,580 --> 00:00:40,660
+Yes, professor.
+
+3
+00:00:40,660 --> 00:00:43,000
+I wish to study architecture.
+
+4
+00:00:43,000 --> 00:00:45,500
+Ah, that's a wonderful profession.
+
+5
+00:00:45,500 --> 00:00:46,940
+Why did you choose it?
+
+6
+00:00:46,940 --> 00:00:50,360
+I gave a lot of thought to things you said during our last discussion.
+
+7
+00:00:50,360 --> 00:00:54,180
+And I decided architecture made the most sense for me.
+
+8
+00:00:54,180 --> 00:00:59,360
+In particular, I'm attracted to the marriage of design and engineering.
+
+9
+00:00:59,360 --> 00:01:05,480
+That's great, but I seem to remember you were preoccupied with all the lofty mathematics.
+
+10
+00:01:05,480 --> 00:01:08,620
+You no longer think this aspect will be too hard for you?
+
+11
+00:01:08,620 --> 00:01:14,400
+No. I was doing some online research and I think I should be able to manage.
+
+12
+00:01:14,400 --> 00:01:20,940
+Math might be the toughest subject I encounter in the curriculum, but I'll simply put in the work required.
+
+13
+00:01:20,940 --> 00:01:23,420
+I'm certain the fruits of my labor will pay off.
+
+14
+00:01:23,420 --> 00:01:25,880
+I'm sure that's true.
+
+15
+00:01:25,880 --> 00:01:34,000
+Due to its material nature, architecture is one field where you will be able to clearly witness the contribution you make to a city.
+
+16
+00:01:34,000 --> 00:01:38,540
+And the legacies you build will last much longer than any of us mortals.
+
+17
+00:01:38,540 --> 00:01:41,020
+Yeah, I guess that's true too.
+
+18
+00:01:41,020 --> 00:01:45,620
+So what subjects do you think I should start brushing up on in preparation?
+
+19
+00:01:45,620 --> 00:01:46,780
+I have the whole summer.
+
+20
+00:01:46,780 --> 00:01:52,640
+These days, architecture is a very diverse and dynamic degree.
+
+21
+00:01:52,640 --> 00:02:00,660
+Most universities will encourage you to learn different things from fields as wide-ranging as philosophy and economics.
+
+22
+00:02:00,660 --> 00:02:10,700
+Nevertheless, I would suggest you start with computer science, because there will be many intricate visuals you will have to produce as part of your projects.
+
+23
+00:02:10,700 --> 00:02:14,120
+Any software in particular you think I should start with?
+
+24
+00:02:14,120 --> 00:02:15,420
+Photoshop is a good place.
+
+25
+00:02:15,420 --> 00:02:21,080
+If you aren't yet, try to become as proficient as you can with it.
+
+26
+00:02:21,080 --> 00:02:37,380
+And another thing that I would recommend you learn as much as you can is fine arts, in particular, the history of Western art.
+
+27
+00:02:37,380 --> 00:02:55,660
+Q1. Why does the woman wish to study architecture?
+
+28
+00:02:55,660 --> 00:03:15,340
+Q2. How does the woman say she will overcome the difficulty in learning mathematics?
+
+29
+00:03:15,340 --> 00:03:34,960
+Q3. What does the man say about architects' contribution to a city?
+
+30
+00:03:34,960 --> 00:03:54,240
+Q4. What subject does the man suggest the woman start with?
+
+31
+00:03:54,240 --> 00:03:59,020
+CONVERSATION 2
+So, as I mentioned over the phone, we are looking for someone who is very discreet.
+
+32
+00:03:59,020 --> 00:04:00,740
+I can't stress this enough.
+
+33
+00:04:00,740 --> 00:04:02,700
+I fully understand.
+
+34
+00:04:02,700 --> 00:04:10,260
+As we all know, being such a famous football player at Real Madrid, Mr Sanchez has a very high public profile.
+
+35
+00:04:10,260 --> 00:04:14,960
+This means he cannot leave the house without being recognized and harassed.
+
+36
+00:04:14,960 --> 00:04:22,280
+Yes, I completely understand how imperative it would be to respect Mr Sanchez's private life.
+
+37
+00:04:22,280 --> 00:04:22,940
+Good.
+
+38
+00:04:22,940 --> 00:04:34,620
+As his personal assistant, you would be required to run common everyday chores for Mr Sanchez, things he cannot do himself due to his fame, like going to the supermarket or post office.
+
+39
+00:04:34,620 --> 00:04:40,500
+So, well, at first sight it may appear that working for a celebrity is very glamorous.
+
+40
+00:04:40,500 --> 00:04:42,760
+Nothing could be further from the truth.
+
+41
+00:04:42,760 --> 00:04:48,320
+I'm telling you this so that you don't get any false expectations of what the job has to offer you.
+
+42
+00:04:48,320 --> 00:04:49,100
+Thanks.
+
+43
+00:04:49,100 --> 00:04:50,820
+I understand this too.
+
+44
+00:04:50,820 --> 00:04:53,780
+This is my first job after graduating from university.
+
+45
+00:04:53,780 --> 00:04:58,540
+So frankly, I don't have much prior working experience.
+
+46
+00:04:58,540 --> 00:05:08,120
+I am, however, very excited about the prospect of joining this company and very keen to start from the bottom in whatever capacity I may be of use.
+
+47
+00:05:08,120 --> 00:05:09,240
+That's good to hear.
+
+48
+00:05:09,240 --> 00:05:11,000
+You sound very energetic.
+
+49
+00:05:11,000 --> 00:05:15,140
+Tell me why do you think you are well suited for this job?
+
+50
+00:05:15,140 --> 00:05:17,100
+Well, firstly, I love football.
+
+51
+00:05:17,100 --> 00:05:22,740
+I'm a lifelong Real Madrid supporter and go to their games every weekend I can.
+
+52
+00:05:22,740 --> 00:05:31,660
+I would simply love to have a job where I'm involved in some capacity with Real Madrid, regardless of the position and salary.
+
+53
+00:05:31,660 --> 00:05:37,420
+And secondly, I think what this company does in sports consultancy is very cool.
+
+54
+00:05:37,420 --> 00:05:42,700
+And I think my language skills could prove very useful down the road.
+
+55
+00:05:42,700 --> 00:05:45,160
+Please tell me more about your language skills.
+
+56
+00:05:45,160 --> 00:05:58,080
+I am fully fluent in English and Spanish and have a working proficiency in French.
+
+57
+00:05:58,080 --> 00:06:16,540
+Q5. What do we learn from the conversation about Mr Sanchez?
+
+58
+00:06:16,540 --> 00:06:34,100
+Q6. What will the man do if he gets the job?
+
+59
+00:06:34,100 --> 00:06:51,260
+Q7. What does the man say about himself?
+
+60
+00:06:51,260 --> 00:07:35,820
+Q8. Why does the man think he is a very competitive candidate?
+
+61
+00:07:35,820 --> 00:07:43,420
+PASSAGE 1
+Adventure sports are undeniably attractive to many energetic and thrill-seeking kids.
+
+62
+00:07:43,420 --> 00:07:50,940
+Sports like rock climbing, surfing, skiing, and mountain biking, thus have lots of appeal.
+
+63
+00:07:50,940 --> 00:07:59,500
+They don't have many of the rules and pressures of traditional team sports, but they still have all the benefits of outdoor physical activity.
+
+64
+00:07:59,500 --> 00:08:06,680
+When properly supervised, extreme sports can be a part of a healthy, balanced life.
+
+65
+00:08:06,680 --> 00:08:17,220
+Some adventure sports may be associated with higher risks of injury, so it's important for kids to figure out when to take risks, and when not to.
+
+66
+00:08:17,220 --> 00:08:23,480
+Risk-free activities deprive kids of the opportunity to test themselves and overcome their fears.
+
+67
+00:08:23,480 --> 00:08:30,640
+But, to some, these very risks are what makes these sports a bad choice.
+
+68
+00:08:30,640 --> 00:08:41,620
+They say that extreme sports can often lead to devastating injuries, especially as young thrill seekers may attempt feats that are too advanced for them.
+
+69
+00:08:41,620 --> 00:08:43,200
+But let's be real.
+
+70
+00:08:43,200 --> 00:08:48,720
+Most kids do all kinds of dangerous stuff whether you want them to or not.
+
+71
+00:08:48,720 --> 00:08:51,960
+Adventure sports have many of the same risks and dangers.
+
+72
+00:08:51,960 --> 00:09:00,860
+But, they have an additional sense of adventure, courage and autonomy that is important to foster in young children.
+
+73
+00:09:00,860 --> 00:09:05,460
+As always, it's up to parents to decide what's best for their kids.
+
+74
+00:09:05,460 --> 00:09:15,560
+But, if you do decide that adventure sports are a bit too much, do try to introduce other forms of outdoor adventures into their lives.
+
+75
+00:09:15,560 --> 00:09:40,886
+Camping under the stars, fishing, stargazing, or even just playing in the woods can help a lot in building the same sense of self-confidence and risk-taking as in adventure sports.
+
+76
+00:09:40,886 --> 00:09:54,340
+Q9. Why do extreme sports appeal to many kids?
+
+77
+00:09:54,340 --> 00:10:12,320
+Q10. What does the speaker say about risk-free activities?
+
+78
+00:10:12,320 --> 00:10:33,680
+Q11. What shall parents do if they decide adventure sports are a bit too much for their kids?
+
+79
+00:10:33,680 --> 00:10:38,240
+PASSAGE 2
+The shiny gadgets of today will be waste tomorrow.
+
+80
+00:10:38,240 --> 00:10:47,740
+Manufacturers don't talk much about this when they announce the big new thing that will replace your mostly just as good old thing.
+
+81
+00:10:47,740 --> 00:11:00,340
+In fact, technology firms often purposely design devices that will not last long and cannot be repaired so that consumers will have to spend their money on a new one.
+
+82
+00:11:00,340 --> 00:11:09,240
+This year, the French government began requiring tech manufacturers to list a repairability score.
+
+83
+00:11:09,240 --> 00:11:20,560
+If a device can be repaired, then its life can be extended, saving consumers money and the planet the burden of so many trashed gadgets.
+
+84
+00:11:20,560 --> 00:11:26,240
+Equipped with this knowledge, consumers can make better choices about which products to buy.
+
+85
+00:11:26,240 --> 00:11:39,800
+Some 59 million tons of old TVs, computers, screens, smartphones, washers and other electronics are discarded every year.
+
+86
+00:11:39,800 --> 00:11:42,200
+This waste is dangerous.
+
+87
+00:11:42,200 --> 00:11:46,140
+Batteries explode in recycling facilities.
+
+88
+00:11:46,140 --> 00:11:53,140
+Toxic substances like mercury leak into soil and groundwater and disperse in the air.
+
+89
+00:11:53,140 --> 00:11:59,120
+Manufacturing flat screens adds greenhouse gases to the atmosphere.
+
+90
+00:11:59,120 --> 00:12:03,940
+We need tech companies to take the lead to solve this problem.
+
+91
+00:12:03,940 --> 00:12:08,200
+If they won't, governments must make them do so.
+
+92
+00:12:08,200 --> 00:12:20,400
+Although tech companies will often speak of environmental sustainability, many lobby against repair legislation, fearful it will eat into their profits.
+
+93
+00:12:20,400 --> 00:12:27,840
+Sustainability matters, but marketable design appears to matter more to these companies.
+
+94
+00:12:27,840 --> 00:12:31,600
+Consumers should support right-to-repair legislation.
+
+95
+00:12:31,600 --> 00:12:35,020
+In this world, damage is a certainty.
+
+96
+00:12:35,020 --> 00:12:48,960
+But we cannot leave things broken: A problem of our creation is a problem that can be fixed.
+
+97
+00:12:48,960 --> 00:13:07,460
+Q12. Why did new tech products soon become waste?
+
+98
+00:13:07,460 --> 00:13:29,060
+Q13. What did the French government require tech companies to do to help consumers make better choices?
+
+99
+00:13:29,060 --> 00:13:49,340
+Q14. What should tech companies do to help ensure environmental sustainability?
+
+100
+00:13:49,340 --> 00:14:33,750
+Q15. What does the speaker think of the problem of waste?
+
+101
+00:14:33,750 --> 00:14:44,060
+RECORDING 1
+On average, U.S. workers spend about 10% of their workday surfing the internet, emailing friends or shopping online.
+
+102
+00:14:44,060 --> 00:14:54,300
+This behavior, called cyberloafing, is believed to cost employers up to $85 billion a year in lost productivity.
+
+103
+00:14:54,300 --> 00:15:08,200
+The majority of cyberloafing research focuses on ways to prevent employees from engaging in this behavior through interventions such as internet monitoring and computer use policies.
+
+104
+00:15:08,200 --> 00:15:15,920
+But it turns out, such behaviors may not be a sign that a worker is lazy or just wasting time.
+
+105
+00:15:15,920 --> 00:15:23,880
+Social media use at work has been linked to higher levels of employee engagement and job satisfaction.
+
+106
+00:15:23,880 --> 00:15:31,440
+New research suggests cyberloafing can help workers cope with an exceptionally stressful work environment.
+
+107
+00:15:31,440 --> 00:15:39,020
+But is cyberloafing actually effective at reducing employee stress levels?
+
+108
+00:15:39,020 --> 00:15:43,780
+That's the question my research team wanted to answer in our new study.
+
+109
+00:15:43,780 --> 00:15:54,500
+Our hypothesis was that cyberloafing may serve as a mini-break, giving employees an opportunity to recover from stressful work situations.
+
+110
+00:15:54,500 --> 00:16:06,340
+To test this, we asked workers to complete an online survey and rank how much time they spent cyberloafing, checking non-work emails and shopping.
+
+111
+00:16:06,340 --> 00:16:19,340
+We also asked them to rank job satisfaction, their desire to quit, and how often they've experienced mistreatment at work, such as being bullied, threatened or yelled at.
+
+112
+00:16:19,340 --> 00:16:33,080
+As you might expect, we found that overall, more mistreatment at work was correlated with lower levels of job satisfaction and a greater desire to quit.
+
+113
+00:16:33,080 --> 00:16:40,240
+More interestingly, we found that cyberloafing effectively buffered this connection.
+
+114
+00:16:40,240 --> 00:16:56,920
+That is, mistreated workers who spent more time surfing the web and checking emails reported higher job satisfaction and were less likely to want to quit than similar participants who didn't cyberloaf as much.
+
+115
+00:16:56,920 --> 00:17:07,500
+This suggests that cyberloafing acts as a sort of relief valve for workers, helping them recover from stressful experiences.
+
+116
+00:17:07,500 --> 00:17:22,340
+While we did not directly assess how cyberloafing affects worker performance, we believe by relieving stress it may not only reduce worker turnover, but also ultimately bolster productivity.
+
+117
+00:17:22,340 --> 00:17:31,120
+This fits with other recent research that suggests taking short breaks is associated with higher levels of daily job performance.
+
+118
+00:17:31,120 --> 00:17:35,080
+That isn't to say cyberloafing is always good.
+
+119
+00:17:35,080 --> 00:17:40,660
+Too much time spent on non-work activities likely causes performance to suffer.
+
+120
+00:17:40,660 --> 00:17:46,660
+All in all, managers should be more lenient with employees.
+
+121
+00:17:46,660 --> 00:18:06,263
+We believe a bit of online shopping or surfing the internet at work could make workers more productive in the long run.
+
+122
+00:18:06,263 --> 00:18:20,520
+Q16. What does most cyberloafing research focus on?
+
+123
+00:18:20,520 --> 00:18:38,880
+Q17. What was the hypothesis of the speaker's research team?
+
+124
+00:18:38,880 --> 00:18:59,820
+Q18. On what point do the results of the speaker's study agree with other recent research?
+
+125
+00:18:59,820 --> 00:19:10,640
+RECORDING 2
+When Julius Morton moved to Nebraska City in 1854, he faced a problem shared by many settlers in the territory: It was a treeless plain.
+
+126
+00:19:10,640 --> 00:19:15,820
+That meant no trees for building materials, or for fuel.
+
+127
+00:19:15,820 --> 00:19:26,660
+But Morton was one of the world's first conservationists, stating, "For prosperity, we ought to plant as many forests as we have exhausted and consumed".
+
+128
+00:19:26,660 --> 00:19:30,660
+So he started planting trees, beginning with his own land.
+
+129
+00:19:30,660 --> 00:19:36,160
+By 1860 Morton possessed a forest of more than 300 trees.
+
+130
+00:19:36,160 --> 00:19:39,640
+A few years later, he had more than 1,000.
+
+131
+00:19:39,640 --> 00:19:44,480
+As the forest grew, so did Morton's influence in Nebraska.
+
+132
+00:19:44,480 --> 00:19:57,720
+This was largely because Morton founded the Nebraska City News, the state's first newspaper, in which he frequently wrote editorials about the practical and aesthetic benefits of tree planting.
+
+133
+00:19:57,720 --> 00:20:05,340
+He also organized the Nebraska State Gardening Society and served on the Nebraska State Board of Agriculture.
+
+134
+00:20:05,340 --> 00:20:12,840
+While serving on the Board, Morton came up with an idea to spread his belief in tree planting statewide.
+
+135
+00:20:12,840 --> 00:20:27,950
+On January 4, 1872, Morton drafted a resolution that April 10 be designated a day for the planting of trees in the State of Nebraska and urged people to go out and plant trees themselves.
+
+136
+00:20:27,950 --> 00:20:33,630
+Morton called the special event Arbor Day as "arbor" is Latin for "tree".
+
+137
+00:20:33,630 --> 00:20:35,410
+The state government agreed.
+
+138
+00:20:35,410 --> 00:20:43,050
+And on April 10, 1872, the first unofficial Arbor Day was celebrated throughout Nebraska.
+
+139
+00:20:43,050 --> 00:20:49,810
+Prizes were awarded to counties, cities, and individuals who planted the largest number of trees.
+
+140
+00:20:49,810 --> 00:21:01,290
+That day, an astounding one million trees were planted in Nebraska—an average of more than six for every man, woman and child in the state.
+
+141
+00:21:01,290 --> 00:21:11,390
+Since 1885, Nebraska has planted more than 700,000 acres of trees, earning it the nickname "the Tree Planters State".
+
+142
+00:21:11,390 --> 00:21:18,350
+Arbor Day became a legal, civic holiday in the state in 1885.
+
+143
+00:21:18,350 --> 00:21:23,210
+It was held on April 22—Julius Morton's birthday.
+
+144
+00:21:23,210 --> 00:21:35,590
+In addition to a parade in Nebraska City, Morton introduced what has since become a long-standing Arbor Day tradition: Schoolchildren went outside and planted trees together.
+
+145
+00:21:35,590 --> 00:21:48,290
+In 1970, nearly a century after Arbor Day was first celebrated, President Richard Nixon declared the last Friday of every April to be observed as National Arbor Day.
+
+146
+00:21:48,290 --> 00:22:05,490
+All 50 states recognize the April observance, although many hold an additional state Arbor Day in a month more suited to local tree planting.
+
+147
+00:22:05,490 --> 00:22:26,210
+Q19. What does the speaker say about Nebraska City in 1854 when Julius Morton moved there?
+
+148
+00:22:26,210 --> 00:22:46,070
+Q20. What did Julius Morton do that increased his influence in Nebraska City?
+
+149
+00:22:46,070 --> 00:23:06,290
+Q21. What does the speaker say happened on April 10, 1872?
+
+150
+00:23:06,290 --> 00:23:11,190
+RECORDING 3
+Modern humans arose in Africa about 200,000 years ago.
+
+151
+00:23:11,190 --> 00:23:17,110
+They then spread across Europe and Asia sometime after 60,000 years ago.
+
+152
+00:23:17,110 --> 00:23:21,870
+This is the "Out of Africa" model, as it's commonly known.
+
+153
+00:23:21,870 --> 00:23:26,610
+In the 1990s, the hypothesis found widespread acceptance.
+
+154
+00:23:26,610 --> 00:23:36,010
+But this popular idea is in need of revision, particularly given the number of important findings across Asia over the past few decades.
+
+155
+00:23:36,010 --> 00:23:45,670
+For instance, many new human fossils found, particularly in China, are now dated as older than 60,000 years.
+
+156
+00:23:45,670 --> 00:23:53,850
+This calls into question the idea that modern humans migrated out of Africa only 60,000 years ago.
+
+157
+00:23:53,850 --> 00:24:02,950
+Take the recent discovery of two modern human teeth found in the Luna cave in China's Guangxi Zhuang Autonomous Region.
+
+158
+00:24:02,950 --> 00:24:17,750
+When my research team and I dated these teeth, we found they were more than 70,000 years old—a situation clearly impossible if modern humans moved out of Africa only 60,000 years ago.
+
+159
+00:24:17,750 --> 00:24:21,330
+So with such findings, what happened exactly?
+
+160
+00:24:21,330 --> 00:24:24,930
+Where does the most current data suggest we came from?
+
+161
+00:24:24,930 --> 00:24:31,610
+The first question we should ask is why did modern humans leave Africa to begin with?
+
+162
+00:24:31,610 --> 00:24:43,790
+If a population is perfectly adapted to a particular environment and has access to an abundance of resources, then there really is no reason to move or change.
+
+163
+00:24:43,790 --> 00:24:56,390
+For instance, some monkeys in Africa have a set of teeth that has hardly changed over the course of millions of years, indicating that they found a place that has worked for them.
+
+164
+00:24:56,390 --> 00:24:58,550
+So what happened with humans?
+
+165
+00:24:58,550 --> 00:25:07,690
+Some researchers have suggested that population density increased to the point where smaller human groups were forced to explore new lands.
+
+166
+00:25:07,690 --> 00:25:16,730
+Other researchers have suggested that due to major environmental events in East Africa, humans were prompted to find greener pastures.
+
+167
+00:25:16,730 --> 00:25:34,610
+Yet another explanation could simply be that early modern human hunters were following the large animals that they relied on, and so they moved out of Africa without realizing that they were actually moving from one continent to another.
+
+168
+00:25:34,610 --> 00:25:41,870
+Humans need daily access to reliable fresh water, which appears to be absent from many coastal areas.
+
+169
+00:25:41,870 --> 00:25:48,870
+This brings us to another question: by which route did modern humans move out of Africa?
+
+170
+00:25:48,870 --> 00:26:11,890
+No clear routes across the Mediterranean from North Africa appear to be present, so the earlier dispersals out of Africa and into Europe and Asia might have been across the Arabian Peninsula.
+
+171
+00:26:11,890 --> 00:26:33,390
+Q22. What do we learn about modern humans according to the hypothesis commonly accepted in the 1990s?
+
+172
+00:26:33,390 --> 00:26:52,110
+Q23. What has called into question the "Out of Africa" model?
+
+173
+00:26:52,110 --> 00:27:12,310
+Q24. What does the speaker want to show with the example of some monkeys in Africa?
+
+174
+00:27:12,310 --> 00:27:32,767
+Q25. What question does the speaker raise close to the end of the talk?

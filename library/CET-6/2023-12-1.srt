@@ -1,0 +1,734 @@
+1
+00:00:40,420 --> 00:00:41,920
+CONVERSATION 1
+Hello, Doctor.
+
+2
+00:00:41,920 --> 00:00:43,420
+Hello, please take a seat.
+
+3
+00:00:43,420 --> 00:00:46,480
+I have your test results here, and it's good news.
+
+4
+00:00:46,480 --> 00:00:48,560
+The blood test came back clear.
+
+5
+00:00:48,560 --> 00:00:52,080
+There is no indication of any digestive issues.
+
+6
+00:00:52,080 --> 00:00:55,180
+So then, why do I feel so poorly all the time?
+
+7
+00:00:55,180 --> 00:00:57,760
+It's probably due to overwork and stress.
+
+8
+00:00:57,760 --> 00:00:59,840
+No, it can't be.
+
+9
+00:00:59,840 --> 00:01:03,340
+I've always been working hard, but I've never felt stress.
+
+10
+00:01:03,340 --> 00:01:06,420
+Other people suffer and complain about that, but I don't.
+
+11
+00:01:06,420 --> 00:01:08,060
+It must be something else.
+
+12
+00:01:08,060 --> 00:01:11,480
+What you have just described is a common sentiment.
+
+13
+00:01:11,480 --> 00:01:15,260
+Many people who suffer from stress fail to recognize it.
+
+14
+00:01:15,260 --> 00:01:18,500
+You told me you often work long into the night, right?
+
+15
+00:01:18,500 --> 00:01:20,880
+Yes, most days in fact.
+
+16
+00:01:20,880 --> 00:01:23,640
+But I've been doing that for about 20 years now.
+
+17
+00:01:23,640 --> 00:01:25,380
+That doesn't matter.
+
+18
+00:01:25,380 --> 00:01:29,340
+You could have been suffering from stress for 20 years without knowing it.
+
+19
+00:01:29,340 --> 00:01:31,420
+And now it's catching up to you.
+
+20
+00:01:31,420 --> 00:01:36,420
+But what about my feeling tired all the time, and not being able to sleep well at night?
+
+21
+00:01:36,420 --> 00:01:39,320
+Those are common consequences of stress.
+
+22
+00:01:39,320 --> 00:01:43,420
+And if you don't sleep well, then of course you will feel fatigued.
+
+23
+00:01:43,420 --> 00:01:46,300
+I'm going to prescribe some special sleeping pills for you.
+
+24
+00:01:46,300 --> 00:01:50,760
+They have a soft, gentle effect, and are made from natural ingredients.
+
+25
+00:01:50,760 --> 00:01:56,020
+So your stomach should tolerate them fine, and there shouldn't be any negative side effects.
+
+26
+00:01:56,020 --> 00:01:59,220
+Take one with your dinner, and come see me after a month.
+
+27
+00:01:59,220 --> 00:02:02,620
+If there is no improvement, I'll give you something stronger.
+
+28
+00:02:02,620 --> 00:02:03,820
+Thank you, Doctor.
+
+29
+00:02:03,820 --> 00:02:04,960
+That's not all.
+
+30
+00:02:04,960 --> 00:02:06,880
+You should try and work less.
+
+31
+00:02:06,880 --> 00:02:09,660
+Is there any way you can decrease your workload?
+
+32
+00:02:09,660 --> 00:02:12,340
+Um, I'd have to think about it.
+
+33
+00:02:12,340 --> 00:02:15,880
+I'm a restaurant manager, and this industry is very competitive.
+
+34
+00:02:15,880 --> 00:02:18,880
+There are many things to keep track of and stay on top of.
+
+35
+00:02:18,880 --> 00:02:23,300
+I recommend you think about delegating some responsibilities to someone else.
+
+36
+00:02:23,300 --> 00:02:26,640
+I'm not asking you to retire, just to slow down a bit.
+
+37
+00:02:26,640 --> 00:02:34,880
+It's for your own health.
+
+38
+00:02:34,880 --> 00:02:53,440
+Q1. What do we learn about the man from his test results?
+
+39
+00:02:53,440 --> 00:03:12,120
+Q2. What does the woman think is a common phenomenon among many people?
+
+40
+00:03:12,120 --> 00:03:29,580
+Q3. What does the woman say she will do for the man?
+
+41
+00:03:29,580 --> 00:03:49,540
+Q4. What does the man say about the industry he is engaged in?
+
+42
+00:03:49,540 --> 00:03:53,180
+CONVERSATION 2
+Today on People in the News, our guest is John Williams.
+
+43
+00:03:53,180 --> 00:04:00,800
+The name may not sound familiar to you, but John was once an acclaimed basketball player.
+
+44
+00:04:00,800 --> 00:04:05,640
+John, you stunned fans by leaving the sport at just 25.
+
+45
+00:04:05,640 --> 00:04:08,280
+Why did you retire so early?
+
+46
+00:04:08,280 --> 00:04:12,840
+Meg, I loved being an athlete, but I didn't love being a celebrity.
+
+47
+00:04:12,840 --> 00:04:20,920
+I was in the limelight when I was still a high school student, and went professional right after high school graduation, which was a mistake.
+
+48
+00:04:20,920 --> 00:04:25,300
+I was a shy kid, and I wasn't ready for all the media attention.
+
+49
+00:04:25,300 --> 00:04:29,520
+But walking away from millions of dollars at the height of your career?
+
+50
+00:04:29,520 --> 00:04:33,940
+Most people wouldn't be able to resist the lure of such a high salary.
+
+51
+00:04:33,940 --> 00:04:40,640
+When you left the sport, there was speculation that you were having issues with your teammates, or even an injury.
+
+52
+00:04:40,640 --> 00:04:41,780
+Not at all.
+
+53
+00:04:41,780 --> 00:04:43,280
+It was hard to quit.
+
+54
+00:04:43,280 --> 00:04:48,400
+I was tempted to stay in the game, because I loved basketball, and I loved my team.
+
+55
+00:04:48,400 --> 00:04:57,000
+As for money, I turned professional at 18, so I'd actually earned a lot and saved most of it, because I had great financial advisors.
+
+56
+00:04:57,000 --> 00:05:00,960
+I knew basketball wasn't a career with a lot of longevity for most players.
+
+57
+00:05:00,960 --> 00:05:05,220
+So I wanted to change careers while I was still young.
+
+58
+00:05:05,220 --> 00:05:09,300
+Okay, that was 20 years ago, and you're back in the news.
+
+59
+00:05:09,300 --> 00:05:14,200
+You've created a foundation that works to get more kids playing team sports.
+
+60
+00:05:14,200 --> 00:05:14,540
+Why?
+
+61
+00:05:14,540 --> 00:05:25,960
+I went to university, and I studied public health and learned about the seriousness of the obesity epidemic, particularly among kids and adolescents in poor communities.
+
+62
+00:05:25,960 --> 00:05:29,720
+I've spent the last two decades trying to alleviate the problem.
+
+63
+00:05:29,720 --> 00:05:32,420
+The Foundation is just the latest attempt.
+
+64
+00:05:32,420 --> 00:05:39,500
+The Foundation uses private donations to support basketball teams for girls and boys in primary school, right?
+
+65
+00:05:39,500 --> 00:05:43,580
+Actually, we support teams for secondary school students, too.
+
+66
+00:05:43,580 --> 00:05:53,660
+And also have some public funding.
+
+67
+00:05:53,660 --> 00:06:12,480
+Q5. Why did John Williams leave the sport of basketball at just 25?
+
+68
+00:06:12,480 --> 00:06:30,580
+Q6. What does the man say about basketball as a career for most players?
+
+69
+00:06:30,580 --> 00:06:49,240
+Q7. What do we learn from the woman about John Williams 20 years later?
+
+70
+00:06:49,240 --> 00:07:37,240
+Q8. What has the man spent the last two decades trying to do?
+
+71
+00:07:37,240 --> 00:07:42,000
+PASSAGE 1
+Kate Atkinson was born in York, England in 1951.
+
+72
+00:07:42,000 --> 00:07:45,340
+She worked hard to gain her credentials as an author.
+
+73
+00:07:45,340 --> 00:07:49,260
+She studied English literature at University in Scotland.
+
+74
+00:07:49,260 --> 00:07:55,620
+After graduating in 1974, she researched a doctorate on American literature.
+
+75
+00:07:55,620 --> 00:08:03,060
+Later, she taught at the university she graduated from, and began writing short stories in 1981.
+
+76
+00:08:03,060 --> 00:08:11,020
+She began writing for women's magazines after winning the 1986 Women's Own Short Story Competition.
+
+77
+00:08:11,020 --> 00:08:18,740
+Her first novel, Behind the Scenes at the Museum, won the 1995 UK Book of the Year award.
+
+78
+00:08:18,740 --> 00:08:24,640
+The book is set in Yorkshire and has been adapted for radio, theatre, and TV.
+
+79
+00:08:24,640 --> 00:08:28,480
+She has written two plays for a theatre in Edinburgh.
+
+80
+00:08:28,480 --> 00:08:37,320
+The first was called Abandonment and the second, Nice, performed as part of the Edinburgh Festival in August 2000.
+
+81
+00:08:37,320 --> 00:08:44,700
+Whatever genre Atkinson writes in, her books touch on the themes of love and loss and how to carry on.
+
+82
+00:08:44,700 --> 00:08:47,860
+They are always presented with ingenuity and a wicked sense of humor.
+
+83
+00:08:47,860 --> 00:08:59,660
+Her books tend to be populated by odd, sometimes sinful, and generally flawed eccentrics who become credible by virtue of being so fully realized.
+
+84
+00:08:59,660 --> 00:09:03,420
+Her books have frequently been described as comedies of manners.
+
+85
+00:09:03,420 --> 00:09:15,680
+That is to say, comedies that represent the complex and sophisticated code of behavior current in fashionable circles of society, where appearances count more than true moral character.
+
+86
+00:09:15,680 --> 00:09:24,600
+A comedy of manners tends to reward its clever and deceitful characters, rather than punish their bad deeds.
+
+87
+00:09:24,600 --> 00:09:38,084
+The humor of a comedy of manners relies on verbal wit and playful teasing.
+
+88
+00:09:38,084 --> 00:09:55,420
+Q9. When did Kate Atkinson begin writing for women's magazines?
+
+89
+00:09:55,420 --> 00:10:11,780
+Q10. What common themes do Kate Atkinson's books touch on?
+
+90
+00:10:11,780 --> 00:10:31,640
+Q11. What does the passage say about the characters in a comedy of manners?
+
+91
+00:10:31,640 --> 00:10:36,480
+PASSAGE 2
+Why is adaptability an important skill to exercise in the workplace?
+
+92
+00:10:36,480 --> 00:10:43,240
+Simply put, adaptability is a skill employers are increasingly looking for.
+
+93
+00:10:43,240 --> 00:10:48,880
+When you spend time learning a new task rather than resisting it, your productivity goes up.
+
+94
+00:10:48,880 --> 00:10:57,340
+You can also serve as an example to your coworkers who may be having trouble adapting, and can help lead your team forward.
+
+95
+00:10:57,340 --> 00:11:15,800
+Strategy consultant, Dorie Clark, explains it to us this way: "I'd say that adaptability is an important skill in the workplace because, frankly, circumstances change—competitors introduce new products, the economy might enter a recession, customer preferences differ over time, and more.
+
+96
+00:11:15,800 --> 00:11:19,440
+If you shake your fist at the sky and say, 'why can't it stay the same?!'
+
+97
+00:11:19,440 --> 00:11:21,960
+, that's not going to do very much good.
+
+98
+00:11:21,960 --> 00:11:31,320
+Instead, you need to recognize when circumstances have changed so you can take appropriate action based on what is, rather than how you wish the world would be.
+
+99
+00:11:31,320 --> 00:11:36,620
+That enables you to make more accurate, informed, and effective choices."
+
+100
+00:11:36,620 --> 00:11:39,960
+Also, the workplace itself has been evolving.
+
+101
+00:11:39,960 --> 00:11:46,420
+Today's work culture and management style is often based on teamwork, rather than a rigid hierarchy.
+
+102
+00:11:46,420 --> 00:11:53,460
+Brainstorming, which requires creativity, flexibility, and emotional intelligence, is a typical problem-solving technique.
+
+103
+00:11:53,460 --> 00:12:01,820
+Employees who are unable or unwilling to participate will not easily move forward in the company.
+
+104
+00:12:01,820 --> 00:12:05,240
+Employees who are flexible demonstrate other skills too.
+
+105
+00:12:05,240 --> 00:12:13,000
+They can reprioritize quickly when changes occur and suggest additional modifications when something is not working.
+
+106
+00:12:13,000 --> 00:12:28,560
+They can also regroup quickly when a setback occurs, adapting to the new situation confidently and without overreacting.
+
+107
+00:12:28,560 --> 00:12:52,200
+Q12. What does the speaker say about adaptability as a workplace skill?
+
+108
+00:12:52,200 --> 00:13:11,000
+Q13. According to Dorie Clark, what does recognizing changed circumstances enable people to do?
+
+109
+00:13:11,000 --> 00:13:28,940
+Q14. What does the passage say about today's work culture?
+
+110
+00:13:28,940 --> 00:14:14,940
+Q15. What are employees with adaptability able to do when changes occur?
+
+111
+00:14:14,940 --> 00:14:18,600
+RECORDING 1
+What makes humans different from other species?
+
+112
+00:14:18,600 --> 00:14:26,740
+Some philosophers argue it's morals or ethics, while some scientists assert it's our greater cognitive development.
+
+113
+00:14:26,740 --> 00:14:31,760
+But I argue that the main difference is our desire to combat routine.
+
+114
+00:14:31,760 --> 00:14:42,840
+This makes being creative a biological mandate, as what we seek in art and technology is surprise, not simply a fulfillment of expectations.
+
+115
+00:14:42,840 --> 00:15:06,240
+As a result, a wild imagination has characterized the history of our species: we build intricate habitats, devise complex recipes for our food, wear clothes that reflect constant changes in fashion, communicate with elaborate signs, symbols and sounds, and travel between habitats on wings and wheels of our own design.
+
+116
+00:15:06,240 --> 00:15:11,640
+To satisfy our appetite for novelty, innovation is key.
+
+117
+00:15:11,640 --> 00:15:13,740
+But who innovates?
+
+118
+00:15:13,740 --> 00:15:20,260
+Now, many people, both laymen and experts, believe that only geniuses innovate.
+
+119
+00:15:20,260 --> 00:15:25,020
+But I believe that innovation is not something that only a few people do.
+
+120
+00:15:25,020 --> 00:15:36,560
+The innovative drive lives in every human brain, and the resulting war against the repetitive is what powers the massive changes that distinguish one generation from the next.
+
+121
+00:15:36,560 --> 00:15:40,640
+The drive to create the new is a trait of being human.
+
+122
+00:15:40,640 --> 00:15:45,300
+We build cultures by the hundreds and tell new stories by the millions.
+
+123
+00:15:45,300 --> 00:15:52,800
+We create and surround ourselves with things that have never existed before, while animals do not.
+
+124
+00:15:52,800 --> 00:15:55,620
+But where do our new ideas come from?
+
+125
+00:15:55,620 --> 00:16:01,520
+According to many, new ideas come from seemingly nowhere, to great minds.
+
+126
+00:16:01,520 --> 00:16:05,620
+From this perspective, new ideas are almost like magic.
+
+127
+00:16:05,620 --> 00:16:09,660
+They come in a flash of inspiration to a select few.
+
+128
+00:16:09,660 --> 00:16:18,540
+However, the reality is that, across the spectrum of human activities, prior work propels the creative process.
+
+129
+00:16:18,540 --> 00:16:28,520
+We may think of innovation as being the result of inspiration or genius, but it's really the result of developing the ideas of others further.
+
+130
+00:16:28,520 --> 00:16:34,480
+This happens in technology where one invention enables or inspires further inventions.
+
+131
+00:16:34,480 --> 00:16:43,100
+And it happens in the arts, as writers, composers, and painters use the work of previous artists in their own work.
+
+132
+00:16:43,100 --> 00:16:46,140
+The human brain works from precedent.
+
+133
+00:16:46,140 --> 00:16:50,880
+We take the ideas we've inherited and put them together into some new shape.
+
+134
+00:16:50,880 --> 00:16:52,900
+What is a true creator?
+
+135
+00:16:52,900 --> 00:16:56,660
+Is a creator a genius who makes something out of nothing?
+
+136
+00:16:56,660 --> 00:17:06,480
+No. Creators are simply humans who use what they inherit who absorb the past and manipulate it to create possible futures.
+
+137
+00:17:06,480 --> 00:17:18,023
+Thus, humans are creators as a rule rather than as an exception.
+
+138
+00:17:18,023 --> 00:17:37,260
+Q16. What is the main question the speaker is trying to answer?
+
+139
+00:17:37,260 --> 00:17:57,160
+Q17. What does the speaker say about innovation?
+
+140
+00:17:57,160 --> 00:18:13,600
+Q18. According to the speaker, where do new ideas actually come from?
+
+141
+00:18:13,600 --> 00:18:25,420
+RECORDING 2
+Many dog owners will tell you that their dog somehow knows when they're ill or upset, and, according to researchers who study dog cognition, those pet owners are right.
+
+142
+00:18:25,420 --> 00:18:30,640
+Dogs do know when their human companions are having a rough time.
+
+143
+00:18:30,640 --> 00:18:42,400
+Not only can your dog sense when you have a cold, but domestic dogs have shown an aptitude for detecting both much smaller mood fluctuations and far more serious physical conditions.
+
+144
+00:18:42,400 --> 00:18:49,100
+This is because dogs are extremely sensitive to changes in the people they're familiar with, and illness causes change.
+
+145
+00:18:49,100 --> 00:19:04,900
+If a person is infected with a virus or bacteria, for example, their odour will be abnormal, and dogs are able to smell that change even if a human can't, because dogs have a much more powerful sense of smell than humans.
+
+146
+00:19:04,900 --> 00:19:13,340
+Researchers have also found that a person's mood, which can be an indicator of a larger illness, triggers a dog's sense of smell.
+
+147
+00:19:13,340 --> 00:19:22,160
+Human emotions manifest physically in chemical signals that are emitted by the body, and dogs are able to smell those as well.
+
+148
+00:19:22,160 --> 00:19:28,080
+Beyond smell, dogs gather information from a person's voice in order to sense changes.
+
+149
+00:19:28,080 --> 00:19:44,460
+In 2014, researchers discovered that dogs have an area of the brain, similar to one in humans, that allows them to understand emotional cues in the tone of a speaker's voice, beyond what they'd be able to pick up from familiar words alone.
+
+150
+00:19:44,460 --> 00:19:48,820
+A person's voice can also carry indicators of illness.
+
+151
+00:19:48,820 --> 00:19:54,300
+What's not understood quite so well is what dogs understand about these changes.
+
+152
+00:19:54,300 --> 00:20:01,200
+Humans send out lots of cues, but whether dogs know some of these cues mean "illness" isn't clear.
+
+153
+00:20:01,200 --> 00:20:14,840
+What we perceive as concern on a dog's part might be more like increased curiosity or suspicion that something is wrong with us, and sticking close by is a great way to gather more information about the situation.
+
+154
+00:20:14,840 --> 00:20:29,400
+Some researchers assert dogs will one day help doctors diagnose diseases, as some dogs have already demonstrated the ability to detect an assortment of ailments, including diabetes and certain types of cancer.
+
+155
+00:20:29,400 --> 00:20:33,420
+But those researchers concede that's probably in the distant future.
+
+156
+00:20:33,420 --> 00:20:40,160
+For now, research suggests dog ownership can have an array of benefits in and of itself.
+
+157
+00:20:40,160 --> 00:20:44,740
+Keeping a pet dog has been shown to bolster health and boost mood.
+
+158
+00:20:44,740 --> 00:20:58,220
+Dogs also help people relax, and they can be a particular comfort to those with chronic diseases.
+
+159
+00:20:58,220 --> 00:21:19,000
+Q19. What do researchers who study dog cognition confirm?
+
+160
+00:21:19,000 --> 00:21:38,300
+Q20. Why are dogs able to detect abnormal odours caused by illness?
+
+161
+00:21:38,300 --> 00:21:58,520
+Q21. What does the passage say about dog ownership?
+
+162
+00:21:58,520 --> 00:22:10,660
+RECORDING 3
+Earlier this month, the think-tank called Onward published a report, "A Question of Degree", which argues that degrees in the creative arts are not good value for money.
+
+163
+00:22:10,660 --> 00:22:29,900
+Ministers, according to Onward, should "crack down on courses that offer extremely limited value for money to students ten years after graduation", restricting the ability of such courses to recruit new students, if the average graduate earns below the student loans payment threshold.
+
+164
+00:22:29,900 --> 00:22:38,260
+Courses like science, technology, engineering, and math, and economics, where the average graduate earns a lot, should be favored.
+
+165
+00:22:38,260 --> 00:22:47,960
+The report provides insight into a government review which looks at how to reform technical education and how to ensure students get good value for money.
+
+166
+00:22:47,960 --> 00:22:53,260
+At first glance, it might even seem like Onward have a point.
+
+167
+00:22:53,260 --> 00:23:02,240
+According to their data, the majority of creative arts students earn less than £25,000 a year, ten years after graduation.
+
+168
+00:23:02,240 --> 00:23:10,960
+The average male creative arts students, indeed, apparently earn much less than they would, had they simply never gone to university.
+
+169
+00:23:10,960 --> 00:23:22,780
+This isn't really good for anyone—and it's certainly no good for graduates, who are forced to endure a lifestyle where they can never save up, never buy a house, never hope to retire.
+
+170
+00:23:22,780 --> 00:23:25,920
+Onward have identified a real problem.
+
+171
+00:23:25,920 --> 00:23:44,580
+Creative arts graduates from top universities like Oxford, with a high proportion of privately-educated students, have fairly good work prospects, while 40 percent of all graduates—regardless of their degree—are on less than £25,000 a year, five years after graduation.
+
+172
+00:23:44,580 --> 00:23:54,320
+This suggests that the problem isn't really to do with specific students studying specific degrees, but really with the economy as a whole.
+
+173
+00:23:54,320 --> 00:24:02,580
+Regardless of what they've studied, young people find it hard to get ahead, unless they're lucky enough to be born with successful parents.
+
+174
+00:24:02,580 --> 00:24:10,900
+If ministers want to make education pay for young people, they need to look beyond the higher education sector, towards the wider world.
+
+175
+00:24:10,900 --> 00:24:20,480
+The rewards that education gives us are not measurable—they are not always instantly obvious, and certainly not always direct.
+
+176
+00:24:20,480 --> 00:24:25,860
+An education makes you a different person from the one you would have been if you hadn't received it.
+
+177
+00:24:25,860 --> 00:24:31,780
+We need to look at the value of education not in the context of a bank balance, but of a life.
+
+178
+00:24:31,780 --> 00:24:47,280
+If we continue to allow ourselves to be distracted with talk of "value for money", we will all be made poorer as a result.
+
+179
+00:24:47,280 --> 00:25:06,320
+Q22. What does the Onward report argue?
+
+180
+00:25:06,320 --> 00:25:21,640
+Q23. What does the speaker think of Onward's argument?
+
+181
+00:25:21,640 --> 00:25:44,040
+Q24. What do we learn about British college graduates five years after graduation?
+
+182
+00:25:44,040 --> 00:26:04,821
+Q25. What does the speaker say actually accounts for the problem identified by Onward?
