@@ -48,6 +48,23 @@ ffmpeg -y -f lavfi -i "sine=frequency=220:duration=62" \
 # dreams.srt 已在仓库；再放 dreams.txt（首行作标题）可选
 ```
 
+### 部署（N100 自托管，2026-08-25 起运行）
+
+```bash
+# 首次（N100 上，Debian 13 + Docker）
+git clone -b develop https://github.com/onty2580/cet-listening.git ~/echo
+cd ~/echo && docker compose up -d    # 端口仅绑 Tailscale IP 100.96.175.68:5173
+
+# 更新代码（compose 挂载仓库目录，无镜像构建）
+cd ~/echo && git pull && docker compose restart
+
+# 同步音频（N100 未装 rsync，用 scp）
+scp -r library/. n100:echo/library/
+```
+
+- `restart: unless-stopped` 保证 7×24；Echo 无认证，端口刻意不绑 0.0.0.0（局域网不可达，仅 Tailscale 网内可达）
+- 健康检查：`curl http://100.96.175.68:5173/`（200）、Range 请求（206）
+
 ### 冒烟验证命令
 
 ```bash

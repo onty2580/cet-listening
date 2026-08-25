@@ -112,6 +112,20 @@
 
 ---
 
+## 部署 — N100 自托管 ✅（2026-08-25，AI 功能暂缓）
+
+**目标**：7×24 跑在 N100（Debian 13 + Docker + Tailscale）上，日常可用。
+
+- [x] `docker-compose.yml` 入库：python:3.13-slim + 仓库目录整体挂载（零镜像构建）+ `restart: unless-stopped`
+- [x] 端口仅绑 Tailscale IP（100.96.175.68:5173）——Echo 无认证，不向局域网暴露
+- [x] N100 clone develop → `~/echo`；音频经 scp 同步（N100 无 rsync）
+- [x] 验证：容器 healthy、/ 200、/api/library 条目 available、Range 206、Mac 经 Tailscale 浏览器实测渲染正常零 console 错误
+- [ ] AI（Phase 4）暂缓——先攒使用反馈
+
+**更新流程**：N100 上 `cd ~/echo && git pull && docker compose restart`；新音频 `scp` 进 `library/`。
+
+---
+
 ## Phase 4 — Optional AI Enhancement → `v0.4-ai`
 
 **目标**：不破坏核心的前提下加 AI。
